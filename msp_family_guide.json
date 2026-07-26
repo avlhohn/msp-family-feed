@@ -5531,14 +5531,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "art-fair",
-        "festival",
-        "family",
-        "kids",
-        "free",
-        "live-music"
-      ],
+      "tags": "art-fair,festival,family,kids,free,live-music",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5561,11 +5554,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "car-show",
-        "community",
-        "free"
-      ],
+      "tags": "car-show,community,free",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5588,11 +5577,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "car-show",
-        "community",
-        "free"
-      ],
+      "tags": "car-show,community,free",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5615,13 +5600,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "touch-a-truck",
-        "family",
-        "kids",
-        "free",
-        "community"
-      ],
+      "tags": "touch-a-truck,family,kids,free,community",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5644,13 +5623,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "touch-a-truck",
-        "community-fest",
-        "family",
-        "kids",
-        "free"
-      ],
+      "tags": "touch-a-truck,community-fest,family,kids,free",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5673,13 +5646,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "touch-a-truck",
-        "family",
-        "kids",
-        "free",
-        "community"
-      ],
+      "tags": "touch-a-truck,family,kids,free,community",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5702,13 +5669,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "movie",
-        "outdoor-movie",
-        "free",
-        "family",
-        "kids"
-      ],
+      "tags": "movie,outdoor-movie,free,family,kids",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5731,12 +5692,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "farmers-market",
-        "free",
-        "family",
-        "kids"
-      ],
+      "tags": "farmers-market,free,family,kids",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5759,13 +5715,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "food-truck",
-        "festival",
-        "free",
-        "family",
-        "kids"
-      ],
+      "tags": "food-truck,festival,free,family,kids",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5788,14 +5738,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "mankato",
-        "all-ages",
-        "family",
-        "festival",
-        "concert",
-        "outstate/day-trip"
-      ],
+      "tags": "mankato,all-ages,family,festival,concert,outstate/day-trip",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5818,14 +5761,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "brainerd",
-        "all-ages",
-        "family",
-        "concert",
-        "festival",
-        "outstate/day-trip"
-      ],
+      "tags": "brainerd,all-ages,family,concert,festival,outstate/day-trip",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5848,14 +5784,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "brainerd",
-        "all-ages",
-        "kids",
-        "family",
-        "county fair",
-        "outstate/day-trip"
-      ],
+      "tags": "brainerd,all-ages,kids,family,county fair,outstate/day-trip",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5878,14 +5807,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "alexandria",
-        "all-ages",
-        "family",
-        "concert",
-        "festival",
-        "outstate/day-trip"
-      ],
+      "tags": "alexandria,all-ages,family,concert,festival,outstate/day-trip",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5908,14 +5830,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "moorhead",
-        "all-ages",
-        "kids",
-        "family",
-        "county fair",
-        "outstate/day-trip"
-      ],
+      "tags": "moorhead,all-ages,kids,family,county fair,outstate/day-trip",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5938,14 +5853,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "moorhead",
-        "all-ages",
-        "family",
-        "concert",
-        "festival",
-        "outstate/day-trip"
-      ],
+      "tags": "moorhead,all-ages,family,concert,festival,outstate/day-trip",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5968,14 +5876,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "moorhead",
-        "all-ages",
-        "kids",
-        "family",
-        "festival",
-        "outstate/day-trip"
-      ],
+      "tags": "moorhead,all-ages,kids,family,festival,outstate/day-trip",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -5998,14 +5899,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "duluth",
-        "all-ages",
-        "kids",
-        "family",
-        "county fair",
-        "outstate/day-trip"
-      ],
+      "tags": "duluth,all-ages,kids,family,county fair,outstate/day-trip",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -6028,14 +5922,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "sports",
-        "college-sports",
-        "game",
-        "ticketed",
-        "baseball",
-        "st-cloud"
-      ],
+      "tags": "sports,college-sports,game,ticketed,baseball,st-cloud",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -6058,15 +5945,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "sports",
-        "youth-sports",
-        "camp",
-        "baseball",
-        "paid",
-        "registration",
-        "minnetonka"
-      ],
+      "tags": "sports,youth-sports,camp,baseball,paid,registration,minnetonka",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -6089,15 +5968,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "2026-08-21",
-      "tags": [
-        "sports",
-        "youth-sports",
-        "camp",
-        "basketball",
-        "paid",
-        "registration",
-        "minneapolis"
-      ],
+      "tags": "sports,youth-sports,camp,basketball,paid,registration,minneapolis",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -6120,13 +5991,7 @@
       "has_deal": true,
       "deal_description": "Early buy advance tickets: Adults $20, Seniors $18, Kids 5-12 $13. Gate prices higher: Adults $28.95, Seniors $26.95, Kids $19.95. Kids 4 and under free.",
       "deal_expiry": "2026-01-20",
-      "tags": [
-        "paid",
-        "registration",
-        "shakopee",
-        "festival",
-        "attraction"
-      ],
+      "tags": "paid,registration,shakopee,festival,attraction",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -6149,13 +6014,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "paid",
-        "registration",
-        "orchard",
-        "seasonal",
-        "agritourism"
-      ],
+      "tags": "paid,registration,orchard,seasonal,agritourism",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -6178,13 +6037,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "paid",
-        "registration",
-        "orchard",
-        "seasonal",
-        "agritourism"
-      ],
+      "tags": "paid,registration,orchard,seasonal,agritourism",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -6207,13 +6060,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "paid",
-        "registration",
-        "orchard",
-        "seasonal",
-        "agritourism"
-      ],
+      "tags": "paid,registration,orchard,seasonal,agritourism",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     }
@@ -10265,12 +10112,7 @@
       "has_deal": true,
       "deal_description": "Kids 12 and under eat free from kids menu Sundays 4-9pm with one child per paid adult",
       "deal_expiry": "",
-      "tags": [
-        "kids-eat-free",
-        "family-dining",
-        "sunday",
-        "coon-rapids"
-      ],
+      "tags": "kids-eat-free,family-dining,sunday,coon-rapids",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -10293,12 +10135,7 @@
       "has_deal": true,
       "deal_description": "Kids eat free every Sunday with one kid meal per adult entr\u00e9e order",
       "deal_expiry": "",
-      "tags": [
-        "kids-eat-free",
-        "family-dining",
-        "sunday",
-        "minneapolis"
-      ],
+      "tags": "kids-eat-free,family-dining,sunday,minneapolis",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -10321,12 +10158,7 @@
       "has_deal": true,
       "deal_description": "Kids eat free from kids menu Sundays 4-9pm with one child per paying adult",
       "deal_expiry": "",
-      "tags": [
-        "kids-eat-free",
-        "family-dining",
-        "sunday",
-        "saint-paul"
-      ],
+      "tags": "kids-eat-free,family-dining,sunday,saint-paul",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -10349,12 +10181,7 @@
       "has_deal": true,
       "deal_description": "One free kids meal with one adult entr\u00e9e Sundays 5-8pm",
       "deal_expiry": "",
-      "tags": [
-        "kids-eat-free",
-        "family-dining",
-        "sunday",
-        "twin-cities"
-      ],
+      "tags": "kids-eat-free,family-dining,sunday,twin-cities",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -10377,12 +10204,7 @@
       "has_deal": true,
       "deal_description": "Kids complimentary 4-9 PM Sundays with adult entr\u00e9e purchase, one child per paying adult",
       "deal_expiry": "",
-      "tags": [
-        "kids-eat-free",
-        "family-dining",
-        "sunday",
-        "saint-paul"
-      ],
+      "tags": "kids-eat-free,family-dining,sunday,saint-paul",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -10405,12 +10227,7 @@
       "has_deal": true,
       "deal_description": "One meal free per paid adult entr\u00e9e on Sundays",
       "deal_expiry": "",
-      "tags": [
-        "kids-eat-free",
-        "family-dining",
-        "sunday",
-        "plymouth"
-      ],
+      "tags": "kids-eat-free,family-dining,sunday,plymouth",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -10433,12 +10250,7 @@
       "has_deal": true,
       "deal_description": "Kids complimentary all day Sundays with $12 minimum purchase",
       "deal_expiry": "",
-      "tags": [
-        "kids-eat-free",
-        "family-dining",
-        "sunday",
-        "eagan"
-      ],
+      "tags": "kids-eat-free,family-dining,sunday,eagan",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -10461,12 +10273,7 @@
       "has_deal": true,
       "deal_description": "Kids eat free all day Wednesdays with purchase of adult meal",
       "deal_expiry": "",
-      "tags": [
-        "kids-eat-free",
-        "family-dining",
-        "wednesday",
-        "eagan"
-      ],
+      "tags": "kids-eat-free,family-dining,wednesday,eagan",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -10489,12 +10296,7 @@
       "has_deal": true,
       "deal_description": "Kids' meals just $1 on Wednesdays with paid adult entr\u00e9e",
       "deal_expiry": "",
-      "tags": [
-        "kids-eat-free",
-        "family-dining",
-        "wednesday",
-        "bloomington"
-      ],
+      "tags": "kids-eat-free,family-dining,wednesday,bloomington",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -10517,12 +10319,7 @@
       "has_deal": true,
       "deal_description": "Kids 12 and under free cheese pizza with two toppings on Sundays with adult meal purchase",
       "deal_expiry": "",
-      "tags": [
-        "kids-eat-free",
-        "family-dining",
-        "sunday",
-        "rochester"
-      ],
+      "tags": "kids-eat-free,family-dining,sunday,rochester",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     }
@@ -11214,12 +11011,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "food-bank",
-        "brooklyn-park"
-      ],
+      "tags": "family,all-ages,food-bank,brooklyn-park",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11242,11 +11034,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "food-packing"
-      ],
+      "tags": "family,all-ages,food-packing",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11269,12 +11057,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "environmental",
-        "hastings"
-      ],
+      "tags": "family,all-ages,environmental,hastings",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11297,12 +11080,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "environmental",
-        "saint-paul"
-      ],
+      "tags": "family,all-ages,environmental,saint-paul",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11325,12 +11103,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "community-garden",
-        "bloomington"
-      ],
+      "tags": "family,all-ages,community-garden,bloomington",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11353,12 +11126,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "community-garden",
-        "saint-paul"
-      ],
+      "tags": "family,all-ages,community-garden,saint-paul",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11381,12 +11149,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "community-garden",
-        "saint-paul"
-      ],
+      "tags": "family,all-ages,community-garden,saint-paul",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11409,11 +11172,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "animal-shelter"
-      ],
+      "tags": "family,all-ages,animal-shelter",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11436,11 +11195,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "animal-shelter"
-      ],
+      "tags": "family,all-ages,animal-shelter",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11463,12 +11218,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "animal-shelter",
-        "minneapolis"
-      ],
+      "tags": "family,all-ages,animal-shelter,minneapolis",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11491,12 +11241,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "animal-shelter",
-        "meeker-county"
-      ],
+      "tags": "family,all-ages,animal-shelter,meeker-county",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11519,11 +11264,7 @@
       "has_deal": false,
       "deal_description": "Free admission ticket + free T-shirt per volunteer",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "festival"
-      ],
+      "tags": "family,all-ages,festival",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11546,11 +11287,7 @@
       "has_deal": false,
       "deal_description": "Free admission ticket per volunteer",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "festival"
-      ],
+      "tags": "family,all-ages,festival",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11573,12 +11310,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "nature-center",
-        "faribault"
-      ],
+      "tags": "family,all-ages,nature-center,faribault",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11601,11 +11333,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "nature-center"
-      ],
+      "tags": "family,all-ages,nature-center",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11628,11 +11356,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "environmental"
-      ],
+      "tags": "family,all-ages,environmental",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11655,12 +11379,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages",
-        "nature-center",
-        "saint-louis-park"
-      ],
+      "tags": "family,all-ages,nature-center,saint-louis-park",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     },
@@ -11683,10 +11402,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": [
-        "family",
-        "all-ages"
-      ],
+      "tags": "family,all-ages",
       "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
       "schema_version": "3.1"
     }
