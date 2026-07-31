@@ -1,91 +1,118 @@
 # MSP Family Guide — Error Fixing (Latest)
 
-Run date: 2026-07-28 — finished 4:49 AM CDT
+Run date: 2026-07-31 — finished 2026-07-31 04:48 CDT
 
 ## Summary
 
-- Open queue at start: **85** (30 `unresolved_website`, 55 `unresolved_image`)
-- Resolved this run: **18** (website 18; image 0 — og_image 0, facebook 0, stock_openverse_specific 0)
-- Left open (rolling to tomorrow): **67** (12 website, 55 image)
+- Open queue at start: **128** rows (73 `unresolved_website`, 55 `unresolved_image`) — 43 unique website items, 55 unique image items.
+- Resolved this run: **41** unique items (55 website rows + 8 image rows filled in the log).
+  - Website: **32** items.
+  - Image: **9** items — og_image 9, facebook 0, stock_openverse_specific 0.
+- Left open (rolling to tomorrow): **65** rows (18 `unresolved_website`, 47 `unresolved_image`) — 11 unique website items, 47 unique image items.
 
 ## Resolved this run
 
 | Item | Type | Resolution note |
-|------|------|-----------------|
-| Tilly's Bar and Grill - Oronoco | website | website: https://tillystavern.netwaiter.com/ — venue's own ordering page, address 1155 Lake Shady Ave S, Oronoco MN verified |
-| Ballroom in the Park | website | website: https://downtownstpaul.com/do/ballroom-in-the-park — page specifically describes the St Paul free outdoor ballroom dance series |
-| Littles and Lattes | website | website: https://www.instagram.com/littles.lattesplaycafe/ — venue's own official social presence, Littles & Lattes Play Cafe, Baxter MN verified |
-| Ben & Adith Miller Golf Tournament | website | website: official Winona Health Foundation page names the Ben & Adith Miller Classic golf tournament, Winona MN |
-| Southwest St. Louis County Fair | website | website: http://swstlouiscountyfair.com/ — official fair domain, Floodwood MN verified |
-| St. Paul Summer Arts, Crafts & Vendor Market | website | website: organizer's official Eventbrite event page, Mears Park St. Paul verified |
-| Uptown Food Truck Festival | website | website: Uptown Minneapolis association's official event page, name+city verified |
-| Boulevard Bar & Grill | website | website: https://www.boulevardbarmn.com/ — official site, Coon Rapids MN verified |
-| The Patty Wagon | website | website: https://www.thepattywagonmn.com/ — official site, 6042 Nicollet Ave Minneapolis verified |
-| Shamrocks | website | website: https://www.crshamrocks.com/ — official site, 995 7th St W St. Paul verified |
-| Willy McCoy's | website | website: https://www.willymccoys.com/ — official site, MN locations verified |
-| The Nook | website | website: https://www.crnook.com/ — official site, 492 Hamline Ave S St. Paul verified |
-| Sunshine Factory | website | website: https://esunshinefactory.com/ — official Sunshine Factory Bar & Grill, Plymouth MN verified |
-| Dickey's Barbecue Pit | website | website: official Dickey's MN locations page, name match |
-| Ze's Diner | website | website: https://zesdiner.com/ — official site, multiple MN locations verified |
-| Chevys Fresh Mex | website | website: official Chevys MN site, Bloomington MN verified |
-| Peak Cafe at Edinborough Park | website | website: official City of Edina facility page names Peak Cafe at Edinborough Park, Edina MN |
-| RLA Summer Block Party | website | website: https://www.riceandlarpenteur.com/ — official Rice & Larpenteur Alliance site names the Summer Block Party |
+| --- | --- | --- |
+| Broadway Pizza Thursday Kids Eat Free | website | website: https://www.broadwaypizza.com/rogers — verified venue name+city match |
+| Camp Carver Day Camp (Woodbury) | website | website: https://www.woodburymn.gov/384/Recreation — verified venue name+city match |
+| Centennial Lakes Farmers Market | website | website: https://www.edinamn.gov/683/Farmers-Market — verified venue name+city match |
+| Coon Rapids Summer Concert Series | website | website: https://www.coonrapidsmn.gov/1309/Summer-Concert-Series — verified venue name+city match |
+| Duluth County Fair | website | website: http://proctorduluthfair.com/ — verified venue name+city match |
+| Eagan Food Truck Festival | website | website: https://www.eaganmn.gov/things-to-do/eagan-food-truck-festival-4 — verified venue name+city match |
+| Eden Prairie Free Outdoor Movie - The Lego Movie | website | website: https://www.edenprairiemn.gov/city-government/departments/parks-and-recreation — verified venue name+city match |
+| Eden Prairie Movie - The Lego Movie | website | website: https://www.edenprairiemn.gov/city-government/departments/parks-and-recreation — verified venue name+city match |
+| Free Kids Entertainment at Valley View Park (Bloomington) | website | website: https://www.bloomingtonmn.gov/pr/arts-parks — verified venue name+city match |
+| Fridley Touch-A-Truck | website | website: https://www.fridleymn.gov/824/Special-Events — verified venue name+city match |
+| Groovin' In The Garden - Flamin' Oh's Concert | website | website: https://comozooconservatory.org/como/groovin-in-the-garden-2026/ — verified venue name+city match |
+| Lakeville Summer Concert Series | website | website: https://www.lakevilleareaartscenter.com/1239/Live-at-the-Lake — verified venue name+city match |
+| Lowell Park Summer Series - Farmers Market, Music & Movie | website | website: https://events.discoverstillwater.com/event/summer-tuesdays/ — verified venue name+city match |
+| Maple Grove Outdoor Movies - Back to the Future | website | website: https://maplegrovemn.gov/Calendar.aspx?EID=1009 — verified venue name+city match |
+| Mill City Farmers Market - Power of Produce (POP) | website | website: https://www.millcityfarmersmarket.org/ — verified venue name+city match |
+| Minneapolis Parks Summer Concert Series | website | website: https://www.minneapolisparks.org/activities-events/music-movies/ — verified venue name+city match |
+| Mounds Park Academy Summer Camps | website | website: https://www.moundsparkacademy.org/current-families/panther-programs/summer-panther-programs.shtml — verified venue name+city match |
+| Music in Kelley Park at Splash Valley (Apple Valley) | website | website: https://applevalleymn.gov/905/Music-in-Kelley-Park — verified venue name+city match |
+| Pi Craft Pizza | website | website: https://www.live4pi.com — verified venue name+city match |
+| Pond House Family History Activities (Bloomington) | website | website: https://www.bloomingtonmn.gov/pr/gideon-and-agnes-pond-house — verified venue name+city match |
+| RLA Summer Block Party | website | website: http://www.ci.roseville.mn.us/Calendar.aspx?EID=5677 — verified venue name+city match |
+| Richfield Farmers Market - Kids Program | website | website: https://richfieldmn.gov/departments/parks_and_recreation/farmers_market/index.php — verified venue name+city match |
+| Rockin' On The Rum - Anoka | website | website: https://www.anokamn.gov/757/Summer-Concerts---Rockin-on-the-Rum-Sund — verified venue name+city match |
+| Roseville Puppet Wagon Free Shows | website | website: https://cityofroseville.com/2478/Puppet-Wagon — verified venue name+city match |
+| Shoreview Farmers Market | website | website: https://www.shoreviewmn.gov/Parks-rec/Special-events/Farmers-market — verified venue name+city match |
+| St. Paul Community Gardens - Monday Evening Volunteer | website | website: https://sapcc.org/community-garden/ — verified venue name+city match |
+| St. Paul Library Story Theatre with Children's Theatre Company | website | website: https://sppl.org/storytime/ — verified venue name+city match |
+| St. Paul Movies in the Parks - Como Park | website | website: https://www.stpaul.gov/departments/parks-and-recreation/activities-events/summer-activities-events/movies-parks — verified venue name+city match |
+| Summer Tuesdays at Lowell Park (Stillwater) | website | website: https://www.summertuesdays.com/ — verified venue name+city match |
+| Sunday Funday: Alma Andina & Ballet Folklorico (Bloomington) | website | website: https://www.bloomingtonmn.gov/pr/events/sunday-funday-alma-andina-ballet-folklorico-mexico-azteca-2026-08-02 — verified venue name+city match |
+| White Bear Lake Summer Festival & Marketfest | website | website: https://www.marketfestwbl.com/ — verified venue name+city match |
+| Ze's Diner Kids Eat Free Wednesdays | website | website: https://zesdiner.com/ — verified venue name+city match |
+| Animales BBQ Family Night Deal | image | image: og_image — self-branded/venue-specific og:image, passed relevance filter; https://images.squarespace-cdn.com/content/v1/5bedb23a620b8559f7dcdd7b/57d3d6b8-d32f-4fce-8b01-2fe41317cb6e/homepage-hero.jpg |
+| Bands by the Barn | image | image: og_image — self-branded/venue-specific og:image, passed relevance filter; https://radiomankato.com/wp-content/uploads/2026/03/FBeventcovers45.webp |
+| Bowlero Brooklyn Park (Lucky Strike) | image | image: og_image — self-branded/venue-specific og:image, passed relevance filter; https://www.luckystrikeent.com/location/lucky-strike-brooklyn-park |
+| Day Block Brewing Company | image | image: og_image — self-branded/venue-specific og:image, passed relevance filter; https://dbbc-tickets-22041300-production.s3.amazonaws.com/wp-content/uploads/2023/01/13123533/beers-landing-photo.jpg |
+| Dual Citizen Brewery St. Paul | image | image: og_image — self-branded/venue-specific og:image, passed relevance filter; https://dcbc.com/wp-content/uploads/2025/03/TaproomSpace-5836-scaled.jpg |
+| Skateville Family Roller Skating Rink | image | image: og_image — self-branded/venue-specific og:image, passed relevance filter; https://skateville1.wpenginepowered.com/wp-content/uploads/2023/11/14732377_1430717760275940_2430282756371478762_n.png |
+| The Burrow Oakdale | image | image: og_image — self-branded/venue-specific og:image, passed relevance filter; https://images.squarespace-cdn.com/content/v1/625dc310a5f56823b78f4a6c/dd0991b9-3171-4396-9861-c272734bf3d7/TheBurrow_Logo_Rawhide-06.png |
+| Topgolf Half-Off Golf Weekdays | image | image: og_image — self-branded/venue-specific og:image, passed relevance filter; https://s3.topgolf.com/uploads/images/cp/tg26-hog-promo-card-1200x675.jpg |
+| Topgolf Sunday Funday Deal | image | image: og_image — self-branded/venue-specific og:image, passed relevance filter; https://s3.topgolf.com/gallery/51549/11355_1655926334_full.jpg |
 
 ## Still open
 
 | Item | Type | Likely reason |
-|------|------|---------------|
-| Family Fun Night | website | ambiguous — generic title, no single official venue/event |
-| Captain's Quarters | website | ambiguous — multiple unrelated venues share name, no city to disambiguate |
-| Broadway Pizza Thursday Kids Eat Free | website | Thursday-specific promo unverified; chain promo appears to run Mondays |
-| Eden Prairie Movie - The Lego Movie | website | only an event-aggregator listing found (familyfuntwincities.com); no official city/venue page — left open |
-| Summer Outdoor Festival - Brainerd | website | generic — no single authoritative festival page |
-| Brainerd Fire Department Golf Scramble | website | exists per chamber calendar but no dedicated official site |
-| Mocha Momma's | website | only a Yelp directory listing found, no official site — left open |
-| Fridley Touch-A-Truck | website | only aggregator listing; no independent official event page |
-| Pi Craft Pizza | website | ambiguous — multiple similarly-named Rochester pizza entities, cannot confirm single official site |
-| St. Paul Community Gardens - Monday Evening Volunteer | website | no single official org matching name + Monday-evening program |
-| Duluth County Fair | website | name mismatch — no 'Duluth County Fair' entity; ambiguous, not confidently resolvable or confirmed gone |
-| International Falls County Fair | website | geographically misleading — Koochiching County Fair is in Northome; no confident match |
-| Maple Grove - Sounds of Summer Movie Night | image | no specific image found (Openverse only generic/off-topic; og:image not extractable via WebFetch) |
-| Maplewood Celebrate Summer | image | no specific image found (Openverse only generic/off-topic; og:image not extractable via WebFetch) |
-| Kelley Park | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Lake Ann Park | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Lily Lake Park | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Pine Tree Pond Park | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Sibley Park | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Staring Lake Park | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Wolfe Park | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Chapel Trail at St. John's University | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Lake Park (Winona) | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| East Lake Park Bandshell | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Alexandria City Park | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Kiwanis Park (Brainerd) | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Columbia Park | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Cottage Grove Ravine Regional Park | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Hamline Park | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Lum Park Recreation Area | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Cameron Park (Bemidji) | image | only generic/wrong-place stock available (no name-verified place-specific Openverse photo; og:image not extractable via WebFetch) |
-| Family Dance Party - Rochester Public Library | image | no specific image found (Openverse only generic/off-topic; og:image not extractable via WebFetch) |
-| Vadnais Heights Summer Concert Series | image | no specific image found (Openverse only generic/off-topic; og:image not extractable via WebFetch) |
-| Badges & Bobbers Fishing Event - Lake George | image | no specific image found (Openverse only generic/off-topic; og:image not extractable via WebFetch) |
-| Niko Moon Concert - Vetter Stone Amphitheater | image | no specific image found (Openverse only generic/off-topic; og:image not extractable via WebFetch) |
-| Bands by the Barn | image | no specific image found (Openverse only generic/off-topic; og:image not extractable via WebFetch) |
-| Music in the Park Thursdays - Mankato | image | no specific image found (Openverse only generic/off-topic; og:image not extractable via WebFetch) |
-| Movies in the Park - Mankato | image | no specific image found (Openverse only generic/off-topic; og:image not extractable via WebFetch) |
-| Moorhead Summer Splash Event | image | no specific image found (Openverse only generic/off-topic; og:image not extractable via WebFetch) |
-| Winona Parks & Rec Summer Activities | image | no specific image found (Openverse only generic/off-topic; og:image not extractable via WebFetch) |
+| --- | --- | --- |
+| Maple Grove - Sounds of Summer Movie Night | image | og:image not extractable via tooling (official site found) |
+| Maplewood Celebrate Summer | image | og:image not extractable via tooling (official site found) |
+| Kelley Park | image | og:image not extractable via tooling (official site found) |
+| Lake Ann Park | image | og:image not extractable via tooling (official site found) |
+| Lily Lake Park | image | og:image not extractable via tooling (official site found) |
+| Pine Tree Pond Park | image | og:image not extractable via tooling (official site found) |
+| Sibley Park | image | og:image not extractable via tooling (official site found) |
+| Staring Lake Park | image | og:image not extractable via tooling (official site found) |
+| Wolfe Park | image | og:image not extractable via tooling (official site found) |
+| Chapel Trail at St. John's University | image | og:image not extractable via tooling (official site found) |
+| Lake Park (Winona) | image | og:image not extractable via tooling (official site found) |
+| East Lake Park Bandshell | image | og:image not extractable via tooling (official site found) |
+| Alexandria City Park | image | og:image not extractable via tooling (official site found) |
+| Kiwanis Park (Brainerd) | image | og:image not extractable via tooling (official site found) |
+| Columbia Park | image | og:image not extractable via tooling (official site found) |
+| Cottage Grove Ravine Regional Park | image | og:image not extractable via tooling (official site found) |
+| Hamline Park | image | og:image not extractable via tooling (official site found) |
+| Lum Park Recreation Area | image | og:image not extractable via tooling (official site found) |
+| Cameron Park (Bemidji) | image | og:image not extractable via tooling (official site found) |
+| Family Dance Party - Rochester Public Library | image | og:image not extractable via tooling (official site found) |
+| Vadnais Heights Summer Concert Series | image | og:image not extractable via tooling (official site found) |
+| Family Fun Night | website | ambiguous / too-generic title |
+| Captain's Quarters | website | ambiguous / too-generic title |
+| Badges & Bobbers Fishing Event - Lake George | image | og:image not extractable via tooling (official site found) |
+| Niko Moon Concert - Vetter Stone Amphitheater | image | og:image not extractable via tooling (official site found) |
+| Music in the Park Thursdays - Mankato | image | og:image not extractable via tooling (official site found) |
+| Movies in the Park - Mankato | image | og:image not extractable via tooling (official site found) |
+| Moorhead Summer Splash Event | image | og:image not extractable via tooling (official site found) |
+| Winona Parks & Rec Summer Activities | image | og:image not extractable via tooling (official site found) |
+| Winona Farmers Market | image | og:image not extractable via tooling (official site found) |
+| Alexandria Freedom Fun Run | image | og:image not extractable via tooling (official site found) |
+| Alexandria Saturday Art Market | image | og:image not extractable via tooling (official site found) |
+| Captain's Quarters Craft Program - BoatHouse | image | og:image not extractable via tooling (official site found) |
+| Urban Air Trampoline Parks - Minnesota Locations | image | og:image not extractable via tooling (official site found) |
+| Denny's Thursday Kids Eat Free | image | og:image not extractable via tooling (official site found) |
+| Perkins Tuesday Kids Eat Free | image | og:image not extractable via tooling (official site found) |
+| Rubio's Rewards Thursday Kids Free Meal | image | og:image not extractable via tooling (official site found) |
+| Topgolf Monthly Membership | image | og:image not extractable via tooling (official site found) |
+| Bowlero Brooklyn Park (Lucky Strike) | image | og:image not extractable via tooling (official site found) |
+| Bowlocity Entertainment Center Rochester | image | og:image not extractable via tooling (official site found) |
 
-…and 27 more still open.
+…and 18 more still open.
 
 ## Diagnostics
 
-- `log_base_rejected`: none — base loaded from canonical GitHub `error_log.csv` (231 rows, byte-identical to local scratch copy), 10-column schema valid.
-- `no_run_summary_today`: not triggered — today's build `run_summary` row was present, queue is current.
-- Publish: `error_log.csv` committed to GitHub (commit "Error log fixer 2026-07-28"); verified current file size 75563 bytes matches local. Initial verify loop reported false 409s due to blob-vs-commit-sha/CDN caching; confirmed landed via commits API.
-- Image queue: Openverse returned only wrong-place matches (e.g. San Jose Kelley Park, Alexandria VA, Wolf Park Indiana, Hamlin vs Hamline) or generic/off-topic photos; none passed the strict exact-place name-match bar, so none resolved. og:image unavailable because WebFetch strips `<head>` and stored deep-link site URLs were not present in the log.
+- `log_base_rejected`: none — base loaded from GitHub raw (`error_log.csv`, 365 data rows, valid 10-col header, monotonic growth vs recent copies).
+- `no_run_summary_today`: not triggered — today's `run_summary` marker present (build completed, queue current).
+- Openverse: queried all 17 named park/place items; every result was generic/topical with no name-match in title or tags, so none met the place-specific bar — all left open (correct per strict rule).
+- og:image tooling: 46 image items have confirmed official websites but WebFetch strips `<head>`, so og:image could not be extracted this run; left open for a head-preserving retry.
+- One image resolution (Bowlero Brooklyn Park) was demoted to open because the extracted "og:image" was a page URL, not an image file.
+- Publish: see below.
 
 ## Files
 
-- [error_log.csv](https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv)
-- [error-fixing-findings-latest.md](https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md)
+- Error log: https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv
+- Findings report: https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md
