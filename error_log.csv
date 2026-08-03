@@ -476,30 +476,30 @@ run_date,severity,category,step,issue_type,item,description,resolved_date,resolv
 2026-08-03,info,events,STEP4.3,duplicate_flagged,Friday Night Car Show (North St. Paul),Collapsed duplicate 'Friday Night Car Show (North St. Paul)' into 'Friday Night Car Show - North St. Paul (Aug 7)'.,,,
 2026-08-03,info,events,STEP4.3,duplicate_flagged,Afton Apple Festival Weekends,Collapsed duplicate 'Afton Apple Festival Weekends' into 'Afton Apple Festival'.,,,
 2026-08-03,info,meal_deals,STEP4.3,duplicate_flagged,Jersey's Bar & Grill,Collapsed duplicate 'Jersey's Bar & Grill' into 'Jersey's Bar & Grill Thursday Kids Eat Free'.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,RLA Summer Block Party,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Eden Prairie Free Outdoor Movie - The Lego Movie,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Maple Grove Outdoor Movies - Back to the Future,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Groovin' In The Garden - Flamin' Oh's Concert,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Shoreview Farmers Market,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Mill City Farmers Market - Power of Produce (POP),No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,"Lowell Park Summer Series - Farmers Market, Music & Movie",No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,St. Paul Movies in the Parks - Como Park,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Minneapolis Parks Summer Concert Series,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Rockin' On The Rum - Anoka,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Roseville Puppet Wagon Free Shows,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Mounds Park Academy Summer Camps,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Summer Tuesdays at Lowell Park (Stillwater),No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Camp Carver Day Camp (Woodbury),No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Coon Rapids Summer Concert Series,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Eagan Food Truck Festival,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Free Kids Entertainment at Valley View Park (Bloomington),No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Music in Kelley Park at Splash Valley (Apple Valley),No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Lakeville Summer Concert Series,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,National Night Out / Night to Unite (Twin Cities Metro),No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Wayzata Car Show,No website found after backfill attempt.,,,
+2026-08-03,warning,events,STEP4.6,unresolved_website,RLA Summer Block Party,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,"website: https://www.riceandlarpenteur.com/ — Rice & Larpenteur Alliance official, verified"
+2026-08-03,warning,events,STEP4.6,unresolved_website,Eden Prairie Free Outdoor Movie - The Lego Movie,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: Eden Prairie city calendar event at Staring Lake Amphitheater — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,Maple Grove Outdoor Movies - Back to the Future,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: Maple Grove city calendar (Town Green) — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,Groovin' In The Garden - Flamin' Oh's Concert,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: Como Zoo Conservatory official Groovin' in the Garden 2026 page — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,Shoreview Farmers Market,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: City of Shoreview official — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,Mill City Farmers Market - Power of Produce (POP),No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: Mill City Farmers Market official — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,"Lowell Park Summer Series - Farmers Market, Music & Movie",No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: Stillwater city calendar (Summer Tuesdays at Lowell Park) — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,St. Paul Movies in the Parks - Como Park,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: St. Paul Parks & Rec official; Como Park in schedule — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,Minneapolis Parks Summer Concert Series,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: Minneapolis Park & Rec Board official — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,Rockin' On The Rum - Anoka,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: City of Anoka official (Riverfront Memorial Park) — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,Roseville Puppet Wagon Free Shows,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: City of Roseville official Puppet Wagon page — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,Mounds Park Academy Summer Camps,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: Mounds Park Academy official Summer Panther Programs — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,Summer Tuesdays at Lowell Park (Stillwater),No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: official Summer Tuesdays event page — verified name+city
+2026-08-03,warning,events,STEP4.6,unresolved_website,Camp Carver Day Camp (Woodbury),No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,"website: Woodbury Parks & Rec (Camp Carver, Carver Lake Park) — verified"
+2026-08-03,warning,events,STEP4.6,unresolved_website,Coon Rapids Summer Concert Series,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: City of Coon Rapids official — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,Eagan Food Truck Festival,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: City of Eagan official — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,Free Kids Entertainment at Valley View Park (Bloomington),No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,"website: Bloomington Parks & Rec (Monday Morning Kids, Valley View Park) — verified"
+2026-08-03,warning,events,STEP4.6,unresolved_website,Music in Kelley Park at Splash Valley (Apple Valley),No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: City of Apple Valley official — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,Lakeville Summer Concert Series,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: Lakeville Area Arts Center 'Live at the Lake' — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,National Night Out / Night to Unite (Twin Cities Metro),No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: St. Paul NNO official page (metro-wide event) — verified
+2026-08-03,warning,events,STEP4.6,unresolved_website,Wayzata Car Show,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: Wayzata official — verified name+city
 2026-08-03,warning,events,STEP4.6,unresolved_website,Mighty Machines (Farmington),No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,St. Paul Park Heritage Days,No website found after backfill attempt.,,,
-2026-08-03,warning,events,STEP4.6,unresolved_website,Blue Heron Days (Lino Lakes),No website found after backfill attempt.,,,
+2026-08-03,warning,events,STEP4.6,unresolved_website,St. Paul Park Heritage Days,No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: official St. Paul Park Heritage Days site — verified name+city
+2026-08-03,warning,events,STEP4.6,unresolved_website,Blue Heron Days (Lino Lakes),No website found after backfill attempt.,2026-08-03,msp-family-guide-error-fixer,website: City of Lino Lakes official — verified name+city
 2026-08-03,warning,events,STEP4.9,unresolved_geocode,Minnesota Renaissance Festival,"Address not geocodable within MN bbox: 12364 Chestnut Blvd, Shakopee, MN 55379",,,
 2026-08-03,warning,events,STEP4.9,unresolved_geocode,Burnsville Fire Muster Festival,"Address not geocodable within MN bbox: Nicollet Commons Park, Burnsville, MN 55337",,,
 2026-08-03,warning,events,STEP4.9,unresolved_geocode,Afton Apple Fall Festival,"Address not geocodable within MN bbox: 14421 90th St S, Hastings, MN 55033",,,
@@ -543,3 +543,4 @@ run_date,severity,category,step,issue_type,item,description,resolved_date,resolv
 2026-08-03,warning,restaurants,STEP4.9,unresolved_geocode,Chuck E. Cheese — Woodbury,"Address not geocodable within MN bbox: Woodbury, MN (Tamarack area)",,,
 2026-08-03,info,pipeline,STEP4.8,curated_stale,,Curated image layer applied from curated_images.csv (126 rows); no new stale URLs detected this run beyond existing OPEN curated_bad_url entries.,,,
 2026-08-03,info,pipeline,STEP7,run_summary,,"Daily refresh 2026-08-03 window 2026-08-03..2026-09-30. counts events=406 parks=813 meal_deals=62 volunteer=53 restaurants=147. dedup_merges=25. images: all filled (0 blank); src={'curated': 99, 'curated_category': 1376, 'og_image': 6}. geocode blanks remaining=41. new unresolved_website=24. Feed + 5 CSVs + error_log published to avlhohn/msp-family-feed@main.",,,
+2026-08-03,info,pipeline,STEP4_fixer,fixer_summary,(fixer run),"open_rows_examined=81 (web=40,img=41); resolved=23 (website=23,image=0[og_image=0,facebook=0,stock_openverse_specific=0]); left_open=58 (web=17,img=41); diagnostics: none (run_summary present today)",,,
