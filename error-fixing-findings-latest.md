@@ -1,93 +1,75 @@
 # MSP Family Guide — Error Fixing (Latest)
 
-Run date: 2026-08-03 — finished 04:47 local
+Run date: 2026-08-04 — finished ~07:07 local.
 
 ## Summary
 
-Open queue at start: 81 rows (40 `unresolved_website`, 41 `unresolved_image`).
+Open queue at start: **58 open rows** (52 distinct items) — `unresolved_website` 17 rows / 11 items, `unresolved_image` 41 rows / 41 items.
 
-Resolved this run: 23 total — 23 website, 0 image (og_image 0, facebook 0, stock_openverse_specific 0).
+Resolved this run: **4 rows / 2 items**, all website (image: 0 — og_image 0, facebook 0, stock_openverse_specific 0).
 
-Left open (rolling to tomorrow): 58 rows (17 `unresolved_website`, 41 `unresolved_image`).
+Left open: **54 rows / 50 items** rolling to tomorrow.
 
 ## Resolved this run
 
 | Item | Type | Resolution note |
-|---|---|---|
-| Blue Heron Days (Lino Lakes) | unresolved_website | website: City of Lino Lakes official — verified name+city |
-| Camp Carver Day Camp (Woodbury) | unresolved_website | website: Woodbury Parks & Rec (Camp Carver, Carver Lake Park) — verified |
-| Coon Rapids Summer Concert Series | unresolved_website | website: City of Coon Rapids official — verified |
-| Eagan Food Truck Festival | unresolved_website | website: City of Eagan official — verified |
-| Eden Prairie Free Outdoor Movie - The Lego Movie | unresolved_website | website: Eden Prairie city calendar event at Staring Lake Amphitheater — verified |
-| Free Kids Entertainment at Valley View Park (Bloomington) | unresolved_website | website: Bloomington Parks & Rec (Monday Morning Kids, Valley View Park) — verified |
-| Groovin' In The Garden - Flamin' Oh's Concert | unresolved_website | website: Como Zoo Conservatory official Groovin' in the Garden 2026 page — verified |
-| Lakeville Summer Concert Series | unresolved_website | website: Lakeville Area Arts Center 'Live at the Lake' — verified |
-| Lowell Park Summer Series - Farmers Market, Music & Movie | unresolved_website | website: Stillwater city calendar (Summer Tuesdays at Lowell Park) — verified |
-| Maple Grove Outdoor Movies - Back to the Future | unresolved_website | website: Maple Grove city calendar (Town Green) — verified |
-| Mill City Farmers Market - Power of Produce (POP) | unresolved_website | website: Mill City Farmers Market official — verified |
-| Minneapolis Parks Summer Concert Series | unresolved_website | website: Minneapolis Park & Rec Board official — verified |
-| Mounds Park Academy Summer Camps | unresolved_website | website: Mounds Park Academy official Summer Panther Programs — verified |
-| Music in Kelley Park at Splash Valley (Apple Valley) | unresolved_website | website: City of Apple Valley official — verified |
-| National Night Out / Night to Unite (Twin Cities Metro) | unresolved_website | website: St. Paul NNO official page (metro-wide event) — verified |
-| RLA Summer Block Party | unresolved_website | website: https://www.riceandlarpenteur.com/ — Rice & Larpenteur Alliance official, verified |
-| Rockin' On The Rum - Anoka | unresolved_website | website: City of Anoka official (Riverfront Memorial Park) — verified |
-| Roseville Puppet Wagon Free Shows | unresolved_website | website: City of Roseville official Puppet Wagon page — verified |
-| Shoreview Farmers Market | unresolved_website | website: City of Shoreview official — verified |
-| St. Paul Movies in the Parks - Como Park | unresolved_website | website: St. Paul Parks & Rec official; Como Park in schedule — verified |
-| St. Paul Park Heritage Days | unresolved_website | website: official St. Paul Park Heritage Days site — verified name+city |
-| Summer Tuesdays at Lowell Park (Stillwater) | unresolved_website | website: official Summer Tuesdays event page — verified name+city |
-| Wayzata Car Show | unresolved_website | website: Wayzata official — verified name+city |
+|------|------|-----------------|
+| Kids Summer Craft Camp (Anoka) | website | website: https://www.appleberrysatticcrafts.com/ — verified venue (Appleberry's Attic, 228 E. Main St, Anoka, MN); exact event name + Aug 3–7 camp match |
+| Eden Prairie Free Outdoor Movie at Staring Lake | website | website: https://www.edenprairiemn.gov/Home/Components/Calendar/Event/20008/ — verified official City of Eden Prairie event at Staring Lake Amphitheater |
 
 ## Still open
 
 | Item | Type | Likely reason |
-|---|---|---|
-| Maple Grove - Sounds of Summer Movie Night | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Maplewood Celebrate Summer | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Kelley Park | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Lake Ann Park | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Lily Lake Park | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Pine Tree Pond Park | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Sibley Park | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Staring Lake Park | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Wolfe Park | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Chapel Trail at St. John's University | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Lake Park (Winona) | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| East Lake Park Bandshell | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Alexandria City Park | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Kiwanis Park (Brainerd) | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Cottage Grove Ravine Regional Park | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Hamline Park | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Lum Park Recreation Area | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Cameron Park (Bemidji) | unresolved_image | no specific image found — Openverse returned none or only generic MN landscape (no name match) |
-| Family Dance Party - Rochester Public Library | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Vadnais Heights Summer Concert Series | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Family Fun Night | unresolved_website | ambiguous — title too generic to disambiguate a venue |
-| Captain's Quarters | unresolved_website | ambiguous — multiple unrelated venues, cannot disambiguate |
-| Badges & Bobbers Fishing Event - Lake George | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Niko Moon Concert - Vetter Stone Amphitheater | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Music in the Park Thursdays - Mankato | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Movies in the Park - Mankato | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Moorhead Summer Splash Event | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Winona Parks & Rec Summer Activities | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Winona Farmers Market | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Alexandria Freedom Fun Run | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Alexandria Saturday Art Market | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Captain's Quarters Craft Program - BoatHouse | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Urban Air Trampoline Parks - Minnesota Locations | unresolved_image | only website found; og:image not extractable and no specific photo available |
-| Denny's Thursday Kids Eat Free | unresolved_image | national/chain venue — no place-specific image; only generic-or-recurring stock available |
-| Perkins Tuesday Kids Eat Free | unresolved_image | national/chain venue — no place-specific image; only generic-or-recurring stock available |
-| Rubio's Rewards Thursday Kids Free Meal | unresolved_image | national/chain venue — no place-specific image; only generic-or-recurring stock available |
-| Topgolf Monthly Membership | unresolved_image | national/chain venue — no place-specific image; only generic-or-recurring stock available |
-| Bowlero Brooklyn Park (Lucky Strike) | unresolved_image | national/chain venue — no place-specific image; only generic-or-recurring stock available |
-| Bowlocity Entertainment Center Rochester | unresolved_image | national/chain venue — no place-specific image; only generic-or-recurring stock available |
-| 56 Brewing Minneapolis | unresolved_image | national/chain venue — no place-specific image; only generic-or-recurring stock available |
+|------|------|---------------|
+| Maple Grove - Sounds of Summer Movie Night | image | only generic/recurring stock available (chain/recurring program or no specific photo) |
+| Maplewood Celebrate Summer | image | only generic/recurring stock available (chain/recurring program or no specific photo) |
+| Kelley Park | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Lake Ann Park | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Lily Lake Park | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Pine Tree Pond Park | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Sibley Park | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Staring Lake Park | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Wolfe Park | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Chapel Trail at St. John's University | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Lake Park (Winona) | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| East Lake Park Bandshell | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Alexandria City Park | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Kiwanis Park (Brainerd) | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Cottage Grove Ravine Regional Park | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Hamline Park | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Lum Park Recreation Area | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Cameron Park (Bemidji) | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Family Dance Party - Rochester Public Library | image | only generic/recurring stock available (chain/recurring program or no specific photo) |
+| Vadnais Heights Summer Concert Series | image | only generic/recurring stock available (chain/recurring program or no specific photo) |
+| Family Fun Night | website | ambiguous — title too generic to disambiguate a specific venue |
+| Captain's Quarters | website | ambiguous — multiple venues share the name; no specific MN site confirmed |
+| Badges & Bobbers Fishing Event - Lake George | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Niko Moon Concert - Vetter Stone Amphitheater | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Music in the Park Thursdays - Mankato | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Movies in the Park - Mankato | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Moorhead Summer Splash Event | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Winona Parks & Rec Summer Activities | image | only generic/recurring stock available (chain/recurring program or no specific photo) |
+| Winona Farmers Market | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Alexandria Freedom Fun Run | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Alexandria Saturday Art Market | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Captain's Quarters Craft Program - BoatHouse | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Urban Air Trampoline Parks - Minnesota Locations | image | only generic/recurring stock available (chain/recurring program or no specific photo) |
+| Denny's Thursday Kids Eat Free | image | only generic/recurring stock available (chain/recurring program or no specific photo) |
+| Perkins Tuesday Kids Eat Free | image | only generic/recurring stock available (chain/recurring program or no specific photo) |
+| Rubio's Rewards Thursday Kids Free Meal | image | only generic/recurring stock available (chain/recurring program or no specific photo) |
+| Topgolf Monthly Membership | image | only generic/recurring stock available (chain/recurring program or no specific photo) |
+| Bowlero Brooklyn Park (Lucky Strike) | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| Bowlocity Entertainment Center Rochester | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
+| 56 Brewing Minneapolis | image | no specific image found — og:image not surfaceable and no CC name-matched Openverse photo |
 
-…and 12 more still open.
+…and 10 more still open.
 
 ## Diagnostics
 
-No `log_base_rejected` (base header valid, 544 data rows, local copy matched GitHub canonical by md5). `run_summary` for today was present, so no `no_run_summary_today`. No base copy skipped for AI-ineligibility (GitHub raw read succeeded; Drive fallback not needed). Openverse queries for the 18 park items returned either zero results or only generic/off-topic images with no name match to the specific park, so none met the place-specific bar. og:image extraction failed for tooling reasons (WebFetch strips <head>) across event/venue items; no Facebook venue photo passed the relevance bar.
+- `no_run_summary_today`: no `run_summary` row dated 2026-08-04 was present in the base at fixer load time (the day's build had not yet published its end-of-run marker). Proceeded on the existing open queue; logged as an info/pipeline row.
+- `log_base_rejected`: none — base loaded from GitHub (`error_log.csv`, 546 rows, valid 10-col schema, byte-identical to local carry-forward).
+- Publish: `error_log.csv` PUT returned 409 on attempt 1 (stale sha), succeeded on attempt 2; post-publish GET confirmed size 161091 == local and sha changed.
+- Image resolutions: subagents surfaced images only from third-party aggregator/tourism/news sources (TripAdvisor, Flickr, tourism bureaus, local news), not true `og:image` from each item's own page — rejected per the strict bar. Openverse returned no confident CC-licensed, name-matched photos of the specific named places. Hence 0 image resolutions.
 
 ## Files
 
