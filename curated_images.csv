@@ -1,45 +1,31 @@
 match_type,match_value,image_url,notes
-title,El Burrito Mercado,https://images.getbento.com/accounts/71da585d3beb45fe2f8167b49efb87eb/media/images/4921unnamed.jpg,
-keyword,Malt Shop,https://images.pexels.com/photos/33694865/pexels-photo-33694865.jpeg,
-keyword,Alloy Brewing,https://images.squarespace-cdn.com/content/v1/55d53dcee4b099f9b43cf904/1628799428587-T93T1WNJ5QKO1S6H9T17/Taproom+Sign+Lance+Jill.jpg?format=1000w,
-keyword,Mighty Machines,https://dakotacountymn.gov/content/mndakotacountywebsite/us/en/library/events-programs/kids/mighty-machines/_jcr_content/root/container/containedwidthcontainer/twocolumn/right/columnlayoutvariatio/col2/image.coreimg.jpeg/1781627239131/mighty-machines.jpeg,
-keyword,Cantina,https://images.pexels.com/photos/5737254/pexels-photo-5737254.jpeg,
-tag,community fest,https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg,
+category,parks,https://images.pexels.com/photos/17504302/pexels-photo-17504302.jpeg,fallback-only category image: MN lake/forest overlook (verified)
+category,events,https://images.pexels.com/photos/31874024/pexels-photo-31874024.jpeg,fallback-only category image: fair/festival crowd (verified)
+category,meal_deals,https://images.pexels.com/photos/28442529/pexels-photo-28442529.jpeg,fallback-only category image: family/friends dining (verified)
+category,volunteer_opportunities,https://images.pexels.com/photos/8543399/pexels-photo-8543399.jpeg,fallback-only category image: community volunteers outdoors (verified)
+category,restaurants,https://images.pexels.com/photos/5990494/pexels-photo-5990494.jpeg,fallback-only category image: warm cafe/restaurant interior (verified)
 keyword,Pizza,https://images.pexels.com/photos/12557597/pexels-photo-12557597.jpeg,
 keyword,The Fun Lab,https://static.wixstatic.com/media/97457a_bb87126f184a4eab9d436df9dedfd338~mv2.jpg,
 keyword,Dave & Buster's,https://www.daveandbusters.com/content/dam/dnb/sa/international-home-page/Int_Play_New.jpg,
 keyword,Chuck E. Cheese,https://s3-media0.fl.yelpcdn.com/bphoto/ECHK7qODGAtfZSrswZDMZA/348s.jpg,
 keyword,Red Cow,https://redcowmn.com/wp-content/uploads/2018/05/redcow.png,
-title,Chevys Fresh Mex,https://www.chevys.com/wp-content/uploads/2020/08/2-item-Combo-02-380x380.jpg,
 keyword,Movies in the Parks,https://images.pexels.com/photos/6521574/pexels-photo-6521574.jpeg,
 keyword,Buffalo Wild Wings,https://stories.inspirebrands.com/wp-content/uploads/2018/12/Buffalo-Wild-Wings-Restaurant-Exterior.jpg,
 keyword,Smashburger,https://sbprod-web-assets.s3.us-west-2.amazonaws.com/smashburger_location_a4272b5091_2f65ccac14.jpg,
-title,McHugh's Public House,https://mchughspublichouse.com/wp-content/uploads/2018/07/June2016_CP-27.jpg,
-title,Celts Craft House,https://popmenucloud.com/cdn-cgi/image/width%3D2880%2Cheight%3D2880%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/npvgbcjr/26d715ab-c6d0-40f8-b1e0-1bf6feb281b7.jpg,
-title,Can Can Wonderland,https://popmenucloud.com/cdn-cgi/image/width%3D2880%2Cheight%3D2880%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D20/etpjoscd/f3196284-6d6c-4b8f-92eb-f3514cf6e332.jpg,
-title,Mears Park,https://www.stpaul.gov/sites/default/files/styles/three_up_image/public/2025-05/Mears%20Park%20River.JPG.webp?itok=HNNyKvQX,
-title,Good Times Park,https://live.staticflickr.com/5062/5632516857_dcda1c331e_b.jpg,"Indoor trampoline park (Flickr, CC-BY-SA) - topical"
 keyword,Parkway Pizza,https://images.squarespace-cdn.com/content/v1/582a7e11579fb307c6f3be25/1598211317706-VWKSYI1EOFBGNUH5U1PG/NE+Front.jpeg,
 keyword,Broadway Pizza,https://www.exploreminnesota.com/sites/default/files/styles/listing_slideshow/public/listing_images/04102fbc2dfdd5e9aaeb0c211290fa26157cceeb_37.jpg.webp?h=6eb229a4&itok=BZNhtjy_,
 keyword,Grand Slam,https://grandslammn.com/wp-content/uploads/2021/12/playZoneSlide_comp-1.jpg,
 keyword,Lava Island,https://lavaisland.com/images/gallery/parks/aurora/TwistySlide.jpg,
 keyword,Valleyfair,https://www.exploreminnesota.com/sites/default/files/styles/share_image/public/listing_images/84fd7aa01e1f417bef04d663f0588927b3e67c52_34.jpg.webp?h=004581e8&itok=nKmvNWXU,
 keyword,The Burrow,https://images.squarespace-cdn.com/content/v1/625dc310a5f56823b78f4a6c/2f840778-1a5e-4230-a955-7ae2628c46a9/img7258*1200xx3648-3648-912-0.jpg,
-title,Minnesota Children's Museum,https://mcm.org/wp-content/uploads/2023/02/our-world-blog-1-illo.png,
-title,bowlero,https://images.ctfassets.net/6gvyj3hhelpa/1SvxLjzMyPgZosMgHCB6Gt/1511169756186aaaa86f93f31175b4cc/6-bowlero-general-hero-center-2.jpg?w=1440&q=75&fm=webp,
-title,topgolf,https://s3-media0.fl.yelpcdn.com/bphoto/EF04X2g3iFV0HfZcHF-C2Q/1000s.jpg,
 keyword,River Rats,https://images.squarespace-cdn.com/content/v1/65c25adb56e609053eb5b217/2d66846d-aef3-4fa0-ae36-ccd56f01d7b2/363367999_769494875181319_1306454163493925773_n.jpg,
 keyword,Bell Museum,https://www.bellmuseum.umn.edu/wp-content/uploads/2025/06/Goldy-Mammoth_Hero.png,
-title,Science Museum of Minnesota,https://www.minneapolis.org/imager/cmsimages/meta-images/5945023/science-museum-52-social_91852798b59be8b28fc00edfe4aec23a.jpg,
-title,St. Paul Saints,https://saint-paul-2022.s3.amazonaws.com/imager/files_idss_com/C17/6f86d743-2ecf-40c2-90a9-21cb39d7e639_2a23813dca470163f0b2610639f888f1.jpg,
-title,Minnehaha Falls Art Fair,https://minneapolis-2021.imgix.net/images/minnehaha-falls-art-fair-hero.jpg?auto=compress%2Cformat&fit=max&position=50%2050&q=80&w=1920&s=9a441c9a186ec72371a390e83dc3dd79,"curated (title match ""minnehaha""): ""Minnehaha Falls Minneapolis Minnesota"" test"
 keyword,Target Field, https://images.pexels.com/photos/28772776/pexels-photo-28772776.jpeg,
 keyword,Lake Harriet Bandshell,https://www.minneapolisparks.org/wp-content/uploads/2018/11/lake_harriet_music1-1.jpg,"curated: ""Lake Harriet Bandshell"
 keyword,Minnesota Zoo,https://www.exploreminnesota.com/sites/default/files/styles/full_width_image/public/2021-05/mn-zoo-tiger.jpg.webp?itok=cprkRiDL,
 keyword,Minneapolis Music in the Parks - Minnehaha Bandstand,https://www.minneapolisparks.org/wp-content/uploads/2018/11/minnehaha_park_concert.jpg,"curated (title match ""minnehaha""): ""Frozen Falls of Minnehaha"
 keyword,Minneapolis Pops Orchestra,https://mplspops.org/wp-content/uploads/2026/04/Minneapolis-Pops-Orchestra-2026-13-1600px.jpg,"auto-picked (overlap 1): ""Concerts by Lake Harriet"""
 keyword,Wanderlight Trail,https://live.staticflickr.com/3709/12431209005_26bf1691c2_b.jpg,"Glowing lanterns at night (Flickr, CC-BY) - topical for zoo lantern trail"
-title,Como Zoo & Conservatory Free Admission,https://live.staticflickr.com/3032/3021118660_f26de84c5a_b.jpg,"auto-picked (overlap 2): ""Marjorie McNeely Conservatory (2008)"""
 keyword, MN State Fair,https://www.exploreminnesota.com/sites/default/files/styles/listing_slideshow_1400px_wide/public/listing_images/b3a78877113e5fd204820f028e460bc2002913c3_4.jpg.webp?h=10d202d3&itok=HZY06OKK,
 keyword, Minnesota State Fair,https://www.exploreminnesota.com/sites/default/files/styles/listing_slideshow_1400px_wide/public/listing_images/b3a78877113e5fd204820f028e460bc2002913c3_4.jpg.webp?h=10d202d3&itok=HZY06OKK,
 keyword,Aquatennial,https://live.staticflickr.com/8282/7533402504_1f08528e58_b.jpg,
@@ -72,6 +58,29 @@ keyword,rock climbing,https://www.verticalendeavors.com/wp-content/uploads/2017/
 keyword,apple orchard,https://images.pexels.com/photos/5529004/pexels-photo-5529004.jpeg,
 keyword,apple picking,https://images.pexels.com/photos/5529004/pexels-photo-5529004.jpeg,
 keyword,apple farm,https://images.pexels.com/photos/9727471/pexels-photo-9727471.jpeg,
+keyword,outdoor-movies,https://images.pexels.com/photos/32682154/pexels-photo-32682154.jpeg,
+keyword,trampoline,https://images.pexels.com/photos/8142258/pexels-photo-8142258.jpeg,"Person jumping on trampoline (Pexels, direct image)"
+keyword,movies-in-the-parks,https://images.pexels.com/photos/32682154/pexels-photo-32682154.jpeg,
+keyword,art-fair,https://images.pexels.com/photos/30669729/pexels-photo-30669729.jpeg,
+keyword,roller-skating,https://images.pexels.com/photos/10387653/pexels-photo-10387653.jpeg,
+keyword,roller-skate,https://images.pexels.com/photos/10387653/pexels-photo-10387653.jpeg,
+keyword,food-truck,https://images.pexels.com/photos/37472499/pexels-photo-37472499.jpeg,
+keyword,irish-fest,https://images.pexels.com/photos/3876540/pexels-photo-3876540.jpeg,
+keyword,putt,https://images.pexels.com/photos/7514005/pexels-photo-7514005.jpeg,
+keyword,bowling,https://images.pexels.com/photos/5952901/pexels-photo-5952901.jpeg,
+keyword,bbq,https://images.pexels.com/photos/2014938/pexels-photo-2014938.jpeg,
+keyword,barbeque,https://images.pexels.com/photos/2014938/pexels-photo-2014938.jpeg,
+keyword,barbecue,https://images.pexels.com/photos/2014938/pexels-photo-2014938.jpeg,
+keyword,tot-time,https://images.pexels.com/photos/5435600/pexels-photo-5435600.jpeg,
+keyword,rockin'-jump,https://actionparksource.com/wp-content/uploads/2018/01/rockin-jump-eagan.jpg,
+keyword,trampoline,https://images.pexels.com/photos/8142258/pexels-photo-8142258.jpeg,"Person jumping on trampoline (Pexels, direct image)"
+keyword,parade,https://images.pexels.com/photos/11664841/pexels-photo-11664841.jpeg,
+keyword,Malt Shop,https://images.pexels.com/photos/33694865/pexels-photo-33694865.jpeg,
+keyword,Alloy Brewing,https://images.squarespace-cdn.com/content/v1/55d53dcee4b099f9b43cf904/1628799428587-T93T1WNJ5QKO1S6H9T17/Taproom+Sign+Lance+Jill.jpg?format=1000w,
+keyword,Mighty Machines,https://dakotacountymn.gov/content/mndakotacountywebsite/us/en/library/events-programs/kids/mighty-machines/_jcr_content/root/container/containedwidthcontainer/twocolumn/right/columnlayoutvariatio/col2/image.coreimg.jpeg/1781627239131/mighty-machines.jpeg,
+keyword,Cantina,https://images.pexels.com/photos/5737254/pexels-photo-5737254.jpeg,
+title,El Burrito Mercado,https://images.getbento.com/accounts/71da585d3beb45fe2f8167b49efb87eb/media/images/4921unnamed.jpg,
+title,Snuffy's Malt Shop,https://static.wixstatic.com/media/002c78_380cc821004e45d99bb2222f01c63e27~mv2.jpg,
 title,Rebe's Play Cafe,https://158a62438e878f829d78.cdn6.editmysite.com/uploads/b/158a62438e878f829d783d2749d42ee8381fbf896312c3ad1f1a90ddbc54b70b/IMG_4037_1694204127.jpg,curated (migrated from play_cafe_seed_venues.json)
 title,Sovereign Grounds,https://images.pexels.com/photos/9509422/pexels-photo-9509422.jpeg,curated
 title,Ninth Street Soccer & Coffee,https://images.pexels.com/photos/37391217/pexels-photo-37391217.jpeg,curated (migrated from play_cafe_seed_venues.json)
@@ -80,12 +89,21 @@ title,Green Mill,https://images.pexels.com/photos/6068717/pexels-photo-6068717.j
 title,Skinners Pub & Eatery,https://skinnersmn.com/wp-content/uploads/2019/06/MG_6436.jpg,curated
 title,Tailgate Sports Cafe,https://live.staticflickr.com/3460/3356280111_15444bde5e.jpg,"Sports bar & restaurant interior (Flickr, CC-BY) - topical"
 title,Pizza Luce,https://marvel-b1-cdn.bc0a.com/f00000000225310/pizzaluce.com/uploads/stpaul-exterior.jpg,curated (user-provided; matches all Pizza Luce locations)
-category,parks,https://images.pexels.com/photos/17504302/pexels-photo-17504302.jpeg,fallback-only category image: MN lake/forest overlook (verified)
-category,events,https://images.pexels.com/photos/31874024/pexels-photo-31874024.jpeg,fallback-only category image: fair/festival crowd (verified)
-category,meal_deals,https://images.pexels.com/photos/28442529/pexels-photo-28442529.jpeg,fallback-only category image: family/friends dining (verified)
-category,volunteer_opportunities,https://images.pexels.com/photos/8543399/pexels-photo-8543399.jpeg,fallback-only category image: community volunteers outdoors (verified)
-category,restaurants,https://images.pexels.com/photos/5990494/pexels-photo-5990494.jpeg,fallback-only category image: warm cafe/restaurant interior (verified)
+title,McHugh's Public House,https://mchughspublichouse.com/wp-content/uploads/2018/07/June2016_CP-27.jpg,
+title,Celts Craft House,https://popmenucloud.com/cdn-cgi/image/width%3D2880%2Cheight%3D2880%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/npvgbcjr/26d715ab-c6d0-40f8-b1e0-1bf6feb281b7.jpg,
+title,Can Can Wonderland,https://popmenucloud.com/cdn-cgi/image/width%3D2880%2Cheight%3D2880%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D20/etpjoscd/f3196284-6d6c-4b8f-92eb-f3514cf6e332.jpg,
+title,Mears Park,https://www.stpaul.gov/sites/default/files/styles/three_up_image/public/2025-05/Mears%20Park%20River.JPG.webp?itok=HNNyKvQX,
+title,Good Times Park,https://live.staticflickr.com/5062/5632516857_dcda1c331e_b.jpg,"Indoor trampoline park (Flickr, CC-BY-SA) - topical"
+title,Como Zoo & Conservatory Free Admission,https://live.staticflickr.com/3032/3021118660_f26de84c5a_b.jpg,"auto-picked (overlap 2): ""Marjorie McNeely Conservatory (2008)"""
+title,Science Museum of Minnesota,https://www.minneapolis.org/imager/cmsimages/meta-images/5945023/science-museum-52-social_91852798b59be8b28fc00edfe4aec23a.jpg,
+title,St. Paul Saints,https://saint-paul-2022.s3.amazonaws.com/imager/files_idss_com/C17/6f86d743-2ecf-40c2-90a9-21cb39d7e639_2a23813dca470163f0b2610639f888f1.jpg,
+title,Minnehaha Falls Art Fair,https://minneapolis-2021.imgix.net/images/minnehaha-falls-art-fair-hero.jpg?auto=compress%2Cformat&fit=max&position=50%2050&q=80&w=1920&s=9a441c9a186ec72371a390e83dc3dd79,"curated (title match ""minnehaha""): ""Minnehaha Falls Minneapolis Minnesota"" test"
+title,Minnesota Children's Museum,https://mcm.org/wp-content/uploads/2023/02/our-world-blog-1-illo.png,
+title,bowlero,https://images.ctfassets.net/6gvyj3hhelpa/1SvxLjzMyPgZosMgHCB6Gt/1511169756186aaaa86f93f31175b4cc/6-bowlero-general-hero-center-2.jpg?w=1440&q=75&fm=webp,
+title,topgolf,https://s3-media0.fl.yelpcdn.com/bphoto/EF04X2g3iFV0HfZcHF-C2Q/1000s.jpg,
+title,Chevys Fresh Mex,https://www.chevys.com/wp-content/uploads/2020/08/2-item-Combo-02-380x380.jpg,
 tag,play-cafe,https://live.staticflickr.com/725/22391678856_11e7edc9f5_b.jpg,fallback-only tag image: child on playground slide (verified)
+tag,community fest,https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg,
 tag,play-area,https://live.staticflickr.com/725/22391678856_11e7edc9f5_b.jpg,fallback-only tag image: child on playground slide (verified)
 tag,story-time,https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg,fallback-only tag image: children reading/story circle (verified)
 tag,car-show,https://live.staticflickr.com/228/472117411_94e0ada8b4_b.jpg,fallback-only tag image: row of classic show cars (verified)
@@ -117,30 +135,12 @@ tag,adventure-peak,https://images.pexels.com/photos/5488873/pexels-photo-5488873
 tag,festival,https://images.pexels.com/photos/1384254/pexels-photo-1384254.jpeg,
 tag,brewery,https://images.pexels.com/photos/19691954/pexels-photo-19691954.jpeg,
 tag,ice-cream,https://images.pexels.com/photos/17429503/pexels-photo-17429503.jpeg,
-keyword,outdoor-movies,https://images.pexels.com/photos/32682154/pexels-photo-32682154.jpeg,
-title,Snuffy's Malt Shop,https://static.wixstatic.com/media/002c78_380cc821004e45d99bb2222f01c63e27~mv2.jpg,
-keyword,movies-in-the-parks,https://images.pexels.com/photos/32682154/pexels-photo-32682154.jpeg,
-keyword,art-fair,https://images.pexels.com/photos/30669729/pexels-photo-30669729.jpeg,
-keyword,roller-skating,https://images.pexels.com/photos/10387653/pexels-photo-10387653.jpeg,
-keyword,roller-skate,https://images.pexels.com/photos/10387653/pexels-photo-10387653.jpeg,
-keyword,food-truck,https://images.pexels.com/photos/37472499/pexels-photo-37472499.jpeg,
-keyword,irish-fest,https://images.pexels.com/photos/3876540/pexels-photo-3876540.jpeg,
-keyword,putt,https://images.pexels.com/photos/7514005/pexels-photo-7514005.jpeg,
-keyword,bowling,https://images.pexels.com/photos/5952901/pexels-photo-5952901.jpeg,
-keyword,bbq,https://images.pexels.com/photos/2014938/pexels-photo-2014938.jpeg,
-keyword,barbeque,https://images.pexels.com/photos/2014938/pexels-photo-2014938.jpeg,
-keyword,barbecue,https://images.pexels.com/photos/2014938/pexels-photo-2014938.jpeg,
-keyword,tot-time,https://images.pexels.com/photos/5435600/pexels-photo-5435600.jpeg,
 tag,coffee,https://images.pexels.com/photos/5373242/pexels-photo-5373242.jpeg,
 tag,mocha,https://images.pexels.com/photos/5373242/pexels-photo-5373242.jpeg,
 tag,play-cafe,https://images.pexels.com/photos/30790990/pexels-photo-30790990.jpeg,
 tag,pump-it-up,https://images.pexels.com/photos/17040658/pexels-photo-17040658.jpeg,
-keyword,rockin'-jump,https://actionparksource.com/wp-content/uploads/2018/01/rockin-jump-eagan.jpg,
 tag,bakery,https://images.pexels.com/photos/3985083/pexels-photo-3985083.jpeg,
-keyword,trampoline,https://images.pexels.com/photos/8142258/pexels-photo-8142258.jpeg,"Person jumping on trampoline (Pexels, direct image)"
 tag,trampoline-park,https://images.pexels.com/photos/8142258/pexels-photo-8142258.jpeg,"Person jumping on trampoline (Pexels, direct image)"
-keyword,trampoline,https://images.pexels.com/photos/8142258/pexels-photo-8142258.jpeg,"Person jumping on trampoline (Pexels, direct image)"
-keyword,parade,https://images.pexels.com/photos/11664841/pexels-photo-11664841.jpeg,
 tag,parade,https://images.pexels.com/photos/11664841/pexels-photo-11664841.jpeg,rotation alt: parade crowd (Pexels direct image)
 tag,parade,https://images.pexels.com/photos/28500389/pexels-photo-28500389.jpeg,rotation alt: parade floats and banners (Pexels direct image)
 tag,parade,https://images.pexels.com/photos/30211544/pexels-photo-30211544.jpeg,rotation alt: parade floral float (Pexels direct image)
