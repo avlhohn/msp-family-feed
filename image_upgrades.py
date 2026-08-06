@@ -10,7 +10,10 @@ Upgrades item imagery in three layers, in this precedence order (later wins):
                          applied to items whose image_source is blank / stock_openverse
                          / openverse_named (i.e. NO real venue photo of their own).
                          A 'tag' row beats a 'category' row. Never overrides a real
-                         'facebook' / 'og_image' photo.
+                         'facebook' / 'og_image' photo. Multiple rows may share one
+                         tag/category value; the layer spreads matching items across
+                         those images by a stable per-title hash so the same picture
+                         doesn't repeat across many events (differentiation).
   3. curated           — hand-picked title/keyword override from curated_images.csv,
                          applied to EVERY item. Wins over everything, including a real
                          photo and any curated_category fallback.
@@ -39,6 +42,7 @@ import csv
 import json
 import time
 import glob
+import hashlib
 import argparse
 import urllib.parse
 import urllib.request
@@ -291,26 +295,65 @@ def apply_openverse_named(records, deadline_ts):
 
 
 # ------------------------------------------------------------------- curated layers
+def _collect_multi(pairs):
+    """Group (match_value, url) pairs into {norm(match_value): [url, url, ...]},
+    preserving CSV order and dropping duplicate URLs. Lets several rows share the
+    same tag/category value so the layer has multiple images to choose among."""
+    out = {}
+    for mv, url in pairs:
+        key = norm(mv)
+        bucket = out.setdefault(key, [])
+        if url and url not in bucket:
+            bucket.append(url)
+    return out
+
+
+def _stable_pick(options, key):
+    """Deterministically choose one URL from `options` for a given item `key`.
+
+    Uses a stable md5 hash of the key (NOT Python's built-in hash(), which is
+    salted per process) so the same event maps to the same image run-over-run
+    (no flicker), while different events sharing a tag spread across the list
+    (differentiation). Falls back to options[0] when key is empty."""
+    if not options:
+        return None
+    if len(options) == 1:
+        return options[0]
+    k = norm(key)
+    if not k:
+        return options[0]
+    h = int(hashlib.md5(k.encode("utf-8")).hexdigest(), 16)
+    return options[h % len(options)]
+
+
 def apply_curated_category(records, curated):
-    """tag rows beat category rows; only touches weak-source items."""
+    """tag rows beat category rows; only touches weak-source items.
+
+    Multiple curated rows may share the same tag/category value: they are gathered
+    into a list and one is chosen per item by a stable hash of the item's title, so
+    several events carrying the same tag (e.g. many 'parade' or 'community-fest'
+    rows) are spread across the available images instead of all showing the one
+    picture. A single event keeps the same image across runs."""
     weak = {norm(x) for x in WEAK_SOURCES}
-    tag_map = {norm(mv): url for mv, url in curated["tag"]}
-    cat_map = {norm(mv): url for mv, url in curated["category"]}
+    tag_map = _collect_multi(curated["tag"])
+    cat_map = _collect_multi(curated["category"])
     upgraded = 0
     for item in records:
         if norm(item.get(F_SRC)) not in weak:
             continue
-        url = None
+        options = None
         for tg in item_tags(item):          # tag row wins (more specific)
             if tg in tag_map:
-                url = tag_map[tg]
+                options = tag_map[tg]
                 break
-        if url is None:
-            url = cat_map.get(norm(item.get(F_CATEGORY)))
-        if url:
-            item[F_IMG] = url
-            item[F_SRC] = "curated_category"
-            upgraded += 1
+        if options is None:
+            options = cat_map.get(norm(item.get(F_CATEGORY)))
+        if options:
+            url = _stable_pick(options, item.get(F_TITLE))
+            if url:
+                item[F_IMG] = url
+                item[F_SRC] = "curated_category"
+                upgraded += 1
     return upgraded
 
 
