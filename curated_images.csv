@@ -11,6 +11,8 @@ keyword,Dave & Buster's,https://www.daveandbusters.com/content/dam/dnb/sa/intern
 keyword,Chuck E. Cheese,https://s3-media0.fl.yelpcdn.com/bphoto/ECHK7qODGAtfZSrswZDMZA/348s.jpg,
 keyword,Red Cow,https://redcowmn.com/wp-content/uploads/2018/05/redcow.png,
 keyword,Movies in the Parks,https://images.pexels.com/photos/6521574/pexels-photo-6521574.jpeg,
+keyword,Slick City Action Park,https://images.pexels.com/photos/5790179/pexels-photo-5790179.jpeg,
+keyword,Sky Zone,https://www.skyzone.com/wp-content/uploads/2022/10/park_slider-01.png,
 keyword,Buffalo Wild Wings,https://stories.inspirebrands.com/wp-content/uploads/2018/12/Buffalo-Wild-Wings-Restaurant-Exterior.jpg,
 keyword,Smashburger,https://sbprod-web-assets.s3.us-west-2.amazonaws.com/smashburger_location_a4272b5091_2f65ccac14.jpg,
 keyword,Parkway Pizza,https://images.squarespace-cdn.com/content/v1/582a7e11579fb307c6f3be25/1598211317706-VWKSYI1EOFBGNUH5U1PG/NE+Front.jpeg,
@@ -84,6 +86,7 @@ keyword,Malt Shop,https://images.pexels.com/photos/33694865/pexels-photo-3369486
 keyword,Alloy Brewing,https://images.squarespace-cdn.com/content/v1/55d53dcee4b099f9b43cf904/1628799428587-T93T1WNJ5QKO1S6H9T17/Taproom+Sign+Lance+Jill.jpg?format=1000w,
 keyword,Mighty Machines,https://dakotacountymn.gov/content/mndakotacountywebsite/us/en/library/events-programs/kids/mighty-machines/_jcr_content/root/container/containedwidthcontainer/twocolumn/right/columnlayoutvariatio/col2/image.coreimg.jpeg/1781627239131/mighty-machines.jpeg,
 keyword,Cantina,https://images.pexels.com/photos/5737254/pexels-photo-5737254.jpeg,
+keyword,Rainforest Cafe,https://images.getbento.com/accounts/3db889a3fca226b46ccb3927ec65f27d/media/images/1872_DSC9417.jpg,
 title,El Burrito Mercado,https://images.getbento.com/accounts/71da585d3beb45fe2f8167b49efb87eb/media/images/4921unnamed.jpg,
 title,Snuffy's Malt Shop,https://static.wixstatic.com/media/002c78_380cc821004e45d99bb2222f01c63e27~mv2.jpg,
 title,Rebe's Play Cafe,https://158a62438e878f829d78.cdn6.editmysite.com/uploads/b/158a62438e878f829d783d2749d42ee8381fbf896312c3ad1f1a90ddbc54b70b/IMG_4037_1694204127.jpg,curated (migrated from play_cafe_seed_venues.json)
@@ -143,7 +146,6 @@ tag,ice-cream,https://images.pexels.com/photos/17429503/pexels-photo-17429503.jp
 tag,coffee,https://images.pexels.com/photos/5373242/pexels-photo-5373242.jpeg,
 tag,mocha,https://images.pexels.com/photos/5373242/pexels-photo-5373242.jpeg,
 tag,play-cafe,https://images.pexels.com/photos/30790990/pexels-photo-30790990.jpeg,
-tag,pump-it-up,https://images.pexels.com/photos/17040658/pexels-photo-17040658.jpeg,
 tag,bakery,https://images.pexels.com/photos/3985083/pexels-photo-3985083.jpeg,
 tag,trampoline,https://images.pexels.com/photos/8142258/pexels-photo-8142258.jpeg,"Person jumping on trampoline (Pexels, direct image)"
 tag,parade,https://images.pexels.com/photos/11664841/pexels-photo-11664841.jpeg,rotation alt: parade crowd (Pexels direct image)
