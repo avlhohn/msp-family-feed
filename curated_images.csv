@@ -4,6 +4,9 @@ category,events,https://images.pexels.com/photos/31874024/pexels-photo-31874024.
 category,meal_deals,https://images.pexels.com/photos/28442529/pexels-photo-28442529.jpeg,fallback-only category image: family/friends dining (verified)
 category,volunteer_opportunities,https://images.pexels.com/photos/8543399/pexels-photo-8543399.jpeg,fallback-only category image: community volunteers outdoors (verified)
 category,restaurants,https://images.pexels.com/photos/5990494/pexels-photo-5990494.jpeg,fallback-only category image: warm cafe/restaurant interior (verified)
+keyword,Library,https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg,
+keyword,Torchlight Concert,https://images.pexels.com/photos/11803427/pexels-photo-11803427.jpeg,
+keyword,Farmers Market,https://images.pexels.com/photos/32027591/pexels-photo-32027591.jpeg,
 keyword,Pizza,https://images.pexels.com/photos/12557597/pexels-photo-12557597.jpeg,
 keyword,Touch-A-Truck,https://images.pexels.com/photos/28220406/pexels-photo-28220406.jpeg,
 keyword,The Fun Lab,https://static.wixstatic.com/media/97457a_bb87126f184a4eab9d436df9dedfd338~mv2.jpg,
@@ -87,6 +90,7 @@ keyword,Alloy Brewing,https://images.squarespace-cdn.com/content/v1/55d53dcee4b0
 keyword,Mighty Machines,https://dakotacountymn.gov/content/mndakotacountywebsite/us/en/library/events-programs/kids/mighty-machines/_jcr_content/root/container/containedwidthcontainer/twocolumn/right/columnlayoutvariatio/col2/image.coreimg.jpeg/1781627239131/mighty-machines.jpeg,
 keyword,Cantina,https://images.pexels.com/photos/5737254/pexels-photo-5737254.jpeg,
 keyword,Rainforest Cafe,https://images.getbento.com/accounts/3db889a3fca226b46ccb3927ec65f27d/media/images/1872_DSC9417.jpg,
+keyword,Minnesota Lynx,https://cdn.wnba.com/sites/1611661324/2026/07/0809gamepreview-scaled.png,
 title,El Burrito Mercado,https://images.getbento.com/accounts/71da585d3beb45fe2f8167b49efb87eb/media/images/4921unnamed.jpg,
 title,Snuffy's Malt Shop,https://static.wixstatic.com/media/002c78_380cc821004e45d99bb2222f01c63e27~mv2.jpg,
 title,Rebe's Play Cafe,https://158a62438e878f829d78.cdn6.editmysite.com/uploads/b/158a62438e878f829d783d2749d42ee8381fbf896312c3ad1f1a90ddbc54b70b/IMG_4037_1694204127.jpg,curated (migrated from play_cafe_seed_venues.json)
