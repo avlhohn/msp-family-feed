@@ -1,86 +1,80 @@
 # MSP Family Guide — Error Fixing (Latest)
 
-Run date: 2026-08-08 · finished ~08:31 local time
+Run date: 2026-08-09 · finished ~00:09 CDT local time
 
 ## Summary
 
-Open queue at start (from today's build base, 728 data rows): **27 `unresolved_website` rows (25 unique)** + **32 `unresolved_image` rows (32 unique)** = 59 open rows.
+Open queue at start: 48 open rows — 16 `unresolved_website` + 32 `unresolved_image` (14 unique website items, 32 unique image items after de-duplication).
 
-Resolved this run: **11** (all website). Image split: og_image 0 / facebook 0 / stock_openverse_specific 0.
+Resolved this run: 0 total (website=0, image=0 [og_image=0, facebook=0, stock_openverse_specific=0]).
 
-Left open (rolling to tomorrow): **14 website** + **32 image** = 46 unique items.
+Left open: 48 (16 website + 32 image), rolling to tomorrow.
+
+Every open item received a second, unhurried attempt (6 parallel subagents for website verification and og:image/Facebook extraction, plus a full Openverse API pass run by the main task). Nothing cleared the strict "confident, specific match" bar this run, so the log stays trustworthy and the queue rolls forward intact.
 
 ## Resolved this run
 
-| Item | Type | Resolution note |
-|---|---|---|
-| Wayzata Car Show | website | website: https://wayzata.com/wayzata-car-show/ — official Wayzata.com page, event+city match |
-| St. Paul Park Heritage Days | website | website: https://stpaulpark.org/community/explore_st_paul_park/heritage_days_festival.php — City of St. Paul Park official event page |
-| Blue Heron Days (Lino Lakes) | website | website: https://www.linolakes.gov/407/Blue-Heron-Days — City of Lino Lakes official event page |
-| Bloomington Street Arts Festival | website | website: https://www.bloomingtonstreetartsfestival.com/ — dedicated official festival site, Bloomington MN |
-| Chroma Zone Mural & Art Festival | website | website: https://www.chromazone.net/ — official festival site, Saint Paul MN |
-| St. Cloud Pride - Pride in the Park | website | website: https://stcpride.org/ — St. Cloud Pride official site (host of Pride in the Park) |
-| St. Paul Movies in the Parks - Encanto | website | website: https://www.stpaul.gov/departments/parks-and-recreation/activities-events/summer-activities-events/movies-parks — official St. Paul Parks & Rec program page |
-| Cars and Caves - German Cars | website | website: https://chanhassenautoplex.com/cars-and-caves/ — Chanhassen AutoPlex official Cars and Caves page |
-| Maple Grove Sounds of Summer Movie - Ratatouille | website | website: https://maplegrovemn.gov/672/Town-Green — official Maple Grove Town Green (Sounds of Summer series) page |
-| Raymond Harvest Festival | website | website: https://raymond-minnesota.com/raymond-harvest-festival — Raymond MN community official event page |
-| La Crescent Apple Fest | website | website: https://applefestusa.com/ — official La Crescent Applefest site |
+None this run.
 
 ## Still open
 
 | Item | Type | Likely reason |
-|---|---|---|
-| Family Fun Night | website | no confident venue+city page match |
-| Captain's Quarters | website | no confident venue+city page match |
-| Summer Outdoor Festival - Brainerd | website | no confident venue+city page match |
-| Brainerd Fire Department Golf Scramble | website | no confident venue+city page match |
-| Plymouth Summerfest | website | no confident venue+city page match |
-| Mighty Machines (Farmington) | website | no confident venue+city page match |
-| St. Louis Park Outdoor Movie - A Minecraft Movie | website | no confident venue+city page match |
-| Anoka Happy Days Festival | website | no confident venue+city page match |
-| International Falls County Fair | website | name mismatch (actually Koochiching County Fair, Northome) |
-| Movies on the Island - Jumanji | website | out-of-state (Superior, WI) / ambiguous for MN feed |
-| Movies on the Island - Mufasa | website | out-of-state (Superior, WI) / ambiguous for MN feed |
-| Plymouth Kids Fest | website | only a generic parks events-index URL available, no dedicated page |
-| Heritage Day - Upsala | website | only a bare city homepage available, no dedicated event page |
-| Family Night on the Farm | website | title too generic to disambiguate a specific venue/event |
-| Maple Grove - Sounds of Summer Movie Night | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Maplewood Celebrate Summer | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Kelley Park | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Lake Ann Park | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Lily Lake Park | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Pine Tree Pond Park | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Chapel Trail at St. John's University | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| East Lake Park Bandshell | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Alexandria City Park | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Kiwanis Park (Brainerd) | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Cottage Grove Ravine Regional Park | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Lum Park Recreation Area | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Cameron Park (Bemidji) | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Family Dance Party - Rochester Public Library | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Vadnais Heights Summer Concert Series | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Badges & Bobbers Fishing Event - Lake George | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Niko Moon Concert - Vetter Stone Amphitheater | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Music in the Park Thursdays - Mankato | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Movies in the Park - Mankato | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Moorhead Summer Splash Event | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Winona Parks & Rec Summer Activities | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Winona Farmers Market | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Alexandria Saturday Art Market | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Urban Air Trampoline Parks - Minnesota Locations | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Denny's Thursday Kids Eat Free | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-| Perkins Tuesday Kids Eat Free | image | no specific image found (no accessible og:image, no verified facebook photo, only generic/wrong-place Openverse candidates) |
-
-…and 6 more still open.
+| --- | --- | --- |
+| Family Fun Night | website | ambiguous — title too generic to pin a specific venue |
+| Captain's Quarters | website | ambiguous — multiple MN venues share the name |
+| Summer Outdoor Festival - Brainerd | website | ambiguous — only candidate (Lakes Area Music Festival) is a name-mismatch guess |
+| Brainerd Fire Department Golf Scramble | website | no dedicated site — event real but only on a blocked city domain |
+| Plymouth Summerfest | website | ambiguous — no official page under this exact name |
+| Mighty Machines (Farmington) | website | only a generic Dakota County Library kids-programs page, not event-specific |
+| St. Louis Park Outdoor Movie - A Minecraft Movie | website | no event-specific page; city calendar access blocked |
+| Anoka Happy Days Festival | website | name mismatch — nearest match is "Ramsey Happy Days," different city |
+| International Falls County Fair | website | title/city mismatch — nearest is Koochiching County Fair, Northome |
+| Movies on the Island - Jumanji | website | out of state — nearest match is Superior, WI |
+| Movies on the Island - Mufasa | website | out of state — nearest match is Superior, WI |
+| Plymouth Kids Fest | website | only a generic Plymouth Parks & Rec department page, not event-specific |
+| Heritage Day - Upsala | website | no dedicated site; city site lacks an event page |
+| Family Night on the Farm | website | ambiguous — recurring event across locations, no single official site |
+| Maple Grove - Sounds of Summer Movie Night | image | og:image not extractable via WebFetch (\<head\> stripped) |
+| Maplewood Celebrate Summer | image | og:image not extractable via WebFetch |
+| Kelley Park | image | no specific image — Openverse "Kelley Park" hits are San Jose CA, wrong place |
+| Lake Ann Park | image | og:image not extractable (site returned 403); no specific image found |
+| Lily Lake Park | image | og:image not extractable (site returned 403) |
+| Pine Tree Pond Park | image | og:image not extractable via WebFetch |
+| Chapel Trail at St. John's University | image | og:image not extractable (site returned 403) |
+| East Lake Park Bandshell | image | only a tourism-bureau (Visit Winona) image, not a self-branded own-page og:image |
+| Alexandria City Park | image | no specific image — Openverse "Alexandria city park" hit is Alexandria VA, wrong place |
+| Kiwanis Park (Brainerd) | image | og:image not extractable via WebFetch |
+| Cottage Grove Ravine Regional Park | image | og:image not present; no specific CC image found |
+| Lum Park Recreation Area | image | og:image not present; no specific CC image found |
+| Cameron Park (Bemidji) | image | og:image not present; no specific CC image found |
+| Family Dance Party - Rochester Public Library | image | only generic disco-ball stock; nothing event-specific |
+| Vadnais Heights Summer Concert Series | image | og:image not extractable; no specific image found |
+| Badges & Bobbers Fishing Event - Lake George | image | og:image not extractable via WebFetch |
+| Niko Moon Concert - Vetter Stone Amphitheater | image | og:image not extractable; no accessible own-page Facebook photo |
+| Music in the Park Thursdays - Mankato | image | og:image not extractable via WebFetch |
+| Movies in the Park - Mankato | image | og:image not extractable via WebFetch |
+| Moorhead Summer Splash Event | image | og:image not extractable via WebFetch |
+| Winona Parks & Rec Summer Activities | image | og:image not extractable; city-wide page (generic anyway) |
+| Winona Farmers Market | image | og:image not extractable; no accessible own-page Facebook photo |
+| Alexandria Saturday Art Market | image | og:image not extractable via WebFetch |
+| Urban Air Trampoline Parks - Minnesota Locations | image | corporate multi-location page; no place-specific image |
+| Denny's Thursday Kids Eat Free | image | og:image not extractable (403); national chain, no place-specific image |
+| Perkins Tuesday Kids Eat Free | image | og:image not extractable via WebFetch |
+| Rubio's Rewards Thursday Kids Free Meal | image | og:image not extractable via WebFetch |
+| Bowlero Brooklyn Park (Lucky Strike) | image | og:image not extractable via WebFetch |
+| Bowlocity Entertainment Center Rochester | image | og:image not extractable; only a logo found |
+| 56 Brewing Minneapolis | image | og:image not extractable via WebFetch |
+| Minneapolis Parks Volunteer Programming | image | og:image not extractable; city-wide page (generic anyway) |
+| Mission Branch Library Community Garden - Monday Nights | image | source questionable — no "Mission Branch" in Hennepin County Library system |
 
 ## Diagnostics
 
-- `no_run_summary_today`: not triggered — today's build `run_summary` row was present in the base.
-- `log_base_rejected`: none — base validated (10-col header, 728 data rows, grows monotonically).
-- **Race with daily build:** the concurrent `msp-family-guide-daily` build re-wrote `error_log.csv` to the shared folder mid-run and an intermediate fixer publish uploaded that build snapshot; the fixer then re-based onto the build's current 728-row log and re-published with resolutions layered on top. Final GitHub log includes both today's build rows and this run's 11 resolutions + `fixer_summary`.
-- Publish: log committed to GitHub on first attempt, verified (sha changed, size matches local).
+- `no_run_summary_today`: no `run_summary` row dated 2026-08-09 was present in the loaded base — the daily build has not yet published today. Proceeded on the carried-forward open queue (logged as an info/pipeline row).
+- `log_base_rejected`: none. The GitHub canonical `error_log.csv` (730 rows incl. header, 10-column schema) passed both header and row-count validation and was used as the base.
+- Openverse false positives caught: "Kelley Park" (San Jose, CA) and "Alexandria city park" (Alexandria, VA) were the only exact name-token matches returned but are wrong-city collisions — correctly rejected under the exact-place bar.
+- Publish: `error_log.csv` and this findings report committed to GitHub via the contents API (see below).
 
 ## Files
 
-- [error_log.csv](https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv)
-- [error-fixing-findings-latest.md](https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md)
+- Error log: https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv
+- Findings report: https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md
