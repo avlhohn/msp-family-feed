@@ -1,78 +1,79 @@
-# MSP Family Guide — Error Fixing (Latest)
+# MSP Family Guide - Error Fixing (Latest)
 
-Run date: 2026-08-10 — finished 23:20 
+Run date: 2026-08-13 - finished 00:56 local
 
 ## Summary
 
-- Open queue at start: 16 `unresolved_website` rows (14 unique) + 32 `unresolved_image` rows (32 unique).
-- Resolved this run: **3 total** — 3 website, 0 image (og_image 0 / facebook 0 / stock_openverse_specific 0).
-- Left open (rolling to next run): 11 unique website + 32 unique image items.
+Open queue at start: 45 rows (13 unresolved_website / 32 unresolved_image), covering 11 unique website items and 32 unique image items.
+
+Resolved this run: 10 rows across 9 items - website 3 rows (2 items); image 7 rows (7 items: og_image 1, facebook 6, stock_openverse_specific 0).
+
+Left open: 35 rows rolling to tomorrow.
 
 ## Resolved this run
 
 | Item | Type | Resolution note |
-|------|------|-----------------|
-| Plymouth Kids Fest | website | website: https://www.plymouthmn.gov/Home/Components/News/News/4141/ — official City of Plymouth page names Kids Fest (Aug 20 2026, Hilde Performance Center) |
-| Family Night on the Farm | website | website: https://visitwinona.com/events/family-night-on-the-farm-barkheim-farms/ — official Visit Winona event page, Barkheim Farms, Lewiston MN |
-| International Falls County Fair | website | website: https://www.koochichingcountyfair.org/ — official Koochiching County Fair (county seat International Falls) |
+| --- | --- | --- |
+| Heritage Day - Upsala | website | website: cityofupsala.com calendar - official City of Upsala site names the event |
+| Plymouth Summerfest | website | website: plymouthmn.gov Parks & Rec events - official city page hosts Summerfest |
+| Vadnais Heights Summer Concert Series | image (og_image) | og_image from official Music-in-the-Park page - self-branded event photo |
+| Alexandria City Park | image (facebook) | facebook - venue's own page photo |
+| Kiwanis Park (Brainerd) | image (facebook) | facebook - venue's own page photo |
+| Cottage Grove Ravine Regional Park | image (facebook) | facebook - park's own page photo |
+| Alexandria Saturday Art Market | image (facebook) | facebook - event's own page photo |
+| Bowlocity Entertainment Center Rochester | image (facebook) | facebook - venue's own page photo |
+| 56 Brewing Minneapolis | image (facebook) | facebook - brewery's own page photo |
 
 ## Still open
 
 | Item | Type | Likely reason |
-|------|------|---------------|
-| Family Fun Night | website | ambiguous — title too generic to disambiguate a specific venue/event |
-| Captain's Quarters | website | ambiguous — multiple MN venues share this name, no specific family event page |
-| Summer Outdoor Festival - Brainerd | website | no specific official site found; no Brainerd festival by this exact name |
-| Brainerd Fire Department Golf Scramble | website | only a chamber-of-commerce events-index listing found (rotating URL, not a stable dedicated page) |
-| Plymouth Summerfest | website | no event by this exact name on city site (Plymouth's signature summer event is 'Music in Plymouth') |
-| Mighty Machines (Farmington) | website | no Farmington-specific event page found |
-| St. Louis Park Outdoor Movie - A Minecraft Movie | website | only a low-confidence 'appears to be' calendar entry — not confidently this exact film screening |
-| Anoka Happy Days Festival | website | candidate page was City of Ramsey (different city) — name/city mismatch, left open |
-| Movies on the Island - Jumanji | website | event is in Superior, WISCONSIN (out of MN scope) |
-| Movies on the Island - Mufasa | website | event is in Superior, WISCONSIN (out of MN scope) |
-| Heritage Day - Upsala | website | only a generic city calendar-index page ('copy-of-calendar-of-events', unstable URL), no dedicated event page |
-| Maple Grove - Sounds of Summer Movie Night | image | event — only generic/topical stock available; og:image non-functional |
-| Maplewood Celebrate Summer | image | event — only generic/topical stock available; og:image non-functional |
-| Kelley Park | image | park/venue — Openverse returned 0 place-specific matches (or off-topic/NC-only); og:image non-functional |
-| Lake Ann Park | image | park/venue — Openverse returned 0 place-specific matches (or off-topic/NC-only); og:image non-functional |
-| Lily Lake Park | image | park/venue — Openverse returned 0 place-specific matches (or off-topic/NC-only); og:image non-functional |
-| Pine Tree Pond Park | image | park/venue — Openverse returned 0 place-specific matches (or off-topic/NC-only); og:image non-functional |
-| Chapel Trail at St. John's University | image | park/venue — Openverse returned 0 place-specific matches (or off-topic/NC-only); og:image non-functional |
-| East Lake Park Bandshell | image | park/venue — Openverse returned 0 place-specific matches (or off-topic/NC-only); og:image non-functional |
-| Alexandria City Park | image | park/venue — Openverse returned 0 place-specific matches (or off-topic/NC-only); og:image non-functional |
-| Kiwanis Park (Brainerd) | image | park/venue — Openverse returned 0 place-specific matches (or off-topic/NC-only); og:image non-functional |
-| Cottage Grove Ravine Regional Park | image | park/venue — Openverse returned 0 place-specific matches (or off-topic/NC-only); og:image non-functional |
-| Lum Park Recreation Area | image | park/venue — Openverse returned 0 place-specific matches (or off-topic/NC-only); og:image non-functional |
-| Cameron Park (Bemidji) | image | park/venue — Openverse returned 0 place-specific matches (or off-topic/NC-only); og:image non-functional |
-| Family Dance Party - Rochester Public Library | image | generic/topical — no place-specific CC image available; og:image non-functional |
-| Vadnais Heights Summer Concert Series | image | event — only generic/topical stock available; og:image non-functional |
-| Badges & Bobbers Fishing Event - Lake George | image | park/venue — Openverse returned 0 place-specific matches (or off-topic/NC-only); og:image non-functional |
-| Niko Moon Concert - Vetter Stone Amphitheater | image | event — only generic/topical stock available; og:image non-functional |
-| Music in the Park Thursdays - Mankato | image | event — only generic/topical stock available; og:image non-functional |
-| Movies in the Park - Mankato | image | event — only generic/topical stock available; og:image non-functional |
-| Moorhead Summer Splash Event | image | event — only generic/topical stock available; og:image non-functional |
-| Winona Parks & Rec Summer Activities | image | generic/topical — no place-specific CC image available; og:image non-functional |
-| Winona Farmers Market | image | generic/topical — no place-specific CC image available; og:image non-functional |
-| Alexandria Saturday Art Market | image | generic/topical — no place-specific CC image available; og:image non-functional |
-| Urban Air Trampoline Parks - Minnesota Locations | image | chain/deal listing — no place-specific CC image; og:image extraction non-functional |
-| Denny's Thursday Kids Eat Free | image | chain/deal listing — no place-specific CC image; og:image extraction non-functional |
-| Perkins Tuesday Kids Eat Free | image | chain/deal listing — no place-specific CC image; og:image extraction non-functional |
-| Rubio's Rewards Thursday Kids Free Meal | image | chain/deal listing — no place-specific CC image; og:image extraction non-functional |
-| Bowlero Brooklyn Park (Lucky Strike) | image | chain/deal listing — no place-specific CC image; og:image extraction non-functional |
-| Bowlocity Entertainment Center Rochester | image | chain/deal listing — no place-specific CC image; og:image extraction non-functional |
-| 56 Brewing Minneapolis | image | chain/deal listing — no place-specific CC image; og:image extraction non-functional |
-| Minneapolis Parks Volunteer Programming | image | generic/topical — no place-specific CC image available; og:image non-functional |
-| Mission Branch Library Community Garden - Monday Nights | image | generic/topical — no place-specific CC image available; og:image non-functional |
+| --- | --- | --- |
+| Maple Grove - Sounds of Summer Movie Night | image | og present but image URL not extractable (tooling) |
+| Maplewood Celebrate Summer | image | no specific event image found |
+| Kelley Park | image | no specific image; Openverse returned off-topic results |
+| Lake Ann Park | image | only city parks-dept umbrella FB page, not venue-specific |
+| Lily Lake Park | image | only a Friends-of advocacy page, not the venue's own |
+| Pine Tree Pond Park | image | no specific image found |
+| Chapel Trail at St. John's University | image | only umbrella Outdoor-U page, not trail-specific |
+| East Lake Park Bandshell | image | search conflates with Lake Harriet Bandshell; unverified |
+| Lum Park Recreation Area | image | no specific image found (og stripped by tooling) |
+| Cameron Park (Bemidji) | image | no specific image; only tourism-site branding |
+| Family Dance Party - Rochester Public Library | image | only generic/aggregator (disco-ball) imagery available |
+| Family Fun Night | website | ambiguous - generic name used across many MN venues |
+| Captain's Quarters | website | ambiguous - no confident MN venue match |
+| Badges & Bobbers Fishing Event - Lake George | image | no specific event photo available |
+| Niko Moon Concert - Vetter Stone Amphitheater | image | only copyrighted artist promo; venue site blocked |
+| Music in the Park Thursdays - Mankato | image | event image present but URL not extractable (tooling) |
+| Movies in the Park - Mankato | image | event image present but URL not extractable (tooling) |
+| Moorhead Summer Splash Event | image | event page 404; no image extractable |
+| Winona Parks & Rec Summer Activities | image | umbrella program page, not event-specific |
+| Winona Farmers Market | image | only a header logo available (rejected per filter) |
+| Urban Air Trampoline Parks - Minnesota Locations | image | chain umbrella item; only a single-location page |
+| Denny's Thursday Kids Eat Free | image | national chain promo; only generic chain branding |
+| Perkins Tuesday Kids Eat Free | image | national chain promo; only generic chain branding |
+| Rubio's Rewards Thursday Kids Free Meal | image | no MN locations exist; chain promo only |
+| Bowlero Brooklyn Park (Lucky Strike) | image | only generic chain hero image reused across locations |
+| Minneapolis Parks Volunteer Programming | image | no specific image found |
+| Mission Branch Library Community Garden - Monday Nights | image | no specific image found |
+| Summer Outdoor Festival - Brainerd | website | ambiguous - no single festival confirmed |
+| Brainerd Fire Department Golf Scramble | website | only third-party chamber calendar found, no authoritative page |
+| Mighty Machines (Farmington) | website | closed-or-broken / no specific Farmington event page found |
+| St. Louis Park Outdoor Movie - A Minecraft Movie | website | no specific screening page; only generic 'Movies in the Parks' |
+| Anoka Happy Days Festival | website | name/location mismatch (event appears to be Ramsey, MN) |
+| Movies on the Island - Jumanji | website | no specific screening page confirmed |
+| Movies on the Island - Mufasa | website | no specific screening page confirmed |
 
 ## Diagnostics
 
-- `no_run_summary_today`: no build `run_summary` row dated 2026-08-10 was present at fixer load (latest build run_date was 2026-08-09). Proceeded on the carried-forward open queue.
-- og:image extraction remains structurally non-functional this run (WebFetch converts HTML→markdown and strips `<head>`, so `og:image` meta tags are unreadable; raw HTTP fetches are policy-blocked). Image rows with websites could not be upgraded via og:image.
-- Openverse yielded no valid place-specific resolutions: exact park queries returned 0 results; the few hits were off-topic (Alexandria 'City Park' → I-94 highway photos; 'Lake George' → George Floyd protest photos) or lacked a verifiable name match in title/tags and were NonCommercial-licensed (Cottage Grove Ravine Regional Park photoset).
-- No `log_base_rejected`. Base loaded from local mount (identical to GitHub raw, 210054 bytes, 10-column header, 742 data rows — validation passed).
-- No publish retries/failures at report-write time (see run summary for final publish status).
+- `no_run_summary_today`: no run_summary row dated 2026-08-13 in the base at fixer start (latest was 2026-08-12); today's build had not published yet. Proceeded on the existing open queue; logged as an info/pipeline row.
+
+- `log_base_rejected`: none - GitHub base validated (10-col schema, 797 rows, matched local copy).
+
+- Openverse: queried 11 place-specific park/venue items; zero returned a verifiable name-match (results were off-topic, e.g. Interstate-94 and Como-garden photos), so none resolved via stock_openverse_specific.
+
+- Publish: error_log.csv committed and verified on attempt 1 (gh_size 224712 = local, sha changed).
 
 ## Files
 
-- Error log: https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv
-- Findings: https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md
+- error_log.csv: https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv
+- error-fixing-findings-latest.md: https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md
