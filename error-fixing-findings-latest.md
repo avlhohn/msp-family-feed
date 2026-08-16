@@ -62,11 +62,12 @@ Five website candidates came back from the research pass; one was rejected on au
 
 ## Diagnostics
 
-- `no_run_summary_today` — **triggered.** The GitHub base contains no `run_summary` row dated 2026-08-16 (the most recent is 2026-08-13), so the daily build's end-of-run marker was absent and the queue may not reflect today's build. Logged as an info/pipeline row and the existing backlog was worked anyway.
-- `log_base_rejected` — none. The GitHub base validated cleanly: exact 10-column header, 927 data rows (monotonic growth vs. prior days), byte-identical to the local mount copy.
-- og:image extraction — **structurally unavailable this run.** The error log does not carry each item's source website URL, and today's build data files did not contain the queued image items, so there was no page to fetch. The known WebFetch limitation (HTML→markdown conversion strips `<head>`, hiding `og:image`) applies regardless; two probes (Vetter Stone Amphitheater, Brooklyn Park Eidem) returned 403/404.
-- Openverse — queried unfiltered by license (per prior finding that a commercial-license filter silently hides valid `by-nc` results). Two passes per item, 22 items; place identity checked against result tags, not titles. Zero place-specific matches.
-- Publish — see below.
+- `no_run_summary_today` — **triggered, then superseded.** At base-load time (05:40) the GitHub log had no `run_summary` dated 2026-08-16 (the latest was 2026-08-13), so the fixer worked the pre-existing backlog. The daily build finished later, at ~08:43, and its 2026-08-16 rows merged into the file before the fixer published — no fixer resolutions were lost, and the published log contains both. The diagnostic row is retained (with corrected wording) because the ordering is worth seeing: today the fixer ran ahead of the build, so items the build logged today were never in the fixer's queue.
+- Build's new open row — the one `unresolved_website` row the build added today is a category roll-up (`688 rows`, overwhelmingly municipal neighbourhood parks with no individual page), not a per-item work item, so it added nothing actionable to drain.
+- `log_base_rejected` — none. The base validated cleanly: exact 10-column header, 927 data rows (monotonic growth vs. prior days), byte-identical to the local mount copy.
+- og:image extraction — **structurally unavailable this run.** The error log carries no per-item source website URL, so there was no page to fetch for the image queue. The known WebFetch limitation (HTML→markdown conversion strips `<head>`, hiding `og:image`) applies regardless; two probes (Vetter Stone Amphitheater, Brooklyn Park Eidem) returned 403/404. The build independently logged the same blocker today as `ogimage_extraction_unavailable`.
+- Openverse — queried unfiltered by license (per the prior finding that a commercial-license filter silently hides valid `by-nc` results). Two passes per item across all 22 items; place identity checked against result tags rather than titles. Zero place-specific matches.
+- Publish — `error_log.csv` and this report both committed on attempt 1, verified by MD5 of the base64-decoded Contents-API response against local bytes (match). The log was re-published after the build merge and the diagnostic correction.
 
 ## Files
 
