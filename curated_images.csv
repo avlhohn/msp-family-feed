@@ -88,6 +88,7 @@ keyword,food truck,https://images.pexels.com/photos/37472499/pexels-photo-374724
 keyword,Irish Fest,https://images.pexels.com/photos/3876540/pexels-photo-3876540.jpeg,
 keyword,putt,https://images.pexels.com/photos/7514005/pexels-photo-7514005.jpeg,
 keyword,bowling,https://images.pexels.com/photos/5952901/pexels-photo-5952901.jpeg,
+keyword,bowl,https://images.pexels.com/photos/9821845/pexels-photo-9821845.jpeg,
 keyword,bbq,https://images.pexels.com/photos/2014938/pexels-photo-2014938.jpeg,
 keyword,Good Times Park,https://images.pexels.com/photos/11795110/pexels-photo-11795110.jpeg,
 keyword,barbeque,https://images.pexels.com/photos/2014938/pexels-photo-2014938.jpeg,
@@ -99,12 +100,14 @@ keyword,parade,https://images.pexels.com/photos/11664841/pexels-photo-11664841.j
 keyword,Malt Shop,https://images.pexels.com/photos/33694865/pexels-photo-33694865.jpeg,
 keyword,Alloy Brewing,https://images.squarespace-cdn.com/content/v1/55d53dcee4b099f9b43cf904/1628799428587-T93T1WNJ5QKO1S6H9T17/Taproom+Sign+Lance+Jill.jpg?format=1000w,
 keyword,Mighty Machines,https://dakotacountymn.gov/content/mndakotacountywebsite/us/en/library/events-programs/kids/mighty-machines/_jcr_content/root/container/containedwidthcontainer/twocolumn/right/columnlayoutvariatio/col2/image.coreimg.jpeg/1781627239131/mighty-machines.jpeg,
+keyword,Celts Craft House,https://popmenucloud.com/cdn-cgi/image/width%3D2880%2Cheight%3D2880%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/npvgbcjr/26d715ab-c6d0-40f8-b1e0-1bf6feb281b7.jpg,
 keyword,Cantina,https://images.pexels.com/photos/5737254/pexels-photo-5737254.jpeg,
 keyword,Rainforest Cafe,https://images.getbento.com/accounts/3db889a3fca226b46ccb3927ec65f27d/media/images/1872_DSC9417.jpg,
 keyword,El Burrito Mercado,https://images.getbento.com/accounts/71da585d3beb45fe2f8167b49efb87eb/media/images/4921unnamed.jpg,
 keyword,Minnesota Lynx,https://cdn.wnba.com/sites/1611661324/2026/07/0809gamepreview-scaled.png,
 keyword,Shamrock's,https://images.pexels.com/photos/21370021/pexels-photo-21370021.jpeg,
 keyword,Bennett's Chop,https://images.pexels.com/photos/37118296/pexels-photo-37118296.jpeg,
+keyword,Minnesota Transportation Museum,https://trainride.org/wp-content/uploads/sites/7832/2025/04/Tots-Trains-Admission-image-1.jpg,
 keyword,Melting Pot,https://images.pexels.com/photos/37593659/pexels-photo-37593659.jpeg,
 keyword,St. Paul Saints,https://saint-paul-2022.s3.amazonaws.com/imager/files_idss_com/C17/36308aeb-0eab-4ae1-b0e6-cd7f1097ea6a_2a23813dca470163f0b2610639f888f1.png,
 keyword,Concert Series,https://images.pexels.com/photos/30271349/pexels-photo-30271349.jpeg,
@@ -112,14 +115,14 @@ keyword,Fishing,https://images.pexels.com/photos/3099187/pexels-photo-3099187.jp
 keyword,Minneapolis Institute of Art,https://images.artsmia.org/wp-content/uploads/2020/08/06085427/featured_0000s_0002_171221_mia356_3748-525x350.jpg,
 keyword,Italian Ristorante,https://images.pexels.com/photos/27866922/pexels-photo-27866922.jpeg,
 keyword,Italian Restaurant,https://images.pexels.com/photos/27866922/pexels-photo-27866922.jpeg,
+keyword,Tailgate Sports Cafe,https://live.staticflickr.com/3460/3356280111_15444bde5e.jpg,"Sports bar & restaurant interior (Flickr, CC-BY) - topical"
+title,Green Mill,https://images.pexels.com/photos/6068717/pexels-photo-6068717.jpeg,curated (migrated from curated_deals_seed.json)
 title,Snuffy's Malt Shop,https://static.wixstatic.com/media/002c78_380cc821004e45d99bb2222f01c63e27~mv2.jpg,
 title,Rebe's Play Cafe,https://158a62438e878f829d78.cdn6.editmysite.com/uploads/b/158a62438e878f829d783d2749d42ee8381fbf896312c3ad1f1a90ddbc54b70b/IMG_4037_1694204127.jpg,curated (migrated from play_cafe_seed_venues.json)
 title,Sovereign Grounds,https://images.pexels.com/photos/9509422/pexels-photo-9509422.jpeg,curated
 title,Ninth Street Soccer & Coffee,https://images.pexels.com/photos/37391217/pexels-photo-37391217.jpeg,curated (migrated from play_cafe_seed_venues.json)
 title,Ginkgo Coffeehouse,https://images.pexels.com/photos/11715908/pexels-photo-11715908.jpeg,curated (migrated from play_cafe_seed_venues.json)
-title,Green Mill,https://images.pexels.com/photos/6068717/pexels-photo-6068717.jpeg,curated (migrated from curated_deals_seed.json)
 title,Skinners Pub & Eatery,https://skinnersmn.com/wp-content/uploads/2019/08/Pizza.jpg,curated
-title,Tailgate Sports Cafe,https://live.staticflickr.com/3460/3356280111_15444bde5e.jpg,"Sports bar & restaurant interior (Flickr, CC-BY) - topical"
 title,Pizza Luce,https://marvel-b1-cdn.bc0a.com/f00000000225310/pizzaluce.com/uploads/stpaul-exterior.jpg,curated (user-provided; matches all Pizza Luce locations)
 title,McHugh's Public House,https://mchughspublichouse.com/wp-content/uploads/2018/07/June2016_CP-27.jpg,
 title,Celts Craft House,https://popmenucloud.com/cdn-cgi/image/width%3D2880%2Cheight%3D2880%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/npvgbcjr/26d715ab-c6d0-40f8-b1e0-1bf6feb281b7.jpg,
@@ -134,7 +137,9 @@ title,Minnesota Children's Museum,https://mcm.org/wp-content/uploads/2023/02/our
 title,bowlero,https://images.ctfassets.net/6gvyj3hhelpa/1SvxLjzMyPgZosMgHCB6Gt/1511169756186aaaa86f93f31175b4cc/6-bowlero-general-hero-center-2.jpg?w=1440&q=75&fm=webp,
 title,Topgolf,https://s3-media0.fl.yelpcdn.com/bphoto/EF04X2g3iFV0HfZcHF-C2Q/1000s.jpg,
 title,Chevys Fresh Mex,https://www.chevys.com/wp-content/uploads/2020/08/2-item-Combo-02-380x380.jpg,
+title,Hope Breakfast Bar,https://images.squarespace-cdn.com/content/v1/5d23e218795d4d000192a159/13fd1d64-a4cf-4f38-a404-cd619fb577ce/Hope-Breakfast-Bar-06242021_123702.jpg,
 tag,burgers,https://images.pexels.com/photos/21370021/pexels-photo-21370021.jpeg,
+tag,breakfast,https://images.pexels.com/photos/38081727/pexels-photo-38081727.jpeg,
 tag,play-cafe,https://live.staticflickr.com/725/22391678856_11e7edc9f5_b.jpg,fallback-only tag image: child on playground slide (verified)
 tag,community fest,https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg,
 tag,play-area,https://live.staticflickr.com/725/22391678856_11e7edc9f5_b.jpg,fallback-only tag image: child on playground slide (verified)
@@ -169,6 +174,8 @@ tag,festival,https://images.pexels.com/photos/1384254/pexels-photo-1384254.jpeg,
 tag,brewery,https://images.pexels.com/photos/19691954/pexels-photo-19691954.jpeg,
 tag,ice-cream,https://images.pexels.com/photos/17429503/pexels-photo-17429503.jpeg,
 tag,coffee,https://images.pexels.com/photos/5373242/pexels-photo-5373242.jpeg,
+tag,candies,https://images.pexels.com/photos/27080475/pexels-photo-27080475.jpeg,
+tag,candy,https://images.pexels.com/photos/27080475/pexels-photo-27080475.jpeg,
 tag,mocha,https://images.pexels.com/photos/5373242/pexels-photo-5373242.jpeg,
 tag,play-cafe,https://images.pexels.com/photos/30790990/pexels-photo-30790990.jpeg,
 tag,bakery,https://images.pexels.com/photos/3985083/pexels-photo-3985083.jpeg,
@@ -193,6 +200,7 @@ tag,swimming,https://images.pexels.com/photos/12799741/pexels-photo-12799741.jpe
 tag,youth-sports,https://images.pexels.com/photos/38116797/pexels-photo-38116797.jpeg,rotation alt: youth soccer match (Pexels direct image)
 tag,youth-sports,https://images.pexels.com/photos/209975/pexels-photo-209975.jpeg,rotation alt: youth baseball (Pexels direct image)
 tag,youth-sports,https://images.pexels.com/photos/7236367/pexels-photo-7236367.jpeg,rotation alt: kids basketball (Pexels direct image)
+tag,bowling,https://images.pexels.com/photos/9821845/pexels-photo-9821845.jpeg,
 tag,car-show,https://images.pexels.com/photos/18620587/pexels-photo-18620587.jpeg,rotation alt: row of classic cars (Pexels direct image)
 tag,car-show,https://images.pexels.com/photos/31867049/pexels-photo-31867049.jpeg,rotation alt: vintage cars lined up (Pexels direct image)
 tag,car-show,https://images.pexels.com/photos/37890534/pexels-photo-37890534.jpeg,rotation alt: classic auto show (Pexels direct image)
@@ -210,6 +218,8 @@ tag,playground,https://images.pexels.com/photos/27275323/pexels-photo-27275323.j
 tag,playground,https://images.pexels.com/photos/12586010/pexels-photo-12586010.jpeg,slide close-up bright colors
 tag,playground,https://images.pexels.com/photos/34889832/pexels-photo-34889832.jpeg,big community playground wide shot
 tag,playground,https://images.pexels.com/photos/32314814/pexels-photo-32314814.jpeg,toddler play area soft surface
+tag,mini golf,https://images.pexels.com/photos/6370119/pexels-photo-6370119.jpeg,
+tag,putt putt,https://images.pexels.com/photos/6370119/pexels-photo-6370119.jpeg,
 tag,neighborhood-park,https://images.pexels.com/photos/32342544/pexels-photo-32342544.jpeg,green neighborhood park path
 tag,neighborhood-park,https://images.pexels.com/photos/20673029/pexels-photo-20673029.jpeg,park with mature shade trees
 tag,neighborhood-park,https://images.pexels.com/photos/28933967/pexels-photo-28933967.jpeg,open grassy park field
