@@ -142,10 +142,10 @@ title,Hope Breakfast Bar,https://images.squarespace-cdn.com/content/v1/5d23e2187
 tag,burgers,https://images.pexels.com/photos/21370021/pexels-photo-21370021.jpeg,
 tag,breakfast,https://images.pexels.com/photos/38081727/pexels-photo-38081727.jpeg,
 tag,play-cafe,https://live.staticflickr.com/725/22391678856_11e7edc9f5_b.jpg,fallback-only tag image: child on playground slide (verified)
-tag,community fest,https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg,
 tag,story-time,https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg,fallback-only tag image: children reading/story circle (verified)
 tag,car-show,https://live.staticflickr.com/228/472117411_94e0ada8b4_b.jpg,fallback-only tag image: row of classic show cars (verified)
 tag,cruise-night,https://live.staticflickr.com/228/472117411_94e0ada8b4_b.jpg,fallback-only tag image: row of classic show cars (verified)
+tag,community-fest,https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg,
 tag,community-fest,https://images.pexels.com/photos/4697232/pexels-photo-4697232.jpeg,fallback-only tag image: fair/festival crowd (verified)
 tag,sports,https://live.staticflickr.com/6012/6205997306_c2609f848d_b.jpg,fallback-only tag image: youth soccer (verified)
 tag,youth-sports,https://live.staticflickr.com/6012/6205997306_c2609f848d_b.jpg,fallback-only tag image: youth soccer (verified)
@@ -183,6 +183,7 @@ tag,trampoline,https://images.pexels.com/photos/8142258/pexels-photo-8142258.jpe
 tag,parade,https://images.pexels.com/photos/11664841/pexels-photo-11664841.jpeg,rotation alt: parade crowd (Pexels direct image)
 tag,parade,https://images.pexels.com/photos/28500389/pexels-photo-28500389.jpeg,rotation alt: parade floats and banners (Pexels direct image)
 tag,parade,https://images.pexels.com/photos/30211544/pexels-photo-30211544.jpeg,rotation alt: parade floral float (Pexels direct image)
+tag,class/camp,https://images.pexels.com/photos/8035135/pexels-photo-8035135.jpeg,
 tag,community-fest,https://images.pexels.com/photos/1384254/pexels-photo-1384254.jpeg,rotation alt: festival crowd (Pexels direct image)
 tag,community-fest,https://images.pexels.com/photos/31874024/pexels-photo-31874024.jpeg,rotation alt: fair festival crowd (Pexels direct image)
 tag,community-fest,https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg,rotation alt: community fest crowd (Pexels direct image)
@@ -206,6 +207,8 @@ tag,car-show,https://images.pexels.com/photos/31867049/pexels-photo-31867049.jpe
 tag,car-show,https://images.pexels.com/photos/37890534/pexels-photo-37890534.jpeg,rotation alt: classic auto show (Pexels direct image)
 tag,cruise-night,https://images.pexels.com/photos/18620587/pexels-photo-18620587.jpeg,rotation alt: row of classic cars (Pexels direct image)
 tag,cruise-night,https://images.pexels.com/photos/31867049/pexels-photo-31867049.jpeg,rotation alt: vintage cars lined up (Pexels direct image)
+tag,museum,https://images.pexels.com/photos/8926847/pexels-photo-8926847.jpeg,
+tag,museum,https://images.pexels.com/photos/1620675/pexels-photo-1620675.jpeg,
 tag,music,https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg,rotation: outdoor live music performance (Pexels direct image)
 tag,music,https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg,rotation: outdoor festival stage (Pexels direct image)
 tag,music,https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg,rotation: outdoor concert crowd (Pexels direct image)
@@ -249,6 +252,9 @@ tag,play-area,https://images.pexels.com/photos/19230068/pexels-photo-19230068.jp
 tag,play-area,https://images.pexels.com/photos/8466905/pexels-photo-8466905.jpeg,play area climbing
 tag,play-area,https://images.pexels.com/photos/19875880/pexels-photo-19875880.jpeg,colorful indoor playspace
 tag,play-area,https://images.pexels.com/photos/5488878/pexels-photo-5488878.jpeg,kids play tunnel/slide
+tag,pool,https://images.pexels.com/photos/2705879/pexels-photo-2705879.jpeg,
+tag,pool,https://images.pexels.com/photos/9966819/pexels-photo-9966819.jpeg,
+tag,pool,https://images.pexels.com/photos/61136/pexels-photo-61136.jpeg,
 tag,indoor-playground,https://images.pexels.com/photos/19230083/pexels-photo-19230083.jpeg,large indoor playground
 tag,indoor-playground,https://images.pexels.com/photos/8535657/pexels-photo-8535657.jpeg,indoor climbing play structure
 tag,indoor-playground,https://images.pexels.com/photos/8435751/pexels-photo-8435751.jpeg,indoor toddler zone
@@ -260,3 +266,7 @@ tag,food-truck,https://images.pexels.com/photos/16782204/pexels-photo-16782204.j
 tag,coffee,https://images.pexels.com/photos/34956523/pexels-photo-34956523.jpeg,coffee cup on table
 tag,farm/u-pick,https://images.pexels.com/photos/38328331/pexels-photo-38328331.jpeg,u-pick farm field rows
 tag,farm/u-pick,https://images.pexels.com/photos/5529545/pexels-photo-5529545.jpeg,family picking produce
+tag,story-time,https://images.pexels.com/photos/6437499/pexels-photo-6437499.jpeg,
+tag,library,https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg,
+tag,water-park,https://images.pexels.com/photos/5603385/pexels-photo-5603385.jpeg,
+tag,water-park,https://images.pexels.com/photos/2326887/pexels-photo-2326887.jpeg,
