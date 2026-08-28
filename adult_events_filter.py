@@ -60,8 +60,37 @@ DROP_PHRASES = [
     # adult tech / computer help (library one-on-one appointments)
     "tech help", "tech drop-in", "tech drop in", "computer help",
     "computer and tech help", "one-to-one computer",
+    # --- added 2026-08-28: synonym vocabulary the library feeds actually use ---
+    # (the original list was built from one 2026-08-25 sample and missed these; 130
+    #  computer/tech-help rows were slipping through under names the list never had.)
+    "computer tutor", "tech tutor", "technology assistance", "technology help",
+    "technology tutor", "public computer aide", "computer lab", "tech time",
+    "1:1 technology", "1:1 tech", "one-on-one tech", "one-on-one computer",
+    "book a tech", "digital literacy", "device help", "smartphone help",
+    # career / workforce synonyms
+    # NOTE: bare "career exploration" is deliberately NOT here — it also names teen/youth
+    #  career nights, which are family programming. Keep the specific adult form only.
+    "career exploration for adults",
+    "careerforce", "career planning", "career counseling", "job help",
+    # senior programming (specific phrases only — a bare "senior" is too broad, it
+    #  also names high-school seniors; keep these tightly scoped)
+    "senior coffee", "senior social", "senior chef", "for seniors", "older adults",
+    "55+",
+    # veteran services — NOTE the KEEP_GUARDS below exempt "Veterans Park / Pow Wow /
+    #  Farmers Market / Memorial", which are place names, not veteran-services programming
+    "resources for veterans", "veterans resource", "veteran services",
     # library adult-programming staples that table employers/partners
     "community partner of the day",
+]
+
+# --- generic adult-programming rule (guarded) -------------------------------------------
+# "Adult Craft", "Book Club for Adults", "Adult Coloring Hour" etc. are adult programming
+# but the words are generic, so this rule is fenced by KEEP_GUARDS: it must NEVER fire on
+# a family event that merely uses "adult" as the top of an age range, on a kids/maker title
+# that contains a tech-ish substring, on a veterans PLACE name, or on the teen "young adult"
+# library category. Each guard below is a real false-positive observed on the live feed.
+GENERIC_ADULT = [
+    "for adults", "adult",
 ]
 
 # --- borderline: report, do NOT auto-drop -----------------------------------------------
@@ -76,6 +105,24 @@ F_TITLE = "title"
 F_CAT = "category"
 F_SEED = "is_seed"
 EVENTS_CAT = "events"
+
+# --- KEEP_GUARDS: if any of these match the title, the GENERIC_ADULT rule is suppressed.
+# These do NOT protect against the explicit DROP_PHRASES above (those are unambiguous);
+# they only fence the generic "adult"/"for adults" catch. Every pattern is a real live case:
+#   - age range:  "best for ages 8 to adult", "ages 3-adult", "adults welcome" (family nature walks)
+#   - maker/kids: "Createch Unplugged", "Sewing Techniques", "3D Modeling ... Techniques"
+#   - place name: "Veterans Memorial Park / Pow Wow / Farmers Market"
+#   - teen cat.:  "Young Adult Book Club" (YA is a teen category, not adult services)
+KEEP_GUARDS = [
+    re.compile(r"\bages?\b.*\badults?\b", re.I),
+    re.compile(r"\bto\s+adults?\b", re.I),
+    re.compile(r"\b-\s*adults?\b", re.I),
+    re.compile(r"\badults?\s+welcome\b", re.I),
+    re.compile(r"\bcreatech\b", re.I),
+    re.compile(r"\btechniques?\b", re.I),
+    re.compile(r"veterans?\s+(memorial|park|pow\s*wow|farmers|field|stadium|hall|bridge)", re.I),
+    re.compile(r"\byoung\s+adults?\b", re.I),
+]
 
 
 def norm(s):
@@ -98,10 +145,20 @@ def _match(title_norm, phrases):
     for p in phrases:
         rx = _RX_CACHE.get(p)
         if rx is None:
-            rx = _RX_CACHE[p] = re.compile(r"\b" + re.escape(p) + r"\b")
+            # Only require a \b where the phrase edge is a word char. A phrase like "55+"
+            # ends in a non-word char, and \b between two non-word chars never matches, so
+            # a trailing \b there would make the phrase impossible to hit.
+            left = r"\b" if p[:1].isalnum() else ""
+            right = r"\b" if p[-1:].isalnum() else ""
+            rx = _RX_CACHE[p] = re.compile(left + re.escape(p) + right)
         if rx.search(title_norm):
             return p
     return None
+
+
+def _guarded(title_norm):
+    """True if any KEEP_GUARD fires — meaning the generic adult rule must NOT drop this row."""
+    return any(rx.search(title_norm) for rx in KEEP_GUARDS)
 
 
 def classify(row):
@@ -113,6 +170,9 @@ def classify(row):
     if not t:
         return None, None
     drop_hit = _match(t, DROP_PHRASES)
+    # generic adult rule only fires when no KEEP_GUARD protects the title
+    if not drop_hit and not _guarded(t):
+        drop_hit = _match(t, GENERIC_ADULT)
     review_hit = _match(t, REVIEW_PHRASES)
     is_seed = str(row.get(F_SEED)).strip().lower() in ("true", "1", "yes")
     if drop_hit:

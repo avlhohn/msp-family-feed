@@ -41,6 +41,42 @@ CASES = [
     ("Minneapolis Works: CAPI", "events", "drop", False),
     ("Work Wednesday: Job Training and Resources", "events", "drop", False),
 
+    # ---- must DROP (2026-08-28 synonym expansion: real live-feed titles) ----
+    ("Public Computer Aide", "events", "drop", False),
+    ("Book a Tech Tutor", "events", "drop", False),
+    ("Computer Tutor Appointment", "events", "drop", False),
+    ("Technology Assistance Drop-In", "events", "drop", False),
+    ("1:1 Technology Help", "events", "drop", False),
+    ("Drop-in Computer Lab", "events", "drop", False),
+    ("Digital Literacy Class", "events", "drop", False),
+    ("CareerForce Winona Office Hours", "events", "drop", False),
+    ("Career Planning for Artists", "events", "drop", False),
+    ("Senior Coffee Hour", "events", "drop", False),
+    ("Senior Social", "events", "drop", False),
+    ("Coffee for Older Adults", "events", "drop", False),
+    ("55+ Book Club", "events", "drop", False),
+    ("Drop-in Resources for Veterans", "events", "drop", False),
+    # generic adult programming (the guarded rule)
+    ("Adult Coloring Hour", "events", "drop", False),
+    ("Adult Craft - Macrame Plant Hanger", "events", "drop", False),
+    ("Book Club for Adults", "events", "drop", False),
+    ("Dial-a-Story for Adults", "events", "drop", False),
+    ("Soma Yoga for Adults", "events", "drop", False),
+    ("Adaptive Adult Storytime", "events", "drop", False),
+
+    # ---- must KEEP (guards against the generic adult rule — every one a real live title) ----
+    ("Bird Migration Walk (best for ages 8 to adult)", "events", None, False),   # age range
+    ("Fungus Among Us (best for ages 8-adult)", "events", None, False),          # age range
+    ("Don't Move a Mussel (best for ages 3 to adult)", "events", None, False),   # age range
+    ("Birds of Wild River (best for ages 3 to adult)", "events", None, False),   # age range
+    ("Createch Unplugged", "events", None, False),                               # kids/maker
+    ("Createch Tournament of Champions: Smash Brothers", "events", None, False), # kids/maker
+    ("Ask an iLAB Mentor: 3D Modeling and Slicing Techniques", "events", None, False),
+    ("DIY: Sewing Techniques", "events", None, False),                           # maker substring
+    ("Veterans Memorial Pow Wow", "events", None, False),                        # place name
+    ("Free Summer Concerts at Veterans Memorial Park", "events", None, False),   # place name
+    ("Young Adult Book Club", "events", None, False),                            # teen (YA) category
+
     # ---- must KEEP (family events a naive keyword filter wrongly flags) ----
     ("Fiesta Latina", "events", None, False),                       # desc mentions a job booth; title clean
     ("Family Storytime", "events", None, False),                    # "caregiver" only in desc
