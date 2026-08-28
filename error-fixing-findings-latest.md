@@ -1,16 +1,20 @@
 # MSP Family Guide — Error Fixing (Latest)
 
-Run date: 2026-08-21 — finished 00:29 local time.
+Run date: **2026-08-28** — finished 17:26 CDT (run date derived from the GitHub API `Date` header, `Fri, 28 Aug 2026 22:17:28 GMT`, not the sandbox clock).
 
 ## Summary
 
-Open queue at start: **31 rows / 30 unique items** — 9 rows (8 unique items) `unresolved_website`, 22 rows `unresolved_image`.
+Open queue at start: **31 rows / 30 unique items** — 9 rows `unresolved_website` (7 unique real items, one of which has 2 rows, plus 1 aggregate diagnostic row) and 22 rows `unresolved_image`.
 
 Resolved this run: **0** — website 0, image 0 (og_image 0, facebook 0, stock_openverse_specific 0).
 
-Left open: **31 rows**, rolling to tomorrow.
+Left open: **31 rows**, all rolling to tomorrow.
 
-Every open item was worked. One website candidate was returned by the research subagents and was **rejected on audit** rather than accepted, which is why the resolved count is zero rather than one. No image cleared the place-specific bar across 22 items x up to 3 Openverse query passes, plus a second looser pass on the 9 items judged most likely to be depictable.
+**This queue has not moved in at least a week.** The previous findings report, dated 2026-08-21, records the identical figures — the same 31 rows / 30 unique items and the same 0 resolutions — and the oldest open rows go back to 2026-07-08. So this is not a bad day; it is a backlog that is structurally undrainable by this task in its current form, and it should be escalated rather than retried nightly. The diagnosis is in Diagnostics below, and it is the real output of this run.
+
+Two Openverse candidates name-matched and were deliberately **rejected as wrong-place**: `Summer's End, Maplewood State Park, Ottertail County` is not the Maplewood suburb the row refers to, and `Lemonade Stand` is generic stock. Both would have passed a naive keyword match, and accepting either would have shipped a wrong photo to families.
+
+Seven diagnostic rows were appended to the log capturing what the research did turn up — four suspected bad addresses, two rows that appear not to exist at all, and one stale redirect. Those byproducts are worth more this run than the empty fix list.
 
 ## Resolved this run
 
@@ -20,53 +24,56 @@ None this run.
 
 | Item | Type | Likely reason |
 |---|---|---|
-| Maple Grove - Sounds of Summer Movie Night | image | no specific image — event has no commons photo; city-level park hits only |
-| Maplewood Celebrate Summer | image | only near-miss stock — "Maplewood Community Center" is a real MN photo but venue-substitution fails the name bar |
-| Kelley Park | image | wrong-place stock only — all hits are Kelley Park, San Jose CA |
-| Lake Ann Park | image | wrong-place stock only — Chippenham England gardens, Eckankar temple |
-| Lily Lake Park | image | generic stock only — water-lily photos, no Stillwater park |
-| Pine Tree Pond Park | image | wrong-place stock only — Como Ordway Japanese Garden, Drake Park OR |
-| East Lake Park Bandshell | image | wrong-place stock only — Jay Pritzker Pavilion, Chicago |
-| Lum Park Recreation Area | image | no specific image — zero name matches; Brainerd city-level hits only |
-| Cameron Park (Bemidji) | image | no specific image — Bemidji city-level hits only (Babe the Blue Ox, BSU) |
-| Captain's Quarters | website | ambiguous — no verifiable MN venue; the well-known Captain's Quarters Marina is in Antioch, IL |
-| Niko Moon Concert - Vetter Stone Amphitheater | image | no specific image — "Vetter" hits are photographer Kenneth Vetter, not the amphitheater |
-| Music in the Park Thursdays - Mankato | image | no specific image — recurring series; hits were South Central MN Pride, wrong event |
-| Movies in the Park - Mankato | image | no specific image — recurring series, no venue photo in the commons |
-| Moorhead Summer Splash Event | image | no specific image — Moorhead city-level hits only |
-| Winona Parks & Rec Summer Activities | image | structurally undepictable — program roll-up, not a place |
-| Winona Farmers Market | image | no specific image — Winona city-level hits only |
-| Urban Air Trampoline Parks - Minnesota Locations | image | structurally undepictable — multi-location roll-up |
-| Denny's Thursday Kids Eat Free | image | structurally undepictable — national recurring meal promo |
-| Perkins Tuesday Kids Eat Free | image | structurally undepictable — national recurring meal promo |
-| Rubio's Rewards Thursday Kids Free Meal | image | structurally undepictable — national recurring meal promo |
-| Bowlero Brooklyn Park (Lucky Strike) | image | no specific image — commercial venue, no commons photo |
-| Minneapolis Parks Volunteer Programming | image | structurally undepictable — program roll-up, not a place |
-| Mission Branch Library Community Garden - Monday Nights | image | no specific image — prior trap: Mission Branch Library hits are San Francisco PL |
-| Summer Outdoor Festival - Brainerd | website | ambiguous — not an official event title; no page names it |
-| Brainerd Fire Department Golf Scramble | website | no official page — event is real (Aug 15, Cragun's Legacy Courses) but only chamber/aggregator listings exist |
-| St. Louis Park Outdoor Movie - A Minecraft Movie | website | candidate rejected on audit — city page 403s, evidence was a blog + aggregator, never a city page naming the movie |
-| Pizza King Station | website | likely bad data — appears to be an Indiana chain; no MN location found |
-| Toddler Tuesday - ECFE | website | ambiguous — Coon Rapids Family Place confirmed at the address, but no program by this exact name |
-| Bump & Putt Family Fun Center | website | no site exists — located at 29107 State Hwy 371, Pequot Lakes (address in log says Nisswa); only Yelp/directory listings |
-| 688 rows | website | not actionable — category roll-up row, not a per-item work unit |
+| East Lake Park Bandshell | image | og:image not extractable (WebFetch strips `<head>`); no Openverse coverage |
+| Kelley Park | image | og:image not extractable; no Openverse coverage |
+| Lake Ann Park | image | chanhassenmn.gov returns 403 to WebFetch; no Openverse coverage |
+| Lily Lake Park | image | stillwatermn.gov returns 403 to WebFetch; no Openverse coverage |
+| Pine Tree Pond Park | image | og:image not extractable; address/city also wrong (see Diagnostics) |
+| Cameron Park (Bemidji) | image | og:image not extractable on visitbemidji.com venue page |
+| Lum Park Recreation Area | image | brainerdmn.gov returns 403 to WebFetch |
+| Maple Grove - Sounds of Summer Movie Night | image | no per-event deep-link page exists; only the Town Green venue page |
+| Maplewood Celebrate Summer | image | both city event URLs 404; only generic/wrong-place stock available |
+| Bowlero Brooklyn Park (Lucky Strike) | image | og:image not extractable; stored URL is also a stale redirect |
+| Denny's Thursday Kids Eat Free | image | dennys.com returns 403; chain promo has no place-specific image |
+| Perkins Tuesday Kids Eat Free | image | perkins.com timed out; chain promo, no place-specific image |
+| Rubio's Rewards Thursday Kids Free Meal | image | rewards page carries no og:image; chain promo |
+| Urban Air Trampoline Parks - Minnesota Locations | image | multi-location row — a single-location photo would misrepresent it |
+| Minneapolis Parks Volunteer Programming | image | agency-wide program page, not a specific venue — generic by nature |
+| Mission Branch Library Community Garden - Monday Nights | image | item does not appear to exist in MN (see Diagnostics) |
+| Moorhead Summer Splash Event | image | event real, but its city calendar deep-link now 404s |
+| Movies in the Park - Mankato | image | no such Mankato program found (see Diagnostics) |
+| Music in the Park Thursdays - Mankato | image | detail page 404s; only the city-wide events page remains |
+| Niko Moon Concert - Vetter Stone Amphitheater | image | venue page 403s; Ticketmaster requires login |
+| Winona Farmers Market | image | site has no og:image; Facebook album not extractable via WebFetch |
+| Winona Parks & Rec Summer Activities | image | umbrella city-department page — generic by nature |
+| Captain's Quarters | website | ambiguous — several unrelated MN venues share the name |
+| Brainerd Fire Department Golf Scramble | website | one-off past event; no page on any official Brainerd site |
+| Summer Outdoor Festival - Brainerd | website | title matches no real named festival (2 open rows) |
+| St. Louis Park Outdoor Movie - A Minecraft Movie | website | event verified real, but stlouisparkmn.gov 403s every path |
+| Pizza King Station | website | no MN venue by this name; nearest match is in Indiana |
+| Bump & Putt Family Fun Center | website | directory listings only (Yelp/ABLocal/Manta) — no official site |
+| Toddler Tuesday - ECFE | website | district-wide ECFE overview page names no such class |
+| 688 rows | website | aggregate diagnostic row, not a per-item fixable target |
 
 ## Diagnostics
 
-- `no_run_summary_today` — **triggered.** No `run_summary` row dated 2026-08-21 was present when the fixer loaded its base. The local copy and the GitHub raw copy were byte-identical (1,863 rows, md5 `2038e4b6…`), meaning the day's build had not yet written the log. The fixer proceeded on the existing backlog, as specified. Per the known race condition, the local file was re-read immediately before publishing and had not grown, so no build merge needed reconciling and the `no_run_summary_today` row remains accurate as written.
-- `log_base_rejected` — none. Base header matched the 10-column schema exactly and the row count (1,863) was consistent with recent days (1,617 on 2026-08-19 → 1,863 on 2026-08-20), so no truncation.
-- Publish — `error_log.csv` verified on attempt 1 (497,814 bytes, md5 match against the Contents-API response). No retries needed.
-- Drive AI-ineligibility skip — not applicable; the one-time Drive fallback did not fire.
+**Image path yield is structurally zero for this queue — this is the headline.** Route 1 (og:image) failed on all 22 items: WebFetch strips `<head>`, and five first-party sites additionally returned 403 (chanhassenmn.gov, stillwatermn.gov, brainerdmn.gov, dennys.com, vetterstoneamphitheater.com). Route 2 (Facebook) is unusable because WebFetch cannot read photo albums. Route 3 (Openverse) name-matched 0 of 17 queries — small municipal Minnesota parks have no CC-licensed coverage. The queue is now roughly 90% municipal parks, chain promotions and umbrella program pages, which is exactly the shape all three routes fail on. Combined with the identical 2026-08-21 result, the conclusion is that more fixer runs cannot drain this backlog. It needs one of: a fetch path that preserves `<head>`, a licensed image source with municipal-park coverage, or a decision to retire the rows that are generic by nature (agency-wide programs, multi-location chain rows) rather than leaving them queued forever.
 
-### Notes worth carrying forward
+**`no_run_summary_today` — triggered, but it is now a permanent false positive.** No `run_summary` row dated 2026-08-28 exists, yet the build clearly completed: 33 rows carry today's date, including the STEP6 publish row and the STEP8 coverage rows. The build stopped emitting `run_summary` after 2026-08-23, so this check can never pass again. Either restore the marker or retarget the freshness check at the STEP6 publish row — a check that always fires is one that stops being read.
 
-- **The rejected website candidate.** `St. Louis Park Outdoor Movie - A Minecraft Movie` → `stlouisparkmn.gov/our-city/summer-concerts`. The screening is almost certainly real (Aug 27, Wolfe Park, 3700 Monterey Dr), but every corroborating source was either a `familyfuntwincities.com` aggregator listing or a real-estate marketing blog, both previously rejected as sources for this exact item. The city domain returns 403 on WebFetch, so the page could not be confirmed to name the movie. Held to the strict bar and left open.
-- **`Pizza King Station` looks like a data-quality problem, not a missing website.** Research found no Minnesota location; the name matches an Indiana chain, and the nearest MN match is the unrelated Station Pizzeria in Minnetonka. Worth checking at the source rather than continuing to search for a URL that may not exist.
-- **`Bump & Putt Family Fun Center` has a wrong address in the log.** It is at 29107 State Hwy 371, **Pequot Lakes**, not "four miles north of Nisswa." Still no official site or Facebook page, so it stays open, but the address is correctable.
-- **`688 rows` is a roll-up row, not work.** It is a category-level count of website-less rows (657 of them municipal parks). It will never resolve as an individual item and inflates the open-queue count every run.
-- **The image queue remains structurally near-undrainable.** Roughly 11 of the 22 items cannot have a place-specific commons photo by construction — national kids-eat-free promos, multi-location roll-ups, and program roll-ups. The wrong-place trap list was confirmed again this run and gained one entry: "Vetter Stone Amphitheater" returns photos by a photographer named Kenneth Vetter.
+**`log_base_rejected` — none.** The base validated cleanly: exact 10-column header, 2,312 rows, zero malformed rows, and the local copy was md5-identical to the GitHub canonical copy (`c2e5818188921ae6a295bd29e5ccd52b`), so there was no local/remote divergence to adjudicate.
+
+**Four park rows carry a suspected wrong address (new finding).** Pine Tree Pond Park is self-contradicted inside our own data — stored address `1485 Settlers Ridge Pkwy, Woodbury` against a stored `cottagegrovemn.gov` website. The park is in **Cottage Grove**, so the city is wrong, not merely the street; that one is safe to act on. Kelley Park (`13001 Johnny Cake Ridge Rd` vs `6855 Fortino St`), Lake Ann Park (`6800 Birch Dr` vs `1456 W 78th St`) and Lily Lake Park (`1003 S Greeley St` vs `1208 Greeley St S`) also disagree with directory sources, but those rest on Yelp/Waze rather than a city page, so they are logged as *suspected* and should be re-verified at STEP 4.9 before anything is edited.
+
+**Two rows appear not to exist at all.** `Mission Branch Library Community Garden - Monday Nights` — no Mission Branch Library exists in the Minneapolis, Hennepin or Ramsey systems; the only one found is in San Antonio, TX. `Movies in the Park - Mankato` — no such Mankato program was found, and our own feed attaches the title to Leif Erikson Park in **Duluth**. Both should be validated for existence and dropped or re-sourced rather than worked as image items again.
+
+**One stale redirect.** `bowlero.com/location/bowlero-brooklyn-park` now redirects to the rebranded `luckystrikeent.com/location/lucky-strike-brooklyn-park`. The venue is open and real (48 lanes plus arcade), so this is a refresh, not a dead link.
+
+**Three website candidates rejected on the bar, deliberately.** Bump & Putt exists (29107 State Hwy 371, Pequot Lakes) but has only directory listings, and a directory is not the venue's own site. Toddler Tuesday - ECFE is served by Anoka-Hennepin ECFE, but no page names this class — only the district-wide overview — so it fails the "specifically names the item" test at medium confidence; the registration catalog was checked directly and its class list is not exposed to fetch. The third, a subagent-supplied St. Louis Park calendar URL, was rejected because its reported date (Sept 2) is contradicted by two independent listings (2026-08-27, Ainsworth Park) and the site's blanket 403 made it impossible to adjudicate — an unverifiable URL carrying a contradicted detail is the exact shape of a fabricated one. Note that the St. Louis Park screening has now passed, so that row may be better retired than resolved.
+
+**Publish:** log and findings both published to GitHub and verified by post-publish size and sha change.
 
 ## Files
 
-- Error log: https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv
-- Findings report: https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md
+- [`error_log.csv`](https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv)
+- [`error-fixing-findings-latest.md`](https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md)
