@@ -14,9 +14,15 @@ Upgrades item imagery in three layers, in this precedence order (later wins):
                          tag/category value; the layer spreads matching items across
                          those images by a stable per-title hash so the same picture
                          doesn't repeat across many events (differentiation).
-  3. curated           — hand-picked title/keyword override from curated_images.csv,
-                         applied to EVERY item. Wins over everything, including a real
-                         photo and any curated_category fallback.
+  3. curated           — hand-picked title/keyword override from curated_images.csv.
+                         Wins over the weak/fallback sources (blank, stock_openverse,
+                         openverse_named, curated_category) — so it stays the backstop
+                         for venues that have no real photo of their own — but DEFERS to
+                         a genuine venue self-photo (facebook / og_image /
+                         stock_openverse_specific): a real, relevance-filtered photo of
+                         the actual place beats generic curated art. (og_image only earns
+                         its label after STEP 4.5's filter rejects logos/wordmarks/banners,
+                         so by this point it is a vetted real photo.)
 
 Reads the compiled data (a JSON list of item dicts, or a dict with a 'records'/'items'
 list) and writes the upgraded data back to the SAME file — only at the very end.
@@ -357,8 +363,17 @@ def apply_curated_category(records, curated):
     return upgraded
 
 
+# genuine venue self-photos: a real, relevance-filtered photo of the actual place.
+# The curated title/keyword override defers to these instead of overwriting them.
+REAL_PHOTO_SOURCES = {"facebook", "og_image", "stock_openverse_specific"}
+
+
 def apply_curated_override(records, curated):
-    """title/keyword override, applied to EVERY item; wins over everything."""
+    """title/keyword override. Wins over the weak/fallback sources, but DEFERS to a
+    genuine venue self-photo (facebook / og_image / stock_openverse_specific) — a real
+    photo of the actual place beats generic curated art. Curated therefore stays the
+    backstop for venues that have no real photo of their own."""
+    protected = {norm(x) for x in REAL_PHOTO_SOURCES}
     title_map = {norm(mv): url for mv, url in curated["title"]}
     keyword_rows = [(norm(mv), url) for mv, url in curated["keyword"]]
     upgraded = 0
@@ -371,6 +386,8 @@ def apply_curated_override(records, curated):
                     url = kurl
                     break
         if url:
+            if norm(item.get(F_SRC)) in protected:
+                continue                     # keep the real venue photo; do not overwrite
             item[F_IMG] = url
             item[F_SRC] = "curated"
             upgraded += 1
