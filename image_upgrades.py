@@ -10,7 +10,7 @@ Upgrades item imagery in three layers, in this precedence order (later wins):
                          applied to items whose image_source is blank / stock_openverse
                          / openverse_named (i.e. NO real venue photo of their own).
                          A 'tag' row beats a 'category' row. Never overrides a real
-                         'facebook' / 'og_image' photo. Multiple rows may share one
+                         'facebook' / 'og_image' / 'site_photo' photo. Multiple rows may share one
                          tag/category value; the layer spreads matching items across
                          those images by a stable per-title hash so the same picture
                          doesn't repeat across many events (differentiation).
@@ -18,11 +18,12 @@ Upgrades item imagery in three layers, in this precedence order (later wins):
                          Wins over the weak/fallback sources (blank, stock_openverse,
                          openverse_named, curated_category) — so it stays the backstop
                          for venues that have no real photo of their own — but DEFERS to
-                         a genuine venue self-photo (facebook / og_image /
+                         a genuine venue self-photo (facebook / og_image / site_photo /
                          stock_openverse_specific): a real, relevance-filtered photo of
-                         the actual place beats generic curated art. (og_image only earns
-                         its label after STEP 4.5's filter rejects logos/wordmarks/banners,
-                         so by this point it is a vetted real photo.)
+                         the actual place beats generic curated art. (og_image and
+                         site_photo only earn their labels after STEP 4.5's filter rejects
+                         logos/wordmarks/banners, so by this point they are vetted real
+                         photos of the actual place.)
 
 Reads the compiled data (a JSON list of item dicts, or a dict with a 'records'/'items'
 list) and writes the upgraded data back to the SAME file — only at the very end.
@@ -365,14 +366,18 @@ def apply_curated_category(records, curated):
 
 # genuine venue self-photos: a real, relevance-filtered photo of the actual place.
 # The curated title/keyword override defers to these instead of overwriting them.
-REAL_PHOTO_SOURCES = {"facebook", "og_image", "stock_openverse_specific"}
+# 'site_photo' is the STEP 4.5 body/hero capture — the largest non-logo content photo
+# on the item's OWN page, taken when its og:image was a logo/wordmark/banner. It clears
+# the same relevance filter as og_image, so it is just as much a real venue photo and
+# must be protected identically.
+REAL_PHOTO_SOURCES = {"facebook", "og_image", "site_photo", "stock_openverse_specific"}
 
 
 def apply_curated_override(records, curated):
     """title/keyword override. Wins over the weak/fallback sources, but DEFERS to a
-    genuine venue self-photo (facebook / og_image / stock_openverse_specific) — a real
-    photo of the actual place beats generic curated art. Curated therefore stays the
-    backstop for venues that have no real photo of their own."""
+    genuine venue self-photo (facebook / og_image / site_photo / stock_openverse_specific)
+    — a real photo of the actual place beats generic curated art. Curated therefore stays
+    the backstop for venues that have no real photo of their own."""
     protected = {norm(x) for x in REAL_PHOTO_SOURCES}
     title_map = {norm(mv): url for mv, url in curated["title"]}
     keyword_rows = [(norm(mv), url) for mv, url in curated["keyword"]]
