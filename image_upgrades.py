@@ -2,10 +2,26 @@
 """
 image_upgrades.py — STEP 4.8 of the msp-family-guide-daily pipeline.
 
-Upgrades item imagery in three layers, in this precedence order (later wins):
+Upgrades item imagery in four layers, in this precedence order (later wins):
   1. openverse_named   — real Openverse photo of a named proper place/venue,
                          applied only to items with no real photo yet
                          (image_source blank or 'stock_openverse').
+  1b. wikimedia        — the named venue's OWN photo from Wikipedia's REST summary
+                         API (a direct read-only API, NOT scraping). Unlike the
+                         other upgrade layers this one is eligible on 'curated_category'
+                         as well as the blank/weak sources: on the daily pipeline a
+                         named venue arrives already stamped 'curated_category' from a
+                         prior run, and the old blank-only gate froze it out of ever
+                         getting a real photo (a one-way ratchet). Four precision
+                         guards keep it from substituting the wrong place: a place-hint
+                         gate (only venue-shaped titles are queried), name/page token
+                         overlap, a Minnesota bounding-box check on the article's
+                         coordinates (blocks a same-named park in another state), and a
+                         logo/wordmark/SVG screen (a Wikipedia brand logo is not a
+                         venue photo — same standard as STEP 4.5). Disambiguation pages
+                         and 404s resolve to nothing and the item keeps its fallback.
+                         Never overwrites a genuine self-photo or a hand-picked
+                         'curated' override. Time-boxed and disk-cached by venue name.
   2. curated_category  — hand-picked category/tag fallback from curated_images.csv,
                          applied to items whose image_source is blank / stock_openverse
                          / openverse_named (i.e. NO real venue photo of their own).
@@ -31,6 +47,7 @@ list) and writes the upgraded data back to the SAME file — only at the very en
 Usage:
     python3 image_upgrades.py [DATA_JSON] [--curated curated_images.csv]
                               [--deadline-seconds 420] [--no-openverse]
+                              [--no-wikimedia] [--wiki-deadline-seconds 240]
 
 If DATA_JSON is omitted, the script auto-discovers a compiled-data JSON in the
 current working folder (a file whose top level is a list of dicts that carry the
@@ -45,10 +62,12 @@ untouched. The script never raises on a single-item failure.
 
 import sys
 import os
+import re
 import csv
 import json
 import time
 import glob
+import html
 import hashlib
 import argparse
 import urllib.parse
@@ -60,6 +79,27 @@ OPENVERSE_URL = "https://api.openverse.org/v1/images/"
 OPENVERSE_TIMEOUT = 8          # seconds per HTTP call
 OPENVERSE_PAGESIZE = 8         # candidates fetched per named query
 USER_AGENT = "msp-family-feed/1.0 (image_upgrades.py)"
+
+# --- Wikimedia named-venue layer -------------------------------------------------
+# Wikipedia REST summary endpoint: a direct read-only API (NOT web-page scraping),
+# so it is policy-allowed exactly like the Openverse API above. For a proper-place
+# title it returns the venue's own photo, or 404s; there is no wrong-place keyword
+# match to fall into. Precision is enforced with three guards (place-hint gate,
+# name/page token overlap, and a Minnesota bounding-box check on the article's
+# coordinates) so a same-named venue in another state can never be substituted.
+WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/"
+WIKI_TIMEOUT = 6               # seconds per HTTP call
+WIKI_CACHE = "_wiki_cache.json"   # disk cache, keyed by normalized venue name
+# Minnesota bounding box (padded). MN spans lat 43.499-49.384, lon -97.239 to -89.489.
+MN_LAT = (43.0, 49.6)
+MN_LON = (-97.6, -89.2)
+_OTHER_STATES = ("alabama", "alaska", "arizona", "arkansas", "california", "colorado",
+    "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho", "illinois",
+    "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine", "maryland",
+    "massachusetts", "michigan", "mississippi", "missouri", "montana", "nebraska",
+    "nevada", "hampshire", "jersey", "mexico", "york", "carolina", "dakota", "ohio",
+    "oklahoma", "oregon", "pennsylvania", "rhode island", "tennessee", "texas",
+    "utah", "vermont", "virginia", "washington", "wisconsin", "wyoming")
 
 # item fields
 F_TITLE = "title"
@@ -301,6 +341,188 @@ def apply_openverse_named(records, deadline_ts):
     return upgraded
 
 
+# ------------------------------------------------------------------- Wikimedia layer
+# Rows eligible for a Wikimedia venue photo: those with no real photo of their own.
+# CRUCIALLY this INCLUDES 'curated_category'. On the daily pipeline a named venue's
+# row arrives already stamped 'curated_category' from a previous run, and the old
+# Openverse gate (WEAK_SOURCES only) treated that as final — a one-way ratchet that
+# permanently froze every named place out of ever getting a real photo. Treating
+# curated_category as upgradeable here is the fix. It still never touches a genuine
+# venue self-photo (facebook/og_image/site_photo/...) or a hand-picked 'curated'
+# override.
+WIKI_UPGRADEABLE = {"", "blank", "stock_openverse", "openverse_named",
+                    "curated_category", None}
+
+WIKI_STOPWORDS = {"the", "a", "an", "of", "and", "at", "in", "on", "for", "to",
+    "with", "by", "&", "park", "event", "events", "day", "days", "festival", "fair",
+    "show", "class", "classes", "storytime", "story", "time", "free", "family",
+    "kids", "kid", "children", "childrens", "club", "group", "session", "sessions",
+    "lab", "zone", "circle", "meetup", "hangout", "discussion", "gaming", "craft",
+    "crafts", "knitting", "sewing", "chat", "chats", "night", "minnesota", "mn"}
+
+_wiki_cache = None
+
+
+def _wiki_norm(s):
+    return html.unescape(re.sub(r"\s+", " ", (s or "").strip()))
+
+
+def _wiki_tokens(s):
+    return {w for w in re.findall(r"[a-z0-9]+", (s or "").lower())
+            if w not in WIKI_STOPWORDS and len(w) > 1}
+
+
+def _wiki_has_hint(name):
+    nl = (name or "").lower()
+    return any(h in nl for h in PLACE_HINTS)
+
+
+def _wiki_candidates(title):
+    """Leading segment before a delimiter, then the full title. Venue names lead."""
+    t = _wiki_norm(title)
+    cands = []
+    for delim in [" - ", " \u2013 ", " \u2014 ", " | ", " @ ", ": ", ", "]:
+        if delim in t:
+            head = t.split(delim)[0].strip()
+            if head and head.lower() not in [c.lower() for c in cands]:
+                cands.append(head)
+            break
+    if t.lower() not in [c.lower() for c in cands]:
+        cands.append(t)
+    return [c for c in cands if len(c) >= 3]
+
+
+def _wiki_load_cache():
+    global _wiki_cache
+    if _wiki_cache is None:
+        try:
+            _wiki_cache = json.load(open(WIKI_CACHE)) if os.path.exists(WIKI_CACHE) else {}
+        except Exception:
+            _wiki_cache = {}
+    return _wiki_cache
+
+
+def _wiki_save_cache():
+    if _wiki_cache is not None:
+        tmp = WIKI_CACHE + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as fh:
+            json.dump(_wiki_cache, fh)
+        os.replace(tmp, WIKI_CACHE)
+
+
+def _wiki_is_photo(url):
+    """Reject logos/wordmarks/icons and vector graphics: the summary image is often a
+    brand logo rather than a photo of the place, and shipping a logo would defeat the
+    same STEP 4.5 filter that rejects logo og:images in favour of real venue photos.
+    A photographed sign (e.g. a park entrance sign) is a real photo and is kept."""
+    if not url:
+        return False
+    path = url.split("?", 1)[0].lower()
+    if path.endswith(".svg") or path.endswith(".svg.png"):
+        return False                # vector art on Wikipedia is virtually always a logo/map
+    fname = path.rsplit("/", 1)[-1]
+    return not any(bad in fname for bad in ("logo", "wordmark", "icon", "favicon", "seal"))
+
+
+def _wiki_out_of_mn(data):
+    """True if the article is confidently located OUTSIDE Minnesota. Coordinates are
+    authoritative; the description string is a fallback when coordinates are absent."""
+    c = data.get("coordinates") or {}
+    lat, lon = c.get("lat"), c.get("lon")
+    if lat is not None and lon is not None:
+        return not (MN_LAT[0] <= lat <= MN_LAT[1] and MN_LON[0] <= lon <= MN_LON[1])
+    desc = (data.get("description") or "").lower()
+    if "minnesota" in desc:
+        return False
+    return any(s in desc for s in _OTHER_STATES)
+
+
+def wiki_lookup(name):
+    """Return (status, page_title, image_url). status in
+    ok / notfound / disambig / noimage / outside_mn / err.
+    Cached on disk by normalized name; transient errors are NOT cached."""
+    cache = _wiki_load_cache()
+    key = _wiki_norm(name).lower()
+    if key in cache:
+        return tuple(cache[key])
+    url = WIKI_SUMMARY + urllib.parse.quote(_wiki_norm(name).replace(" ", "_"), safe="")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT,
+                                                    "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=WIKI_TIMEOUT) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        res = ("notfound", "", "") if e.code == 404 else ("err", str(e.code), "")
+        if e.code == 404:
+            cache[key] = list(res)
+        return res
+    except Exception as e:
+        return ("err", str(e)[:40], "")     # transient: do NOT cache
+    if data.get("type") == "disambiguation":
+        res = ("disambig", data.get("title", ""), "")
+    elif _wiki_out_of_mn(data):
+        res = ("outside_mn", data.get("title", ""), "")
+    else:
+        img = ((data.get("originalimage") or {}).get("source")
+               or (data.get("thumbnail") or {}).get("source") or "")
+        if img and not _wiki_is_photo(img):
+            img = ""                # logo/wordmark/vector: treat as no usable photo
+        res = ("ok" if img else "noimage", data.get("title", ""), img)
+    cache[key] = list(res)
+    return res
+
+
+def wiki_resolve(title, min_overlap=1):
+    """High-precision resolve of a row title to a Minnesota venue's Wikipedia photo.
+    Guards: (1) title must name a place (is_named_place); (2) only candidates that
+    contain a place-hint word are queried, so generic activity titles like
+    'Chess Club' are never attempted; (3) the returned page title must share a
+    distinctive token with the candidate; (4) the article must sit inside the MN
+    bounding box. Returns the image URL or None."""
+    if not is_named_place(title):
+        return None
+    cands = [c for c in _wiki_candidates(title) if _wiki_has_hint(c)]
+    for cand in cands:
+        status, page, img = wiki_lookup(cand)
+        if status == "ok":
+            if len(_wiki_tokens(cand) & _wiki_tokens(page)) >= min_overlap:
+                return img
+            return None                 # matched a page but not the same entity
+    return None
+
+
+def apply_wikimedia_named(records, deadline_ts):
+    """Upgrade eligible named-venue rows to their Wikipedia venue photo.
+    Time-boxed like the Openverse layer; the disk cache is flushed periodically so
+    the expensive network work is durable across a timeout and a re-run resumes
+    from where it stopped (on the daily pipeline the cache is warm after day one)."""
+    upgraded = 0
+    since_save = 0
+    _wiki_load_cache()
+    for item in records:
+        if time.time() >= deadline_ts:
+            break
+        if norm(item.get(F_SRC)) not in {norm(x) for x in WIKI_UPGRADEABLE}:
+            continue
+        title = item.get(F_TITLE) or ""
+        if not is_named_place(title):
+            continue
+        try:
+            url = wiki_resolve(title)
+        except Exception:
+            url = None
+        since_save += 1
+        if url:
+            item[F_IMG] = url
+            item[F_SRC] = "wikimedia"
+            upgraded += 1
+        if since_save >= 25:
+            _wiki_save_cache()
+            since_save = 0
+    _wiki_save_cache()
+    return upgraded
+
+
 # ------------------------------------------------------------------- curated layers
 def _collect_multi(pairs):
     """Group (match_value, url) pairs into {norm(match_value): [url, url, ...]},
@@ -370,7 +592,8 @@ def apply_curated_category(records, curated):
 # on the item's OWN page, taken when its og:image was a logo/wordmark/banner. It clears
 # the same relevance filter as og_image, so it is just as much a real venue photo and
 # must be protected identically.
-REAL_PHOTO_SOURCES = {"facebook", "og_image", "site_photo", "stock_openverse_specific"}
+REAL_PHOTO_SOURCES = {"facebook", "og_image", "site_photo", "stock_openverse_specific",
+                      "wikimedia"}
 
 
 def apply_curated_override(records, curated):
@@ -407,6 +630,10 @@ def main():
     ap.add_argument("--deadline-seconds", type=int, default=420)
     ap.add_argument("--no-openverse", action="store_true",
                     help="skip the network Openverse named-entity layer")
+    ap.add_argument("--no-wikimedia", action="store_true",
+                    help="skip the network Wikimedia venue-photo layer")
+    ap.add_argument("--wiki-deadline-seconds", type=int, default=240,
+                    help="time budget for the Wikimedia layer (cache makes re-runs cheap)")
     args = ap.parse_args()
 
     data_path = args.data or discover_data_file()
@@ -428,6 +655,16 @@ def main():
         except Exception as e:                      # never let this layer kill the run
             print("image_upgrades: openverse layer error (skipped): %s" % e,
                   file=sys.stderr)
+
+    wiki = 0
+    if not args.no_wikimedia:
+        wiki_deadline = time.time() + max(30, args.wiki_deadline_seconds)
+        try:
+            wiki = apply_wikimedia_named(records, wiki_deadline)
+        except Exception as e:                      # never let this layer kill the run
+            print("image_upgrades: wikimedia layer error (skipped): %s" % e,
+                  file=sys.stderr)
+
     cat = apply_curated_category(records, curated)
     override = apply_curated_override(records, curated)
 
@@ -443,6 +680,7 @@ def main():
         "data_file": data_path,
         "records": len(records),
         "openverse_named_applied": named,
+        "wikimedia_named_applied": wiki,
         "curated_category_applied": cat,
         "curated_override_applied": override,
         "image_source_before": dict(before),
