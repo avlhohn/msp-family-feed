@@ -90,6 +90,13 @@ USER_AGENT = "msp-family-feed/1.0 (image_upgrades.py)"
 WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/"
 WIKI_TIMEOUT = 6               # seconds per HTTP call
 WIKI_CACHE = "_wiki_cache.json"   # disk cache, keyed by normalized venue name
+# The cache is published to the repo alongside the other artifacts, so a fresh daily
+# sandbox can start WARM instead of re-querying ~429 venue names cold every run. On
+# startup the helper primes the local cache from this public raw URL if no local copy
+# already exists (a direct read-only file fetch, no auth). Soft-fail: a cold start is
+# always safe, just slower. Delete the committed file to force a full refresh.
+WIKI_CACHE_URL = ("https://raw.githubusercontent.com/avlhohn/msp-family-feed/"
+                  "main/_wiki_cache.json")
 # Minnesota bounding box (padded). MN spans lat 43.499-49.384, lon -97.239 to -89.489.
 MN_LAT = (43.0, 49.6)
 MN_LON = (-97.6, -89.2)
@@ -410,6 +417,34 @@ def _wiki_save_cache():
         os.replace(tmp, WIKI_CACHE)
 
 
+def _wiki_prime_cache():
+    """Warm-start the disk cache from the copy published in the repo.
+
+    A fresh daily sandbox has no local _wiki_cache.json, so without this the run
+    re-queries ~429 venue names cold and lands ~41 on the first pass (converging to
+    ~50 only as transient errors clear on a later run). Priming from the published
+    copy lets a cold sandbox start warm and hit ~50 in one pass. Read-only file
+    fetch over the public raw URL, no auth. Soft-fail on every path: a cold start is
+    always correct, just slower, so any error here is swallowed and the run proceeds.
+    Never overwrites a local cache that already exists (local wins — it is fresher)."""
+    if os.path.exists(WIKI_CACHE):
+        return "local"                 # a local copy is already present; leave it alone
+    try:
+        req = urllib.request.Request(WIKI_CACHE_URL, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=WIKI_TIMEOUT + 4) as resp:
+            raw = resp.read()
+        data = json.loads(raw.decode("utf-8"))
+        if not isinstance(data, dict):
+            return "bad_shape"
+        tmp = WIKI_CACHE + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as fh:
+            json.dump(data, fh)
+        os.replace(tmp, WIKI_CACHE)
+        return "primed:%d" % len(data)
+    except Exception as exc:
+        return "miss:%s" % type(exc).__name__
+
+
 def _wiki_is_photo(url):
     """Reject logos/wordmarks/icons and vector graphics: the summary image is often a
     brand logo rather than a photo of the place, and shipping a logo would defeat the
@@ -634,6 +669,9 @@ def main():
                     help="skip the network Wikimedia venue-photo layer")
     ap.add_argument("--wiki-deadline-seconds", type=int, default=240,
                     help="time budget for the Wikimedia layer (cache makes re-runs cheap)")
+    ap.add_argument("--no-wiki-cache-fetch", action="store_true",
+                    help="do not warm-start the Wikimedia cache from the published copy "
+                         "(offline testing / forcing a cold rebuild)")
     args = ap.parse_args()
 
     data_path = args.data or discover_data_file()
@@ -658,6 +696,9 @@ def main():
 
     wiki = 0
     if not args.no_wikimedia:
+        if not args.no_wiki_cache_fetch:
+            primed = _wiki_prime_cache()
+            print("image_upgrades: wiki cache warm-start: %s" % primed, file=sys.stderr)
         wiki_deadline = time.time() + max(30, args.wiki_deadline_seconds)
         try:
             wiki = apply_wikimedia_named(records, wiki_deadline)
