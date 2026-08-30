@@ -123,8 +123,8 @@ keyword,Minneapolis Institute of Art,https://images.artsmia.org/wp-content/uploa
 keyword,Italian Ristorante,https://images.pexels.com/photos/27866922/pexels-photo-27866922.jpeg,
 keyword,Italian Restaurant,https://images.pexels.com/photos/27866922/pexels-photo-27866922.jpeg,
 keyword,Tailgate Sports Cafe,https://live.staticflickr.com/3460/3356280111_15444bde5e.jpg,"Sports bar & restaurant interior (Flickr, CC-BY) - topical"
-title,Green Mill,https://images.pexels.com/photos/6068717/pexels-photo-6068717.jpeg,curated (migrated from curated_deals_seed.json)
-title,Snuffy's Malt Shop,https://static.wixstatic.com/media/002c78_380cc821004e45d99bb2222f01c63e27~mv2.jpg,
+title,Green Mill,https://www.greenmill.com/wp-content/uploads/2022/04/about-us.webp,flagship venue own-site interior photo (screenshot-verified); replaces stock
+title,Snuffy's Malt Shop,https://static.wixstatic.com/media/002c78_a18dd6fd776e43688801fd6656dd0ed0~mv2_d_4000_2667_s_4_2.jpg,flagship venue own-site burger photo (screenshot-verified); replaces prior
 title,Rebe's Play Cafe,https://158a62438e878f829d78.cdn6.editmysite.com/uploads/b/158a62438e878f829d783d2749d42ee8381fbf896312c3ad1f1a90ddbc54b70b/IMG_4037_1694204127.jpg,curated (migrated from play_cafe_seed_venues.json)
 title,Sovereign Grounds,https://images.pexels.com/photos/9509422/pexels-photo-9509422.jpeg,curated
 title,Ninth Street Soccer & Coffee,https://images.pexels.com/photos/37391217/pexels-photo-37391217.jpeg,curated (migrated from play_cafe_seed_venues.json)
@@ -396,3 +396,9 @@ keyword,tiny diner,https://images.squarespace-cdn.com/content/v1/5f60bc1b6c6cfd1
 title,Tilia,https://images.squarespace-cdn.com/content/v1/5b5698195417fc565f073fc5/1533829446735-WW0RY8YRVZVRQLOPHT2A/tilia_bg1.jpg?format=1500w,flagship venue own-site interior photo (screenshot-verified)
 title,Pumphouse Creamery,https://images.squarespace-cdn.com/content/v1/5dc41492598601058cfa78cf/1684444338513-0C3AYARLKPTUS9VQIIF5/dsc-4089.JPG?format=1500w,flagship venue own-site creamery photo (screenshot-verified)
 title,Wagner's Drive-In,https://static.spotapps.co/spots/4f/6f11d2b48d44f1863bc379de68ead5/:original,flagship venue own-site burgers-and-malts photo (screenshot-verified)
+keyword,green mill,https://www.greenmill.com/wp-content/uploads/2022/04/about-us.webp,flagship venue own-site interior photo (screenshot-verified); location variants
+keyword,snuffy,https://static.wixstatic.com/media/002c78_a18dd6fd776e43688801fd6656dd0ed0~mv2_d_4000_2667_s_4_2.jpg,flagship venue own-site burger photo (screenshot-verified); location variants
+keyword,pinstripes,https://d3k81ch9hvuctc.cloudfront.net/company/Rgru5C/images/9f86b652-f5f3-40e1-92d5-30c3724f8c7d.jpeg,flagship venue own-site flatbread photo (screenshot-verified); 2 variants
+keyword,bridgeman,https://www.bridgemans.com/site_assets/Spring2025-51%20-%20Copy%202.JPG,flagship venue own-site ice-cream photo (screenshot-verified); 2 variants
+title,Mill Valley Kitchen,https://millvalleykitchen.com/wp-content/uploads/2025/10/tomatoflatbread.jpg,flagship venue own-site flatbread photo (screenshot-verified)
+title,Tamarack Tap Room,https://static.spotapps.co/spots/c6/152e546cdf4e65bc888e894e1ea047/:original,flagship venue own-site patio photo (screenshot-verified)
