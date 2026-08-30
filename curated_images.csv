@@ -116,7 +116,7 @@ keyword,Bennett's Chop,https://images.pexels.com/photos/37118296/pexels-photo-37
 keyword,Minnesota Transportation Museum,https://trainride.org/wp-content/uploads/sites/7832/2025/04/Tots-Trains-Admission-image-1.jpg,
 keyword,Melting Pot,https://images.pexels.com/photos/37593659/pexels-photo-37593659.jpeg,
 keyword,St. Paul Saints,https://saint-paul-2022.s3.amazonaws.com/imager/files_idss_com/C17/36308aeb-0eab-4ae1-b0e6-cd7f1097ea6a_2a23813dca470163f0b2610639f888f1.png,
-keyword,Skinners,https://skinnersmn.com/wp-content/uploads/2019/08/Pizza.jpg,curated
+keyword,skinner,https://skinnersmn.com/wp-content/uploads/2019/08/Pizza.jpg,curated
 keyword,Concert Series,https://images.pexels.com/photos/30271349/pexels-photo-30271349.jpeg,
 keyword,Fishing,https://images.pexels.com/photos/3099187/pexels-photo-3099187.jpeg,
 keyword,Minneapolis Institute of Art,https://images.artsmia.org/wp-content/uploads/2020/08/06085427/featured_0000s_0002_171221_mia356_3748-525x350.jpg,
@@ -129,7 +129,7 @@ title,Rebe's Play Cafe,https://158a62438e878f829d78.cdn6.editmysite.com/uploads/
 title,Sovereign Grounds,https://images.pexels.com/photos/9509422/pexels-photo-9509422.jpeg,curated
 title,Ninth Street Soccer & Coffee,https://images.pexels.com/photos/37391217/pexels-photo-37391217.jpeg,curated (migrated from play_cafe_seed_venues.json)
 title,Ginkgo Coffeehouse,https://images.pexels.com/photos/11715908/pexels-photo-11715908.jpeg,curated (migrated from play_cafe_seed_venues.json)
-title,Skinners Pub & Eatery,https://skinnersmn.com/wp-content/uploads/2019/08/Pizza.jpg,curated
+title,Skinner's Pub & Eatery,https://skinnersmn.com/wp-content/uploads/2019/08/Pizza.jpg,curated
 title,Pizza Luce,https://marvel-b1-cdn.bc0a.com/f00000000225310/pizzaluce.com/uploads/stpaul-exterior.jpg,curated (user-provided; matches all Pizza Luce locations)
 title,McHugh's Public House,https://mchughspublichouse.com/wp-content/uploads/2018/07/June2016_CP-27.jpg,
 title,Brunson's Pub,https://images.squarespace-cdn.com/content/v1/57bf04e859cc6810c15cf472/b873f039-592c-46ab-bc1b-0f6044fb0bb1/BP-250831-Web-55C.jpg?format=1000w,curated venue photo (own site interior; verified 2026-08-29)
@@ -402,3 +402,12 @@ keyword,pinstripes,https://d3k81ch9hvuctc.cloudfront.net/company/Rgru5C/images/9
 keyword,bridgeman,https://www.bridgemans.com/site_assets/Spring2025-51%20-%20Copy%202.JPG,flagship venue own-site ice-cream photo (screenshot-verified); 2 variants
 title,Mill Valley Kitchen,https://millvalleykitchen.com/wp-content/uploads/2025/10/tomatoflatbread.jpg,flagship venue own-site flatbread photo (screenshot-verified)
 title,Tamarack Tap Room,https://static.spotapps.co/spots/c6/152e546cdf4e65bc888e894e1ea047/:original,flagship venue own-site patio photo (screenshot-verified)
+title,Minnesota's Largest Candy Store,https://minnesotaslargestcandystore.com/wp-content/uploads/2023/05/o-7.jpg,flagship venue own-site caramel-apple photo (screenshot-verified)
+keyword,minnesota's largest candy,https://minnesotaslargestcandystore.com/wp-content/uploads/2023/05/o-7.jpg,flagship venue own-site caramel-apple photo (screenshot-verified)
+title,Agra Culture Kitchen at Mia,https://images.getbento.com/accounts/72d562030d8cff7a702e285753b036ed/media/images/37733Agra-Minneapolis-Art-Institute-Location.jpg,flagship venue own-site storefront photo (screenshot-verified); 2 title variants
+title,Agra Culture at Mia,https://images.getbento.com/accounts/72d562030d8cff7a702e285753b036ed/media/images/37733Agra-Minneapolis-Art-Institute-Location.jpg,flagship venue own-site storefront photo (screenshot-verified); 2 title variants
+keyword,agra culture,https://images.getbento.com/accounts/72d562030d8cff7a702e285753b036ed/media/images/37733Agra-Minneapolis-Art-Institute-Location.jpg,flagship venue own-site storefront photo (screenshot-verified)
+title,Southern Social,https://static.spotapps.co/spots/8e/16d1e137fa46608cfe2ec43def1b71/:original,flagship venue own-site food photo (screenshot-verified)
+keyword,southern social,https://static.spotapps.co/spots/8e/16d1e137fa46608cfe2ec43def1b71/:original,flagship venue own-site food photo (screenshot-verified)
+title,Owl's Nest Cafe,https://www.owlsnestcafe.com/wp-content/uploads/2024/04/20240416_082857-scaled.jpg,flagship venue own-site bakery photo (screenshot-verified)
+keyword,owl's nest,https://www.owlsnestcafe.com/wp-content/uploads/2024/04/20240416_082857-scaled.jpg,flagship venue own-site bakery photo (screenshot-verified)
