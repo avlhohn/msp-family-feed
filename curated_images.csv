@@ -100,8 +100,6 @@ keyword,apple picking,https://images.pexels.com/photos/5529004/pexels-photo-5529
 keyword,apple farm,https://images.pexels.com/photos/9727471/pexels-photo-9727471.jpeg,
 keyword,outdoor movies,https://images.pexels.com/photos/32682154/pexels-photo-32682154.jpeg,
 keyword,Original Pancake House, https://images.pexels.com/photos/6529790/pexels-photo-6529790.jpeg,
-keyword,Grill,https://images.pexels.com/photos/33858065/pexels-photo-33858065.jpeg,
-keyword,trampoline,https://images.pexels.com/photos/8142258/pexels-photo-8142258.jpeg,"Person jumping on trampoline (Pexels, direct image)"
 keyword,urban air adventure park,https://images.pexels.com/photos/30685195/pexels-photo-30685195.jpeg,
 keyword,movies in the parks,https://images.pexels.com/photos/32682154/pexels-photo-32682154.jpeg,
 keyword,Music in the Park,https://images.pexels.com/photos/16803238/pexels-photo-16803238.jpeg,
@@ -163,6 +161,7 @@ title,Topgolf,https://s3-media0.fl.yelpcdn.com/bphoto/EF04X2g3iFV0HfZcHF-C2Q/100
 title,Chevys Fresh Mex,https://www.chevys.com/wp-content/uploads/2020/08/2-item-Combo-02-380x380.jpg,
 title,Hope Breakfast Bar,https://images.squarespace-cdn.com/content/v1/5d23e218795d4d000192a159/13fd1d64-a4cf-4f38-a404-cd619fb577ce/Hope-Breakfast-Bar-06242021_123702.jpg,
 tag,burgers,https://images.pexels.com/photos/21370021/pexels-photo-21370021.jpeg,
+tag,burger,https://images.pexels.com/photos/33858065/pexels-photo-33858065.jpeg,
 tag,breakfast,https://images.pexels.com/photos/38081727/pexels-photo-38081727.jpeg,
 tag,play-cafe,https://live.staticflickr.com/725/22391678856_11e7edc9f5_b.jpg,fallback-only tag image: child on playground slide (verified)
 tag,story-time,https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg,fallback-only tag image: children reading/story circle (verified)
@@ -213,8 +212,10 @@ tag,mocha,https://images.pexels.com/photos/5373242/pexels-photo-5373242.jpeg,
 tag,play-cafe,https://images.pexels.com/photos/30790990/pexels-photo-30790990.jpeg,
 tag,tech,https://images.pexels.com/photos/9822679/pexels-photo-9822679.jpeg,
 tag,tot-time,https://images.pexels.com/photos/5435600/pexels-photo-5435600.jpeg,
+tag,trampoline,https://images.pexels.com/photos/8142258/pexels-photo-8142258.jpeg,"Person jumping on trampoline (Pexels, direct image)"
 tag,bakery,https://images.pexels.com/photos/3985083/pexels-photo-3985083.jpeg,
 tag,trampoline,https://images.pexels.com/photos/8142258/pexels-photo-8142258.jpeg,"Person jumping on trampoline (Pexels, direct image)"
+tag,Library,https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg,
 tag,parade,https://images.pexels.com/photos/11664841/pexels-photo-11664841.jpeg,rotation alt: parade crowd (Pexels direct image)
 tag,parade,https://images.pexels.com/photos/28500389/pexels-photo-28500389.jpeg,rotation alt: parade floats and banners (Pexels direct image)
 tag,parade,https://images.pexels.com/photos/30211544/pexels-photo-30211544.jpeg,rotation alt: parade floral float (Pexels direct image)
