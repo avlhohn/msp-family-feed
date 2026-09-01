@@ -77,6 +77,62 @@ CASES = [
     ("Pub Trivia Night", "events", "drop", False),
     ("Trivia at Bent Brewstillery Taproom", "events", "drop", False),
 
+    # ---- must DROP (2026-09-01 audit: adult/non-family titles found stale in the live app) ----
+    # concerts / comedy — explicit named-act list (no keyword catches these)
+    ("Wallflowers 30th Anniversary Tour", "events", "drop", False),
+    ("Happy Together Tour", "events", "drop", False),
+    ("Doug Stone Farewell Tour", "events", "drop", False),
+    ("Tom Papa", "events", "drop", False),
+    ("Liz Phair - St. Paul, MN", "events", "drop", False),
+    ("Brandon Flowers - Saint Paul, MN", "events", "drop", False),
+    ("Phoebe Bridgers at Saint Paul, MN", "events", "drop", False),
+    ("Bombargo - Saint Paul", "events", "drop", False),
+    ("Ida Undertow Show - St. Paul, MN", "events", "drop", False),
+    ("Sugarland Ride or Die Tour", "events", "drop", False),
+    ("Tyler Polzin @ OMNI - Maple Grove!", "events", "drop", False),
+    # fundraiser galas / banquets
+    ("Aspirus | Circle of Light Gala", "events", "drop", False),
+    ("DMN Light of Hope Fundraiser Dinner Gala", "events", "drop", False),
+    ("Itasca chapter annual banquet", "events", "drop", False),
+    ("MN Lacrosse Hall of Fame Award Ceremony & Gala", "events", "drop", False),
+    # professional / business conferences
+    ("AWWA MN Section Annual Conference", "events", "drop", False),
+    ("MN Recreation and Park Association Annual Conference", "events", "drop", False),
+    ("Women in Leadership Conference", "events", "drop", False),
+    ("WCR Realtor Safety CE", "events", "drop", False),
+    ("Regenerative AG & Homesteading Summit with Joel Salatin", "events", "drop", False),
+    ("SBR: Marketing Matters... No Really. It Does.", "events", "drop", False),
+    ("Inside Executive Minds with Radha Chavali", "events", "drop", False),
+    ("Zion Lutheran Church Stewardship Conference", "events", "drop", False),
+    ("Fast-Track to Social Media Marketing for Business", "events", "drop", False),
+    # men-only adult groups
+    ("Men's Bible Study - Subversive: Living in God's Kingdom", "events", "drop", False),
+    ("Oakdale Men's Book Club", "events", "drop", False),
+    ("F3 Men's Workout - The Edge", "events", "drop", False),
+    # adult wellness / mental-health talks & fairs
+    ("Changing the Narrative on Mental Health and Suicide", "events", "drop", False),
+    ("Holistic Healing & Wellness Fair Maple Grove, MN", "events", "drop", False),
+    ("Maternal Mental Health Awarness", "events", "drop", False),
+    ("The Working Caregiver, Presented by Family Means", "events", "drop", False),
+    # ruck / adult import-car expo / adult women's fitness class
+    ("Ruck Life Twin Cities", "events", "drop", False),
+    ("IMPORTEXPO - Minnesota 2026", "events", "drop", False),
+    ("IMPORTEXPO Minnesota", "events", "drop", False),
+    ("SHiNE @ Fitness in the Parks", "events", "drop", False),
+
+    # ---- must KEEP (2026-09-01 rules must NOT sweep in the family false-positives) ----
+    ("Wayzata Car Show", "events", None, False),                     # community car show, not IMPORTEXPO
+    ("Anoka Classic Car Show", "events", None, False),
+    ("Otsego Prairie Festival - Touch-A-Truck & Car Show", "events", None, False),
+    ("Meet the Author: Elizabeth Acevedo", "events", None, False),   # library author visit
+    ("Local Author Visit: John Ball", "events", None, False),
+    ("Black Authors Book Club: Black Buck", "events", None, False),  # community book club (not men's)
+    ("Galaxie Book Club", "events", None, False),                    # 'gala' substring must not trip
+    ("UMD Men's Hockey vs Bemidji State University", "events", None, False),   # college sport
+    ("Minnesota Gophers Women's Soccer vs Iowa", "events", None, False),       # college sport
+    ("Parent-Teacher Conference Day Camp", "events", None, False),   # 'conference' w/o adult-context words
+    ("Spirits of Summit Avenue St. Paul Ghost Walk", "events", None, False),   # 'summit' in a street name
+
     # ---- must KEEP (the compound trivia rule must NOT over-fire) ----
     ("Trivia Night with Trivia Mafia", "events", None, False),          # library all-ages trivia, no alcohol token
     ("Family Trivia at the Library", "events", None, False),            # 'library' must not trip \bbar\b
