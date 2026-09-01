@@ -14,7 +14,6 @@ keyword,Davannis,https://saint-paul-2022.s3.amazonaws.com/imager/files_idss_com/
 keyword,Willy McCoy's,https://media-cdn.tripadvisor.com/media/daodao/photo-s/0e/07/82/0a/photo2jpg.jpg,
 keyword,Axel's Bonfire,https://media.bizj.us/view/img/12837884/46036524319502008587540352171154201644714737n*900xx1696-954-160-0.jpg,
 keyword,The Nook,https://images.squarespace-cdn.com/content/v1/5eb3f58dcc1f816f9d231244/1600266740650-IYZLZUA5E6Y96DYGVCAC/image-asset.jpeg,
-keyword,Library,https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg,
 keyword,Torchlight Concert,https://images.pexels.com/photos/11803427/pexels-photo-11803427.jpeg,
 keyword,Farmers Market,https://images.pexels.com/photos/32027591/pexels-photo-32027591.jpeg,
 keyword,Touch-A-Truck,https://images.pexels.com/photos/28220406/pexels-photo-28220406.jpeg,
@@ -32,8 +31,8 @@ keyword,Smashburger,https://sbprod-web-assets.s3.us-west-2.amazonaws.com/smashbu
 keyword,Parkway Pizza,https://images.squarespace-cdn.com/content/v1/582a7e11579fb307c6f3be25/1598211317706-VWKSYI1EOFBGNUH5U1PG/NE+Front.jpeg,
 keyword,Q-Cumbers,https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/8e/07/2a/20160816-124411-largejpg.jpg,
 keyword,Broder's Pasta Bar,https://images.squarespace-cdn.com/content/v1/58752f8e29687f83cf2d366c/5d64f0e4-109f-44ae-8d87-92cf8e5c2285/010820_Broders_PastaBar_Menu_Winter_FettuccineAllaBolognese_1.jpg,
-keyword,Broadway Pizza,https://images.pexels.com/photos/6068717/pexels-photo-6068717.jpeg,
-keyword,Broadway Bar & Pizza,https://images.pexels.com/photos/6068717/pexels-photo-6068717.jpeg,
+keyword,Broadway Pizza,https://www.exploreminnesota.com/sites/default/files/styles/listing_slideshow/public/listing_images/04102fbc2dfdd5e9aaeb0c211290fa26157cceeb_37.jpg,
+keyword,Broadway Bar & Pizza,https://www.exploreminnesota.com/sites/default/files/styles/listing_slideshow/public/listing_images/04102fbc2dfdd5e9aaeb0c211290fa26157cceeb_37.jpg,
 keyword,Rennaissance Festival,https://www.exploreminnesota.com/sites/default/files/styles/share_image/public/listing_images/2d8490a37c5bafd7d3180d0ce383a75d8235c723_4.jpg,
 keyword,Rockin' Jump,https://rockinjump.com/wp-content/uploads/2018/07/slam-dunk-zone.jpg,
 keyword,Grand Slam,https://grandslammn.com/wp-content/uploads/2021/12/playZoneSlide_comp-1.jpg,
@@ -599,3 +598,28 @@ tag,indoor-playground,https://images.pexels.com/photos/11986168/pexels-photo-119
 tag,indoor-playground,https://images.pexels.com/photos/34855103/pexels-photo-34855103.jpeg,climbing arch in frosty grass
 tag,indoor-playground,https://images.pexels.com/photos/28279146/pexels-photo-28279146.jpeg,rope cargo net close-up
 tag,indoor-playground,https://images.pexels.com/photos/29606685/pexels-photo-29606685.jpeg,playground structure with tube slides
+tag,library,https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg,kid-lit rotation (books/children reading)
+tag,library,https://images.pexels.com/photos/6437499/pexels-photo-6437499.jpeg,kid-lit rotation
+tag,library,https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg,kid-lit rotation
+tag,library,https://images.pexels.com/photos/8775874/pexels-photo-8775874.jpeg,kid-lit rotation
+tag,library,https://images.pexels.com/photos/7979786/pexels-photo-7979786.jpeg,kid-lit rotation
+tag,reading,https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg,kid-lit rotation (open book)
+tag,reading,https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg,kid-lit rotation
+tag,reading,https://images.pexels.com/photos/6437499/pexels-photo-6437499.jpeg,kid-lit rotation
+tag,reading,https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg,kid-lit rotation
+tag,reading,https://images.pexels.com/photos/8775874/pexels-photo-8775874.jpeg,kid-lit rotation
+tag,reading,https://images.pexels.com/photos/7979786/pexels-photo-7979786.jpeg,kid-lit rotation
+tag,crafts,https://images.pexels.com/photos/7031293/pexels-photo-7031293.jpeg,craft rotation (painting)
+tag,crafts,https://images.pexels.com/photos/8506328/pexels-photo-8506328.jpeg,craft rotation (drawing)
+tag,crafts,https://images.pexels.com/photos/8033970/pexels-photo-8033970.jpeg,craft rotation (kids craft supplies)
+tag,craft,https://images.pexels.com/photos/7031293/pexels-photo-7031293.jpeg,craft rotation (painting)
+tag,craft,https://images.pexels.com/photos/8506328/pexels-photo-8506328.jpeg,craft rotation (drawing)
+tag,craft,https://images.pexels.com/photos/8033970/pexels-photo-8033970.jpeg,craft rotation (kids craft supplies)
+tag,outdoor,https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg,outdoor rotation
+tag,outdoor,https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg,outdoor rotation
+tag,trails,https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg,trail/outdoor rotation
+tag,trails,https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg,trail/outdoor rotation
+tag,library,https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg,library-scene rotation (retired broad keyword rule)
+tag,reading,https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg,library-scene rotation (retired broad keyword rule)
+tag,story-time,https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg,library-family rotation (even spread)
+tag,story-time,https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg,library-family rotation (even spread)
