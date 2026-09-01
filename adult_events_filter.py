@@ -86,6 +86,51 @@ DROP_PHRASES = [
     #  the compound trivia rule below handles bar/brewery trivia, which "trivia" alone can't.)
     "estate planning", "dementia", "happy hour", "retirement party",
     "blood drive", "pub trivia", "bar trivia", "trivia night at the bar",
+    # --- added 2026-09-01: adult / non-family titles found stale in the live app ---
+    # (the "safe keywords" half of the 2026-09-01 audit. Each phrase below was verified against
+    #  the live feed to hit ONLY the adult rows and NOT the family false-positives that a looser
+    #  keyword would sweep in — see the notes on each. Concerts are handled by CONCERT_TITLES.)
+    #
+    # fundraiser galas / banquets — a ticketed adult evening dinner, never a kids event.
+    #   "gala" is safe as a standalone token; a family event essentially never calls itself a gala.
+    #   "fundraiser dinner"/"dinner gala"/"annual banquet" are the specific adult forms.
+    "gala", "fundraiser dinner", "annual banquet", "hall of fame award",
+    # professional / business conferences & continuing-ed (adult workforce programming).
+    #   NOTE: bare "conference" is NOT here — "MN Rec & Park Association Annual Conference" is
+    #   caught by "annual conference"; a school "parent-teacher conference" must survive, so we
+    #   require the adult-context words. "leadership conference", "women in leadership",
+    #   "realtor", "chamber of commerce", "continuing education"/"ce" are adult-only.
+    "annual conference", "leadership conference", "women in leadership",
+    "realtor", "chamber of commerce", "homesteading summit", "marketing matters",
+    "executive minds", "stewardship conference", "social media marketing for business",
+    # men-only adult groups — "men's bible study", "men's book club", F3 men's workout.
+    #   Gendered college sports ("UMD Men's Hockey", "Gophers Women's Soccer") are family KEEPs,
+    #   so we do NOT drop on bare "men's"/"women's"; only these specific adult-group forms.
+    "men's bible study", "men's book club", "f3 men's workout",
+    # adult wellness / mental-health talks & fairs.
+    #   "wellness fair" and "holistic healing" name adult health expos; "maternal mental health"
+    #   and "the working caregiver" and "changing the narrative on mental health" are adult talks.
+    "wellness fair", "holistic healing", "maternal mental health",
+    "the working caregiver", "changing the narrative on mental health",
+    # adult endurance / rucking
+    "ruck life",
+    # adult women's dance-fitness class (recurring; scoped to the full phrase, never bare "shine")
+    "shine @ fitness in the parks", "shine at fitness in the parks",
+    # adult import-car expo (community "car show"s are family KEEPs, so scope to this brand)
+    "importexpo", "import expo",
+]
+
+# --- explicit concert / comedy title list (added 2026-09-01) --------------------------------
+# Named touring musicians and stand-up comics carry NO "adult" keyword, so no phrase rule can
+# catch them without false-positiving on family shows (a kids' concert is still a concert).
+# The precision-first answer the owner chose is an explicit allow-to-drop list of the specific
+# ticketed adult acts verified on the 2026-09-01 feed. Matched as a normalized substring of the
+# title. Extend this list by hand as new adult touring acts appear — never broaden it to a
+# generic "tour"/"concert" rule (that would drop "Happy Together KIDS Tour"-style family shows).
+CONCERT_TITLES = [
+    "bombargo", "brandon flowers", "doug stone farewell", "happy together tour",
+    "ida undertow", "liz phair", "phoebe bridgers", "sugarland ride or die",
+    "tom papa", "tyler polzin", "wallflowers 30th anniversary",
 ]
 
 # --- generic adult-programming rule (guarded) -------------------------------------------
@@ -193,6 +238,12 @@ def classify(row):
     if not t:
         return None, None
     drop_hit = _match(t, DROP_PHRASES)
+    # explicit named-act concert/comedy list (no keyword catches these; extend by hand)
+    if not drop_hit:
+        for c in CONCERT_TITLES:
+            if c in t:
+                drop_hit = "concert:" + c
+                break
     # compound bar/brewery-trivia rule (trivia + alcohol token); bare trivia is left alone
     if not drop_hit:
         drop_hit = _compound_drop(t)
