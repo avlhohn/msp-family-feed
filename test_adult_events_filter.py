@@ -64,6 +64,26 @@ CASES = [
     ("Soma Yoga for Adults", "events", "drop", False),
     ("Adaptive Adult Storytime", "events", "drop", False),
 
+    # ---- must DROP (2026-08-31 expansion: adult titles found stale in the live app) ----
+    ("Estate Planning 101", "events", "drop", False),
+    ("Navigating Estate Planning", "events", "drop", False),
+    ("Dementia 101", "events", "drop", False),
+    ("Join Us for an Informative Presentation: Navigating the Dementia Journey", "events", "drop", False),
+    ("AGC North Metro Member & Guest Happy Hour", "events", "drop", False),
+    ("Dave\u2019s retirement party", "events", "drop", False),           # curly apostrophe
+    ("Harvest Bank Blood Drive", "events", "drop", False),
+    # compound bar/brewery-trivia rule (trivia + alcohol token only)
+    ("Trivia Thursday at Minnesota BEER Company", "events", "drop", False),
+    ("Pub Trivia Night", "events", "drop", False),
+    ("Trivia at Bent Brewstillery Taproom", "events", "drop", False),
+
+    # ---- must KEEP (the compound trivia rule must NOT over-fire) ----
+    ("Trivia Night with Trivia Mafia", "events", None, False),          # library all-ages trivia, no alcohol token
+    ("Family Trivia at the Library", "events", None, False),            # 'library' must not trip \bbar\b
+    ("OMNI Brewery Oktoberfest", "events", None, False),                # brewery but no 'trivia' -> family fest
+    ("Waldmann Brewery Oktoberfest", "events", None, False),            # brewery but no 'trivia'
+    ("Public Library Story Time", "events", None, False),               # 'public' must not trip \bpub\b
+
     # ---- must KEEP (guards against the generic adult rule — every one a real live title) ----
     ("Bird Migration Walk (best for ages 8 to adult)", "events", None, False),   # age range
     ("Fungus Among Us (best for ages 8-adult)", "events", None, False),          # age range
