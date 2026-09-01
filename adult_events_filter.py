@@ -81,6 +81,11 @@ DROP_PHRASES = [
     "resources for veterans", "veterans resource", "veteran services",
     # library adult-programming staples that table employers/partners
     "community partner of the day",
+    # --- added 2026-08-31: adult-only titles found stale in the live app ---
+    # (each is an unambiguous adult title that essentially never names a kids/family event;
+    #  the compound trivia rule below handles bar/brewery trivia, which "trivia" alone can't.)
+    "estate planning", "dementia", "happy hour", "retirement party",
+    "blood drive", "pub trivia", "bar trivia", "trivia night at the bar",
 ]
 
 # --- generic adult-programming rule (guarded) -------------------------------------------
@@ -161,6 +166,24 @@ def _guarded(title_norm):
     return any(rx.search(title_norm) for rx in KEEP_GUARDS)
 
 
+# --- compound rule (added 2026-08-31): trivia AT a bar / brewery is adult programming, but
+# bare "trivia" is NOT droppable — libraries run all-ages trivia ("Trivia Night with Trivia
+# Mafia" @ Galaxie Library is a real family KEEP). So drop a trivia title ONLY when it also
+# carries an alcohol word-boundary token. Word boundaries are load-bearing: \bpub\b will not
+# fire inside "public", \bbar\b will not fire inside "library" or "barn". This catches
+# "Trivia Thursday at Minnesota BEER Company" but leaves "OMNI Brewery Oktoberfest" alone
+# (no "trivia") and library trivia alone (no alcohol token).
+_RX_TRIVIA = re.compile(r"\btrivia\b")
+_RX_ALCOHOL = re.compile(r"\b(beer|brewery|taproom|distillery|pub|bar|cider|winery)\b")
+
+
+def _compound_drop(title_norm):
+    """'trivia' co-occurring with an alcohol token -> bar/brewery trivia (adult). Else None."""
+    if _RX_TRIVIA.search(title_norm) and _RX_ALCOHOL.search(title_norm):
+        return "trivia+alcohol"
+    return None
+
+
 def classify(row):
     """Return ('drop', phrase) | ('review', phrase) | (None, None) for one row.
     Only ever acts on events-category rows; never drops a seed."""
@@ -170,6 +193,9 @@ def classify(row):
     if not t:
         return None, None
     drop_hit = _match(t, DROP_PHRASES)
+    # compound bar/brewery-trivia rule (trivia + alcohol token); bare trivia is left alone
+    if not drop_hit:
+        drop_hit = _compound_drop(t)
     # generic adult rule only fires when no KEEP_GUARD protects the title
     if not drop_hit and not _guarded(t):
         drop_hit = _match(t, GENERIC_ADULT)
