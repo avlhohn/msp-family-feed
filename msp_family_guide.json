@@ -2614,7 +2614,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "art fair,festival,free,family,edina,west-metro,twin-cities,art-fair,all-ages,craft-fair,Edina,kids,artists,community-fest,art,art-crawl,family-friendly,art festival,free admission,local artists,outdoor"
+      "tags": "art fair,festival,free,family,edina,west-metro,twin-cities,art-fair,all-ages,craft-fair,Edina,kids,artists,community-fest,art,art-crawl,family-friendly,art festival,free admission,local artists,outdoor",
+      "end_date": "2026-09-13"
     },
     {
       "title": "Eagan Art Block",
@@ -2803,7 +2804,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "farm/u-pick,seasonal,family,outstate/day-trip,winona"
+      "tags": "farm/u-pick,seasonal,family,outstate/day-trip,winona",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Burnsville Festival & Fire Muster",
@@ -2845,7 +2847,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "duluth,sports,family,northshore,marathon,all-ages,outdoor,skating,kids"
+      "tags": "duluth,sports,family,northshore,marathon,all-ages,outdoor,skating,kids",
+      "end_date": "2026-09-25"
     },
     {
       "title": "Moorhead Sausage Fest",
@@ -2866,7 +2869,8 @@
       "has_deal": true,
       "deal_description": "Kids 12 and under free",
       "deal_expiry": "2026-09-26",
-      "tags": "moorhead,festival,paid,family,food,kids-free,all-ages,outstate,free"
+      "tags": "moorhead,festival,paid,family,food,kids-free,all-ages,outstate,free",
+      "end_date": "2026-09-27"
     },
     {
       "title": "Minnesota Family Festival",
@@ -2908,7 +2912,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "festival,community-fest,all-ages,free,st-cloud,outstate/day-trip,dog-friendly,pride,family,St. Cloud,community event"
+      "tags": "festival,community-fest,all-ages,free,st-cloud,outstate/day-trip,dog-friendly,pride,family,St. Cloud,community event",
+      "end_date": "2026-09-19"
     },
     {
       "title": "St. Cloud Pride in the Park 2026",
@@ -2971,7 +2976,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "alexandria, festival, food, family, community-fest, fall, oktoberfest"
+      "tags": "alexandria, festival, food, family, community-fest, fall, oktoberfest",
+      "end_date": "2026-09-11"
     },
     {
       "title": "Boats and Bluegrass Festival",
@@ -3223,7 +3229,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "festival,community-fest,parade,wayzata,west-metro,twin-cities,free,all-ages,family,carnival,kids-menu"
+      "tags": "festival,community-fest,parade,wayzata,west-metro,twin-cities,free,all-ages,family,carnival,kids-menu",
+      "end_date": "2026-09-11"
     },
     {
       "title": "James J. Hill Days 2026",
@@ -3622,7 +3629,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "minneapolis, twin-cities, music, free, community-fest, family, all-ages, concert, festival, september, twins-cities, Minneapolis, kids"
+      "tags": "minneapolis, twin-cities, music, free, community-fest, family, all-ages, concert, festival, september, twins-cities, Minneapolis, kids",
+      "end_date": "2026-09-21"
     },
     {
       "title": "Fall Harvest Orchard Fall Festival",
@@ -3895,7 +3903,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "duluth, community, festival, free, all-ages, family, community-fest, outstate/day-trip, pride, community-event, family-friendly"
+      "tags": "duluth, community, festival, free, all-ages, family, community-fest, outstate/day-trip, pride, community-event, family-friendly",
+      "end_date": "2026-09-05"
     },
     {
       "title": "Duluth Oktoberfest",
@@ -4273,7 +4282,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "family,all-ages,art-fair,festival,free,september,lakeville,south-metro,twins-cities,art"
+      "tags": "family,all-ages,art-fair,festival,free,september,lakeville,south-metro,twins-cities,art",
+      "end_date": "2026-09-20"
     },
     {
       "title": "Silverwood Park FIELD TRIP Arts and Nature Festival",
@@ -4588,7 +4598,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "car-show,cruise-night,recurring,family,all-ages,free,north-st-paul,east-metro,twin-cities"
+      "tags": "car-show,cruise-night,recurring,family,all-ages,free,north-st-paul,east-metro,twin-cities",
+      "end_date": "2026-09-18"
     },
     {
       "title": "Capital City Fest 2026",
@@ -5092,7 +5103,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "alexandria,county-fair,family,kids,all-ages,free,outstate/day-trip,county fair"
+      "tags": "alexandria,county-fair,family,kids,all-ages,free,outstate/day-trip,county fair",
+      "end_date": "2026-09-10"
     },
     {
       "title": "Old Fashioned Pie & Ice Cream Social",
@@ -5155,7 +5167,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "college-sports,football,game,ticketed,mankato"
+      "tags": "college-sports,football,game,ticketed,mankato",
+      "end_date": "2026-09-26"
     },
     {
       "title": "Fall Harvest Orchard - Pumpkins & Corn Maze",
@@ -5365,7 +5378,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "parade,community-fest,free,all-ages,moorhead,cruise-night"
+      "tags": "parade,community-fest,free,all-ages,moorhead,cruise-night",
+      "end_date": "2026-09-05"
     },
     {
       "title": "Mankato Pride 2026",
@@ -5596,7 +5610,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "chanhassen, west-metro, free, community-fest, recurring, library, class, all-ages, feed, carver_library, src:carver_libcal, teen, reading, farmers-market"
+      "tags": "chanhassen, west-metro, free, community-fest, recurring, library, class, all-ages, feed, carver_library, src:carver_libcal, teen, reading, farmers-market",
+      "end_date": "2026-09-22"
     },
     {
       "title": "Holy Cross Polish Festival (SeptemberFest)",
@@ -5680,7 +5695,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "anoka,twin-cities,north-metro,kids,family,farm,festival,seasonal,fall,paid"
+      "tags": "anoka,twin-cities,north-metro,kids,family,farm,festival,seasonal,fall,paid",
+      "end_date": "2026-09-20"
     },
     {
       "title": "Anoka County Farms Fall Festival",
@@ -7024,7 +7040,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "winona, family, university, events, all-ages, free, community-fest, outstate/day-trip"
+      "tags": "winona, family, university, events, all-ages, free, community-fest, outstate/day-trip",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Minnesota Renaissance Festival - WOOFSTOCK",
@@ -7801,7 +7818,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "family,all-ages,touch-a-truck,free"
+      "tags": "family,all-ages,touch-a-truck,free",
+      "end_date": "2026-09-19"
     },
     {
       "title": "Backstage Pass: Moose",
@@ -7948,7 +7966,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "family,all-ages,free"
+      "tags": "family,all-ages,free",
+      "end_date": "2026-09-26"
     },
     {
       "title": "Fall Colors Family Kayaking",
@@ -8830,7 +8849,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Otsego,free,family,kids,all-ages,touch-a-truck,petting-zoo,fireworks,car-show,festival,otsego"
+      "tags": "Otsego,free,family,kids,all-ages,touch-a-truck,petting-zoo,fireworks,car-show,festival,otsego",
+      "end_date": "2026-09-26"
     },
     {
       "title": "Maple Grove Hairball Rock Tribute Concert",
@@ -9124,7 +9144,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "family,music,festival,grand-rapids,outstate,free"
+      "tags": "family,music,festival,grand-rapids,outstate,free",
+      "end_date": "2026-09-12"
     },
     {
       "title": "UMD Bulldogs Football vs Augustana",
@@ -9911,10 +9932,10 @@
       "price": "",
       "age_range": "",
       "address": "Theresa Prior, Lakeland, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.95506,
+      "longitude": -92.77091,
+      "image_url": "https://images.pexels.com/photos/6437499/pexels-photo-6437499.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-03",
       "time": "3:30 PM",
       "phone": "",
@@ -12022,7 +12043,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Lake Elmo, free, family, recurring, feed, washington_library, src:washco_libcal, library"
+      "tags": "Lake Elmo, free, family, recurring, feed, washington_library, src:washco_libcal, library",
+      "end_date": "2026-09-21"
     },
     {
       "title": "Dog Gone Reading",
@@ -12043,7 +12065,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, washington_library, src:washco_libcal, library, reading, story-time, free, kids, family"
+      "tags": "feed, washington_library, src:washco_libcal, library, reading, story-time, free, kids, family",
+      "end_date": "2026-09-29"
     },
     {
       "title": "Dog Gone Reading",
@@ -15487,7 +15510,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, carver_library, src:carver_libcal, library, story-time, free, kids, family"
+      "tags": "feed, carver_library, src:carver_libcal, library, story-time, free, kids, family",
+      "end_date": "2026-09-26"
     },
     {
       "title": "OVERTAKE Rochester Car Show",
@@ -16033,7 +16057,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "class,registration,community-ed,youth,fall,woodbury,paid,kids"
+      "tags": "class,registration,community-ed,youth,fall,woodbury,paid,kids",
+      "end_date": "2027-01-22"
     },
     {
       "title": "NSC Fall Cup Soccer Tournament - Girls",
@@ -16159,7 +16184,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "chaska, library, class, free, 5-12, Chaska, preschool, animals, feed, carver_library, src:carver_libcal, reading"
+      "tags": "chaska, library, class, free, 5-12, Chaska, preschool, animals, feed, carver_library, src:carver_libcal, reading",
+      "end_date": "2026-09-12"
     },
     {
       "title": "StoryWalk: Waconia Fountain Park",
@@ -16201,7 +16227,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Victoria, free, school-age, maker, victoria, library, class, all-ages, waconia, Norwood Young America, feed, carver_library, src:carver_libcal, crafts, reading"
+      "tags": "Victoria, free, school-age, maker, victoria, library, class, all-ages, waconia, Norwood Young America, feed, carver_library, src:carver_libcal, crafts, reading",
+      "end_date": "2026-09-08"
     },
     {
       "title": "Read, Stay, Play!",
@@ -16243,7 +16270,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Watertown, free, school-age, maker, Chaska, watertown, library, class, all-ages, Waconia, feed, carver_library, src:carver_libcal, crafts, reading, story-time, kids, family"
+      "tags": "Watertown, free, school-age, maker, Chaska, watertown, library, class, all-ages, Waconia, feed, carver_library, src:carver_libcal, crafts, reading, story-time, kids, family",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Read, Stay, Play!",
@@ -16264,7 +16292,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, carver_library, src:carver_libcal, library, crafts, reading, norwood-young-america, class, free, all-ages"
+      "tags": "feed, carver_library, src:carver_libcal, library, crafts, reading, norwood-young-america, class, free, all-ages",
+      "end_date": "2026-09-11"
     },
     {
       "title": "Read, Stay, Play!",
@@ -16969,8 +16998,8 @@
       "address": "Merrick State Park, S2965 WI-35, Fountain City, WI, 54629, United States",
       "latitude": "",
       "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "image_url": "https://images.pexels.com/photos/4697232/pexels-photo-4697232.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-05",
       "time": "7:00 PM",
       "phone": "",
@@ -17314,7 +17343,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Rogers,free,school-age,all-ages,babies,class,kids,open-play,preschool,recurring,rogers,toddlers,eden-prairie,minneapolis,brooklyn-center,Eden Prairie,Minneapolis,Brooklyn Center,Brooklyn Park,src:hclib,library,reading"
+      "tags": "Rogers,free,school-age,all-ages,babies,class,kids,open-play,preschool,recurring,rogers,toddlers,eden-prairie,minneapolis,brooklyn-center,Eden Prairie,Minneapolis,Brooklyn Center,Brooklyn Park,src:hclib,library,reading",
+      "end_date": "2026-09-30"
     },
     {
       "title": "Connect and Play",
@@ -17356,7 +17386,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Minneapolis,free,school-age,all-ages,babies,class,kids,minneapolis,open-play,preschool,recurring,toddlers,maple-grove,feed,hennepin_library,src:hclib,library,reading"
+      "tags": "Minneapolis,free,school-age,all-ages,babies,class,kids,minneapolis,open-play,preschool,recurring,toddlers,maple-grove,feed,hennepin_library,src:hclib,library,reading",
+      "end_date": "2026-09-26"
     },
     {
       "title": "Connect and Play",
@@ -17377,7 +17408,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Maple Plain,free,all-ages,babies,class,kids,maple-plain,open-play,preschool,recurring,toddlers,school-age,feed,hennepin_library,src:hclib,library,reading"
+      "tags": "Maple Plain,free,all-ages,babies,class,kids,maple-plain,open-play,preschool,recurring,toddlers,school-age,feed,hennepin_library,src:hclib,library,reading",
+      "end_date": "2026-09-24"
     },
     {
       "title": "Connect and Play",
@@ -17566,7 +17598,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, hennepin_library, src:hclib, library, reading"
+      "tags": "feed, hennepin_library, src:hclib, library, reading",
+      "end_date": "2026-10-28"
     },
     {
       "title": "Connect and Play",
@@ -18868,7 +18901,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Minneapolis,free,school-age,animals,maker,class,kids,minneapolis,recurring,family,feed,hennepin_library,src:hclib,library,reading, reading, animals"
+      "tags": "Minneapolis,free,school-age,animals,maker,class,kids,minneapolis,recurring,family,feed,hennepin_library,src:hclib,library,reading, reading, animals",
+      "end_date": "2026-09-19"
     },
     {
       "title": "Read With an Animal",
@@ -19435,7 +19469,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Minnetonka,free,all-ages,class,kids,minnetonka,stem,family,feed,hennepin_library,src:hclib,library, stem"
+      "tags": "Minnetonka,free,all-ages,class,kids,minnetonka,stem,family,feed,hennepin_library,src:hclib,library, stem",
+      "end_date": "2026-09-29"
     },
     {
       "title": "LEGO® Lab",
@@ -19456,7 +19491,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Minneapolis,free,all-ages,class,kids,minneapolis,stem,recurring,family,feed,hennepin_library,src:hclib,library, stem"
+      "tags": "Minneapolis,free,all-ages,class,kids,minneapolis,stem,recurring,family,feed,hennepin_library,src:hclib,library, stem",
+      "end_date": "2026-09-26"
     },
     {
       "title": "LEGO® Lab",
@@ -19960,7 +19996,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Minneapolis,free,teen,story-time,maker,all-ages,class,minneapolis,open-play,recurring,tweens,feed,hennepin_library,src:hclib,library"
+      "tags": "Minneapolis,free,teen,story-time,maker,all-ages,class,minneapolis,open-play,recurring,tweens,feed,hennepin_library,src:hclib,library",
+      "end_date": "2026-09-29"
     },
     {
       "title": "Creative Expression Sessions With zAmya Theater Project",
@@ -20800,7 +20837,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Hopkins,free,babies,class,family,hopkins,recurring,feed,hennepin_library,src:hclib,library,baby"
+      "tags": "Hopkins,free,babies,class,family,hopkins,recurring,feed,hennepin_library,src:hclib,library,baby",
+      "end_date": "2026-09-24"
     },
     {
       "title": "Baby Caregiver Connection Hour With Hopkins ECFE",
@@ -21283,7 +21321,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "all-ages, class, free, minneapolis, open-play, Minneapolis, maker, feed, hennepin_library, src:hclib, library, crafts"
+      "tags": "all-ages, class, free, minneapolis, open-play, Minneapolis, maker, feed, hennepin_library, src:hclib, library, crafts",
+      "end_date": "2026-09-28"
     },
     {
       "title": "Dream of Owls: Puppet Show",
@@ -21808,7 +21847,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "class, free, recurring, teen-night, teens, feed, hennepin_library, src:hclib, library, crafts, bilingual"
+      "tags": "class, free, recurring, teen-night, teens, feed, hennepin_library, src:hclib, library, crafts, bilingual",
+      "end_date": "2026-09-17"
     },
     {
       "title": "Finding Calm Within: How Meditation Reduces Stress in Everyday Life",
@@ -24475,7 +24515,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Saint Paul,free,school-age,babies,class,family,kids,open-play,preschool,recurring,saint-paul,toddlers"
+      "tags": "Saint Paul,free,school-age,babies,class,family,kids,open-play,preschool,recurring,saint-paul,toddlers",
+      "end_date": "2026-09-25"
     },
     {
       "title": "Teen Writers' Guild",
@@ -24496,7 +24537,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Saint Paul,free,teen,maker,teen-night,class,recurring,saint-paul,teens"
+      "tags": "Saint Paul,free,teen,maker,teen-night,class,recurring,saint-paul,teens",
+      "end_date": "2026-09-29"
     },
     {
       "title": "Baby & Toddler Storytime",
@@ -24685,7 +24727,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "class,free,open-play,recurring,saint-paul,teen-night,teens"
+      "tags": "class,free,open-play,recurring,saint-paul,teen-night,teens",
+      "end_date": "2026-09-28"
     },
     {
       "title": "Learn to Play DND",
@@ -25966,7 +26009,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "nature,preschool,program,activity"
+      "tags": "nature,preschool,program,activity",
+      "end_date": "2027-05-20"
     },
     {
       "title": "Maple Grove Angel of Hope Family Activities",
@@ -26701,7 +26745,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, carver_library, src:carver_libcal, library, chanhassen, class, free, all-ages"
+      "tags": "feed, carver_library, src:carver_libcal, library, chanhassen, class, free, all-ages",
+      "end_date": "2026-09-13"
     },
     {
       "title": "Family Caregiver Support Consultations",
@@ -27982,7 +28027,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, dakota_library, src:dakota_libcal, library, teen"
+      "tags": "feed, dakota_library, src:dakota_libcal, library, teen",
+      "end_date": "2026-10-07"
     },
     {
       "title": "Ask a Sewing Mentor",
@@ -28003,7 +28049,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, dakota_library, src:dakota_libcal, library, teen"
+      "tags": "feed, dakota_library, src:dakota_libcal, library, teen",
+      "end_date": "2026-09-24"
     },
     {
       "title": "Ask a Sewing Mentor",
@@ -28045,7 +28092,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, free, kids, family, src:dakota_libcal, teen"
+      "tags": "library, story-time, free, kids, family, src:dakota_libcal, teen",
+      "end_date": "2026-10-10"
     },
     {
       "title": "Ask a Sewing Mentor",
@@ -28927,7 +28975,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "oakdale, library, play-date, free, toddlers, recurring, Oakdale, school-age, music, feed, washington_library, src:washco_libcal, play, story-time, kids, family"
+      "tags": "oakdale, library, play-date, free, toddlers, recurring, Oakdale, school-age, music, feed, washington_library, src:washco_libcal, play, story-time, kids, family",
+      "end_date": "2026-10-01"
     },
     {
       "title": "Drop-In Play Date",
@@ -30250,7 +30299,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "plymouth,registration,league,school-age,soccer"
+      "tags": "plymouth,registration,league,school-age,soccer",
+      "end_date": "2026-11-01"
     },
     {
       "title": "Burnsville Fire Muster",
@@ -30733,7 +30783,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Plymouth,free,feed,hennepin_library,src:hclib,library"
+      "tags": "Plymouth,free,feed,hennepin_library,src:hclib,library",
+      "end_date": "2026-09-28"
     },
     {
       "title": "English Conversation Circle",
@@ -30754,7 +30805,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Saint Paul,free,family,maker"
+      "tags": "Saint Paul,free,family,maker",
+      "end_date": "2026-09-24"
     },
     {
       "title": "English Conversation Circle",
@@ -30775,7 +30827,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, hennepin_library, src:hclib, library"
+      "tags": "feed, hennepin_library, src:hclib, library",
+      "end_date": "2026-10-31"
     },
     {
       "title": "English Conversation Circle",
@@ -31195,7 +31248,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Prior Lake, free, family, maker, Savage, Wayzata, feed, scott_library, hennepin_library, src:scott_libcal, library, crafts, story-time, kids, src:hclib"
+      "tags": "Prior Lake, free, family, maker, Savage, Wayzata, feed, scott_library, hennepin_library, src:scott_libcal, library, crafts, story-time, kids, src:hclib",
+      "end_date": "2026-09-30"
     },
     {
       "title": "Crafternoon",
@@ -32056,7 +32110,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Minneapolis,free,family,maker,games"
+      "tags": "Minneapolis,free,family,maker,games",
+      "end_date": "2026-09-08"
     },
     {
       "title": "Coffee and Conversations",
@@ -32077,7 +32132,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Minneapolis, free, feed, hennepin_library, src:hclib, library"
+      "tags": "Minneapolis, free, feed, hennepin_library, src:hclib, library",
+      "end_date": "2026-09-17"
     },
     {
       "title": "Coffee and Conversations",
@@ -32560,7 +32616,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Woodbury, free, school-age, games, maker, feed, washington_library, src:washco_libcal, library"
+      "tags": "Woodbury, free, school-age, games, maker, feed, washington_library, src:washco_libcal, library",
+      "end_date": "2026-09-28"
     },
     {
       "title": "Contraption Club",
@@ -32812,7 +32869,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, washington_library, src:washco_libcal, library, games, story-time, free, kids, family,library,games"
+      "tags": "feed, washington_library, src:washco_libcal, library, games, story-time, free, kids, family,library,games",
+      "end_date": "2026-10-01"
     },
     {
       "title": "Contraption Club (3D Printing) at Cottage Grove Service Center",
@@ -32854,7 +32912,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, free, kids, family, src:washco_libcal"
+      "tags": "library, story-time, free, kids, family, src:washco_libcal",
+      "end_date": "2026-10-01"
     },
     {
       "title": "Story Time Art Creations",
@@ -33001,7 +33060,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, washington_library, src:washco_libcal, library, crafts, story-time, free, kids, family"
+      "tags": "feed, washington_library, src:washco_libcal, library, crafts, story-time, free, kids, family",
+      "end_date": "2026-09-30"
     },
     {
       "title": "Teen Art Cart",
@@ -33022,7 +33082,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Hugo, free, teen, maker, teen-night, feed, washington_library, library, story-time, kids, family, src:washco_libcal, crafts"
+      "tags": "Hugo, free, teen, maker, teen-night, feed, washington_library, library, story-time, kids, family, src:washco_libcal, crafts",
+      "end_date": "2026-09-17"
     },
     {
       "title": "Teen Art Cart",
@@ -33043,7 +33104,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, washington_library, src:washco_libcal, library, teen, crafts, story-time, free, kids, family"
+      "tags": "feed, washington_library, src:washco_libcal, library, teen, crafts, story-time, free, kids, family",
+      "end_date": "2026-10-01"
     },
     {
       "title": "Baby Play Date",
@@ -33148,7 +33210,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Woodbury, free, family, maker, class, feed, washington_library, src:washco_libcal, library, crafts, reading"
+      "tags": "Woodbury, free, family, maker, class, feed, washington_library, src:washco_libcal, library, crafts, reading",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Teen Hang Out",
@@ -33169,7 +33232,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Hugo, free, teen, maker, teen-night, games, Saint Paul, camp, feed, washington_library, library, story-time, kids, family, src:washco_libcal, crafts"
+      "tags": "Hugo, free, teen, maker, teen-night, games, Saint Paul, camp, feed, washington_library, library, story-time, kids, family, src:washco_libcal, crafts",
+      "end_date": "2026-09-15"
     },
     {
       "title": "Teen Hang Out",
@@ -33190,7 +33254,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, washington_library, src:washco_libcal, library, teen, crafts, games"
+      "tags": "feed, washington_library, src:washco_libcal, library, teen, crafts, games",
+      "end_date": "2026-09-29"
     },
     {
       "title": "Dungeons & Dragons Club for Tween/Teen",
@@ -33211,7 +33276,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Woodbury, free, teen, teen-night, maker, recurring, feed, washington_library, src:washco_libcal, library, reading, games"
+      "tags": "Woodbury, free, teen, teen-night, maker, recurring, feed, washington_library, src:washco_libcal, library, reading, games",
+      "end_date": "2026-09-16"
     },
     {
       "title": "Art and Play",
@@ -33379,7 +33445,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, dakota_library, src:dakota_libcal, library, baby"
+      "tags": "feed, dakota_library, src:dakota_libcal, library, baby",
+      "end_date": "2026-09-29"
     },
     {
       "title": "Feeding Your Baby",
@@ -33421,7 +33488,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, dakota_library, src:dakota_libcal, library, teen, crafts, games"
+      "tags": "feed, dakota_library, src:dakota_libcal, library, teen, crafts, games",
+      "end_date": "2026-10-12"
     },
     {
       "title": "Storytime for 2-6s",
@@ -34723,7 +34791,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Blaine, free, preschool, story-time, maker, feed, anoka_library, src:anoka_libcal, library, crafts, reading"
+      "tags": "Blaine, free, preschool, story-time, maker, feed, anoka_library, src:anoka_libcal, library, crafts, reading",
+      "end_date": "2026-09-11"
     },
     {
       "title": "Preschool Craft Hour",
@@ -34744,7 +34813,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, crafts, reading"
+      "tags": "library, crafts, reading",
+      "end_date": "2026-10-09"
     },
     {
       "title": "Read to a Dog",
@@ -34828,7 +34898,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Blaine, free, family, stem, nature, maker, feed, anoka_library, src:anoka_libcal, library, crafts, outdoors"
+      "tags": "Blaine, free, family, stem, nature, maker, feed, anoka_library, src:anoka_libcal, library, crafts, outdoors",
+      "end_date": "2026-09-24"
     },
     {
       "title": "Reverse Coloring",
@@ -35920,7 +35991,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Shakopee, free, family, story-time, stem, maker, feed, scott_library, library, kids, src:scott_libcal"
+      "tags": "Shakopee, free, family, story-time, stem, maker, feed, scott_library, library, kids, src:scott_libcal",
+      "end_date": "2026-09-13"
     },
     {
       "title": "Enjoy the Library's Story Stroll at Savage Community Park",
@@ -35941,7 +36013,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, scott_library, library, story-time, free, kids, family, src:scott_libcal"
+      "tags": "feed, scott_library, library, story-time, free, kids, family, src:scott_libcal",
+      "end_date": "2026-09-13"
     },
     {
       "title": "Family Early Literacy Class at Elko New Market Library",
@@ -35983,7 +36056,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Elko New Market, free, school-age, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, reading,library,music,reading"
+      "tags": "Elko New Market, free, school-age, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, reading,library,music,reading",
+      "end_date": "2026-10-30"
     },
     {
       "title": "Learn to Play Mahjong at Savage Library! REGISTRATION REQ STARTING 8/21",
@@ -36025,7 +36099,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Prior Lake, free, baby, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, toddler, reading, animals,library,toddler,music,reading"
+      "tags": "Prior Lake, free, baby, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, toddler, reading, animals,library,toddler,music,reading",
+      "end_date": "2026-09-28"
     },
     {
       "title": "Preschool Early Literacy Class at Savage Library",
@@ -36046,7 +36121,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Savage, free, toddler, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, reading,library,story-time,toddler,music,reading"
+      "tags": "Savage, free, toddler, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, reading,library,story-time,toddler,music,reading",
+      "end_date": "2026-09-28"
     },
     {
       "title": "ECFE Library Play & Learn - Registration Required",
@@ -36130,7 +36206,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Jordan, free, school-age, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, reading, animals,library,music,reading,animals"
+      "tags": "Jordan, free, school-age, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, reading, animals,library,music,reading,animals",
+      "end_date": "2026-09-29"
     },
     {
       "title": "Family Early Literacy Class at the New Prague Library",
@@ -36151,7 +36228,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "New Prague, free, school-age, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, stem, reading"
+      "tags": "New Prague, free, school-age, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, stem, reading",
+      "end_date": "2026-09-29"
     },
     {
       "title": "Young at Art at the Belle Plaine Library",
@@ -36256,7 +36334,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Prior Lake, free, baby, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, toddler, reading, animals"
+      "tags": "Prior Lake, free, baby, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, toddler, reading, animals",
+      "end_date": "2026-09-24"
     },
     {
       "title": "Toddler Early Literacy Class at Savage Library",
@@ -36277,7 +36356,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Savage, free, toddler, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, reading"
+      "tags": "Savage, free, toddler, story-time, class, music, recurring, feed, scott_library, src:scott_libcal, library, reading",
+      "end_date": "2026-09-24"
     },
     {
       "title": "Science Time with the Library",
@@ -36445,7 +36525,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Savage, free, school-age, animals, feed, scott_library, src:scott_libcal, library, reading"
+      "tags": "Savage, free, school-age, animals, feed, scott_library, src:scott_libcal, library, reading",
+      "end_date": "2026-09-29"
     },
     {
       "title": "Introduction to Print-Making at New Prague Library! REGISTRATION REQ. BEGINS 9/1",
@@ -36508,7 +36589,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Shakopee, free, school-age, story-time, feed, scott_library, src:scott_libcal, library"
+      "tags": "Shakopee, free, school-age, story-time, feed, scott_library, src:scott_libcal, library",
+      "end_date": "2026-10-09"
     },
     {
       "title": "ECFE Stories and a Song",
@@ -36529,7 +36611,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time"
+      "tags": "library, story-time",
+      "end_date": "2026-10-30"
     },
     {
       "title": "Teen Mondays at Savage Library",
@@ -36634,7 +36717,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Waconia, free, family, maker, feed, carver_library, src:carver_libcal, library, crafts, story-time, kids"
+      "tags": "Waconia, free, family, maker, feed, carver_library, src:carver_libcal, library, crafts, story-time, kids",
+      "end_date": "2026-09-15"
     },
     {
       "title": "Flax to Linen: From Seed to Fiber",
@@ -37264,7 +37348,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Duluth, duluth, outstate, attraction, skating, arena, entertainment, games"
+      "tags": "Duluth, duluth, outstate, attraction, skating, arena, entertainment, games",
+      "end_date": "2026-09-26"
     },
     {
       "title": "Lake Superior Harvest Festival",
@@ -37285,7 +37370,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Duluth, duluth, outstate, attraction, festival, arena, entertainment, crafts, music, food, farmers-market, family, seasonal, outstate/day-trip"
+      "tags": "Duluth, duluth, outstate, attraction, festival, arena, entertainment, crafts, music, food, farmers-market, family, seasonal, outstate/day-trip",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Labor Day Picnic",
@@ -37411,7 +37497,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "games, skating"
+      "tags": "games, skating",
+      "end_date": "2026-09-17"
     },
     {
       "title": "Red Wing Farmers market",
@@ -38125,7 +38212,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Saint Paul,free,family"
+      "tags": "Saint Paul,free,family",
+      "end_date": "2026-09-21"
     },
     {
       "title": "Fall Bingo Reading Challenge Begins",
@@ -38146,7 +38234,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, ecrl, src:ecrl, library, reading, games"
+      "tags": "feed, ecrl, src:ecrl, library, reading, games",
+      "end_date": "2026-11-14"
     },
     {
       "title": "Celebrate Library Card Sign up Month (Ends Today)",
@@ -38251,7 +38340,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, richfield, src:richfield, farmers-market"
+      "tags": "feed, richfield, src:richfield, farmers-market",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Public Skating",
@@ -38293,7 +38383,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "skating"
+      "tags": "skating",
+      "end_date": "2026-09-17"
     },
     {
       "title": "St. Paul Farmer's Market",
@@ -38314,7 +38405,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, lakeville, community, family, twin-cities"
+      "tags": "feed, lakeville, community, family, twin-cities",
+      "end_date": "2026-09-09"
     },
     {
       "title": "Housing & Redevelopment Authority Board Workshop",
@@ -38587,7 +38679,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk, games, animals, state-park, outdoor, family, kids"
+      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk, games, animals, state-park, outdoor, family, kids",
+      "end_date": "2026-09-19"
     },
     {
       "title": "Fishing Friday Afternoons",
@@ -38776,7 +38869,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk"
+      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk",
+      "end_date": "2026-09-07"
     },
     {
       "title": "Explore Potholes on a Guided Tour",
@@ -38797,7 +38891,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk"
+      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk",
+      "end_date": "2026-10-10"
     },
     {
       "title": "Storytime in Nature- Hibernation!",
@@ -39847,7 +39942,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk"
+      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Navigating by the Stars",
@@ -40130,10 +40226,10 @@
       "price": "$7",
       "age_range": "",
       "address": "Nerstrand Big Woods State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.345453,
+      "longitude": -93.109204,
+      "image_url": "https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-31",
       "time": "10:30 AM",
       "phone": "",
@@ -40603,7 +40699,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "nature, state-park, outdoor, free, family, kids, outdoors, state park, src:dnr_stpk, feed, dnr_state_parks"
+      "tags": "nature, state-park, outdoor, free, family, kids, outdoors, state park, src:dnr_stpk, feed, dnr_state_parks",
+      "end_date": "2026-09-30"
     },
     {
       "title": "Phenology of Afton",
@@ -40949,10 +41046,10 @@
       "price": "$7",
       "age_range": "",
       "address": "Nerstrand Big Woods State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.345453,
+      "longitude": -93.109204,
+      "image_url": "https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-10",
       "time": "1 PM",
       "phone": "",
@@ -40991,10 +41088,10 @@
       "price": "$7",
       "age_range": "",
       "address": "Nerstrand Big Woods State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.345453,
+      "longitude": -93.109204,
+      "image_url": "https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-10",
       "time": "10 AM",
       "phone": "",
@@ -41023,7 +41120,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk"
+      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk",
+      "end_date": "2026-10-03"
     },
     {
       "title": "Fall Color Extravaganza",
@@ -41044,7 +41142,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk, crafts"
+      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk, crafts",
+      "end_date": "2026-10-10"
     },
     {
       "title": "Fall Leaf Color Walk",
@@ -41149,7 +41248,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk, animals"
+      "tags": "feed, dnr_state_parks, outdoors, nature, free, state park, src:dnr_stpk, animals",
+      "end_date": "2026-10-03"
     },
     {
       "title": "The Great Beak Match-up: Investigation Station",
@@ -41800,7 +41900,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, washington_library, src:washco_libcal, library"
+      "tags": "feed, washington_library, src:washco_libcal, library",
+      "end_date": "2026-09-29"
     },
     {
       "title": "American Mah Jongg",
@@ -41821,7 +41922,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, washington_library, src:washco_libcal, library"
+      "tags": "feed, washington_library, src:washco_libcal, library",
+      "end_date": "2026-09-30"
     },
     {
       "title": "Stitches & Giggles",
@@ -41842,7 +41944,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, washington_library, src:washco_libcal, library, crafts, story-time, free, kids, family"
+      "tags": "feed, washington_library, src:washco_libcal, library, crafts, story-time, free, kids, family",
+      "end_date": "2026-09-30"
     },
     {
       "title": "Knitting Group",
@@ -41863,7 +41966,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, washington_library, src:washco_libcal, library, story-time, free, kids, family"
+      "tags": "feed, washington_library, src:washco_libcal, library, story-time, free, kids, family",
+      "end_date": "2026-10-01"
     },
     {
       "title": "500 Cards",
@@ -41884,7 +41988,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, washington_library, src:washco_libcal, library, games"
+      "tags": "feed, washington_library, src:washco_libcal, library, games",
+      "end_date": "2026-09-26"
     },
     {
       "title": "Dungeons & Dragons Club for Teens",
@@ -41905,7 +42010,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, washington_library, src:washco_libcal, library, teen, games"
+      "tags": "feed, washington_library, src:washco_libcal, library, teen, games",
+      "end_date": "2026-09-26"
     },
     {
       "title": "(RESCHEDULED) F1RST Wrestling: LIVE!",
@@ -42115,7 +42221,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, washington_library, src:washco_libcal, library, story-time, free, kids, family"
+      "tags": "feed, washington_library, src:washco_libcal, library, story-time, free, kids, family",
+      "end_date": "2026-09-19"
     },
     {
       "title": "Big Truck Day",
@@ -43018,7 +43125,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, dakota_library, src:dakota_libcal, library, reading"
+      "tags": "feed, dakota_library, src:dakota_libcal, library, reading",
+      "end_date": "2026-09-14"
     },
     {
       "title": "Pleasant Hill Book Group",
@@ -43165,7 +43273,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, dakota_library, src:dakota_libcal, library, reading, story-time, free, kids, family"
+      "tags": "feed, dakota_library, src:dakota_libcal, library, reading, story-time, free, kids, family",
+      "end_date": "2026-09-20"
     },
     {
       "title": "Wescott Third Thursday Book Discussion Group",
@@ -43354,7 +43463,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, carver_library, src:carver_libcal, library"
+      "tags": "feed, carver_library, src:carver_libcal, library",
+      "end_date": "2026-10-28"
     },
     {
       "title": "Carver County Library Board Meeting",
@@ -43417,7 +43527,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, carver_library, src:carver_libcal, library, crafts, reading"
+      "tags": "feed, carver_library, src:carver_libcal, library, crafts, reading",
+      "end_date": "2026-09-24"
     },
     {
       "title": "CHANforum: Preparing Your Finances for a Potential Disaster",
@@ -43459,7 +43570,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, carver_library, src:carver_libcal, library, crafts, reading"
+      "tags": "feed, carver_library, src:carver_libcal, library, crafts, reading",
+      "end_date": "2026-09-28"
     },
     {
       "title": "Waconia Book Club",
@@ -43690,7 +43802,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed, carver_library, src:carver_libcal, library, reading, story-time, free, kids, family"
+      "tags": "feed, carver_library, src:carver_libcal, library, reading, story-time, free, kids, family",
+      "end_date": "2026-09-27"
     },
     {
       "title": "Lunch Hour Parenting Book Club*",
@@ -44635,7 +44748,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, free, kids, family, src:washco_libcal, reading"
+      "tags": "library, story-time, free, kids, family, src:washco_libcal, reading",
+      "end_date": "2026-09-28"
     },
     {
       "title": "Teens Make Stuff: Photocard Keychain",
@@ -44698,7 +44812,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, free, kids, family, src:dakota_libcal"
+      "tags": "library, story-time, free, kids, family, src:dakota_libcal",
+      "end_date": "2026-09-09"
     },
     {
       "title": "Ask an iLAB Mentor: 3D Modeling and Slicing Techniques",
@@ -44719,7 +44834,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, free, kids, family, src:dakota_libcal"
+      "tags": "library, story-time, free, kids, family, src:dakota_libcal",
+      "end_date": "2026-09-23"
     },
     {
       "title": "Open Play",
@@ -44782,7 +44898,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, free, kids, family, src:rclreads, teen, games"
+      "tags": "library, story-time, free, kids, family, src:rclreads, teen, games",
+      "end_date": "2026-10-25"
     },
     {
       "title": "Mario Mondays",
@@ -44950,7 +45067,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "community, family, winona, outstate/day-trip"
+      "tags": "community, family, winona, outstate/day-trip",
+      "end_date": "2026-09-17"
     },
     {
       "title": "Silent Book Club",
@@ -45034,7 +45152,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "community, family, winona, outstate/day-trip"
+      "tags": "community, family, winona, outstate/day-trip",
+      "end_date": "2026-09-17"
     },
     {
       "title": "Friends of the Library: Monthly Meeting",
@@ -45265,7 +45384,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "nature, state-park, outdoor, free, family, kids, outdoors, state park, src:dnr_stpk"
+      "tags": "nature, state-park, outdoor, free, family, kids, outdoors, state park, src:dnr_stpk",
+      "end_date": "2026-09-12"
     },
     {
       "title": "A Microscopic World (great for all ages)",
@@ -45307,7 +45427,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "nature, state-park, outdoor, free, family, kids, outdoors, state park, src:dnr_stpk, animals"
+      "tags": "nature, state-park, outdoor, free, family, kids, outdoors, state park, src:dnr_stpk, animals",
+      "end_date": "2026-09-19"
     },
     {
       "title": "Eagan Art Block Festival",
@@ -45895,7 +46016,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "outdoors, nature, free, state park"
+      "tags": "outdoors, nature, free, state park",
+      "end_date": "2026-10-03"
     },
     {
       "title": "Fabulous Frogs- Story Time",
@@ -47459,10 +47581,10 @@
       "price": "",
       "age_range": "",
       "address": "8500 W. Broadway Ave, Brooklyn Park,, MN, 55445",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.110417,
+      "longitude": -93.376128,
+      "image_url": "https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-27",
       "time": "4:15 PM",
       "phone": "",
@@ -47480,10 +47602,10 @@
       "price": "",
       "age_range": "",
       "address": "8500 W. Broadway Ave, Brooklyn Park,, MN, 55445",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.110417,
+      "longitude": -93.376128,
+      "image_url": "https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-15",
       "time": "4:15 PM",
       "phone": "",
@@ -47501,10 +47623,10 @@
       "price": "",
       "age_range": "",
       "address": "8500 W. Broadway Ave, Brooklyn Park,, MN, 55445",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.110417,
+      "longitude": -93.376128,
+      "image_url": "https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-29",
       "time": "4:15 PM",
       "phone": "",
@@ -47522,10 +47644,10 @@
       "price": "",
       "age_range": "",
       "address": "8500 W. Broadway Ave, Brooklyn Park,, MN, 55445",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.110417,
+      "longitude": -93.376128,
+      "image_url": "https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-13",
       "time": "4:15 PM",
       "phone": "",
@@ -47932,7 +48054,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "free, kids, farmers market, edina, recurring"
+      "tags": "free, kids, farmers market, edina, recurring",
+      "end_date": "2026-10-01"
     },
     {
       "title": "East Isles Uptown Farmers Market",
@@ -47953,7 +48076,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "free, farmers market, minneapolis, recurring"
+      "tags": "free, farmers market, minneapolis, recurring",
+      "end_date": "2026-09-24"
     },
     {
       "title": "Burnsville Farmers Market",
@@ -47974,7 +48098,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "free, farmers market, burnsville, recurring"
+      "tags": "free, farmers market, burnsville, recurring",
+      "end_date": "2026-10-29"
     },
     {
       "title": "Nowthen Farmers Market",
@@ -47995,7 +48120,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "free, farmers market, nowthen, recurring"
+      "tags": "free, farmers market, nowthen, recurring",
+      "end_date": "2026-09-24"
     },
     {
       "title": "Maple Grove Community Center Farmers Market",
@@ -48016,7 +48142,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "free, farmers market, maple grove, recurring"
+      "tags": "free, farmers market, maple grove, recurring",
+      "end_date": "2026-10-15"
     },
     {
       "title": "Okee Dokee Brothers Concert",
@@ -52195,7 +52322,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, games"
+      "tags": "library, games",
+      "end_date": "2026-10-01"
     },
     {
       "title": "Chess Club",
@@ -52636,7 +52764,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "src:hclib, library, reading, outdoors"
+      "tags": "src:hclib, library, reading, outdoors",
+      "end_date": "2026-09-21"
     },
     {
       "title": "Club Book: An Evening with David Heska Wanbli Weiden",
@@ -52930,7 +53059,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "src:dakota_libcal, library, teen, games"
+      "tags": "src:dakota_libcal, library, teen, games",
+      "end_date": "2026-10-12"
     },
     {
       "title": "Developmental Hockey Ice",
@@ -52972,7 +53102,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "skating"
+      "tags": "skating",
+      "end_date": "2026-09-17"
     },
     {
       "title": "St. Paul Farmer&#39;s Market",
@@ -52993,7 +53124,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "src:lakeville"
+      "tags": "src:lakeville",
+      "end_date": "2026-09-16"
     },
     {
       "title": "Aging Wisely",
@@ -53098,7 +53230,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "music"
+      "tags": "music",
+      "end_date": "2026-09-05"
     },
     {
       "title": "Children’s Matinee",
@@ -53350,7 +53483,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "outdoors, nature, free, state park"
+      "tags": "outdoors, nature, free, state park",
+      "end_date": "2026-09-18"
     },
     {
       "title": "Birds, Berries, and More! Hike",
@@ -58579,7 +58713,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "outdoors, nature, free, state park"
+      "tags": "outdoors, nature, free, state park",
+      "end_date": "2026-10-17"
     },
     {
       "title": "Belle Plaine Friends of the Library Book Sale",
@@ -58684,7 +58819,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "duluth, arena, entertainment, games, skating"
+      "tags": "duluth, arena, entertainment, games, skating",
+      "end_date": "2026-10-31"
     },
     {
       "title": "UMD Women's Hockey vs St. Thomas",
@@ -58705,7 +58841,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "duluth, arena, entertainment, games, skating"
+      "tags": "duluth, arena, entertainment, games, skating",
+      "end_date": "2026-10-10"
     },
     {
       "title": "UMD Men's Hockey vs Bemidji State University",
@@ -58747,7 +58884,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "duluth, arena, entertainment, games, skating"
+      "tags": "duluth, arena, entertainment, games, skating",
+      "end_date": "2026-10-17"
     },
     {
       "title": "UMD Men's Hockey vs Long Island University",
@@ -58768,7 +58906,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "duluth, arena, entertainment, games, skating"
+      "tags": "duluth, arena, entertainment, games, skating",
+      "end_date": "2026-10-03"
     },
     {
       "title": "Zach Williams",
@@ -58894,7 +59033,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": ""
+      "tags": "",
+      "end_date": "2026-09-05"
     },
     {
       "title": "38th Annual GSTA Muscle Car Shootout at BIR",
@@ -59482,7 +59622,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "outdoors"
+      "tags": "outdoors",
+      "end_date": "2026-09-10"
     },
     {
       "title": "Friday Night Live Music at 22 Northmen Brewing",
@@ -59503,7 +59644,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "music"
+      "tags": "music",
+      "end_date": "2026-09-11"
     },
     {
       "title": "Live Music at Lure Lakebar",
@@ -59524,7 +59666,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "music, food"
+      "tags": "music, food",
+      "end_date": "2026-09-11"
     },
     {
       "title": "Live Music at The Depot Smokehouse and Tavern",
@@ -59545,7 +59688,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "music, food"
+      "tags": "music, food",
+      "end_date": "2026-09-11"
     },
     {
       "title": "Tandem Skydiving Comes to Alexandria",
@@ -59587,7 +59731,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "crafts, music"
+      "tags": "crafts, music",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Tandem Skydiving in Alexandria",
@@ -59608,7 +59753,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": ""
+      "tags": "",
+      "end_date": "2026-09-06"
     },
     {
       "title": "Saturday Story Hour",
@@ -59629,7 +59775,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "story-time, music, reading"
+      "tags": "story-time, music, reading",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Saturday Afternoon Live Music",
@@ -59650,7 +59797,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "music, food"
+      "tags": "music, food",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Live Music at 22 Northmen Brewing",
@@ -59734,7 +59882,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "crafts, music, outdoors, food"
+      "tags": "crafts, music, outdoors, food",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Pine River - Family Storytime",
@@ -60301,7 +60450,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, crafts"
+      "tags": "library, crafts",
+      "end_date": "2026-10-30"
     },
     {
       "title": "Preschool Storytime (AI)",
@@ -60322,7 +60472,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, crafts, music"
+      "tags": "library, story-time, crafts, music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Preschool Storytime (AI)",
@@ -60343,7 +60494,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, crafts, music"
+      "tags": "library, story-time, crafts, music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Preschool Storytime (AI)",
@@ -60364,7 +60516,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, crafts, music"
+      "tags": "library, story-time, crafts, music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Preschool Storytime (AI)",
@@ -60385,7 +60538,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, crafts, music"
+      "tags": "library, story-time, crafts, music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Preschool Storytime (AI)",
@@ -60406,7 +60560,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, crafts, music"
+      "tags": "library, story-time, crafts, music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Preschool Storytime (AI)",
@@ -60427,7 +60582,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, crafts, music"
+      "tags": "library, story-time, crafts, music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Preschool Storytime (AI)",
@@ -60448,7 +60604,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, crafts, music"
+      "tags": "library, story-time, crafts, music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Preschool Storytime (AI)",
@@ -60469,7 +60626,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, crafts, music"
+      "tags": "library, story-time, crafts, music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Princeton Friends of the Library Meeting",
@@ -60595,7 +60753,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, crafts"
+      "tags": "library, crafts",
+      "end_date": "2026-10-27"
     },
     {
       "title": "Craft 'n' Chat",
@@ -60637,7 +60796,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library",
+      "end_date": "2026-10-27"
     },
     {
       "title": "Storytime at Wyoming Area Library",
@@ -60784,7 +60944,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, crafts"
+      "tags": "library, crafts",
+      "end_date": "2026-10-28"
     },
     {
       "title": "Family Activity: Basic Hand Sewing!",
@@ -61855,7 +62016,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, music, reading"
+      "tags": "library, story-time, music, reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -61876,7 +62038,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, music, reading"
+      "tags": "library, story-time, music, reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -61897,7 +62060,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, music, reading"
+      "tags": "library, story-time, music, reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -61918,7 +62082,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, music, reading"
+      "tags": "library, story-time, music, reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -61939,7 +62104,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, music, reading"
+      "tags": "library, story-time, music, reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -61960,7 +62126,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, music, reading"
+      "tags": "library, story-time, music, reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -61981,7 +62148,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, music, reading"
+      "tags": "library, story-time, music, reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -63052,7 +63220,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, music, reading"
+      "tags": "library, story-time, music, reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "North Branch Storytime",
@@ -63073,7 +63242,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, music, reading"
+      "tags": "library, story-time, music, reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "North Branch Storytime",
@@ -63094,7 +63264,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, music, reading"
+      "tags": "library, story-time, music, reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "North Branch Storytime",
@@ -63115,7 +63286,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, music, reading"
+      "tags": "library, story-time, music, reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "North Branch Storytime",
@@ -63136,7 +63308,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, music, reading"
+      "tags": "library, story-time, music, reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "North Branch Storytime",
@@ -63157,7 +63330,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time, music, reading"
+      "tags": "library, story-time, music, reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Storytime around the Town at DW Companies!",
@@ -63577,7 +63751,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, reading"
+      "tags": "library, reading",
+      "end_date": "2026-10-10"
     },
     {
       "title": "Discover Your Roots",
@@ -63682,7 +63857,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, games"
+      "tags": "library, games",
+      "end_date": "2026-10-09"
     },
     {
       "title": "Learn to Play Mah Jongg",
@@ -63871,7 +64047,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, games"
+      "tags": "library, games",
+      "end_date": "2026-10-28"
     },
     {
       "title": "Mora Storytime",
@@ -63976,7 +64153,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, reading"
+      "tags": "library, reading",
+      "end_date": "2026-10-24"
     },
     {
       "title": "Community Bingo",
@@ -64060,7 +64238,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, reading"
+      "tags": "library, reading",
+      "end_date": "2026-10-31"
     },
     {
       "title": "Bear Necessities",
@@ -64312,7 +64491,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "outdoors, nature, free, state park"
+      "tags": "outdoors, nature, free, state park",
+      "end_date": "2026-10-04"
     },
     {
       "title": "Seed Collection Event (all ages)",
@@ -64333,7 +64513,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "outdoors, nature, free, state park"
+      "tags": "outdoors, nature, free, state park",
+      "end_date": "2026-10-17"
     },
     {
       "title": "Bird walk: campground",
@@ -64480,7 +64661,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "outdoors, nature, free, state park, animals"
+      "tags": "outdoors, nature, free, state park, animals",
+      "end_date": "2026-10-16"
     },
     {
       "title": "Lore of the Loon",
@@ -65089,7 +65271,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library",
+      "end_date": "2026-10-22"
     },
     {
       "title": "Letter Writing Social Hour",
@@ -66580,7 +66763,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, reading, games, outdoors"
+      "tags": "library, reading, games, outdoors",
+      "end_date": "2026-10-12"
     },
     {
       "title": "Artists Working in Community",
@@ -67231,7 +67415,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, reading, outdoors"
+      "tags": "library, reading, outdoors",
+      "end_date": "2026-10-31"
     },
     {
       "title": "MEA Family Movie Night",
@@ -70738,7 +70923,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, teen, games"
+      "tags": "library, teen, games",
+      "end_date": "2026-10-28"
     },
     {
       "title": "North St. Paul Bookclub",
@@ -72607,7 +72793,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, reading"
+      "tags": "library, reading",
+      "end_date": "2026-10-10"
     },
     {
       "title": "Preschool Sensory Play",
@@ -72754,7 +72941,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, crafts, reading"
+      "tags": "library, crafts, reading",
+      "end_date": "2026-10-08"
     },
     {
       "title": "ECFE on Wheels October Session",
@@ -72775,7 +72963,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, crafts, reading"
+      "tags": "library, crafts, reading",
+      "end_date": "2026-10-09"
     },
     {
       "title": "ECFE on Wheels October Session",
@@ -72943,7 +73132,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, crafts, reading"
+      "tags": "library, crafts, reading",
+      "end_date": "2026-10-12"
     },
     {
       "title": "ECFE on Wheels at the Chaska Library October Session",
@@ -73090,7 +73280,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library",
+      "end_date": "2026-10-27"
     },
     {
       "title": "Chair Yoga at Your Library",
@@ -73111,7 +73302,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library",
+      "end_date": "2026-10-29"
     },
     {
       "title": "Yoga at Your Library",
@@ -73132,7 +73324,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library",
+      "end_date": "2026-10-28"
     },
     {
       "title": "Tell Your Story: Creative Writing Class",
@@ -73258,7 +73451,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, reading"
+      "tags": "library, reading",
+      "end_date": "2026-10-10"
     },
     {
       "title": "CHANforum: Open Mic",
@@ -73342,7 +73536,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library",
+      "end_date": "2026-10-20"
     },
     {
       "title": "Paper Mache Masks",
@@ -73363,7 +73558,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library",
+      "end_date": "2026-10-22"
     },
     {
       "title": "The Works: Mini-Catapults",
@@ -73594,7 +73790,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, reading"
+      "tags": "library, reading",
+      "end_date": "2026-10-24"
     },
     {
       "title": "All Libraries Open at 1:00",
@@ -73972,7 +74169,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, story-time"
+      "tags": "library, story-time",
+      "end_date": "2026-10-31"
     },
     {
       "title": "Upper Elementary Tuesdays at the New Prague Library",
@@ -74203,7 +74401,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library, reading"
+      "tags": "library, reading",
+      "end_date": "2026-10-10"
     },
     {
       "title": "New Prague Friends of the Library Fall Book Sale at the New Prague Library",
@@ -74623,7 +74822,8 @@
       "has_deal": true,
       "deal_description": "Parking is Free!; Ages 2 and under are Free!",
       "deal_expiry": "2026-11-01",
-      "tags": "outdoors,fall,halloween,pumpkins,family"
+      "tags": "outdoors,fall,halloween,pumpkins,family",
+      "end_date": "2026-11-01"
     },
     {
       "title": "2026 Market Day",
@@ -74644,7 +74844,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "crafts, farmers-market"
+      "tags": "crafts, farmers-market",
+      "end_date": "2026-09-26"
     },
     {
       "title": "4th Annual Bemidji Walk for Recovery",
@@ -74707,7 +74908,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": ""
+      "tags": "",
+      "end_date": "2026-09-25"
     },
     {
       "title": "Watermark Art Center: Women & Bumblebees",
@@ -74770,7 +74972,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "crafts"
+      "tags": "crafts",
+      "end_date": "2026-11-27"
     },
     {
       "title": "Live Music: Hillbilly Fever",
@@ -74917,7 +75120,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "music"
+      "tags": "music",
+      "end_date": "2026-09-06"
     },
     {
       "title": "Open Mic at Intuition Brewing",
@@ -75169,7 +75373,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": ""
+      "tags": "",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Southwest MN Hacks: Fall 2026",
@@ -76124,10 +76329,10 @@
       "price": "",
       "age_range": "",
       "address": "Paul Watkins Art Gallery, West 9th and Winona Streets, Winona, 55987, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.05001,
+      "longitude": -91.63923,
+      "image_url": "https://images.pexels.com/photos/4697232/pexels-photo-4697232.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-03",
       "time": "9:00 AM",
       "phone": "",
@@ -76145,10 +76350,10 @@
       "price": "",
       "age_range": "",
       "address": "Minnesota, Winona, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.045341,
+      "longitude": -91.695188,
+      "image_url": "https://images.pexels.com/photos/8506328/pexels-photo-8506328.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-03",
       "time": "10:00 AM",
       "phone": "",
@@ -76166,10 +76371,10 @@
       "price": "",
       "age_range": "",
       "address": "Minnesota, Winona, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.045341,
+      "longitude": -91.695188,
+      "image_url": "https://images.pexels.com/photos/7869442/pexels-photo-7869442.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-03",
       "time": "10:00 AM",
       "phone": "",
@@ -76187,10 +76392,10 @@
       "price": "",
       "age_range": "",
       "address": "Minnesota, Winona, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.045341,
+      "longitude": -91.695188,
+      "image_url": "https://images.pexels.com/photos/7031293/pexels-photo-7031293.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-03",
       "time": "10:00 AM",
       "phone": "",
@@ -76208,10 +76413,10 @@
       "price": "",
       "age_range": "",
       "address": "Minnesota, Winona, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.045341,
+      "longitude": -91.695188,
+      "image_url": "https://images.pexels.com/photos/8033970/pexels-photo-8033970.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-03",
       "time": "10:00 AM",
       "phone": "",
@@ -76229,10 +76434,10 @@
       "price": "",
       "age_range": "",
       "address": "The Lafayette, 79 East 3rd St., Winona, MN, 55987, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.05001,
+      "longitude": -91.63923,
+      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-03",
       "time": "6:00 PM",
       "phone": "",
@@ -76250,10 +76455,10 @@
       "price": "",
       "age_range": "",
       "address": "Peter’s Biergarten, 54 E. 3rd St., Winona, Minnesota, 55987",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.05001,
+      "longitude": -91.63923,
+      "image_url": "https://images.pexels.com/photos/7447195/pexels-photo-7447195.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-05",
       "time": "6:00 PM",
       "phone": "",
@@ -76271,10 +76476,10 @@
       "price": "$7",
       "age_range": "",
       "address": "Trempealeau Hotel, 11332 Main Street, Trempealeau, Wisconsin, 54661, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.004444,
+      "longitude": -91.442354,
+      "image_url": "https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-05",
       "time": "6:00 PM",
       "phone": "",
@@ -76292,10 +76497,10 @@
       "price": "",
       "age_range": "",
       "address": "Prairie Island Campground, 1120 Prairie Island Rd, Winona, MN, 55987",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.05001,
+      "longitude": -91.63923,
+      "image_url": "https://images.pexels.com/photos/30271349/pexels-photo-30271349.jpeg",
+      "image_source": "curated",
       "date": "2026-09-05",
       "time": "6:30 PM",
       "phone": "",
@@ -76313,10 +76518,10 @@
       "price": "",
       "age_range": "",
       "address": "Foxhole Brewhouse, 905 Highway 71 NE, Willmar, MN, 56201, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.12195,
+      "longitude": -95.04354,
+      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-04",
       "time": "6:00 PM",
       "phone": "",
@@ -76334,10 +76539,10 @@
       "price": "",
       "age_range": "",
       "address": "Sibley State Park, 800 Sibley Park Road NE, New London, MN, 56273, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.30108,
+      "longitude": -94.94418,
+      "image_url": "https://images.pexels.com/photos/4697232/pexels-photo-4697232.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-05",
       "time": "8:30 AM",
       "phone": "",
@@ -76355,10 +76560,10 @@
       "price": "",
       "age_range": "",
       "address": "Sibley State Park, 800 Sibley Park Road NE, New London, MN, 56273, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.30108,
+      "longitude": -94.94418,
+      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-05",
       "time": "1:00 PM",
       "phone": "",
@@ -76376,10 +76581,10 @@
       "price": "$35.00",
       "age_range": "",
       "address": "Zorbaz, 159 Lake Ave S, Spicer, MN, 56288, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.23302,
+      "longitude": -94.94001,
+      "image_url": "https://images.pexels.com/photos/31874024/pexels-photo-31874024.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-06",
       "time": "11:30 AM",
       "phone": "",
@@ -76397,10 +76602,10 @@
       "price": "",
       "age_range": "",
       "address": "Sibley State Park, 800 Sibley Park Road NE, New London, MN, 56273, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.30108,
+      "longitude": -94.94418,
+      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-06",
       "time": "1:00 PM",
       "phone": "",
@@ -76418,10 +76623,10 @@
       "price": "",
       "age_range": "",
       "address": "1701 Charlton Street, West St. Paul, MN, 55118, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.894945,
+      "longitude": -93.098705,
+      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-09",
       "time": "7:00 PM",
       "phone": "",
@@ -76439,10 +76644,10 @@
       "price": "",
       "age_range": "",
       "address": "8946 70th Street S, Cottage Grove, MN, 55016, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.848177,
+      "longitude": -92.924266,
+      "image_url": "https://images.pexels.com/photos/8033970/pexels-photo-8033970.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-10",
       "time": "6:00 PM",
       "phone": "",
@@ -76450,7 +76655,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "crafts"
+      "tags": "crafts",
+      "end_date": "2026-10-01"
     },
     {
       "title": "Fall Farm Tour",
@@ -76460,10 +76666,10 @@
       "price": "",
       "age_range": "",
       "address": "1701 Charlton Street, West St. Paul, MN, 55118, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.894945,
+      "longitude": -93.098705,
+      "image_url": "https://images.pexels.com/photos/31874024/pexels-photo-31874024.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-11",
       "time": "10:00 AM",
       "phone": "",
@@ -76481,10 +76687,10 @@
       "price": "",
       "age_range": "",
       "address": "8946 70th Street S, Cottage Grove, MN, 55016, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.848177,
+      "longitude": -92.924266,
+      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-12",
       "time": "10:00 AM",
       "phone": "",
@@ -76502,10 +76708,10 @@
       "price": "",
       "age_range": "",
       "address": "8946 70th Street S, Cottage Grove, MN, 55016, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.848177,
+      "longitude": -92.924266,
+      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-12",
       "time": "10:00 AM",
       "phone": "",
@@ -76523,10 +76729,10 @@
       "price": "",
       "age_range": "",
       "address": "8946 70th Street S, Cottage Grove, MN, 55016, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.848177,
+      "longitude": -92.924266,
+      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-14",
       "time": "10:00 AM",
       "phone": "",
@@ -76544,10 +76750,10 @@
       "price": "",
       "age_range": "",
       "address": "365 Marie Avenue W, West St. Paul, MN, 55118, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.890928,
+      "longitude": -93.100668,
+      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-14",
       "time": "5:00 PM",
       "phone": "",
@@ -76555,7 +76761,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": ""
+      "tags": "",
+      "end_date": "2026-09-28"
     },
     {
       "title": "Nature After Dinner: The Buzz About Bees",
@@ -76565,10 +76772,10 @@
       "price": "",
       "age_range": "",
       "address": "1701 Charlton Street, West St. Paul, MN, 55118, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.894945,
+      "longitude": -93.098705,
+      "image_url": "https://images.pexels.com/photos/31874024/pexels-photo-31874024.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-15",
       "time": "6:00 PM",
       "phone": "",
@@ -76586,10 +76793,10 @@
       "price": "$80",
       "age_range": "",
       "address": "8946 70th Street S, Cottage Grove, MN, 55016, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.848177,
+      "longitude": -92.924266,
+      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-16",
       "time": "9:00 AM",
       "phone": "",
@@ -76597,7 +76804,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "outdoors, animals, play"
+      "tags": "outdoors, animals, play",
+      "end_date": "2026-09-30"
     },
     {
       "title": "Catnip and Crafts for Your Cat",
@@ -76607,10 +76815,10 @@
       "price": "",
       "age_range": "",
       "address": "8946 70th Street S, Cottage Grove, MN, 55016, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.848177,
+      "longitude": -92.924266,
+      "image_url": "https://images.pexels.com/photos/8033970/pexels-photo-8033970.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-16",
       "time": "6:00 PM",
       "phone": "",
@@ -76628,10 +76836,10 @@
       "price": "",
       "age_range": "",
       "address": "1701 Charlton Street, West St. Paul, MN, 55118, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.894945,
+      "longitude": -93.098705,
+      "image_url": "https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-17",
       "time": "6:00 PM",
       "phone": "",
@@ -76649,10 +76857,10 @@
       "price": "",
       "age_range": "",
       "address": "365 Marie Avenue W, West St. Paul, MN, 55118, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.890928,
+      "longitude": -93.100668,
+      "image_url": "https://images.pexels.com/photos/4697232/pexels-photo-4697232.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-21",
       "time": "8:15 AM",
       "phone": "",
@@ -76670,10 +76878,10 @@
       "price": "",
       "age_range": "",
       "address": "8946 70th Street S, Cottage Grove, MN, 55016, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.848177,
+      "longitude": -92.924266,
+      "image_url": "https://images.pexels.com/photos/4697232/pexels-photo-4697232.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-28",
       "time": "8:15 AM",
       "phone": "",
@@ -76691,10 +76899,10 @@
       "price": "",
       "age_range": "",
       "address": "365 Marie Avenue W, West St. Paul, MN, 55118, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.890928,
+      "longitude": -93.100668,
+      "image_url": "https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-21",
       "time": "8:15 AM",
       "phone": "",
@@ -76712,10 +76920,10 @@
       "price": "",
       "age_range": "",
       "address": "1701 Charlton Street, West St. Paul, MN, 55118, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.894945,
+      "longitude": -93.098705,
+      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-22",
       "time": "6:00 PM",
       "phone": "",
@@ -76733,10 +76941,10 @@
       "price": "",
       "age_range": "",
       "address": "1701 Charlton Street, West St. Paul, MN, 55118, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.894945,
+      "longitude": -93.098705,
+      "image_url": "https://images.pexels.com/photos/7031293/pexels-photo-7031293.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-24",
       "time": "6:30 PM",
       "phone": "",
@@ -76754,10 +76962,10 @@
       "price": "",
       "age_range": "",
       "address": "8946 70th Street S, Cottage Grove, MN, 55016, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.848177,
+      "longitude": -92.924266,
+      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-25",
       "time": "7:00 PM",
       "phone": "",
@@ -76775,10 +76983,10 @@
       "price": "",
       "age_range": "",
       "address": "8946 70th Street S, Cottage Grove, MN, 55016, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.848177,
+      "longitude": -92.924266,
+      "image_url": "https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-26",
       "time": "10:00 AM",
       "phone": "",
@@ -76796,10 +77004,10 @@
       "price": "",
       "age_range": "",
       "address": "8946 70th Street S, Cottage Grove, MN, 55016, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.848177,
+      "longitude": -92.924266,
+      "image_url": "https://images.pexels.com/photos/7031293/pexels-photo-7031293.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-26",
       "time": "1:00 PM",
       "phone": "",
@@ -76817,10 +77025,10 @@
       "price": "",
       "age_range": "",
       "address": "8946 70th Street S, Cottage Grove, MN, 55016, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.848177,
+      "longitude": -92.924266,
+      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-28",
       "time": "8:15 AM",
       "phone": "",
@@ -76838,10 +77046,10 @@
       "price": "",
       "age_range": "",
       "address": "1701 Charlton Street, West St. Paul, MN, 55118, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.894945,
+      "longitude": -93.098705,
+      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-29",
       "time": "7:00 PM",
       "phone": "",
@@ -76859,10 +77067,10 @@
       "price": "",
       "age_range": "",
       "address": "365 Marie Avenue W, West St. Paul, MN, 55118, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.890928,
+      "longitude": -93.100668,
+      "image_url": "https://images.pexels.com/photos/3099187/pexels-photo-3099187.jpeg",
+      "image_source": "curated",
       "date": "2026-10-01",
       "time": "6:00 PM",
       "phone": "",
@@ -76880,10 +77088,10 @@
       "price": "",
       "age_range": "",
       "address": "Rochester, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.023439,
+      "longitude": -92.463018,
+      "image_url": "https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-05",
       "time": "",
       "phone": "",
@@ -76901,10 +77109,10 @@
       "price": "",
       "age_range": "",
       "address": "Rochester, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.023439,
+      "longitude": -92.463018,
+      "image_url": "https://images.pexels.com/photos/7869442/pexels-photo-7869442.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-08",
       "time": "",
       "phone": "",
@@ -76922,10 +77130,10 @@
       "price": "",
       "age_range": "",
       "address": "South St. Paul, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.890669,
+      "longitude": -93.037281,
+      "image_url": "https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-16",
       "time": "11:00 AM",
       "phone": "",
@@ -76943,10 +77151,10 @@
       "price": "",
       "age_range": "",
       "address": "Minneopa State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.171045,
+      "longitude": -94.115092,
+      "image_url": "https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-04",
       "time": "10 AM",
       "phone": "",
@@ -76964,10 +77172,10 @@
       "price": "",
       "age_range": "",
       "address": "Forestville Mystery Cave State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 43.630584,
+      "longitude": -92.220019,
+      "image_url": "https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-05",
       "time": "7 PM",
       "phone": "",
@@ -76985,10 +77193,10 @@
       "price": "",
       "age_range": "",
       "address": "Forestville Mystery Cave State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 43.630584,
+      "longitude": -92.220019,
+      "image_url": "https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-06",
       "time": "1 PM",
       "phone": "",
@@ -77006,10 +77214,10 @@
       "price": "",
       "age_range": "",
       "address": "Forestville Mystery Cave State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 43.630584,
+      "longitude": -92.220019,
+      "image_url": "https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-06",
       "time": "6:30 PM",
       "phone": "",
@@ -77027,10 +77235,10 @@
       "price": "",
       "age_range": "",
       "address": "Forestville Mystery Cave State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 43.630584,
+      "longitude": -92.220019,
+      "image_url": "https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-06",
       "time": "10 AM",
       "phone": "",
@@ -77048,10 +77256,10 @@
       "price": "",
       "age_range": "",
       "address": "Lake Maria State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.313239,
+      "longitude": -93.952906,
+      "image_url": "https://images.pexels.com/photos/8033970/pexels-photo-8033970.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-26",
       "time": "1 PM",
       "phone": "",
@@ -77069,10 +77277,10 @@
       "price": "$7",
       "age_range": "",
       "address": "Nerstrand Big Woods State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.345453,
+      "longitude": -93.109204,
+      "image_url": "https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-17",
       "time": "1 PM",
       "phone": "",
@@ -77090,10 +77298,10 @@
       "price": "$7",
       "age_range": "",
       "address": "Nerstrand Big Woods State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.345453,
+      "longitude": -93.109204,
+      "image_url": "https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-17",
       "time": "6 PM",
       "phone": "",
@@ -77111,10 +77319,10 @@
       "price": "",
       "age_range": "",
       "address": "Nerstrand Big Woods State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.345453,
+      "longitude": -93.109204,
+      "image_url": "https://images.pexels.com/photos/8033970/pexels-photo-8033970.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-17",
       "time": "3 PM",
       "phone": "",
@@ -77132,10 +77340,10 @@
       "price": "",
       "age_range": "",
       "address": "Nerstrand Big Woods State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.345453,
+      "longitude": -93.109204,
+      "image_url": "https://images.pexels.com/photos/8033970/pexels-photo-8033970.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-31",
       "time": "1 PM",
       "phone": "",
@@ -77153,10 +77361,10 @@
       "price": "$7",
       "age_range": "",
       "address": "Nerstrand Big Woods State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.345453,
+      "longitude": -93.109204,
+      "image_url": "https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-18",
       "time": "10 AM",
       "phone": "",
@@ -77174,10 +77382,10 @@
       "price": "$7",
       "age_range": "",
       "address": "Nerstrand Big Woods State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.345453,
+      "longitude": -93.109204,
+      "image_url": "https://images.pexels.com/photos/8033970/pexels-photo-8033970.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-18",
       "time": "1 PM",
       "phone": "",
@@ -77195,10 +77403,10 @@
       "price": "",
       "age_range": "",
       "address": "300 Nicollet Mall, Minneapolis,, MN, 55401",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.980167,
+      "longitude": -93.269957,
+      "image_url": "https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-11",
       "time": "1:30 PM",
       "phone": "",
@@ -77216,10 +77424,10 @@
       "price": "",
       "age_range": "",
       "address": "300 Nicollet Mall, Minneapolis,, MN, 55401",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.980167,
+      "longitude": -93.269957,
+      "image_url": "https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-11",
       "time": "2:30 PM",
       "phone": "",
@@ -77237,10 +77445,10 @@
       "price": "",
       "age_range": "",
       "address": "Elizabeth Ripley, Columbia Heights, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.04605,
+      "longitude": -93.25178,
+      "image_url": "https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-09",
       "time": "10:30 PM",
       "phone": "",
@@ -77248,7 +77456,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library",
+      "end_date": "2026-10-21"
     },
     {
       "title": "Books and Beyond: Imagine That",
@@ -77258,10 +77467,10 @@
       "price": "",
       "age_range": "",
       "address": "Megan Koenen, Hastings, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.74269,
+      "longitude": -92.85187,
+      "image_url": "https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-09",
       "time": "3:30 PM",
       "phone": "",
@@ -77279,10 +77488,10 @@
       "price": "",
       "age_range": "",
       "address": "Shakopee Library, Shakopee, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.797077,
+      "longitude": -93.524482,
+      "image_url": "https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-15",
       "time": "3:30 PM",
       "phone": "",
@@ -77300,10 +77509,10 @@
       "price": "",
       "age_range": "",
       "address": "Shakopee Library, Shakopee, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.797077,
+      "longitude": -93.524482,
+      "image_url": "https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-17",
       "time": "3:30 PM",
       "phone": "",
@@ -77321,10 +77530,10 @@
       "price": "",
       "age_range": "",
       "address": "Jordan Library, Jordan, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.665903,
+      "longitude": -93.634997,
+      "image_url": "https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-22",
       "time": "3:30 PM",
       "phone": "",
@@ -101740,7 +101949,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "family,all-ages,minneapolis,donations"
+      "tags": "family,all-ages,minneapolis,donations",
+      "end_date": "2026-09-30"
     },
     {
       "title": "Second Harvest Heartland Food Bank Volunteer",
@@ -111309,7 +111519,7 @@
       "address": "3669 Galleria, Edina, MN 55435",
       "latitude": "44.889700",
       "longitude": "-93.350120",
-      "image_url": "https://images.pexels.com/photos/2456435/pexels-photo-2456435.jpeg",
+      "image_url": "https://images.pexels.com/photos/9821845/pexels-photo-9821845.jpeg",
       "image_source": "curated",
       "date": "",
       "time": "",
@@ -111330,7 +111540,7 @@
       "address": "Minnetonka, MN",
       "latitude": "44.94051",
       "longitude": "-93.46389",
-      "image_url": "https://images.pexels.com/photos/2456435/pexels-photo-2456435.jpeg",
+      "image_url": "https://images.pexels.com/photos/9821845/pexels-photo-9821845.jpeg",
       "image_source": "curated",
       "date": "",
       "time": "",
@@ -111687,7 +111897,7 @@
       "address": "Fridley, MN",
       "latitude": "45.08383",
       "longitude": "-93.25904",
-      "image_url": "https://images.pexels.com/photos/12737918/pexels-photo-12737918.jpeg",
+      "image_url": "https://images.pexels.com/photos/33858065/pexels-photo-33858065.jpeg",
       "image_source": "curated",
       "date": "",
       "time": "",
