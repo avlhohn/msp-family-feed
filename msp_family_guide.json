@@ -5812,8 +5812,8 @@
       "address": "In the Heart of the Beast Puppet and Mask Theatre, 2411 Hennepin Ave, Minneapolis, MN 55405",
       "latitude": "44.977300",
       "longitude": "-93.265469",
-      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
-      "image_source": "curated_category",
+      "image_url": "https://images.squarespace-cdn.com/content/v1/67042000d25538273d4dcd96/1786552064034-P42CIBKXM0V0N0VZ0F1F/Puppet+Library+-+stage+wall.jpg?format=1000w",
+      "image_source": "curated",
       "date": "2026-09-05",
       "time": "10:00-14:00",
       "phone": "",
@@ -11331,7 +11331,7 @@
       "address": "Minneapolis Central, 300 Nicollet Mall, Minneapolis, MN 55401",
       "latitude": "44.977300",
       "longitude": "-93.265469",
-      "image_url": "https://images.pexels.com/photos/7979786/pexels-photo-7979786.jpeg",
+      "image_url": "https://images.pexels.com/photos/7356602/pexels-photo-7356602.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-26",
       "time": "3:00 PM",
@@ -11340,7 +11340,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "class,free,minneapolis,Minneapolis,feed,hennepin_library,library,story-time,kids,family,src:hclib"
+      "tags": "class,free,minneapolis,Minneapolis,feed,hennepin_library,library,story-time,kids,family,src:hclib,puppet-show"
     },
     {
       "title": "Beaded Keychain Workshop",
@@ -13245,7 +13245,7 @@
       "address": "George Latimer Central Library, 90 West 4th Street, Saint Paul, MN 55102",
       "latitude": "44.949749",
       "longitude": "-93.093103",
-      "image_url": "https://live.staticflickr.com/65535/49375647497_b5de3cc792_b.jpg",
+      "image_url": "https://images.pexels.com/photos/7356602/pexels-photo-7356602.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-26",
       "time": "11:00 AM",
@@ -13254,7 +13254,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "babies,class,family,free,kids,music-class,open-play,preschool,saint-paul,story-time,toddlers"
+      "tags": "babies,class,family,free,kids,music-class,open-play,preschool,saint-paul,story-time,toddlers,puppet-show"
     },
     {
       "title": "Minnesota Libraries Read Together: Silent Reading Time",
@@ -60024,7 +60024,7 @@
       "address": "5244 Lyndale Ave. S., Minneapolis,, MN, 55419",
       "latitude": 44.907329,
       "longitude": -93.288714,
-      "image_url": "https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg",
+      "image_url": "https://images.pexels.com/photos/7356602/pexels-photo-7356602.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-14",
       "time": "2:00 PM",
@@ -60033,7 +60033,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library,puppet-show"
     },
     {
       "title": "Mystery/Thriller Book Club",
@@ -72057,7 +72057,7 @@
       "address": "21300 John Milless Dr., Rogers,, MN, 55374",
       "latitude": 45.191578,
       "longitude": -93.548367,
-      "image_url": "https://images.pexels.com/photos/8775874/pexels-photo-8775874.jpeg",
+      "image_url": "https://images.pexels.com/photos/7356602/pexels-photo-7356602.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-03",
       "time": "10:00 AM",
@@ -72066,7 +72066,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library,puppet-show"
     },
     {
       "title": "Dream of Owls: Puppet Show",
@@ -72078,7 +72078,7 @@
       "address": "5280 Grandview Square, Edina,, MN, 55436",
       "latitude": 44.906403,
       "longitude": -93.354936,
-      "image_url": "https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg",
+      "image_url": "https://images.pexels.com/photos/7356602/pexels-photo-7356602.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-29",
       "time": "10:00 AM",
@@ -72087,7 +72087,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library,puppet-show"
     },
     {
       "title": "Family Storytime",
@@ -73737,7 +73737,7 @@
       "address": "2727 E. Lake St., Minneapolis,, MN, 55406",
       "latitude": 44.948109,
       "longitude": -93.231938,
-      "image_url": "https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg",
+      "image_url": "https://images.pexels.com/photos/7356602/pexels-photo-7356602.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-30",
       "time": "11:00 AM",
@@ -73746,7 +73746,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library,puppet-show"
     },
     {
       "title": "Dream of Owls: Puppet Show",
@@ -73758,7 +73758,7 @@
       "address": "5100 34th Ave. S., Minneapolis,, MN, 55417",
       "latitude": 44.910471,
       "longitude": -93.223247,
-      "image_url": "https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg",
+      "image_url": "https://images.pexels.com/photos/7356602/pexels-photo-7356602.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-30",
       "time": "4:00 PM",
@@ -73767,7 +73767,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library,puppet-show"
     },
     {
       "title": "Stitched Loon Ornament",
