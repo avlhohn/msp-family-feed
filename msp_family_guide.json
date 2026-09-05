@@ -22,7 +22,7 @@
       "address": "2400 3rd Ave S, Minneapolis, MN",
       "latitude": "44.9773",
       "longitude": "-93.26547",
-      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-08",
       "time": "Varies",
@@ -31,7 +31,7 @@
       "has_deal": true,
       "deal_description": "Free admission for up to 2 with MELSA smARTpass; daily discounts for kids to 17, students, seniors 65+ and military families; $35 adult / $25 kid Section C, preview and rush seats; 20% group discount for 15+",
       "deal_expiry": "",
-      "tags": "theater,performing-arts,show,kids,family,minneapolis,ticketed,paid,twin-cities,theatre,youth-activity,class,lesson,performance,school-age,children's show,performing arts"
+      "tags": "theater,performing-arts,show,kids,family,minneapolis,ticketed,paid,twin-cities,theatre,youth-activity,class,lesson,performance,school-age,children's show,performing arts,theatre-show"
     },
     {
       "title": "Afton Apple Orchard Fall Festival Weekends 2026",
@@ -884,7 +884,7 @@
       "address": "32060 Furrow Rd, Lanesboro, MN 55949",
       "latitude": "43.7188",
       "longitude": "-91.9765",
-      "image_url": "https://images.pexels.com/photos/5529545/pexels-photo-5529545.jpeg",
+      "image_url": "https://images.pexels.com/photos/5570593/pexels-photo-5570593.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-05",
       "time": "Weekends",
@@ -893,7 +893,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "farm/u-pick,seasonal,family,outstate/day-trip,winona",
+      "tags": "farm/u-pick,seasonal,family,outstate/day-trip,winona,corn-maze",
       "end_date": "2026-09-12"
     },
     {
@@ -1919,7 +1919,7 @@
       "address": "9048 Ahern Ave SE, Delano, MN",
       "latitude": "45.0405",
       "longitude": "-93.7891",
-      "image_url": "https://images.pexels.com/photos/5529545/pexels-photo-5529545.jpeg",
+      "image_url": "https://images.pexels.com/photos/18748105/pexels-photo-18748105.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-05",
       "time": "10:00 AM - 6:00 PM",
@@ -2592,7 +2592,7 @@
       "address": "8001 109th Ave N, Brooklyn Park, MN 55445",
       "latitude": "45.12363",
       "longitude": "-93.38018",
-      "image_url": "https://live.staticflickr.com/1102/1478354100_d2c92c1c2e_b.jpg",
+      "image_url": "https://images.pexels.com/photos/18748105/pexels-photo-18748105.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-05",
       "time": "",
@@ -2991,7 +2991,7 @@
       "address": "Moorhead, MN area",
       "latitude": "46.870019",
       "longitude": "-96.779279",
-      "image_url": "https://images.pexels.com/photos/5529545/pexels-photo-5529545.jpeg",
+      "image_url": "https://images.pexels.com/photos/13953661/pexels-photo-13953661.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-20",
       "time": "10:00 AM",
@@ -3000,7 +3000,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "moorhead,farm/u-pick,family,kids,seasonal,outstate/day-trip"
+      "tags": "moorhead,farm/u-pick,family,kids,seasonal,outstate/day-trip,pumpkin-patch"
     },
     {
       "title": "Lac Qui Parle County Fair",
@@ -3077,7 +3077,7 @@
       "address": "Delano, MN",
       "latitude": "45.041907",
       "longitude": "-93.789133",
-      "image_url": "https://images.pexels.com/photos/5529545/pexels-photo-5529545.jpeg",
+      "image_url": "https://images.pexels.com/photos/18748105/pexels-photo-18748105.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-15",
       "time": "10:00 AM",
@@ -4108,7 +4108,7 @@
       "address": "Civic Center Park, Minnetonka, MN",
       "latitude": "44.94051",
       "longitude": "-93.46389",
-      "image_url": "https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-11",
       "time": "Dusk",
@@ -4117,7 +4117,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "minnetonka,west-metro,outdoor-movie,free,all-ages,family"
+      "tags": "minnetonka,west-metro,outdoor-movie,free,all-ages,family,movie-screening"
     },
     {
       "title": "Field Fest",
@@ -4150,7 +4150,7 @@
       "address": "3675 Arboretum Blvd, Chanhassen, MN",
       "latitude": "44.86184",
       "longitude": "-93.53072",
-      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
+      "image_url": "https://images.pexels.com/photos/18748105/pexels-photo-18748105.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-17",
       "time": "All day",
@@ -4159,7 +4159,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "chanhassen,west-metro,seasonal,paid"
+      "tags": "chanhassen,west-metro,seasonal,paid,pumpkin-patch"
     },
     {
       "title": "Wayzata Fire Department 9th Annual Pancake Breakfast",
@@ -4423,7 +4423,7 @@
       "address": "Arlington Hills Park, Saint Paul, MN",
       "latitude": "44.9497487",
       "longitude": "-93.0931028",
-      "image_url": "https://images.pexels.com/photos/1384254/pexels-photo-1384254.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-16",
       "time": "20:00",
@@ -4432,7 +4432,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "free,family,movie,bonfire,st-paul"
+      "tags": "free,family,movie,bonfire,st-paul,movie-screening"
     },
     {
       "title": "St. Paul Parks & Recreation - Back-to-School Bonfire",
@@ -5790,7 +5790,7 @@
       "address": "Levee Park, Hastings, MN",
       "latitude": "44.745695",
       "longitude": "-92.849962",
-      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-11",
       "time": "19:30",
@@ -5799,7 +5799,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "free,outdoor-movie,kids,family,all-ages"
+      "tags": "free,outdoor-movie,kids,family,all-ages,movie-screening"
     },
     {
       "title": "Carpenter Fall Raptor Release - Hastings",
@@ -6441,7 +6441,7 @@
       "address": "Polar Lakes Park, White Bear Township, MN",
       "latitude": "45.092935",
       "longitude": "-93.050146",
-      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-12",
       "time": "Evening",
@@ -6450,7 +6450,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "outdoor-movie,free,family,white-bear-township"
+      "tags": "outdoor-movie,free,family,white-bear-township,movie-screening"
     },
     {
       "title": "Three Rivers Parks - Fall Colors Family Kayaking",
@@ -6652,7 +6652,7 @@
       "address": "RCTC Field, Rochester, MN",
       "latitude": "44.023439",
       "longitude": "-92.463018",
-      "image_url": "https://images.pexels.com/photos/8914048/pexels-photo-8914048.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-18",
       "time": "Dusk",
@@ -6661,7 +6661,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "family,outdoor,entertainment,rochester,Rochester,free,outdoor movie,evening"
+      "tags": "family,outdoor,entertainment,rochester,Rochester,free,outdoor movie,evening,movie-screening"
     },
     {
       "title": "Moorhead Community Celebration",
@@ -8607,7 +8607,7 @@
       "address": "Arlington Hills Community Center, Saint Paul, MN",
       "latitude": "44.949749",
       "longitude": "-93.093103",
-      "image_url": "https://images.pexels.com/photos/4697232/pexels-photo-4697232.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-16",
       "time": "8:00 PM - 10:00 PM",
@@ -8616,7 +8616,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "St. Paul,free,family,kids,all-ages,outdoor movie,bonfire"
+      "tags": "St. Paul,free,family,kids,all-ages,outdoor movie,bonfire,movie-screening"
     },
     {
       "title": "Back-to-School Bonfire - Palace",
@@ -10508,7 +10508,7 @@
       "address": "North Regional, 1315 Lowry Ave. N., Minneapolis, MN 55411",
       "latitude": "44.977300",
       "longitude": "-93.265469",
-      "image_url": "https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-24",
       "time": "5:30 PM",
@@ -10517,7 +10517,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "class,family,free,kids,minneapolis,recurring,Minneapolis,school-age,movie,maker,feed,hennepin_library,src:hclib,library"
+      "tags": "class,family,free,kids,minneapolis,recurring,Minneapolis,school-age,movie,maker,feed,hennepin_library,src:hclib,library,movie-screening"
     },
     {
       "title": "Family Movie Night",
@@ -10529,7 +10529,7 @@
       "address": "North Regional, 1315 Lowry Ave. N., Minneapolis, MN 55411",
       "latitude": "44.977300",
       "longitude": "-93.265469",
-      "image_url": "https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-10",
       "time": "5:30 PM",
@@ -10538,7 +10538,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "class,family,free,kids,minneapolis,recurring,Minneapolis,school-age,movie,maker,feed,hennepin_library,src:hclib,library"
+      "tags": "class,family,free,kids,minneapolis,recurring,Minneapolis,school-age,movie,maker,feed,hennepin_library,src:hclib,library,movie-screening"
     },
     {
       "title": "Pokémon Collectible Card Club",
@@ -14441,7 +14441,7 @@
       "address": "11500 150th Street West, Savage, MN 55378",
       "latitude": "44.787",
       "longitude": "-93.391",
-      "image_url": "https://images.pexels.com/photos/31874024/pexels-photo-31874024.jpeg",
+      "image_url": "https://images.pexels.com/photos/18748105/pexels-photo-18748105.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-06",
       "time": "10:00 AM",
@@ -14450,7 +14450,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "seasonal,paid,family,farm,kids,savage"
+      "tags": "seasonal,paid,family,farm,kids,savage,pumpkin-patch"
     },
     {
       "title": "Fall Harvest Orchard - Family Activities",
@@ -14483,7 +14483,7 @@
       "address": "32060 Furrow Road, Lanesboro, MN 55949",
       "latitude": "43.73",
       "longitude": "-91.945",
-      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
+      "image_url": "https://images.pexels.com/photos/13953661/pexels-photo-13953661.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-15",
       "time": "10:00 AM",
@@ -14492,7 +14492,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "seasonal,paid,family,farm,kids,lanesboro"
+      "tags": "seasonal,paid,family,farm,kids,lanesboro,pumpkin-patch"
     },
     {
       "title": "Spotlight Storytime",
@@ -16184,7 +16184,7 @@
       "address": "Arlington Hills Park, Saint Paul, MN",
       "latitude": "44.949750",
       "longitude": "-93.093100",
-      "image_url": "https://images.pexels.com/photos/4697232/pexels-photo-4697232.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-16",
       "time": "20:00-22:00",
@@ -16193,7 +16193,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "saint-paul,east-metro,free,family"
+      "tags": "saint-paul,east-metro,free,family,movie-screening"
     },
     {
       "title": "Back-to-School Bonfire at Palace Park",
@@ -16373,7 +16373,7 @@
       "address": "Winona, MN",
       "latitude": "44.05001",
       "longitude": "-91.63923",
-      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
+      "image_url": "https://images.pexels.com/photos/5570593/pexels-photo-5570593.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-12",
       "time": "",
@@ -16382,7 +16382,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "winona,outstate,paid,family"
+      "tags": "winona,outstate,paid,family,corn-maze"
     },
     {
       "title": "Deep Roots Festival",
@@ -17382,7 +17382,7 @@
       "address": "Polar Lakes Park, White Bear Township, MN",
       "latitude": "45.092935",
       "longitude": "-93.050146",
-      "image_url": "https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-12",
       "time": "Dusk",
@@ -17391,7 +17391,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "white-bear-township,community-movie-night,family-friendly"
+      "tags": "white-bear-township,community-movie-night,family-friendly,movie-screening"
     },
     {
       "title": "St. Cloud Movie Under the Stars",
@@ -17403,7 +17403,7 @@
       "address": "Whitney Park, St. Cloud, MN",
       "latitude": "45.583173",
       "longitude": "-94.182478",
-      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-12",
       "time": "Dusk",
@@ -17412,7 +17412,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "st-cloud,community-movie-night,family-friendly"
+      "tags": "st-cloud,community-movie-night,family-friendly,movie-screening"
     },
     {
       "title": "Vergas Hairyman Festival",
@@ -33245,7 +33245,7 @@
       "address": "Whitney Park, St. Cloud, MN",
       "latitude": "45.583173",
       "longitude": "-94.182478",
-      "image_url": "https://images.pexels.com/photos/25649992/pexels-photo-25649992.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-12",
       "time": "6:30 PM",
@@ -33254,7 +33254,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "st-cloud,free,outdoor,movie,family"
+      "tags": "st-cloud,free,outdoor,movie,family,movie-screening"
     },
     {
       "title": "Paramount Center for the Arts - The Beatles: #1 Hits",
@@ -33413,7 +33413,7 @@
       "address": "Slatterly Park, Rochester, MN",
       "latitude": "44.012937",
       "longitude": "-92.454374",
-      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-05",
       "time": "6:30 PM",
@@ -33422,7 +33422,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "rochester, movies, music, outdoor, family"
+      "tags": "rochester,movies,music,outdoor,family,movie-screening"
     },
     {
       "title": "Punch Brothers Concert",
@@ -34673,7 +34673,7 @@
       "address": "North River Hills Park, Big Lake, MN",
       "latitude": 45.33246,
       "longitude": -93.74608,
-      "image_url": "https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-25",
       "time": "",
@@ -34682,7 +34682,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "statewide, family, kids, outdoor movie, outstate/day-trip"
+      "tags": "statewide,family,kids,outdoor movie,outstate/day-trip,movie-screening"
     },
     {
       "title": "Lake County Fair",
@@ -34778,7 +34778,7 @@
       "address": "Monticello, MN",
       "latitude": 45.30539,
       "longitude": -93.794,
-      "image_url": "https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg",
+      "image_url": "https://images.pexels.com/photos/13953661/pexels-photo-13953661.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-06",
       "time": "10:00",
@@ -34787,7 +34787,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "corn-maze, pumpkin-patch, farm, fall, family-event, september, monticello"
+      "tags": "corn-maze,pumpkin-patch,farm,fall,family-event,september,monticello"
     },
     {
       "title": "Leech Lake Band of Ojibwe Powwow - Cass Lake",
@@ -35597,7 +35597,7 @@
       "address": "3121 W 150th St, Shakopee, MN 55379",
       "latitude": "44.7327",
       "longitude": "-93.49774",
-      "image_url": "https://images.pexels.com/photos/37177818/pexels-photo-37177818.jpeg",
+      "image_url": "https://images.pexels.com/photos/13953661/pexels-photo-13953661.jpeg",
       "image_source": "curated_category",
       "date": "",
       "time": "",
@@ -36059,7 +36059,7 @@
       "address": "Minneapolis, MN",
       "latitude": 44.95859,
       "longitude": -93.27415,
-      "image_url": "https://images.pexels.com/photos/1384254/pexels-photo-1384254.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "",
       "time": "",
@@ -36068,7 +36068,7 @@
       "has_deal": true,
       "deal_description": "Free admission for up to 2 with MELSA smARTpass; daily discounts for kids to 17, students, seniors 65+ and military families; $35 adult / $25 kid Section C, preview and rush seats; 20% group discount for 15+",
       "deal_expiry": "",
-      "tags": "sensory-friendly,theater,performing-arts"
+      "tags": "sensory-friendly,theater,performing-arts,theatre-show"
     },
     {
       "title": "Grand Slam Family Fun Center - Coon Rapids",
@@ -36899,7 +36899,7 @@
       "address": "Boerboom Park, Osseo, MN",
       "latitude": "45.11939",
       "longitude": "-93.40246",
-      "image_url": "https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "",
       "time": "Tuesdays June 9-August 11",
@@ -36908,7 +36908,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Osseo,movies,concerts,outdoor,free,family,recurring"
+      "tags": "Osseo,movies,concerts,outdoor,free,family,recurring,movie-screening"
     },
     {
       "title": "St. Paul Music in the Parks - Como Lakeside Pavilion",
@@ -37781,7 +37781,7 @@
       "address": "St. Cloud, MN",
       "latitude": "45.561608",
       "longitude": "-94.1642",
-      "image_url": "https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "",
       "time": "18:30",
@@ -37790,7 +37790,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "st-cloud,outstate,day-trip"
+      "tags": "st-cloud,outstate,day-trip,movie-screening"
     },
     {
       "title": "Farmers Market with Kids' Activities - Moorhead",
@@ -38663,7 +38663,7 @@
       "address": "20 W 7th Pl, St. Paul, MN 55102",
       "latitude": "44.94683",
       "longitude": "-93.09666",
-      "image_url": "https://images.pexels.com/photos/8005025/pexels-photo-8005025.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "",
       "time": "",
@@ -38672,7 +38672,7 @@
       "has_deal": true,
       "deal_description": "MELSA smARTpass partner - free or discounted tickets with a library card",
       "deal_expiry": "",
-      "tags": "attraction,theater,performance,smartpass,indoor,kids,teens,family,st-paul,twin-cities,is_seed"
+      "tags": "attraction,theater,performance,smartpass,indoor,kids,teens,family,st-paul,twin-cities,is_seed,theatre-show"
     },
     {
       "title": "FlyOver America",
@@ -39335,7 +39335,7 @@
       "address": "Town Green Park, Maple Grove, MN",
       "latitude": "45.101034",
       "longitude": "-93.441865",
-      "image_url": "https://images.pexels.com/photos/1384254/pexels-photo-1384254.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "",
       "time": "dusk",
@@ -39344,7 +39344,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "free, movies, maple grove"
+      "tags": "free,movies,maple grove,movie-screening"
     },
     {
       "title": "Lake Superior Zoo",
@@ -39692,7 +39692,7 @@
       "address": "Leif Erikson Park, Duluth, MN",
       "latitude": 46.796174,
       "longitude": -92.083306,
-      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "",
       "time": "Sunset",
@@ -39701,7 +39701,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "duluth, family, kids, free, outdoor movie, outstate/day-trip"
+      "tags": "duluth,family,kids,free,outdoor movie,outstate/day-trip,movie-screening"
     },
     {
       "title": "Moorhead Farmers Market",
@@ -39776,7 +39776,7 @@
       "address": "Perham, MN",
       "latitude": 46.594404,
       "longitude": -95.572541,
-      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
+      "image_url": "https://images.pexels.com/photos/18748105/pexels-photo-18748105.jpeg",
       "image_source": "curated_category",
       "date": "",
       "time": "",
@@ -39785,7 +39785,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "corn-maze, pumpkin-patch, farm, fall, family-event, perham"
+      "tags": "corn-maze,pumpkin-patch,farm,fall,family-event,perham"
     },
     {
       "title": "YMCA of the North Summer Sports Camps",
@@ -49689,7 +49689,7 @@
       "address": "Paradise Center for the Arts, 321 Central Ave N, Faribault, 55021, United States",
       "latitude": 44.29496,
       "longitude": -93.26883,
-      "image_url": "https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-25",
       "time": "6:00 PM",
@@ -49698,7 +49698,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "movie"
+      "tags": "movie,movie-screening"
     },
     {
       "title": "Gallery Opening Reception at Paradise Center for the Arts",
@@ -49752,7 +49752,7 @@
       "address": "Paradise Center for the Arts, 321 Central Ave N, Faribault, 55021, United States",
       "latitude": 44.29496,
       "longitude": -93.26883,
-      "image_url": "https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-16",
       "time": "7:30 PM",
@@ -49761,7 +49761,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": ""
+      "tags": "theatre-show"
     },
     {
       "title": "Paradise Community Theatre Presents: Agatha Christie's Murder on the Orient Express",
@@ -49773,7 +49773,7 @@
       "address": "Paradise Center for the Arts, 321 Central Ave N, Faribault, 55021, United States",
       "latitude": 44.29496,
       "longitude": -93.26883,
-      "image_url": "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-17",
       "time": "7:30 PM",
@@ -49782,7 +49782,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": ""
+      "tags": "theatre-show"
     },
     {
       "title": "Paradise Community Theatre Presents: Agatha Christie's Murder on the Orient Express",
@@ -49794,7 +49794,7 @@
       "address": "Paradise Center for the Arts, 321 Central Ave N, Faribault, 55021, United States",
       "latitude": 44.29496,
       "longitude": -93.26883,
-      "image_url": "https://images.pexels.com/photos/1384254/pexels-photo-1384254.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-18",
       "time": "2:00 PM",
@@ -49803,7 +49803,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": ""
+      "tags": "theatre-show"
     },
     {
       "title": "Paradise Community Theatre Presents: Agatha Christie's Murder on the Orient Express",
@@ -49815,7 +49815,7 @@
       "address": "Paradise Center for the Arts, 321 Central Ave N, Faribault, 55021, United States",
       "latitude": 44.29496,
       "longitude": -93.26883,
-      "image_url": "https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-23",
       "time": "7:30 PM",
@@ -49824,7 +49824,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": ""
+      "tags": "theatre-show"
     },
     {
       "title": "Paradise Community Theatre Presents: Agatha Christie's Murder on the Orient Express",
@@ -49836,7 +49836,7 @@
       "address": "Paradise Center for the Arts, 321 Central Ave N, Faribault, 55021, United States",
       "latitude": 44.29496,
       "longitude": -93.26883,
-      "image_url": "https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-24",
       "time": "7:30 PM",
@@ -49845,7 +49845,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": ""
+      "tags": "theatre-show"
     },
     {
       "title": "Paradise Community Theatre Presents: Agatha Christie's Murder on the Orient Express",
@@ -49857,7 +49857,7 @@
       "address": "Paradise Center for the Arts, 321 Central Ave N, Faribault, 55021, United States",
       "latitude": 44.29496,
       "longitude": -93.26883,
-      "image_url": "https://images.pexels.com/photos/31874024/pexels-photo-31874024.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-25",
       "time": "2:00 PM",
@@ -49866,7 +49866,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": ""
+      "tags": "theatre-show"
     },
     {
       "title": "Fari \"BOO\" Downtown Bar Crawl",
@@ -57480,7 +57480,7 @@
       "address": "2941 Pentagon Dr. N.E., St. Anthony,, MN, 55418",
       "latitude": 45.0283,
       "longitude": -93.21874,
-      "image_url": "https://images.pexels.com/photos/8506328/pexels-photo-8506328.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-06",
       "time": "6:00 PM",
@@ -57489,7 +57489,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,music,movie"
+      "tags": "library,crafts,music,movie,movie-screening"
     },
     {
       "title": "Baby Storytime",
@@ -60924,7 +60924,7 @@
       "address": "12601 Ridgedale Dr., Minnetonka,, MN, 55305",
       "latitude": 44.964619,
       "longitude": -93.440315,
-      "image_url": "https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-16",
       "time": "1:00 PM",
@@ -60933,7 +60933,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,movie"
+      "tags": "library,movie,movie-screening"
     },
     {
       "title": "Pokémon Club",
@@ -61365,7 +61365,7 @@
       "address": "1315 Lowry Ave. N., Minneapolis, MN, 55411",
       "latitude": 45.01324,
       "longitude": -93.295796,
-      "image_url": "https://images.pexels.com/photos/6437499/pexels-photo-6437499.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-22",
       "time": "5:30 PM",
@@ -61374,7 +61374,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,movie"
+      "tags": "library,movie,movie-screening"
     },
     {
       "title": "Family Movie Night",
@@ -61386,7 +61386,7 @@
       "address": "1315 Lowry Ave. N., Minneapolis, MN, 55411",
       "latitude": 45.01324,
       "longitude": -93.295796,
-      "image_url": "https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-08",
       "time": "5:30 PM",
@@ -61395,7 +61395,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,movie"
+      "tags": "library,movie,movie-screening"
     },
     {
       "title": "Chess Club",
@@ -62163,7 +62163,7 @@
       "address": "611 Van White Memorial Blvd., Minneapolis,, MN, 55411",
       "latitude": 44.984792,
       "longitude": -93.294615,
-      "image_url": "https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-15",
       "time": "5:00 PM",
@@ -62172,7 +62172,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,movie"
+      "tags": "library,movie,movie-screening"
     },
     {
       "title": "Baby Storytime",
@@ -65502,7 +65502,7 @@
       "address": "5184 Main St. E., Maple Plain,, MN, 55359",
       "latitude": 45.007646,
       "longitude": -93.654158,
-      "image_url": "https://images.pexels.com/photos/8506328/pexels-photo-8506328.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-17",
       "time": "9:30 AM",
@@ -65511,7 +65511,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,movie"
+      "tags": "library,crafts,movie,movie-screening"
     },
     {
       "title": "Read With an Animal",
@@ -68001,7 +68001,7 @@
       "address": "565 Prairie Center Dr., Eden Prairie,, MN, 55344",
       "latitude": 44.850338,
       "longitude": -93.428255,
-      "image_url": "https://images.pexels.com/photos/8775874/pexels-photo-8775874.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-09",
       "time": "1:00 PM",
@@ -68010,7 +68010,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,movie"
+      "tags": "library,movie,movie-screening"
     },
     {
       "title": "Book Club",
@@ -71886,7 +71886,7 @@
       "address": "3240 Library Lane, St. Louis Park,, MN, 55426",
       "latitude": 44.943658,
       "longitude": -93.369181,
-      "image_url": "https://images.pexels.com/photos/7979786/pexels-photo-7979786.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-15",
       "time": "6:00 PM",
@@ -71895,7 +71895,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,movie"
+      "tags": "library,movie,movie-screening"
     },
     {
       "title": "Book Club: All the Colors of the Dark",
@@ -71970,7 +71970,7 @@
       "address": "3240 Library Lane, St. Louis Park,, MN, 55426",
       "latitude": 44.943658,
       "longitude": -93.369181,
-      "image_url": "https://images.pexels.com/photos/7979786/pexels-photo-7979786.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-22",
       "time": "6:00 PM",
@@ -71979,7 +71979,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,movie"
+      "tags": "library,movie,movie-screening"
     },
     {
       "title": "Foreign Film Fest: Movie and Discussion",
@@ -71991,7 +71991,7 @@
       "address": "3240 Library Lane, St. Louis Park,, MN, 55426",
       "latitude": 44.943658,
       "longitude": -93.369181,
-      "image_url": "https://images.pexels.com/photos/7979786/pexels-photo-7979786.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-29",
       "time": "6:00 PM",
@@ -72000,7 +72000,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,movie"
+      "tags": "library,movie,movie-screening"
     },
     {
       "title": "Foreign Film Fest: Movie and Discussion",
@@ -72012,7 +72012,7 @@
       "address": "3240 Library Lane, St. Louis Park,, MN, 55426",
       "latitude": 44.943658,
       "longitude": -93.369181,
-      "image_url": "https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-08",
       "time": "6:00 PM",
@@ -72021,7 +72021,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,movie"
+      "tags": "library,movie,movie-screening"
     },
     {
       "title": "Building Your WordPress Website - Part 1",
@@ -88119,7 +88119,7 @@
       "address": "28186 Kettle River Blvd N, Wyoming, MN 55092",
       "latitude": 45.3556802,
       "longitude": -92.9990243,
-      "image_url": "https://images.pexels.com/photos/4697232/pexels-photo-4697232.jpeg",
+      "image_url": "https://images.pexels.com/photos/13953661/pexels-photo-13953661.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-25",
       "time": "",
@@ -88225,7 +88225,7 @@
       "address": "Fuller Farm, 456 Stone Lk Rd SW, Bemidji, MN, 56601, United States",
       "latitude": 47.47231,
       "longitude": -94.88328,
-      "image_url": "https://images.pexels.com/photos/31874024/pexels-photo-31874024.jpeg",
+      "image_url": "https://images.pexels.com/photos/5570593/pexels-photo-5570593.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-18",
       "time": "",
@@ -88234,7 +88234,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": ""
+      "tags": "corn-maze"
     },
     {
       "title": "2026 Market Day",
@@ -88309,7 +88309,7 @@
       "address": "Fuller Farm, 456 Stone Lk Rd SW, Bemidji, MN, 56601, United States",
       "latitude": 47.47231,
       "longitude": -94.88328,
-      "image_url": "https://images.pexels.com/photos/31874024/pexels-photo-31874024.jpeg",
+      "image_url": "https://images.pexels.com/photos/5570593/pexels-photo-5570593.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-25",
       "time": "",
@@ -88318,7 +88318,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": ""
+      "tags": "corn-maze"
     },
     {
       "title": "2026 Market Day",
@@ -88772,7 +88772,7 @@
       "address": "Marshall Lyon County Library, 201 C Street, Marshall, MN, 56258, United States",
       "latitude": 44.44696,
       "longitude": -95.78866,
-      "image_url": "https://images.pexels.com/photos/8005025/pexels-photo-8005025.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-09-12",
       "time": "11:00 AM",
@@ -88781,7 +88781,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "teen,movie"
+      "tags": "teen,movie,movie-screening"
     },
     {
       "title": "MASC presents Much Ado About Nothing",
@@ -93203,7 +93203,7 @@
       "address": "3240 Library Lane, St. Louis Park,, MN, 55426",
       "latitude": 44.943658,
       "longitude": -93.369181,
-      "image_url": "https://images.pexels.com/photos/8775874/pexels-photo-8775874.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-13",
       "time": "6:00 PM",
@@ -93212,7 +93212,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,movie"
+      "tags": "library,movie,movie-screening"
     },
     {
       "title": "Foreign Film Fest: Movie and Discussion",
@@ -93224,7 +93224,7 @@
       "address": "3240 Library Lane, St. Louis Park,, MN, 55426",
       "latitude": 44.943658,
       "longitude": -93.369181,
-      "image_url": "https://images.pexels.com/photos/8775874/pexels-photo-8775874.jpeg",
+      "image_url": "https://images.pexels.com/photos/33450578/pexels-photo-33450578.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-06",
       "time": "6:00 PM",
@@ -93233,7 +93233,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,movie"
+      "tags": "library,movie,movie-screening"
     },
     {
       "title": "Paws to Read with Maxwell",
@@ -95849,7 +95849,7 @@
       "address": "Prior Lake Library, Prior Lake, MN",
       "latitude": 44.714278,
       "longitude": -93.425903,
-      "image_url": "https://images.pexels.com/photos/8775874/pexels-photo-8775874.jpeg",
+      "image_url": "https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg",
       "image_source": "curated_category",
       "date": "2026-10-15",
       "time": "9:30 PM",
@@ -95858,7 +95858,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library"
+      "tags": "library,theatre-show"
     },
     {
       "title": "Family Early Literacy Class at the Belle Plaine Library",
