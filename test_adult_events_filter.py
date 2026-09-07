@@ -76,6 +76,10 @@ CASES = [
     ("Trivia Thursday at Minnesota BEER Company", "events", "drop", False),
     ("Pub Trivia Night", "events", "drop", False),
     ("Trivia at Bent Brewstillery Taproom", "events", "drop", False),
+    # 2026-09-07: the 'Brewing' form. Both are REAL live titles in the 09-07 window that the
+    # rule could not see while the alcohol list carried \bbrewery\b alone.
+    ("Smart Alex Trivia at Copper Trail Brewing", "events", "drop", False),
+    ("Intuit-To-Win-It Trivia at Intuition Brewing", "events", "drop", False),
 
     # ---- must DROP (2026-09-01 audit: adult/non-family titles found stale in the live app) ----
     # concerts / comedy — explicit named-act list (no keyword catches these)
@@ -138,6 +142,12 @@ CASES = [
     ("Family Trivia at the Library", "events", None, False),            # 'library' must not trip \bbar\b
     ("OMNI Brewery Oktoberfest", "events", None, False),                # brewery but no 'trivia' -> family fest
     ("Waldmann Brewery Oktoberfest", "events", None, False),            # brewery but no 'trivia'
+    # 2026-09-07: the KEEP side of the 'Brewing' widening — each a real live title. These are
+    # what prove the change completed the VOCABULARY without widening the rule's SHAPE.
+    ("Live Music at 22 Northmen Brewing", "events", None, False),        # brewing, no 'trivia'
+    ("Driftless Revelers at Bent Paddle Brewing Company", "events", None, False),
+    ("Mille Lacs Kathio State Park Trivia", "events", None, False),      # state-park all-ages trivia
+    ("Tall Tale Trivia at Sibley State Park", "events", None, False),    # state-park all-ages trivia
     ("Public Library Story Time", "events", None, False),               # 'public' must not trip \bpub\b
 
     # ---- must KEEP (guards against the generic adult rule — every one a real live title) ----
