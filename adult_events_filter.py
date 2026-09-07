@@ -219,7 +219,17 @@ def _guarded(title_norm):
 # "Trivia Thursday at Minnesota BEER Company" but leaves "OMNI Brewery Oktoberfest" alone
 # (no "trivia") and library trivia alone (no alcohol token).
 _RX_TRIVIA = re.compile(r"\btrivia\b")
-_RX_ALCOHOL = re.compile(r"\b(beer|brewery|taproom|distillery|pub|bar|cider|winery)\b")
+# 2026-09-07: added the brewing/brewpub/brewhouse forms. The list carried \bbrewery\b only, so
+# "Smart Alex Trivia at Copper Trail Brewing" and "Intuit-To-Win-It Trivia at Intuition
+# Brewing" -- two real bar-trivia rows live in this window -- could never fire the rule. This
+# is a VOCABULARY completion, not a loosening of the rule's SHAPE: the compound requirement is
+# unchanged, so a brewing title with no "trivia" is still untouched ("Live Music at 22 Northmen
+# Brewing" and the "Day Block Brewing" restaurant row both survive). FP surface was measured
+# BEFORE the change: 13 titles in the dataset carry \bbrewing\b and exactly the 2 brewery-trivia
+# rows also carry \btrivia\b. Word boundaries stay load-bearing -- \bpub\b does not fire inside
+# "brewpub", which is why brewpub is listed in its own right.
+_RX_ALCOHOL = re.compile(
+    r"\b(beer|brewery|brewing|brewpub|brewhouse|taproom|distillery|pub|bar|cider|winery)\b")
 
 
 def _compound_drop(title_norm):
