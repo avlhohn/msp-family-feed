@@ -68,10 +68,27 @@ def nt(s):
 
 def na(a):
     a = unicodedata.normalize("NFKD", str(a or "")).encode("ascii", "ignore").decode().lower()
+
+    # --- suite/unit designators are stripped ENTIRELY (2026-09-07) -------------------------
+    # Previously the abbreviation table carried ("ste", "st"), which was actively wrong twice
+    # over: it folded a SUITE marker into STREET, and it left the spelled "suite" untouched.
+    # So "15670 Edgewood Dr Ste 120" and "15670 Edgewood Dr, Suite 120" normalized differently
+    # and the two Littles and Lattes rows could never collide (found 2026-09-06).
+    # A suite/unit number carries no information about WHICH BUILDING a venue is in, which is
+    # the only thing this key is comparing, so dropping it is lossless for the comparison.
+    # ORDER IS LOAD-BEARING: '#' must be handled BEFORE punctuation becomes whitespace, or
+    # "#120" degrades to a bare " 120" that is indistinguishable from a house number.
+    a = re.sub(r"#\s*[a-z]?\d+[a-z]?\b", " ", a)                  # "#120", "# 12b"
     a = re.sub(r"[^a-z0-9 ]", " ", a)
+    _DESIG = r"(?:suite|ste|unit|apt|apartment|rm|room|bldg|building|floor)"
+    a = re.sub(rf"\b{_DESIG}\s+[a-z]?\d+[a-z]?\b", " ", a)        # "suite 120", "unit 3b"
+    a = re.sub(rf"\b{_DESIG}\s+[a-z]\b", " ", a)                  # "suite b"
+    a = re.sub(rf"\b{_DESIG}\b", " ", a)                          # bare leftover marker
+    # --------------------------------------------------------------------------------------
+
     for x, y in [("street", "st"), ("avenue", "ave"), ("north", "n"), ("south", "s"),
                  ("east", "e"), ("west", "w"), ("road", "rd"), ("drive", "dr"),
-                 ("boulevard", "blvd"), ("saint", "st"), ("ste", "st")]:
+                 ("boulevard", "blvd"), ("saint", "st")]:
         a = re.sub(rf"\b{x}\b", y, a)
     a = re.sub(r"\b5[0-9]{4}\b", " ", a)      # MN ZIP
     a = re.sub(r"\bmn\b", " ", a)             # state token
