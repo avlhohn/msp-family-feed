@@ -81,6 +81,59 @@ def run_ntime():
 
 
 # ---------------------------------------------------------------------------
+# 1b) na() suite/unit stripping (added 2026-09-07)
+#
+# The pairs below must normalize IDENTICALLY — each is one building written two ways by two
+# sources. The Edgewood pair is the real observed failure: `ste`->`st` folded a SUITE marker
+# into STREET while the spelled `suite` was left alone, so the two Littles and Lattes rows
+# could never collide.
+#
+# The NON-pairs are the guard. A suite number is droppable because it does not identify the
+# BUILDING; a HOUSE number is the opposite, and a rule that ate digits generally would merge
+# two genuinely different addresses on one street — the wrong-merge error that silently
+# deletes a real venue.
+# ---------------------------------------------------------------------------
+NA_SAME = [
+    ("15670 Edgewood Dr Ste 120",        "15670 Edgewood Dr, Suite 120"),
+    ("15670 Edgewood Dr #120",           "15670 Edgewood Dr Suite 120"),
+    ("100 Main St Unit 4",               "100 Main Street, Unit 4"),
+    ("200 Oak Ave Apt 3B",               "200 Oak Avenue, Apartment 3B"),
+    ("300 Elm St, Ste. B",               "300 Elm Street Suite B"),
+    ("400 Pine Rd Bldg 2",               "400 Pine Road, Building 2"),
+    ("500 Cedar Blvd Room 12",           "500 Cedar Boulevard, Rm 12"),
+    # a suite marker must not survive to make one address differ from the bare form
+    ("928 W 7th St Suite 200",           "928 West 7th Street"),
+    # the Saint/St fold and ZIP/state stripping must still work alongside the new rule
+    ("1341 Pascal St N, Saint Paul, MN 55108", "1341 Pascal St N, St. Paul"),
+]
+
+NA_DIFFER = [
+    # different BUILDINGS on the same street — must NOT collapse
+    ("15670 Edgewood Dr", "15680 Edgewood Dr"),
+    ("100 Main St",       "200 Main St"),
+    # 'suite' stripped must not make two different streets equal
+    ("100 Main St Suite 4", "100 Oak St Suite 4"),
+]
+
+
+def run_na():
+    passed = failed = 0
+    for a, b in NA_SAME:
+        if D.na(a) == D.na(b):
+            passed += 1
+        else:
+            failed += 1
+            print(f"  FAIL  na({a!r})={D.na(a)!r} != na({b!r})={D.na(b)!r}")
+    for a, b in NA_DIFFER:
+        if D.na(a) != D.na(b):
+            passed += 1
+        else:
+            failed += 1
+            print(f"  FAIL  na() wrongly EQUATED {a!r} and {b!r} -> {D.na(a)!r}")
+    return passed, failed
+
+
+# ---------------------------------------------------------------------------
 # 2) end-to-end: a time-format twin pair must collapse; genuine two-session
 #    rows (10am + 2pm) must survive; a blank-time twin folds into the timed row.
 # ---------------------------------------------------------------------------
@@ -168,8 +221,9 @@ def run_e2e():
 
 def main():
     p1, f1 = run_ntime()
+    p1b, f1b = run_na()
     p2, f2 = run_e2e()
-    passed, failed = p1 + p2, f1 + f2
+    passed, failed = p1 + p1b + p2, f1 + f1b + f2
     print(f"\n{passed} passed, {failed} failed")
     return failed == 0
 
