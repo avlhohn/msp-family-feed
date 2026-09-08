@@ -5,11 +5,11 @@
   "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
   "schema_version": "3.1",
   "counts": {
-    "events": 4966,
+    "events": 4964,
     "parks": 823,
     "meal_deals": 147,
     "volunteer_opportunities": 268,
-    "restaurants": 462
+    "restaurants": 459
   },
   "events": [
     {
@@ -535,7 +535,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "art fair,festival,free,family,edina,west-metro,twin-cities,art-fair,all-ages,craft-fair,Edina,kids,artists,community-fest,art,art-crawl,family-friendly,art festival,free admission,local artists,outdoor"
+      "tags": "art fair,festival,free,family,edina,west-metro,twin-cities,art-fair,all-ages,craft-fair,Edina,kids,artists,community-fest,art,art-crawl,family-friendly,art festival,free admission,local artists,outdoor",
+      "end_date": "2026-09-13"
     },
     {
       "title": "Eagan Art Block",
@@ -703,7 +704,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "duluth,sports,family,northshore,marathon,all-ages,outdoor,skating,kids"
+      "tags": "duluth,sports,family,northshore,marathon,all-ages,outdoor,skating,kids",
+      "end_date": "2026-09-25"
     },
     {
       "title": "Moorhead Sausage Fest",
@@ -724,7 +726,8 @@
       "has_deal": true,
       "deal_description": "Kids 12 and under free",
       "deal_expiry": "2026-09-26",
-      "tags": "moorhead,festival,paid,family,food,kids-free,all-ages,outstate,free"
+      "tags": "moorhead,festival,paid,family,food,kids-free,all-ages,outstate,free",
+      "end_date": "2026-09-27"
     },
     {
       "title": "Minnesota Family Festival",
@@ -766,7 +769,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "festival,community-fest,all-ages,free,st-cloud,outstate/day-trip,dog-friendly,pride,family,St. Cloud,community event"
+      "tags": "festival,community-fest,all-ages,free,st-cloud,outstate/day-trip,dog-friendly,pride,family,St. Cloud,community event",
+      "end_date": "2026-09-19"
     },
     {
       "title": "Blues on Belgrade",
@@ -1375,7 +1379,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "minneapolis,twin-cities,music,free,community-fest,family,all-ages,concert,festival,september,twins-cities,Minneapolis,kids"
+      "tags": "minneapolis,twin-cities,music,free,community-fest,family,all-ages,concert,festival,september,twins-cities,Minneapolis,kids",
+      "end_date": "2026-09-21"
     },
     {
       "title": "La Crescent Applefest",
@@ -1858,7 +1863,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "family,all-ages,art-fair,festival,free,september,lakeville,south-metro,twins-cities,art"
+      "tags": "family,all-ages,art-fair,festival,free,september,lakeville,south-metro,twins-cities,art",
+      "end_date": "2026-09-20"
     },
     {
       "title": "Silverwood Park FIELD TRIP Arts and Nature Festival",
@@ -2551,7 +2557,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "alexandria,county-fair,family,kids,all-ages,free,outstate/day-trip,county fair"
+      "tags": "alexandria,county-fair,family,kids,all-ages,free,outstate/day-trip,county fair",
+      "end_date": "2026-09-10"
     },
     {
       "title": "Fall Harvest Orchard - Pumpkins & Corn Maze",
@@ -2845,7 +2852,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "chanhassen,west-metro,free,community-fest,recurring,library,class,all-ages,feed,carver_library"
+      "tags": "chanhassen,west-metro,free,community-fest,recurring,library,class,all-ages,feed,carver_library",
+      "end_date": "2026-09-22"
     },
     {
       "title": "CHANchats: Coffee with Communities of Belonging",
@@ -4672,7 +4680,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "family,all-ages,touch-a-truck,free"
+      "tags": "family,all-ages,touch-a-truck,free",
+      "end_date": "2026-09-19"
     },
     {
       "title": "Backstage Pass: Moose",
@@ -4777,7 +4786,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "family,all-ages,free"
+      "tags": "family,all-ages,free",
+      "end_date": "2026-09-26"
     },
     {
       "title": "Fall Colors Family Kayaking",
@@ -5575,7 +5585,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Otsego,free,family,kids,all-ages,touch-a-truck,petting-zoo,fireworks,car-show,festival,otsego"
+      "tags": "Otsego,free,family,kids,all-ages,touch-a-truck,petting-zoo,fireworks,car-show,festival,otsego",
+      "end_date": "2026-09-26"
     },
     {
       "title": "Maple Grove Hairball Rock Tribute Concert",
@@ -6688,7 +6699,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Lake Elmo,free,family,recurring,feed,washington_library,src:washco_libcal,library"
+      "tags": "Lake Elmo,free,family,recurring,feed,washington_library,src:washco_libcal,library",
+      "end_date": "2026-09-21"
     },
     {
       "title": "Meditation Monday",
@@ -7738,7 +7750,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "class,registration,community-ed,youth,fall,woodbury,paid,kids"
+      "tags": "class,registration,community-ed,youth,fall,woodbury,paid,kids",
+      "end_date": "2027-01-22"
     },
     {
       "title": "NSC Fall Cup Soccer Tournament - Girls",
@@ -7843,7 +7856,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "chaska,library,class,free,5-12,Chaska,preschool,animals"
+      "tags": "chaska,library,class,free,5-12,Chaska,preschool,animals",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Tails for Reading",
@@ -7948,7 +7962,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Watertown,free,school-age,maker,Chaska,watertown,library,class,all-ages,Waconia,feed,carver_library,src:carver_libcal,crafts,reading"
+      "tags": "Watertown,free,school-age,maker,Chaska,watertown,library,class,all-ages,Waconia,feed,carver_library,src:carver_libcal,crafts,reading",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Read, Stay, Play!",
@@ -8431,7 +8446,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Rogers,free,school-age,all-ages,babies,class,kids,open-play,preschool,recurring,rogers,toddlers,eden-prairie,minneapolis,brooklyn-center,Eden Prairie,Minneapolis,Brooklyn Center,Brooklyn Park,src:hclib,library,reading"
+      "tags": "Rogers,free,school-age,all-ages,babies,class,kids,open-play,preschool,recurring,rogers,toddlers,eden-prairie,minneapolis,brooklyn-center,Eden Prairie,Minneapolis,Brooklyn Center,Brooklyn Park,src:hclib,library,reading",
+      "end_date": "2026-09-30"
     },
     {
       "title": "Connect and Play",
@@ -8473,7 +8489,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Maple Plain,free,all-ages,babies,class,kids,maple-plain,open-play,preschool,recurring,toddlers,school-age,feed,hennepin_library,src:hclib,library,reading"
+      "tags": "Maple Plain,free,all-ages,babies,class,kids,maple-plain,open-play,preschool,recurring,toddlers,school-age,feed,hennepin_library,src:hclib,library,reading",
+      "end_date": "2026-09-24"
     },
     {
       "title": "Connect and Play",
@@ -8830,7 +8847,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Minneapolis,free,school-age,animals,maker,class,kids,minneapolis,recurring,family,feed,hennepin_library,src:hclib,library,reading"
+      "tags": "Minneapolis,free,school-age,animals,maker,class,kids,minneapolis,recurring,family,feed,hennepin_library,src:hclib,library,reading",
+      "end_date": "2026-09-19"
     },
     {
       "title": "Improv 101",
@@ -8998,7 +9016,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Minnetonka,free,all-ages,class,kids,minnetonka,stem,family,feed,hennepin_library,src:hclib,library"
+      "tags": "Minnetonka,free,all-ages,class,kids,minnetonka,stem,family,feed,hennepin_library,src:hclib,library",
+      "end_date": "2026-09-29"
     },
     {
       "title": "LEGO® Lab",
@@ -9019,7 +9038,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Minneapolis,free,all-ages,class,kids,minneapolis,stem,recurring,family,feed,hennepin_library,src:hclib,library"
+      "tags": "Minneapolis,free,all-ages,class,kids,minneapolis,stem,recurring,family,feed,hennepin_library,src:hclib,library",
+      "end_date": "2026-09-26"
     },
     {
       "title": "Finger Knitting Fun",
@@ -9124,7 +9144,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Minneapolis,free,teen,story-time,maker,all-ages,class,minneapolis,open-play,recurring,tweens,feed,hennepin_library,src:hclib,library"
+      "tags": "Minneapolis,free,teen,story-time,maker,all-ages,class,minneapolis,open-play,recurring,tweens,feed,hennepin_library,src:hclib,library",
+      "end_date": "2026-09-29"
     },
     {
       "title": "Creative Expression Sessions With zAmya Theater Project",
@@ -9460,7 +9481,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Hopkins,free,babies,class,family,hopkins,recurring,feed,hennepin_library,src:hclib,library,baby"
+      "tags": "Hopkins,free,babies,class,family,hopkins,recurring,feed,hennepin_library,src:hclib,library,baby",
+      "end_date": "2026-09-24"
     },
     {
       "title": "Baby Caregiver Connection Hour With Hopkins ECFE",
@@ -9649,7 +9671,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "all-ages,class,free,minneapolis,open-play,Minneapolis,maker,feed,hennepin_library,src:hclib,library,crafts"
+      "tags": "all-ages,class,free,minneapolis,open-play,Minneapolis,maker,feed,hennepin_library,src:hclib,library,crafts",
+      "end_date": "2026-09-28"
     },
     {
       "title": "Dream of Owls: Puppet Show",
@@ -11329,7 +11352,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Saint Paul,free,school-age,babies,class,family,kids,open-play,preschool,recurring,saint-paul,toddlers,library"
+      "tags": "Saint Paul,free,school-age,babies,class,family,kids,open-play,preschool,recurring,saint-paul,toddlers,library",
+      "end_date": "2026-09-25"
     },
     {
       "title": "Teen Writers' Guild",
@@ -11350,7 +11374,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Saint Paul,free,teen,maker,teen-night,class,recurring,saint-paul,teens,crafts,library"
+      "tags": "Saint Paul,free,teen,maker,teen-night,class,recurring,saint-paul,teens,crafts,library",
+      "end_date": "2026-09-29"
     },
     {
       "title": "Baby & Toddler Storytime",
@@ -11476,7 +11501,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "class,free,open-play,recurring,saint-paul,teen-night,teens,games,library"
+      "tags": "class,free,open-play,recurring,saint-paul,teen-night,teens,games,library",
+      "end_date": "2026-09-28"
     },
     {
       "title": "Learn to Play DND",
@@ -12547,7 +12573,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "nature,preschool,program,activity"
+      "tags": "nature,preschool,program,activity",
+      "end_date": "2027-05-20"
     },
     {
       "title": "Maple Grove Angel of Hope Family Activities",
@@ -15214,7 +15241,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "plymouth,registration,league,school-age,soccer"
+      "tags": "plymouth,registration,league,school-age,soccer",
+      "end_date": "2026-11-01"
     },
     {
       "title": "Burnsville Fire Muster",
@@ -15634,7 +15662,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Plymouth,free,feed,hennepin_library,src:hclib,library"
+      "tags": "Plymouth,free,feed,hennepin_library,src:hclib,library",
+      "end_date": "2026-09-28"
     },
     {
       "title": "English Conversation Circle",
@@ -15802,7 +15831,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Prior Lake,free,family,maker,Savage,Wayzata,feed,scott_library,hennepin_library,src:scott_libcal,library,crafts"
+      "tags": "Prior Lake,free,family,maker,Savage,Wayzata,feed,scott_library,hennepin_library,src:scott_libcal,library,crafts",
+      "end_date": "2026-09-30"
     },
     {
       "title": "Crafternoon",
@@ -15928,7 +15958,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Minneapolis,free,feed,hennepin_library,src:hclib,library"
+      "tags": "Minneapolis,free,feed,hennepin_library,src:hclib,library",
+      "end_date": "2026-09-17"
     },
     {
       "title": "Coffee and Conversations",
@@ -16474,7 +16505,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Woodbury,free,family,maker,class,feed,washington_library,src:washco_libcal,library,crafts,reading"
+      "tags": "Woodbury,free,family,maker,class,feed,washington_library,src:washco_libcal,library,crafts,reading",
+      "end_date": "2026-09-12"
     },
     {
       "title": "Teen Hang Out",
@@ -16495,7 +16527,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Hugo,free,teen,maker,teen-night,games,Saint Paul,camp,feed,washington_library,library,story-time,kids,family,src:washco_libcal,crafts"
+      "tags": "Hugo,free,teen,maker,teen-night,games,Saint Paul,camp,feed,washington_library,library,story-time,kids,family,src:washco_libcal,crafts",
+      "end_date": "2026-09-15"
     },
     {
       "title": "Teen Hang Out",
@@ -16558,7 +16591,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Woodbury,free,teen,teen-night,maker,recurring,feed,washington_library,src:washco_libcal,library,reading,games"
+      "tags": "Woodbury,free,teen,teen-night,maker,recurring,feed,washington_library,src:washco_libcal,library,reading,games",
+      "end_date": "2026-09-16"
     },
     {
       "title": "Dungeons & Dragons Club for Tween/Teen",
@@ -18280,7 +18314,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Blaine,free,family,stem,nature,maker,feed,anoka_library,src:anoka_libcal,library,crafts,outdoors"
+      "tags": "Blaine,free,family,stem,nature,maker,feed,anoka_library,src:anoka_libcal,library,crafts,outdoors",
+      "end_date": "2026-09-24"
     },
     {
       "title": "Reverse Coloring",
@@ -19078,7 +19113,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Shakopee,free,family,story-time,stem,maker,feed,scott_library,library,kids,src:scott_libcal"
+      "tags": "Shakopee,free,family,story-time,stem,maker,feed,scott_library,library,kids,src:scott_libcal",
+      "end_date": "2026-09-13"
     },
     {
       "title": "Enjoy the Library's Story Stroll at Savage Community Park",
@@ -19099,7 +19135,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed,scott_library,library,story-time,free,kids,family,src:scott_libcal"
+      "tags": "feed,scott_library,library,story-time,free,kids,family,src:scott_libcal",
+      "end_date": "2026-09-13"
     },
     {
       "title": "Family Early Literacy Class at Elko New Market Library",
@@ -19183,7 +19220,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Prior Lake,free,baby,story-time,class,music,recurring,feed,scott_library,src:scott_libcal,library,toddler,reading,animals"
+      "tags": "Prior Lake,free,baby,story-time,class,music,recurring,feed,scott_library,src:scott_libcal,library,toddler,reading,animals",
+      "end_date": "2026-09-28"
     },
     {
       "title": "Toddler/Preschool Early Literacy Class at Prior Lake Library",
@@ -19246,7 +19284,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Savage,free,toddler,story-time,class,music,recurring,feed,scott_library,src:scott_libcal,library,reading"
+      "tags": "Savage,free,toddler,story-time,class,music,recurring,feed,scott_library,src:scott_libcal,library,reading",
+      "end_date": "2026-09-28"
     },
     {
       "title": "Preschool Early Literacy Class at Savage Library",
@@ -19351,7 +19390,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Jordan,free,school-age,story-time,class,music,recurring,feed,scott_library,src:scott_libcal,library,reading,animals"
+      "tags": "Jordan,free,school-age,story-time,class,music,recurring,feed,scott_library,src:scott_libcal,library,reading,animals",
+      "end_date": "2026-09-29"
     },
     {
       "title": "Family Early Literacy Class at the Jordan Library",
@@ -19414,7 +19454,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "New Prague,free,school-age,story-time,class,music,recurring,feed,scott_library,src:scott_libcal,library,stem,reading"
+      "tags": "New Prague,free,school-age,story-time,class,music,recurring,feed,scott_library,src:scott_libcal,library,stem,reading",
+      "end_date": "2026-09-29"
     },
     {
       "title": "Young at Art at the Belle Plaine Library",
@@ -19477,7 +19518,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Prior Lake,free,baby,story-time,class,music,recurring,feed,scott_library,src:scott_libcal,library,toddler,reading,animals"
+      "tags": "Prior Lake,free,baby,story-time,class,music,recurring,feed,scott_library,src:scott_libcal,library,toddler,reading,animals",
+      "end_date": "2026-09-24"
     },
     {
       "title": "Baby Lap Sit Early Literacy Class at Prior Lake",
@@ -19519,7 +19561,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Savage,free,toddler,story-time,class,music,recurring,feed,scott_library,src:scott_libcal,library,reading"
+      "tags": "Savage,free,toddler,story-time,class,music,recurring,feed,scott_library,src:scott_libcal,library,reading",
+      "end_date": "2026-09-24"
     },
     {
       "title": "Toddler Early Literacy Class at Savage Library",
@@ -19624,7 +19667,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Savage,free,school-age,animals,feed,scott_library,src:scott_libcal,library,reading"
+      "tags": "Savage,free,school-age,animals,feed,scott_library,src:scott_libcal,library,reading",
+      "end_date": "2026-09-29"
     },
     {
       "title": "Waggin' Tale Reading Time - Registration Recommended",
@@ -19792,7 +19836,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Waconia,free,family,maker,feed,carver_library,src:carver_libcal,library,crafts"
+      "tags": "Waconia,free,family,maker,feed,carver_library,src:carver_libcal,library,crafts",
+      "end_date": "2026-09-15"
     },
     {
       "title": "Flax to Linen: From Seed to Fiber",
@@ -20275,7 +20320,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Duluth,duluth,outstate,attraction,skating,arena,entertainment,games"
+      "tags": "Duluth,duluth,outstate,attraction,skating,arena,entertainment,games",
+      "end_date": "2026-09-26"
     },
     {
       "title": "Lake Superior Harvest Festival",
@@ -20653,7 +20699,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "Saint Paul,free,family,library"
+      "tags": "Saint Paul,free,family,library",
+      "end_date": "2026-09-21"
     },
     {
       "title": "Fall Bingo Reading Challenge Begins",
@@ -20674,7 +20721,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed,ecrl,src:ecrl,library,reading,games"
+      "tags": "feed,ecrl,src:ecrl,library,reading,games",
+      "end_date": "2026-11-14"
     },
     {
       "title": "Celebrate Library Card Sign up Month (Ends Today)",
@@ -22753,7 +22801,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed,washington_library,src:washco_libcal,library"
+      "tags": "feed,washington_library,src:washco_libcal,library",
+      "end_date": "2026-09-19"
     },
     {
       "title": "Big Truck Day",
@@ -23278,7 +23327,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed,dakota_library,src:dakota_libcal,library,reading"
+      "tags": "feed,dakota_library,src:dakota_libcal,library,reading",
+      "end_date": "2026-09-20"
     },
     {
       "title": "Wescott Third Thursday Book Discussion Group",
@@ -23887,7 +23937,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "feed,carver_library,src:carver_libcal,library,reading"
+      "tags": "feed,carver_library,src:carver_libcal,library,reading",
+      "end_date": "2026-09-27"
     },
     {
       "title": "Lunch Hour Parenting Book Club*",
@@ -25777,7 +25828,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,free,kids,family,src:carver_libcal"
+      "tags": "library,story-time,free,kids,family,src:carver_libcal",
+      "end_date": "2026-09-27"
     },
     {
       "title": "Master Gardener Help Desk",
@@ -25798,7 +25850,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,free,kids,family,src:carver_libcal"
+      "tags": "library,story-time,free,kids,family,src:carver_libcal",
+      "end_date": "2026-09-26"
     },
     {
       "title": "Family Stem Saturday",
@@ -26029,7 +26082,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,free,kids,family,src:carver_libcal"
+      "tags": "library,story-time,free,kids,family,src:carver_libcal",
+      "end_date": "2026-09-27"
     },
     {
       "title": "Master Gardener Help Desk",
@@ -26050,7 +26104,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,free,kids,family,src:carver_libcal"
+      "tags": "library,story-time,free,kids,family,src:carver_libcal",
+      "end_date": "2026-09-26"
     },
     {
       "title": "Family Storytime",
@@ -26365,7 +26420,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,free,kids,family,src:carver_libcal"
+      "tags": "library,story-time,free,kids,family,src:carver_libcal",
+      "end_date": "2026-09-27"
     },
     {
       "title": "Master Gardener Help Desk",
@@ -31555,7 +31611,7 @@
       "tags": "attraction,community-center,water-park,pool,aquatics,indoor,active-play,seasonal,kids,family,st-paul,twin-cities"
     },
     {
-      "title": "PlayPark at Edinborough Park",
+      "title": "Edinborough Park PlayPark",
       "description": "Adventure Peak climbing structure (44x44x37 ft high) with toddler areas. Gated area for kids 4 and under with slides, climbing equipment, fun lights and music features. Cafe on-site.",
       "category": "events",
       "price_type": "Paid",
@@ -31573,7 +31629,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "indoor-playground,open-play,toddlers,preschool,climbing,edina,indoor-play,park,family-entertainment"
+      "tags": "indoor-playground,open-play,toddlers,preschool,climbing,edina,indoor-play,park,family-entertainment,events,kids,paid,south-metro,twin-cities,recurring"
     },
     {
       "title": "Nurture to Play - Sartell",
@@ -31595,27 +31651,6 @@
       "deal_description": "",
       "deal_expiry": "",
       "tags": "indoor-playground,open-play,toddlers,babies,outstate,events,preschool,paid,st-cloud,sartell,recurring"
-    },
-    {
-      "title": "Edinborough Park PlayPark - Edina",
-      "description": "Year-round indoor play facility with Little Peak toddler area (climbing, sliding, bouncing) separate from main play area. Socks required. Adult supervision required. Admission $9 per child.",
-      "category": "events",
-      "price_type": "Paid",
-      "price": "$9/child",
-      "age_range": "All ages",
-      "address": "7700 York Ave S, 55435, Edina, MN",
-      "latitude": "44.864120",
-      "longitude": "-93.321450",
-      "image_url": "https://images.pexels.com/photos/12586010/pexels-photo-12586010.jpeg",
-      "image_source": "curated_category",
-      "date": "",
-      "time": "Mon-Sat 9:00 AM - 9:00 PM, Sun 9:00 AM - 6:00 PM",
-      "phone": "",
-      "website": "https://www.edinamn.gov/1604/PlayPark",
-      "has_deal": false,
-      "deal_description": "",
-      "deal_expiry": "",
-      "tags": "indoor-playground,events,open-play,toddlers,preschool,kids,paid,edina,south-metro,twin-cities,recurring"
     },
     {
       "title": "Sky Zone Trampoline Park - Little Leapers (multiple locations)",
@@ -32920,15 +32955,15 @@
       "tags": "events,story-time,babies,toddlers,preschool,free,recurring,st-paul"
     },
     {
-      "title": "Kids Empire - Bloomington Indoor Playground",
+      "title": "Kids Empire - Bloomington",
       "description": "Floor-to-ceiling climbing walls and play structures for kids. Multi-level playground with age-appropriate activities. $22.90 per child.",
       "category": "events",
       "price_type": "Paid",
       "price": "$22.90/child",
       "age_range": "Ages 2+",
-      "address": "Bloomington, MN",
-      "latitude": "44.8322405",
-      "longitude": "-93.3204872",
+      "address": "10590 France Ave S, Bloomington, MN 55431",
+      "latitude": 44.811329,
+      "longitude": -93.332455,
       "image_url": "https://images.pexels.com/photos/34164757/pexels-photo-34164757.jpeg",
       "image_source": "curated_category",
       "date": "",
@@ -32938,7 +32973,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "events,indoor-playground,kids,paid,bloomington"
+      "tags": "events,indoor-playground,kids,paid,bloomington,indoor-play,family-entertainment"
     },
     {
       "title": "Monkey Junction - Rochester Indoor Play",
@@ -33435,27 +33470,6 @@
       "longitude": "-93.234950",
       "image_url": "https://static.wixstatic.com/media/97457a_bb87126f184a4eab9d436df9dedfd338~mv2.jpg",
       "image_source": "curated",
-      "date": "",
-      "time": "",
-      "phone": "",
-      "website": "",
-      "has_deal": false,
-      "deal_description": "",
-      "deal_expiry": "",
-      "tags": "indoor-play,family-entertainment"
-    },
-    {
-      "title": "Kids Empire",
-      "description": "Indoor play facility for families.",
-      "category": "events",
-      "price_type": "Paid",
-      "price": "$22.90",
-      "age_range": "All ages",
-      "address": "10590 France Ave S, Bloomington, MN",
-      "latitude": "44.832240",
-      "longitude": "-93.320490",
-      "image_url": "https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg",
-      "image_source": "curated_category",
       "date": "",
       "time": "",
       "phone": "",
@@ -39385,7 +39399,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "src:carver_libcal,library,teen,reading,farmers-market"
+      "tags": "src:carver_libcal,library,teen,reading,farmers-market",
+      "end_date": "2026-09-19"
     },
     {
       "title": "Burnsville Festival & Fire Muster",
@@ -45286,7 +45301,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Princeton Friends of the Library Meeting",
@@ -45832,7 +45848,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "RC Preschool Storytime",
@@ -46084,7 +46101,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -46756,7 +46774,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Friends of the Aitkin Public Library Meeting",
@@ -46924,7 +46943,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -46945,7 +46965,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -47386,7 +47407,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Craft n Chat (Milaca)",
@@ -47470,7 +47492,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -47491,7 +47514,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -47890,7 +47914,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "RC Preschool Storytime",
@@ -48079,7 +48104,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -48100,7 +48126,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -48646,7 +48673,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Princeton Friends of the Library Meeting",
@@ -48814,7 +48842,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -48835,7 +48864,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -49255,7 +49285,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "RC Preschool Storytime",
@@ -49423,7 +49454,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -49444,7 +49476,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -49948,7 +49981,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Learn to Play Mah Jongg",
@@ -50116,7 +50150,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -50137,7 +50172,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -82582,7 +82618,8 @@
       "has_deal": true,
       "deal_description": "Parking is Free!; Ages 2 and under are Free!",
       "deal_expiry": "2026-11-01",
-      "tags": "outdoors,fall,halloween,pumpkins,family"
+      "tags": "outdoors,fall,halloween,pumpkins,family",
+      "end_date": "2026-11-01"
     },
     {
       "title": "2026 Market Day",
@@ -82771,7 +82808,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "crafts"
+      "tags": "crafts",
+      "end_date": "2026-11-27"
     },
     {
       "title": "Marshall Pride Clothing Swap",
@@ -103630,14 +103668,14 @@
       "title": "Exhibit: \"Why We Record: Defying Fragmentation and Erasure in Palestine\"",
       "description": "Why We Record: Defying Fragmentation and Erasure in Palestine is a visual exhibit by the American Friends Service Committee and Visualizing Palestine that explores the truths of the past, the heartbreak of the present, and the possibilities for a future without oppression in Palestine. The Cedar Tree Project is honored to help invite the Winona area community and beyond to view Why We Record at the Watkins Gallery, Winona State University from August 24-September 18, 2026 (open Mon-Tue and Thur-Fri 9am-4pm, Wed 9am-8pm). Exhibit Location and Address: Watkins Gallery at Winona State University ",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Paul Watkins Art Gallery, West 9th and Winona Streets, Winona, 55987, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.05001,
+      "longitude": -91.63923,
+      "image_url": "https://images.pexels.com/photos/4697232/pexels-photo-4697232.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-08",
       "time": "9:00 AM",
       "phone": "",
@@ -103651,14 +103689,14 @@
       "title": "Tuesday Night Trivia",
       "description": "",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Wellington’s Pub and Grill, 1429 Service Drive, Winona, 55987",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.05001,
+      "longitude": -91.63923,
+      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-08",
       "time": "7:00 PM",
       "phone": "",
@@ -103672,14 +103710,14 @@
       "title": "Hei N Löw Trivia Night",
       "description": "Put your smarts to the test and come on down for Trivia Night! Every second and last Wednesday of the month starting at 6:30pm.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Hei N Löw Bar & Patio, 529 E. 7th St., Winona, MN, 55987, United States",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.05001,
+      "longitude": -91.63923,
+      "image_url": "https://images.pexels.com/photos/31874024/pexels-photo-31874024.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-09",
       "time": "6:30 PM",
       "phone": "",
@@ -103693,14 +103731,14 @@
       "title": "Sunset Yoga",
       "description": "Join Laura (co-owner and winemaker) for a one-hour vinyasa yoga flow practice. This class begins at 6:00 p.m., includes a complimentary beverage, and no former yoga training required. Please bring your own mat and water bottle, $15 per person, reservations at http://www.exploretock.com/elmarovineyard (We welcome walk-ins!)",
       "category": "events",
-      "price_type": "",
-      "price": "",
+      "price_type": "Paid",
+      "price": "$15",
       "age_range": "",
       "address": "Elmaro Vineyard, N14898 Delaney Rd., Trempealeau, WI, 54661, United States",
       "latitude": "",
       "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "image_url": "https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-10",
       "time": "6:00 PM",
       "phone": "",
@@ -103714,14 +103752,14 @@
       "title": "Developmental Hockey Ice",
       "description": "strong Event date: /strong September 22, 2026 br strong Event Time: /strong 06:00 AM - 07:00 AM br strong Location: /strong br 251 Civic Center Parkway br Burnsville, MN 55337 br strong Description: /strong br These 1-hour sessions offer hockey skaters the opportunity to work on their skating skills either individually or through private lessons with an instructor depending on the age of the skater. On ice supervision is required for all skaters ages 17 & under, & the instructor needs to wear skates. All equipment is required for skaters 17 & under, and helmets are recommended for skaters and ",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Burnsville, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.767057,
+      "longitude": -93.277389,
+      "image_url": "https://images.pexels.com/photos/11006619/pexels-photo-11006619.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-22",
       "time": "6:00 AM",
       "phone": "",
@@ -103735,14 +103773,14 @@
       "title": "Developmental Hockey Ice",
       "description": "strong Event date: /strong September 22, 2026 br strong Event Time: /strong 07:00 AM - 08:00 AM br strong Location: /strong br 251 Civic Center Parkway br Burnsville, MN 55337 br strong Description: /strong br These 1-hour sessions offer hockey skaters the opportunity to work on their skating skills either individually or through private lessons with an instructor depending on the age of the skater. On ice supervision is required for all skaters ages 17 & under, & the instructor needs to wear skates. All equipment is required for skaters 17 & under, and helmets are recommended for skaters and ",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Burnsville, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.767057,
+      "longitude": -93.277389,
+      "image_url": "https://images.pexels.com/photos/11006619/pexels-photo-11006619.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-22",
       "time": "7:00 AM",
       "phone": "",
@@ -103756,14 +103794,14 @@
       "title": "Developmental Hockey Ice",
       "description": "strong Event date: /strong September 22, 2026 br strong Event Time: /strong 08:00 AM - 09:00 AM br strong Location: /strong br 251 Civic Center Parkway br Burnsville, MN 55337 br strong Description: /strong br These 1-hour sessions offer hockey skaters the opportunity to work on their skating skills either individually or through private lessons with an instructor depending on the age of the skater. On ice supervision is required for all skaters ages 17 & under, & the instructor needs to wear skates. All equipment is required for skaters 17 & under, and helmets are recommended for skaters and ",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Burnsville, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.767057,
+      "longitude": -93.277389,
+      "image_url": "https://images.pexels.com/photos/11006619/pexels-photo-11006619.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-22",
       "time": "8:00 AM",
       "phone": "",
@@ -103777,14 +103815,14 @@
       "title": "Public Skating for 18 & older",
       "description": "strong Event date: /strong September 22, 2026 br strong Event Time: /strong 09:00 AM - 10:30 AM br strong Location: /strong br 251 Civic Center Parkway br Burnsville, MN 55337 br strong Description: /strong br *These sessions are for skaters 18 & older only*",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Burnsville, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.767057,
+      "longitude": -93.277389,
+      "image_url": "https://images.pexels.com/photos/6557329/pexels-photo-6557329.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-22",
       "time": "9:00 AM",
       "phone": "",
@@ -103798,14 +103836,14 @@
       "title": "Public Skating",
       "description": "strong Event date: /strong September 22, 2026 br strong Event Time: /strong 11:00 AM - 12:30 PM br strong Location: /strong br 251 Civic Center Parkway br Burnsville, MN 55337 br strong Description: /strong br Skating Aid Rentals (Pushers): $4 BR/ *Outside skating aids of any kind are not allowed* BR/",
       "category": "events",
-      "price_type": "",
-      "price": "",
+      "price_type": "Paid",
+      "price": "$4",
       "age_range": "",
       "address": "Burnsville, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.767057,
+      "longitude": -93.277389,
+      "image_url": "https://images.pexels.com/photos/11006619/pexels-photo-11006619.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-22",
       "time": "11:00 AM",
       "phone": "",
@@ -103819,14 +103857,14 @@
       "title": "Stick and Puck",
       "description": "strong Event date: /strong September 22, 2026 br strong Event Time: /strong 11:00 AM - 12:30 PM br strong Location: /strong br 251 Civic Center Parkway br Burnsville, MN 55337 br strong Description: /strong br These sessions are for hockey skaters of any age to come and skate with sticks & pucks! Come work on your skating skills, drills & stick handling. All equipment is required for any skater 17 & under. Helmets are required for any skater 18 & older. Scrimmages, games, & lessons of any kind are not allowed at any time. Pushers or skating aids are not allowed on the ice during these sessions",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Burnsville, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.767057,
+      "longitude": -93.277389,
+      "image_url": "https://images.pexels.com/photos/6850566/pexels-photo-6850566.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-22",
       "time": "11:00 AM",
       "phone": "",
@@ -103840,14 +103878,14 @@
       "title": "Discovery Table - Brains, Beaks, and Bold Personalities",
       "description": "Let's meet the corvid family! There's Raven the brainy, sassy one; Crow the popular one; and Blue Jay the flashy favorite. Stop by to learn about some of Minnesota's most common, intelligent, and fascinating birds, and discover what makes these clever creatures so special. The table is set up in the River Inn Visitor Center.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Jay Cooke State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 46.650813,
+      "longitude": -92.347376,
+      "image_url": "https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-10",
       "time": "11 AM",
       "phone": "",
@@ -103861,14 +103899,14 @@
       "title": "Nature Walk: Powerful Pollinators",
       "description": "Discover the beauty and importance of pollinators! Explore blooming wildflowers while observing bees, butterflies, moths, beetles, and other pollinators that help our ecosystems thrive! Learn what we can do to protect them on this half-mile guided walk, suitable for all ages. Meet at the River Inn Interpretive Center",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Jay Cooke State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 46.650813,
+      "longitude": -92.347376,
+      "image_url": "https://images.pexels.com/photos/8033970/pexels-photo-8033970.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-11",
       "time": "1 PM",
       "phone": "",
@@ -103882,14 +103920,14 @@
       "title": "Discovery Table - Take a Look at Bones",
       "description": "Stop by anytime to hear ongoing mini-talks about some of the animals of the park by looking at their bones. The table is set up outside in front of the River Inn Visitor Center.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Jay Cooke State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 46.650813,
+      "longitude": -92.347376,
+      "image_url": "https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-11",
       "time": "10 AM",
       "phone": "",
@@ -103903,14 +103941,14 @@
       "title": "Discovery Table: Coyotes, American Prairie Wolves",
       "description": "What's that *yip* chorusing through the night? A uniquely American animal, the coyote is a villainized character in the story of our westward expansion. Are they scoundrels, or the heroes we all need? Stop by the River Inn Visitors Center to learn about this clever creature.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Jay Cooke State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 46.650813,
+      "longitude": -92.347376,
+      "image_url": "https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-12",
       "time": "12 PM",
       "phone": "",
@@ -103924,14 +103962,14 @@
       "title": "Peculiar Prickly Porcupines",
       "description": "What do porcupines eat? What do they sound like? Are porcupines immortal? Can they shoot their quills? Learn all this and more as we investigate North America's cutest, but least cuddly rodent. Bring your Smart devices to play a game of Kahoot! inside the River Inn Visitor Center.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Jay Cooke State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 46.650813,
+      "longitude": -92.347376,
+      "image_url": "https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-12",
       "time": "6:30 PM",
       "phone": "",
@@ -103945,14 +103983,14 @@
       "title": "River Rove",
       "description": "The St. Louis River flows through Jay Cooke State Park into Lake Superior. Learn all about water, hydroelectricity, and more with Naturalist Dan. Follow the signs across the bridge to his nature program.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Jay Cooke State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 46.650813,
+      "longitude": -92.347376,
+      "image_url": "https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-12",
       "time": "2 PM",
       "phone": "",
@@ -103966,14 +104004,14 @@
       "title": "Guardians of the Garden",
       "description": "At the pollinator garden by the Swinging Bridge. Discover how the park's wildflowers rely on bees, butterflies, and other pollinators to thrive. We'll explore the hidden connection between blooms and the creatures that help them grow. Stop in to chat with the naturalist about what's buzzing around our pollinator garden today.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Jay Cooke State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 46.650813,
+      "longitude": -92.347376,
+      "image_url": "https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-13",
       "time": "10 AM",
       "phone": "",
@@ -103987,14 +104025,14 @@
       "title": "Night Through The Senses",
       "description": "What happens in the park after the sun goes down? Join us around the campfire for an interactive exploration of the nighttime world. Use your senses to uncover hidden sounds, mysterious scents, fascinating textures, and surprising sights as we discover how both people and wildlife experience the dark. And for our sense of taste, we will be roasting marshmallows! Meet in amphitheater behind park office.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Jay Cooke State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 46.650813,
+      "longitude": -92.347376,
+      "image_url": "https://images.pexels.com/photos/8033970/pexels-photo-8033970.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-13",
       "time": "6 PM",
       "phone": "",
@@ -104008,14 +104046,14 @@
       "title": "Discovery Table - Rocks Talks",
       "description": "Rocks tell you a story about Earth's history if you know what to look for. Stop in anytime with your rocks to have a naturalist help you identify them and learn the stories at Jay Cooke. Meet outside the River Inn Visitor Center.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Jay Cooke State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 46.650813,
+      "longitude": -92.347376,
+      "image_url": "https://images.pexels.com/photos/8033970/pexels-photo-8033970.jpeg",
+      "image_source": "curated_category",
       "date": "2026-09-13",
       "time": "10 AM",
       "phone": "",
@@ -104029,14 +104067,14 @@
       "title": "Mysterious Mudpuppies: Investigation Station",
       "description": "Fish aren't the only creature swimming in the river, drop-by to discover the \"puppy\" of the St. Croix River. This slimy creature has a paddle-like tail, four legs and an adorable face. Stop by to learn its importance as an indicator species. No live animals will be present, but there will be plenty to see and explore. Most participants spend about ten minutes at this ongoing station.Find us near the visitor center.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Interstate State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.395436,
+      "longitude": -92.668719,
+      "image_url": "https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-15",
       "time": "2:30 PM",
       "phone": "",
@@ -104050,14 +104088,14 @@
       "title": "Explore Potholes on a Guided Tour",
       "description": "These potholes aren't what you think! Explore GLACIAL potholes and unique geology on a walk with a park guide. Uncover stories hidden within scenic river views. Discover how massive lava flows, glacial rivers and human interest in the area shaped the impressive landscape. Expect rocky terrain and short stairs on this 1/4-mile walk. This tour is best for ages 6 and up. Meet outside the park's visitor center. This program takes place entirely outdoors and will be canceled or postponed in the event of lightning or thunder.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Interstate State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.395436,
+      "longitude": -92.668719,
+      "image_url": "https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-15",
       "time": "12 PM",
       "phone": "",
@@ -104071,14 +104109,14 @@
       "title": "Secrets of Skulls: Investigation Station",
       "description": "Skulls reveal incredible secrets about the animals they belong to... if you know what to look for. Take a close look at several replica skulls from Minnesota mammals and learn to read their clues with a park naturalist. What will you discover? Most participants spend about ten minutes at this drop-in activity station. Find us near the visitor center. Canceled in the event of rain.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Interstate State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.395436,
+      "longitude": -92.668719,
+      "image_url": "https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-17",
       "time": "2:30 PM",
       "phone": "",
@@ -104092,14 +104130,14 @@
       "title": "Bridge Lessons",
       "description": "Join us at the Lake Elmo Library for Bridge Lessons! Marilyn, a Bridge instructor, will be teaching the card-game to beginners and intermediates. Supplies will be provided. This class is intended for adults. Registration is not required; however, there is a maximum capacity of 8 persons for this class.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Leah Egersdorf, Lake Elmo, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.00217,
+      "longitude": -92.88019,
+      "image_url": "https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-08",
       "time": "6:00 PM",
       "phone": "",
@@ -104113,14 +104151,14 @@
       "title": "Teen Art Cart",
       "description": "Drop by Hardwood Creek Library after school for time with the Art Cart in the teen area. The Art Cart brings a self-guided craft to the teen area. These crafts are designed to allow teens room to expand upon their own design through creativity and imagination. For ages 11–18 only. This program is brought to you in part by the Clean Water and Land Legacy Amendment.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Suzi Stephenson, Forest Lake, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.27911,
+      "longitude": -92.98516,
+      "image_url": "https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-08",
       "time": "7:30 PM",
       "phone": "",
@@ -104134,14 +104172,14 @@
       "title": "Art Discovery: Shape It Up",
       "description": "Discover shape — an essential element of art. Then, create your own shape art project inspired by Monir Shahroudy Farmanfarmaian, an Iranian artist especially known for her mirror mosaics. This class is recommended for ages 4 and up. Art Discovery is fun for everyone, especially those who don't consider themselves artists. Each program explores one of the essential elements of art.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Linnea Frank, Lake Elmo, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.00217,
+      "longitude": -92.88019,
+      "image_url": "https://images.pexels.com/photos/7979786/pexels-photo-7979786.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-08",
       "time": "8:00 PM",
       "phone": "",
@@ -104155,14 +104193,14 @@
       "title": "Contraption Club (3D Printing) at Cottage Grove Service Center",
       "description": "Join us for Contraption Club at Cottage Grove Service Center, 13000 Ravine Parkway South, Cottage Grove. Learn how 3D printing works and use the free design software Tinkercad to create your own original 3D design. Children ages 9-12 are welcome. Space is limited to 5 participants. Registration is required. This is an abridged version of the program that took place at the Park Grove Library. Because 3D printing takes several hours, finished designs will be available for pickup the following week.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Chelsea Bartlett, Cottage Grove, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.82774,
+      "longitude": -92.94382,
+      "image_url": "https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-08",
       "time": "8:30 PM",
       "phone": "",
@@ -104176,14 +104214,14 @@
       "title": "Collage Hangout",
       "description": "Learn how to incorporate drawing, painting, cutting and tearing to create new compositions. Use a variety of interesting materials including old book pages, retired postal stamps, modern fashion magazines and more to create a one of a kind original artwork. Presented by eHolt Arts. For youth and teens ages 8–18.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Marz Heim, MN",
       "latitude": "",
       "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "image_url": "https://images.pexels.com/photos/6437499/pexels-photo-6437499.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-15",
       "time": "7:00 PM",
       "phone": "",
@@ -104197,14 +104235,14 @@
       "title": "Harvest Craft Day",
       "description": "Drop in to make creative fall crafts, including acorn necklaces and spiky hedgehogs. For youth ages 2 and older with their caregivers.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Aimee Schreiber, Farmington, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.64024,
+      "longitude": -93.14355,
+      "image_url": "https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-15",
       "time": "7:00 PM",
       "phone": "",
@@ -104218,14 +104256,14 @@
       "title": "Teen Dungeons & Dragons",
       "description": "Join us for a twice-monthly D&D group for teens. D&D is a fantasy tabletop RPG about adventure, storytelling, and creativity. Learn the game, go on adventures and make friends. Everything you need for a successful adventure will be provided. Beginners welcome. Registration required. For youth ages 12–18.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Ashley Lopez, West St. Paul, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.91015,
+      "longitude": -93.08021,
+      "image_url": "https://images.pexels.com/photos/8775874/pexels-photo-8775874.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-15",
       "time": "10:00 PM",
       "phone": "",
@@ -104239,14 +104277,14 @@
       "title": "Authors Natalie Fowler and Jessica Freeburg",
       "description": "Join us to hear authors Natalie Fowler and Jessica Freeburg discuss their work researching the stories behind spirits, creatures and ghosts. They will talk about their books “Monsters of the Midwest: True Tales of Bigfoot, Werewolves, and Other Legendary Creatures”; “Ghosts of the Wild West” and “Witches of New England.” Jessica is the founder of the paranormal group “Ghost Stories Ink” a ghost hunting group dedicated to finding creative inspiration in creepy and haunted locations. Natalie serves as the group’s researcher and historian. For adults. Funded by MELSA.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Erin Holl, Apple Valley, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.73191,
+      "longitude": -93.21772,
+      "image_url": "https://images.pexels.com/photos/6437499/pexels-photo-6437499.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-15",
       "time": "11:00 PM",
       "phone": "",
@@ -104260,14 +104298,14 @@
       "title": "Autumn Glow LED Holders",
       "description": "Bring cozy light to your space as the days get shorter. Design custom lithophane-style candle holders specifically sized for battery-operated LED tea lights. Learn the “Hole” tool using TinkerCAD to create intricate cutouts of falling leaves, stars or geometric patterns that allow light to shine through. Presented by Make with Sam. Registration required. For youth ages 12–18.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Andrea Egbert, Hastings, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.74269,
+      "longitude": -92.85187,
+      "image_url": "https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-15",
       "time": "11:00 PM",
       "phone": "",
@@ -104281,14 +104319,14 @@
       "title": "Wescott Third Thursday Book Discussion Group",
       "description": "Discuss a variety of great books with other members of the community. This month's title is Velvet Was the Night by Silvia Moreno-Garcia. New members are welcome. Social gathering begins at 6 p.m. with book discussion starting at 6:30 p.m. For adults.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Karen Mackey, MN",
       "latitude": "",
       "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "image_url": "https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-15",
       "time": "11:00 PM",
       "phone": "",
@@ -129040,7 +129078,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "family,all-ages,minneapolis,donations"
+      "tags": "family,all-ages,minneapolis,donations",
+      "end_date": "2026-09-30"
     },
     {
       "title": "Second Harvest Heartland Food Bank Volunteer",
@@ -130389,13 +130428,13 @@
       "tags": "family-dining,dog-friendly,patio,kids-menu,kids-eat-free,recurring,tuesday,rogers,twin-cities"
     },
     {
-      "title": "Peak Café (Edinborough Park)",
+      "title": "Peak Café",
       "description": "Coffee shop inside Edinborough Park's Adventure Peak indoor play park — parents drink while kids play; café is no-admission, Adventure Peak charges ~$10/child. Note seasonal/limited hours (often Fri–Sun).",
       "category": "restaurants",
       "price_type": "Varies",
-      "price": "",
+      "price": "10",
       "age_range": "All ages",
-      "address": "7700 York Ave S, Edina, MN",
+      "address": "7700 York Ave S, Edina, MN 55435",
       "latitude": "44.86412",
       "longitude": "-93.32145",
       "image_url": "https://images.pexels.com/photos/34956523/pexels-photo-34956523.jpeg",
@@ -130407,7 +130446,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "family-dining,play-cafe,play-area,coffee,toddlers,preschool,kids,cafe,indoor-park,edina,twin-cities"
+      "tags": "family-dining,play-cafe,play-area,coffee,toddlers,preschool,kids,cafe,indoor-park,edina,twin-cities,kids-play-area,indoor-play,white-bear-lake"
     },
     {
       "title": "Duluth Grill",
@@ -131277,7 +131316,7 @@
       "price_type": "Varies",
       "price": "",
       "age_range": "0-8",
-      "address": "2054 St Clair Ave, St. Paul, MN",
+      "address": "2054 St Clair Ave, St. Paul, MN 55105",
       "latitude": "44.93386",
       "longitude": "-93.18342",
       "image_url": "https://158a62438e878f829d78.cdn6.editmysite.com/uploads/b/158a62438e878f829d783d2749d42ee8381fbf896312c3ad1f1a90ddbc54b70b/IMG_4037_1694204127.jpg",
@@ -131289,7 +131328,7 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "family-dining,play-cafe,play-area,coffee,toddlers,babies,preschool,kids,st-paul,twin-cities,restaurants,all-ages,recurring"
+      "tags": "family-dining,play-cafe,play-area,coffee,toddlers,babies,preschool,kids,st-paul,twin-cities,restaurants,all-ages,recurring,cafe,minneapolis"
     },
     {
       "title": "Sovereign Grounds",
@@ -132949,27 +132988,6 @@
       "deal_description": "Mondays (Family Night): kids eat free at participating locations",
       "deal_expiry": "",
       "tags": "minneapolis,st-paul,family-dining,kids-menu"
-    },
-    {
-      "title": "Peak Café at Edinborough Play Park",
-      "description": "Café inside play park with Corner Coffee beans, pastries, healthy snacks. Kids can play without park admission to café.",
-      "category": "restaurants",
-      "price_type": "Paid",
-      "price": "",
-      "age_range": "all ages",
-      "address": "Edinborough Park, Edina, MN",
-      "latitude": "44.862761",
-      "longitude": "-93.321967",
-      "image_url": "https://images.pexels.com/photos/27866922/pexels-photo-27866922.jpeg",
-      "image_source": "curated_category",
-      "date": "",
-      "time": "",
-      "phone": "",
-      "website": "",
-      "has_deal": false,
-      "deal_description": "",
-      "deal_expiry": "",
-      "tags": "family-dining,kids-play-area,cafe,edina"
     },
     {
       "title": "Green Mill Restaurant & Bar - St. Paul",
@@ -139041,27 +139059,6 @@
       "tags": "indoor-play,babies,toddlers,saint-louis-park"
     },
     {
-      "title": "Peak Cafe Adventure Peak - White Bear Lake",
-      "description": "Coffee shop with Adventure Peak PlayPark indoor play facility nearby",
-      "category": "restaurants",
-      "price_type": "Paid",
-      "price": "10",
-      "age_range": "kids",
-      "address": "Edinborough Park, White Bear Lake, MN",
-      "latitude": "45.08381",
-      "longitude": "-93.00693",
-      "image_url": "https://images.pexels.com/photos/5373242/pexels-photo-5373242.jpeg",
-      "image_source": "curated_category",
-      "date": "",
-      "time": "",
-      "phone": "",
-      "website": "",
-      "has_deal": false,
-      "deal_description": "",
-      "deal_expiry": "",
-      "tags": "coffee,indoor-play,white-bear-lake"
-    },
-    {
       "title": "Bennett's Chop & Railhouse - Kids Eat Free Sunday",
       "description": "Family restaurant with kids menu",
       "category": "restaurants",
@@ -139648,27 +139645,6 @@
       "deal_description": "Kids eat free Saturday 11am-9pm, 1 child per adult",
       "deal_expiry": "",
       "tags": "kids-eat-free,restaurant"
-    },
-    {
-      "title": "Rebe's Play Cafe",
-      "description": "Café with extensive play area for young children ages 0-5 with toys and entertainment",
-      "category": "restaurants",
-      "price_type": "Paid",
-      "price": "",
-      "age_range": "0-5",
-      "address": "Rebe's Play Cafe, Minneapolis, MN",
-      "latitude": "44.9773",
-      "longitude": "-93.26547",
-      "image_url": "https://158a62438e878f829d78.cdn6.editmysite.com/uploads/b/158a62438e878f829d783d2749d42ee8381fbf896312c3ad1f1a90ddbc54b70b/IMG_4037_1694204127.jpg",
-      "image_source": "curated",
-      "date": "",
-      "time": "",
-      "phone": "",
-      "website": "https://www.rebesplaycafe.com",
-      "has_deal": false,
-      "deal_description": "",
-      "deal_expiry": "",
-      "tags": "family-dining,play-area,cafe,minneapolis"
     },
     {
       "title": "Metro Diner",
