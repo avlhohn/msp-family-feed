@@ -5,7 +5,7 @@
   "metro_area": "Minnesota Statewide (Twin Cities metro + Duluth, Rochester, St. Cloud, Mankato, Moorhead, Brainerd, Bemidji, Winona, Alexandria)",
   "schema_version": "3.1",
   "counts": {
-    "events": 4964,
+    "events": 4965,
     "parks": 823,
     "meal_deals": 147,
     "volunteer_opportunities": 268,
@@ -104335,6 +104335,27 @@
       "deal_description": "",
       "deal_expiry": "",
       "tags": "library,reading"
+    },
+    {
+      "title": "Joyer Adventure Farm at Waldoch Farm",
+      "description": "Family-run garden center and adventure farm about 20 minutes north of the Twin Cities, with 20+ attractions: the Joyer Barnyard (farm animals and feeding), a low ropes course, the Zoom Mountain slide, and seasonal u-pick (strawberries in June, sunflowers in late summer). Fall Fun adds a pumpkin patch and corn maze, running Sept 20 through Halloween. Open daily except Tuesdays, 10am-6pm; last entry 1 hour before close. Confirm current hours and tickets each visit.",
+      "category": "events",
+      "price_type": "Paid",
+      "price": "General admission $16.99 online / $21.99 at door",
+      "age_range": "all ages",
+      "address": "8174 Lake Dr, Lino Lakes, MN 55014",
+      "latitude": "45.2022977",
+      "longitude": "-93.0965601",
+      "image_url": "https://cdn.shopify.com/s/files/1/0557/0773/0100/t/4/assets/attractionshayride_UPsC.jpg?v=1680115156822",
+      "image_source": "curated",
+      "date": "2026-09-20",
+      "time": "",
+      "phone": "",
+      "website": "https://waldochfarm.com",
+      "has_deal": false,
+      "deal_description": "",
+      "deal_expiry": "",
+      "tags": "attraction,farm,farm/u-pick,corn-maze,pumpkins,petting-zoo,seasonal,fall,outdoor,kids,family,all-ages,lino-lakes,north-metro,twin-cities"
     }
   ],
   "parks": [
