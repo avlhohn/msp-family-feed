@@ -1,26 +1,16 @@
 # MSP Family Guide — Error Fixing (Latest)
 
-**Run date:** 2026-09-08 (derived from the GitHub API `Date` response header, not the sandbox clock) — finished 09:5x UTC.
+Run date **2026-09-09**, finished 04:49 US Central (09:49 UTC). Run date derived from the GitHub API `Date` response header, not the sandbox clock.
 
 ## Summary
 
-| | |
-|---|---|
-| Open queue at start | **20 rows / 19 distinct items** — `unresolved_website` 6, `unresolved_image` 14 |
-| Resolved this run | **0** — website 0; image 0 (og_image 0, facebook 0, site_photo 0, stock_openverse_specific 0) |
-| Left open (rolling to tomorrow) | **20** |
+Open queue at start: **20 rows / 19 distinct items** — 14 `unresolved_image`, 6 `unresolved_website`. One of the 19 (`688 rows`) is an aggregate roll-up the build writes, not a fixable item, so the real work list was 18.
 
-A zero-resolution run is the correct outcome here, not a failure to try. The bar is a confident, specific, redistributable match; every candidate this run failed it on **licence** or on **provenance**, and one failed on being **fabricated by a research subagent**. Lowering the bar to move the number would put a wrong photo or an all-rights-reserved asset into a published family feed.
+Resolved this run: **0** (website 0; image 0 — og_image 0, facebook 0, site_photo 0, stock_openverse_specific 0).
 
-### Where the queue actually stands
+Left open: **20**, rolling to tomorrow. Zero regressions — all 3,057 carried rows were preserved byte-identically and one `fixer_summary` row was appended.
 
-Cross-checked all 19 items against today's published feed (`generated_date: 2026-09-08`, counts 4964 / 823 / 147 / 268 / 459 — matching today's `run_summary` marker):
-
-- **11 items have aged out of the feed entirely** and cannot be resolved by any amount of searching.
-- **1 item (`688 rows`) is a category roll-up**, never a per-item work item.
-- **7 items remain in the feed**, of which 3 are bad seeds or settled negatives, 2 are held open deliberately as defect markers, and **2 had a genuinely untried route** — those 2 got the run's research budget.
-
-Two apparent feed matches were **false hits** and are worth recording, because fuzzy title matching has produced this error before: `Toddler Tuesday - ECFE` matched a **Winona** "Toddler Tuesday" row (different city, different program), and `Urban Air Trampoline Parks - Minnesota Locations` matched 4 **per-location** rows rather than the umbrella item. Both logged items are genuinely gone.
+A zero-resolution run is the correct outcome here rather than a failure to try. The queue was scoped by first cross-checking every open item against the published feed, then asking which items still have an *untried* route; the two that did were probed and both closed as new settled negatives. The remaining image items are blocked by image **licensing**, not by discovery, so more searching is the wrong spend — a diagnosis now confirmed on a third consecutive run. Lowering the bar to move the number would put a wrong or all-rights-reserved photo into a published family feed.
 
 ## Resolved this run
 
@@ -30,50 +20,56 @@ None this run.
 
 | Item | Type | Likely reason |
 |---|---|---|
-| Lake Ann Park | image | **Rejected on licence, not absent.** Real photos exist (TripAdvisor CDN, two realtor sites) but all are all-rights-reserved third-party rehosts. `chanhassenmn.gov`, `chanrec.com`, `carvercountymn.gov` all still hard-403. |
-| Cameron Park (Bemidji) | image | Licence-bound. RecDesk facility URL returns organization-not-found; real city domain `ci.bemidji.mn.us` has no per-park pages. Only real photo is a copyrighted Bemidji Pioneer news asset. |
-| Bowlero Brooklyn Park (Lucky Strike) | image | Settled negative on hard evidence — all 6 location-page images are Contentful brand assets reused on the Blaine and Lakeville MN sibling pages. Closed question. |
-| Denny's Thursday Kids Eat Free | image | National-chain brand banner class; `dennys.com` hard-403. No venue-specific photo exists to find. |
-| Perkins Tuesday Kids Eat Free | image | National-chain brand banner class. Same. |
-| Rubio's Rewards Thursday Kids Free Meal | image | **Bad seed — see Escalations.** No MN locations exist; no image can legitimately resolve this row. |
-| Bump & Putt Family Fun Center | website | **Deliberately held open as a defect marker — see Escalations.** No first-party site exists after 7 confirmations. |
-| Maplewood Celebrate Summer | image | Aged out of feed |
-| Niko Moon Concert - Vetter Stone Amphitheater | image | Aged out of feed |
-| Music in the Park Thursdays - Mankato | image | Aged out of feed |
-| Movies in the Park - Mankato | image | Aged out of feed |
-| Moorhead Summer Splash Event | image | Aged out of feed |
-| Winona Parks & Rec Summer Activities | image | Aged out of feed |
-| Urban Air Trampoline Parks - Minnesota Locations | image | Aged out — umbrella row replaced by per-location rows |
-| Mission Branch Library Community Garden - Monday Nights | image | Aged out; also a bad seed (no such branch in Hennepin County) |
-| Summer Outdoor Festival - Brainerd | website (2 rows) | Aged out; no event of this name exists |
-| Pizza King Station | website | Aged out; bad seed (no MN location; name matches an Indiana chain) |
-| Toddler Tuesday - ECFE | website | Aged out; item name and logged address describe different things |
-| 688 rows | website | Category roll-up, not a work item — never dispatch research on it |
+| Denny's Thursday Kids Eat Free | image | **New settled negative.** `dennys.com` 403s the page-body route as well as og:image; MN Yelp pages 403; the only Facebook asset is a chain-wide brand graphic that fails the recurrence test. It is a promotion, not a venue — no specific photo exists. |
+| Perkins Tuesday Kids Eat Free | image | **New settled negative.** `perkins.com` times out; `stores.perkinsrestaurants.com` MN location pages 403; `eatatperkins.com` carries only chain-wide menu product shots that recur on ND/KS/FL siblings. |
+| Lake Ann Park | image | Licence-bound. Every real photograph found across 10+ routes was rejected on licence, none on absence. `chanhassenmn.gov`, the `chanrec.com` alias and `carvercountymn.gov` all hard-403. |
+| Cameron Park (Bemidji) | image | Licence-bound. `visitbemidji.com` venue page returns 200 with zero images; the city runs RecDesk (org-not-found), not CivicPlus; the one genuine photo is an all-rights-reserved newspaper staff image. |
+| Bowlero Brooklyn Park (Lucky Strike) | image | Settled negative on hard evidence — all six location-page images are Contentful brand assets appearing identically on the Blaine MN and Lakeville MN sibling pages. |
+| Rubio's Rewards Thursday Kids Free Meal | image | Bad seed — see Escalations. No image should be sought for a row that should not exist. |
+| Bump & Putt Family Fun Center | website | No first-party site exists (8th confirmation). Deliberately kept open as the defect marker for the dead link it ships — see Escalations. |
+| Maplewood Celebrate Summer | image | Aged out of the feed. |
+| Niko Moon Concert - Vetter Stone Amphitheater | image | Aged out of the feed. |
+| Music in the Park Thursdays - Mankato | image | Aged out of the feed. |
+| Movies in the Park - Mankato | image | Aged out of the feed (prior "present" verdicts were false fuzzy hits on Minnetonka / White Bear Township / Duluth screenings). |
+| Moorhead Summer Splash Event | image | Aged out of the feed. |
+| Winona Parks & Rec Summer Activities | image | Aged out of the feed. |
+| Urban Air Trampoline Parks - Minnesota Locations | image | Aged out of the feed (umbrella row; only per-location rows remain). |
+| Mission Branch Library Community Garden - Monday Nights | image | Aged out of the feed, and a bad seed — no such branch exists in Hennepin County. |
+| Summer Outdoor Festival - Brainerd | website (×2 rows) | Aged out; no event of this name exists. Brainerd's real summer events are Lakes Jam and the Crow Wing Viking Festival. |
+| Pizza King Station | website | Aged out; no Minnesota location exists — the name matches an Indiana chain. |
+| Toddler Tuesday - ECFE | website | Aged out; item name and logged address describe different things — see Escalations. |
+| 688 rows | website | Aggregate roll-up written by the build, never researched as an item. |
 
-## Escalations — items the fixer cannot close, refreshed with first-hand evidence
+## Escalations
 
-These are **source-data defects**, not missing websites. Re-searching them nightly can never succeed; they need a build-stage fix.
+These are source-data defects the fixer cannot close by searching. Each was **re-verified first-hand today** against the feed published this morning, and each is still present.
 
-1. **Bump & Putt Family Fun Center — the feed is shipping a broken link (7th confirmation).** Stored `website` `https://www.brainerd.com/business/bump-n-putt-family-fun-park/` re-fetched today: still a hard **404**. Stored `address` is `Four miles north of Nisswa, MN`, which is **wrong** — the venue is at **29107 State Hwy 371, Pequot Lakes, MN 56472**, phone **218-568-8833**. The stored coordinates (46.5205, -94.2886) were derived from the wrong address and are therefore also wrong. *No evidence of closure and no evidence of current operation* — those are different findings and neither justifies closing the row. **Recommended build fix:** blank the dead website, correct the address, blank lat/lon so STEP 4.9 re-geocodes. This row is kept OPEN on purpose: it is the only thing keeping the broken link visible.
+**Bump & Putt Family Fun Center — shipping a broken link, 8th consecutive run.** The stored website `brainerd.com/business/bump-n-putt-family-fun-park/` was fetched again today and returns a hard 404 ("Sorry! That page doesn't seem to exist."). The stored address `Four miles north of Nisswa, MN` is also wrong; the correct address is **29107 State Hwy 371, Pequot Lakes, MN 56472** (phone 218-568-8833). The stored coordinates were geocoded *from* the wrong address, so the pin is wrong too — the address fix and the coordinate blanking are one fix, not two, because STEP 4.9 skips populated coordinates and a corrected address with an uncorrected pin never self-heals. There is no evidence of closure and no evidence of current operation; those are different findings, and the row must not be closed as "confirmed closed". It is kept open deliberately: it is the only thing making the broken link visible.
 
-2. **Bowlero Brooklyn Park — stale URL and wrong ZIP.** `bowlero.com/location/bowlero-brooklyn-park` **301-redirects** to `https://www.luckystrikeent.com/location/lucky-strike-brooklyn-park`, which is the canonical URL to store. The venue's own page states **7545 Brooklyn Blvd, Brooklyn Park, MN 55443**; the feed stores ZIP **55445**. **Recommended build fix:** store the Lucky Strike URL, correct the ZIP, blank lat/lon.
+**Bowlero Brooklyn Park — wrong ZIP, non-canonical URL.** `bowlero.com/location/bowlero-brooklyn-park` 301s to `luckystrikeent.com/location/lucky-strike-brooklyn-park`, and the venue's own page states **7545 Brooklyn Blvd, Brooklyn Park, MN 55443**. The feed stores ZIP **55445**. Both the URL and the ZIP should be corrected at the build stage.
 
-3. **Rubio's Rewards Thursday Kids Free Meal — bad seed, and the most serious of these.** Rubio's Coastal Grill operates only in AZ, Southern CA and NV — **no Minnesota locations**. The row ships `deal_description`: *"Free kids meal with entree purchase Thursday (Rewards members, limit 1 per transaction)"* against `address: Multiple Twin Cities locations`. Per the standing rule that a `deal_description` is a factual claim a family will act on at a counter, this is worse than a missing image. **Recommended build fix: DROP the row.**
+**Rubio's Rewards Thursday Kids Free Meal — bad seed, and the most serious of these.** Rubio's Coastal Grill operates roughly 82 restaurants across California, Arizona and Nevada only; it has **no Minnesota locations**. The feed carries this as a `meal_deals` row addressed "Multiple Twin Cities locations". A `deal_description` is a factual claim a family will act on at a counter, so this is worse than a missing image. Recommend the build **drop the row**.
 
-4. **Cameron Park (Bemidji) — no usable street address.** Stored `address` is `Lake Bemidji, Bemidji, MN`, a lake, not an address. Public sources disagree on the real one (`2504` vs `2609 Birchmont Dr NE`), so this run does **not** assert a correction — it flags the field as needing a first-party source. Also note for future runs: the City of Bemidji's real domain is **`ci.bemidji.mn.us`**, not `bemidjimn.gov`.
+**Cameron Park (Bemidji) — the address field holds a lake, not an address.** Stored address is `Lake Bemidji, Bemidji, MN`. Public sources disagree on the real street address (`2504` vs `2609 Birchmont Dr NE`), so no correction should be asserted from search results — this field needs a first-party source rather than a guess.
 
-5. **Structural, and the highest-leverage of all: have the build auto-close an unresolved row once its item has left the published feed.** That single change would drain **12 of the 20** rows today. The fixer cannot close them by searching — "no longer in feed" is not a sanctioned search resolution — so they accrue forever and train the reader to skim the queue.
+**Toddler Tuesday - ECFE — venue-substitution trap.** The item name and the logged address (`10 Coon Rapids Boulevard`) describe different things; that address is the Urban Air trampoline park. A research pass will confidently propose `urbanair.com/minnesota-coon-rapids/` — that must be rejected, because attaching a paid trampoline-park URL to a row labelled ECFE misrepresents a sliding-fee district parenting class as a commercial jump session.
+
+**Structural ask, now raised for the 6th run.** Have the build **auto-close an unresolved row once its item has left the published feed**. Eleven of today's 20 open rows are for items that no longer ship; the fixer cannot close them by searching, so they accrue indefinitely. This single change drains 11 of 20 rows. A permanently unresolvable row that never leaves the queue trains the reader to skim the block.
+
+One positive note: **Perkins' Tuesday kids-eat-free promotion was independently corroborated as still active** at Minnesota locations, so unlike Rubio's that row is a genuine deal with only an image gap.
 
 ## Diagnostics
 
-- **`log_base_rejected`:** none. Base validated — header exactly the 10-column schema, 2983 data rows, 0 malformed, monotonic growth (2545 → 2640 → 2983). Local copy was **byte-identical to the remote** (blob `ff31c84d`, commit `9812a7a7`), so there were no pending owner edits to carry.
-- **`no_run_summary_today`:** not triggered — today's build marker is present, and the feed's `generated_date` header reads 2026-09-08, so the fixer ran after a completed, correctly-dated build.
-- **Subagent fabrication caught.** A research agent reported City-of-Bemidji assets `Cameron_Park_Swimming_Beach_Web.jpg` and `Cameron_Park_Boat_Access_Web.jpg` on `bemidjimn.gov`. That domain **does not resolve** (ECONNREFUSED); the filenames are unverifiable. Rejected on independent check. This is the third recorded instance of an agent confabulating image evidence — a subagent verdict is a candidate, never a verdict.
-- **Route closure confirmed at the specific-URL level.** `bemidjimn.recdesk.com/Community/Facility/Detail?facilityId=14` was fetched first-hand and returns organization-not-found, upgrading a previously generic finding to a specific one.
-- **Token handling:** the local `github_token.txt` was validated live against the GitHub API at STEP 1 instead of re-fetching from the Drive connector. This satisfies the fail-fast gate with a stronger check than a shape test, and avoids the known late-run connector hang. *(Autonomous deviation from the letter of the task file, noted here for visibility.)*
-- **Publish:** see below — no retries required.
+- `log_base_rejected`: **not triggered.** The base passed both guards — header exactly the 10-column schema, and 3,057 rows, up monotonically from 2,983 (09-08) and 2,640 (09-05).
+- Base provenance: the local copy was byte-identical to the GitHub remote by git blob SHA-1 (`d0d2003f82022bc7b5068660100ec45d5f13bfd9`, 951,760 bytes), so there was no stale-base or owner-edit divergence to resolve this run.
+- `no_run_summary_today`: **not triggered.** The build's `run_summary` marker for 2026-09-09 is present, and the published feed's `generated_date` is 2026-09-09, so the fixer ran *after* the build and worked a current queue (unlike 2026-09-07, when the ordering was inverted).
+- Run date was derived from the GitHub API `Date` response header rather than the sandbox clock, per the standing rule that the sandbox clock and the injected date have both been wrong, and wrong in agreement.
+- Drive was used only to fetch the publish token, at the start of the run (fail-fast gate). No AI-ineligibility skips occurred; the one-time Drive base fallback did not fire.
+- Regression guard: the 3,057 carried rows were compared against the pre-run base and are identical; no resolved row was re-opened, edited or deleted.
+- Source-trust note: one research subagent cited `twincitiesfrugalmom.com` as corroboration. That source was retired from this pipeline on 2026-08-28; it was not relied on for any claim written to the log, and the Perkins promotion was corroborated independently.
+- Publish: both artifacts verified post-PUT by returned size and by SHA change — see Files.
 
 ## Files
 
-- Error log: <https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv>
-- This report: <https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md>
+- Error log: https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv
+- Findings report: https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md
