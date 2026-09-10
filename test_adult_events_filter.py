@@ -177,8 +177,39 @@ CASES = [
     ("Small Business Saturday Market", "restaurants", None, False),
     ("Job Corps Volunteer Day", "volunteer_opportunities", None, False),
 
+    # ---- must NOT DROP (2026-09-10 hand review of the REVIEW tier). Both are real live titles
+    #      whose adult-sounding words name PARENTS OF CHILDREN -- i.e. exactly this guide's
+    #      audience.  They correctly land in REVIEW rather than being silently kept: "caregiver
+    #      support" and "support group" DO name adult programming most of the time, so the tier
+    #      is right and the hand read is the resolution.  What these cases assert is that they
+    #      never become DROPs -- a later reader tempted to promote either phrase into
+    #      DROP_PHRASES will fail here.  Both were reviewed and KEPT on 2026-09-10.
+    ("Family Caregiver Support Consultations", "events", "review", False),
+    #   age_range "All ages", tags carry all-ages: a free library social-worker consultation.
+    #   The source declares the audience; inferring adult-only from the word "Caregiver" would
+    #   assert a claim the source did not make.
+    ("Family Support Group-Afton,MN", "events", "review", False),
+    #   description: "a parent or caregiver of a child age 21 or younger". Note that "the
+    #   working caregiver" IS a DROP phrase -- a specific adult talk title -- which is exactly
+    #   why neither rule is a bare "caregiver" or a bare "support group".
+
     # ---- REVIEW tier (borderline, never auto-dropped) ----
-    ("Magnet Senior Center", "events", "review", False),
+    # 2026-09-10: "Magnet Senior Center" was a REVIEW case here until its 16 live rows were
+    # read by hand -- its description says "All individuals age 55+ are welcome" -- so it is
+    # now an unambiguous DROP by proper noun. Bare "senior center" must STAY in REVIEW: an
+    # intergenerational event held AT a senior center is a real family KEEP, and the two cases
+    # below are what pin that distinction down for the next reader.
+    ("Magnet Senior Center", "events", "drop", False),
+    ("Family Fun Night at the Eagan Senior Center", "events", "review", False),
+    ("Senior Center Open House", "events", "review", False),
+    # 2026-09-10, same shape: an adult library meditation talk, dropped by its own full title.
+    # Bare "grief" must STAY in REVIEW -- the three KEEPs below are real Minnesota family
+    # grief programming that a bare "grief" DROP phrase would silently delete.
+    ("Dealing with Grief and Other Emotional Challenges Through Meditation",
+     "events", "drop", False),
+    ("Children's Grief Connection Family Camp", "events", "review", False),
+    ("Kids Grief Support Group", "events", "review", False),
+    ("Grief Camp for Children and Teens", "events", "review", False),
 
     # ---- seed guard: a seed matching a drop phrase is reviewed, never dropped ----
     ("Career Services", "events", "review", True),
