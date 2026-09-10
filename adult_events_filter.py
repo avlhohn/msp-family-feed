@@ -118,6 +118,22 @@ DROP_PHRASES = [
     "shine @ fitness in the parks", "shine at fitness in the parks",
     # adult import-car expo (community "car show"s are family KEEPs, so scope to this brand)
     "importexpo", "import expo",
+    # --- added 2026-09-10: an adult-only declaration that lives in the DESCRIPTION -----------
+    # "Magnet Senior Center" (Hennepin County Library, 300 Nicollet Mall) carried 16 rows this
+    # run.  Its description says "All individuals age 55+ are welcome" -- and the filter already
+    # has a "55+" rule, which could never fire, because matching is TITLE-ONLY by design (see
+    # DESIGN note 1: description matching produced a real false positive on "Fiesta Latina").
+    # That design is correct and is NOT being changed.  The remedy for an adult-only claim that
+    # lives only in the description is the same one the bar-trivia-in-the-address case takes:
+    # let REVIEW surface it, read it by hand, and pin the PROPER NOUN here so the hand-review
+    # does not have to be repeated every run.  Scoped to the venue's full name -- bare
+    # "senior center" stays in REVIEW_PHRASES, because an intergenerational event held AT a
+    # senior center is a real family KEEP and this is the merge-asymmetry direction that hurts.
+    "magnet senior center",
+    # An adult library meditation talk ("longtime meditator Jim Rose", no age framing), which
+    # bare "grief" cannot express: Children's Grief Connection runs real FAMILY grief camps in
+    # Minnesota, so "grief" stays a REVIEW_PHRASE and only this specific adult title drops.
+    "grief and other emotional challenges",
 ]
 
 # --- explicit concert / comedy title list (added 2026-09-01) --------------------------------
