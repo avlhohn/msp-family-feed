@@ -1,71 +1,81 @@
 # MSP Family Guide — Error Fixing (Latest)
 
-Run date **2026-09-12**, finished **04:52 US Central (09:52 UTC)**. Run date derived from the GitHub API `Date` response header (`Sat, 12 Sep 2026 09:41:10 GMT`), not the sandbox clock; the sandbox clock agreed this run.
+Run date **2026-09-14**, finished **04:52 US Central (09:52 UTC)**. Run date derived from the GitHub API `Date` response header (`Mon, 14 Sep 2026 09:52:39 GMT`), not the sandbox clock.
 
 ## Summary
 
-Open queue at start: **19 rows / 18 distinct items** — 6 `unresolved_website` (one of which is the `688 rows` category roll-up, never dispatchable) and 13 `unresolved_image`.
+Open queue at start: **19 rows / 18 distinct items** — 5 `unresolved_website` (one of which is the `688 rows` category roll-up, never dispatchable) and 13 `unresolved_image`.
 
 Resolved this run: **0** — website 0; image 0 (`og_image` 0, `facebook` 0, `stock_openverse_specific` 0).
 
-Left open: **19 rows / 18 items**, rolling to tomorrow. No regressions: all 3,355 carried rows are byte-identical to the base, and all 536 previously-resolved rows are preserved untouched.
+Left open: **19 rows / 18 items**, rolling to tomorrow. No regressions: all 3,535 carried rows are byte-identical to the base, and all 536 previously-resolved rows are preserved untouched.
 
-The run was scoped before any research was dispatched, which is what kept a zero-resolution run cheap. Only **6 of the 18 items still exist in today's published feed**; 12 have aged out. Of those 6, five are settled negatives on first-hand evidence from earlier runs — two are chain-promotion image rows that are structurally unresolvable, and three are data defects wearing a website/image row's clothes. That left exactly **one item with a genuinely untried route** (Lake Ann Park), and it closed. One subagent was dispatched.
+The run was scoped before any research was dispatched, which is what keeps a zero-resolution run cheap. Only **6 of the 18 items still exist in today's published feed**; 12 have aged out and are queue residue rather than live defects. Of those 6, five are settled negatives on first-hand evidence — two are chain-promotion image rows that are structurally unresolvable, one fails the recurrence test, one is a bad seed, and one is licence-bound. That left exactly **one item with any discovery left** (Lake Ann Park); one subagent was dispatched, closed 11 further routes, and returned a clean negative.
+
+Zero is the correct outcome here. Lowering the verification bar is the only thing that would move the number, and the standing rule is not to. What the run produced instead is **one new structural finding** — a gap in the STEP 4.5 image-backfill gate, which went live in the nightly for the first time today, that makes the Bowlero row unreachable by the very pass built to drain it — plus **three escalations re-verified first-hand** rather than restated from the last report.
 
 ## Resolved this run
 
 None this run.
 
+Two rows were **appended**, both dated 2026-09-14, step `STEP4_fixer`: the mandated `fixer_summary` (info), whose open-queue census is recomputed from the log file itself at write time so it cannot drift from this report; and `curated_stock_gate_gap` (warning), the new finding under Diagnostics. No existing row was modified.
+
 ## Still open
 
 | Item | Type | Likely reason |
 |---|---|---|
-| Lake Ann Park | image | Licence-bound, not discovery-bound. ~25 routes now closed. The one untried route this run — the Wayback Machine, to get behind the `chanhassenmn.gov` hard-403 — turned out to be blocked to our fetcher at the tool level (see Diagnostics). |
-| Bowlero Brooklyn Park (Lucky Strike) | image | Settled negative. All six images on the venue page are Contentful chain assets recurring on the Blaine and Lakeville MN sibling pages. Re-confirmed today: the four body photos are generic brand marketing (grand-opening party, birthday candles, "family unlimited bowling", holiday bowling). The real defect on this row is the stale URL and wrong ZIP — see Escalations. |
+| Lake Ann Park | image | Licence-bound, not discovery-bound. ~36 routes now closed, 11 of them today. The city's own photos sit behind a hard 403 and every fetchable copy is a third-party rehost. |
+| Bowlero Brooklyn Park (Lucky Strike) | image | Settled negative on the recurrence test — its imagery is Contentful brand assets that appear identically on the Blaine and Lakeville MN sibling pages, i.e. marketing, not a photo of this venue. The real defect on this row is the wrong ZIP; see Escalations. **Also newly shown to be unreachable by STEP 4.5 — see Diagnostics.** |
 | Denny's Thursday Kids Eat Free | image | Structurally unresolvable. A `meal_deals` row is a promotion, not a venue, so there is no "photo of this exact thing" to find. `dennys.com` 403s both the og:image and page-body routes; its only Facebook asset is a chain-wide brand graphic. Do not re-queue for search. |
 | Perkins Tuesday Kids Eat Free | image | Structurally unresolvable, same reason. `perkins.com` times out, MN location pages 403, and `eatatperkins.com` carries only menu product shots that recur on ND/KS/FL siblings. The deal itself is genuine — this is an image gap only. |
-| Rubio's Rewards Thursday Kids Free Meal | image | Bad seed, not an image gap. See Escalations. |
-| Bump & Putt Family Fun Center | website | No first-party site exists after 10 runs, but the row is deliberately kept open as a defect marker for the dead URL it still ships. See Escalations. |
+| Rubio's Rewards Thursday Kids Free Meal | image | Bad seed, not an image gap — the chain has no Minnesota presence. See Escalations. |
+| Bump & Putt Family Fun Center | website | No first-party site exists after 11 runs, but the row is deliberately kept open as a defect marker for the dead URL it still ships. See Escalations. |
 | Maplewood Celebrate Summer | image | Aged out of the feed. |
 | Mission Branch Library Community Garden - Monday Nights | image | Aged out. Also a bad seed — no "Mission Branch Library" exists in the Hennepin County system; it is a San Francisco Public Library location. |
 | Moorhead Summer Splash Event | image | Aged out of the feed. |
 | Movies in the Park - Mankato | image | Aged out of the feed. |
 | Music in the Park Thursdays - Mankato | image | Aged out of the feed. |
 | Niko Moon Concert - Vetter Stone Amphitheater | image | Aged out of the feed. |
-| Urban Air Trampoline Parks - Minnesota Locations | image | Aged out. The umbrella row is gone; the four surviving per-location rows are different items and must not be merged into it. |
+| Urban Air Trampoline Parks - Minnesota Locations | image | Aged out. The umbrella row is gone; the surviving per-location rows are different items and must not be merged into it. |
 | Winona Parks & Rec Summer Activities | image | Aged out of the feed. |
 | Pizza King Station | website | Aged out. Bad seed — no Minnesota location exists; the name matches an Indiana chain. |
 | Summer Outdoor Festival - Brainerd | website (x2 rows) | Aged out. No event of this name exists; Brainerd's real summer events are Lakes Jam and the Crow Wing Viking Festival. |
-| Toddler Tuesday - ECFE | website | Aged out. Its prior false fuzzy match to a Winona row is now gone too. The item name and its logged Coon Rapids address describe different things; a research pass will confidently propose the Urban Air URL and that must be rejected. |
+| Toddler Tuesday - ECFE | website | Aged out. The item name and its logged Coon Rapids address describe different things; a research pass will confidently propose the Urban Air URL and that must be rejected. |
 | 688 rows | website | Category roll-up written by the build, not a per-item work item. Never dispatch research on it. |
 
-## Escalations
+**Bump & Putt is deliberately NOT closed.** Closing it with a negative resolution would bury the fact that the feed actively ships a broken link to families. That closure was made once before and explicitly reverted; it stays open as a defect marker until the row is either repaired or dropped from the feed.
 
-These are not missing websites or missing images. Re-searching them nightly can never succeed, so they are surfaced here for the build stage or a human to act on once. All three live ones were re-verified **first-hand today**, not recalled from memory.
+### Escalations — re-verified first-hand this run
 
-**Bump & Putt Family Fun Center — 10th consecutive confirmation.** `https://www.brainerd.com/business/bump-n-putt-family-fun-park/` returns a hard **404** ("Sorry! That page doesn't seem to exist."). The feed has now shipped this broken link for ten runs. The stored address `Four miles north of Nisswa, MN` is wrong — the venue is at **29107 State Hwy 371, Pequot Lakes, MN 56472** (phone 218-568-8833) — and the stored coordinates **46.520522 / -94.288609** were geocoded *from* the wrong address, so the address fix and the pin fix are one fix, not two. Blank `latitude`/`longitude` when correcting the address, because STEP 4.9 skips populated coordinates and a corrected address with an uncorrected pin never self-heals. No evidence of closure and no evidence of current operation were found — those are different findings, and the row must not be closed as "confirmed closed".
+These three are data defects, not image-search failures, and each was checked against the source today rather than restated from the previous report. They are recorded here rather than as recurring log rows, because a warning that can never be resolved trains the next reader to skim the block.
 
-**Bowlero / Lucky Strike Brooklyn Park — wrong ZIP, stale URL.** `bowlero.com/location/bowlero-brooklyn-park` still **301s** to `https://www.luckystrikeent.com/location/lucky-strike-brooklyn-park`, which is the canonical URL to store. That page states **7545 Brooklyn Blvd, Brooklyn Park, MN 55443**; the feed stores **55445**. The chain has rebranded Bowlero → Lucky Strike, so the stored URL is a redirect rather than a canonical address.
+1. **Bump & Putt Family Fun Center — the stored website is a hard 404, for the eleventh consecutive run.** `brainerd.com/business/bump-n-putt-family-fun-park/` returns exactly *"Sorry! That page doesn't seem to exist."* The feed ships this link live. The remedy is to blank the `website` field or drop the row, not to keep searching for a photo of a venue whose only recorded URL is dead.
 
-**Rubio's Rewards Thursday Kids Free Meal — bad seed, and the most serious of the three.** Reconfirmed today: Rubio's Coastal Grill operates **82 restaurants across California, Arizona and Nevada only** — no Minnesota locations at all. MN businesses trading as "Rubio's" are unaffiliated independents. This `meal_deals` row therefore advertises a kids-eat-free deal that cannot be honoured at any counter in the state, which is worse than a missing image: a `deal_description` is a factual claim a family will act on. Recommend the build **drop the row** rather than keep seeking an image for it.
+2. **Bowlero Brooklyn Park (Lucky Strike) — ZIP mismatch.** The venue's own page states *7545 Brooklyn Blvd., Brooklyn Park, MN **55443***; the feed stores **55445**. Per the standing rule, a corrected address means `latitude`/`longitude` must be blanked and re-geocoded — STEP 4.9 skips populated coordinates, so a corrected address with an uncorrected pin never self-heals.
 
-**New this run — the publish target carries two meal_deals artifacts, one of them 18 days stale.** `deals.csv` (150 rows) is the live artifact and matches `msp_family_guide.json`'s `meal_deals` exactly, 150 of 150 titles. But an orphaned **`meal_deals.csv` (56 rows)** also sits at the repo root, last committed **2026-08-25**, and **25 of its 56 titles no longer exist in the feed**. Any consumer that resolves the category by its obvious filename gets month-old data. Nothing can currently see this: the build's own publish row names `deals.csv` and never touches `meal_deals.csv`, so the six-artifact blob-SHA-1 verification passes while the stale seventh file sits beside it. This is the same "two things naming one source, nothing enforcing agreement" class the pipeline already documents for `LIBRARY_SRC` and `SOURCE_KEYS`, reached through the publish target instead of through code. Recommend deleting `meal_deals.csv` from the repo, or making it the single canonical path and retiring `deals.csv`.
-
-**Standing structural ask, 5th run running — auto-close an unresolved row once its item leaves the published feed.** Twelve of today's eighteen items no longer exist in the feed. The fixer cannot close them by searching, so they accrue forever and train the reader to skim the queue. This one change would drain 12 of 18 rows today and is by far the highest-leverage fix available.
+3. **Rubio's Rewards Thursday Kids Free Meal — the chain has no Minnesota presence.** Confirmed **82 restaurants across California (60), Arizona (17) and Nevada (5) only**. The `meal_deals` row advertises a deal that cannot be honoured at any Minnesota counter. This is a bad seed and should be dropped, not image-backfilled. (`rubios.com/locations` returns only CSS/JS to WebFetch; the count came from search.)
 
 ## Diagnostics
 
-**Base validation — clean.** The session-local `error_log.csv` was byte-identical to the GitHub canonical (blob `102de9f4db5b410a9554d0127010a0289c0f2b5d`, 1,047,587 bytes, 3,355 rows). Header matched the 10-column schema exactly, no malformed rows, and row count grew monotonically from 3,057 on 2026-09-09. No `log_base_rejected`.
+**STEP 1 was clean.** The local `error_log.csv` was byte-identical to the remote (blob `332df94e920570cde7ae4ec1ab3691e0773ffbfa`), so there was no owner-edit divergence and no `log_base_rejected`. Today's build marker was present (`Run 2026-09-14 (Monday) COMPLETE … 7,157 rows`), so no `no_run_summary_today` row was written. The header matched the 10-column contract exactly and row growth remains monotonic across runs. The GitHub token was fetched and validated at the *start* of the run, before any research, so a stale credential could not discard completed work at publish time.
 
-**Freshness — clean.** A `run_summary` row dated 2026-09-12 was present, so the day's build had already run. No `no_run_summary_today`.
+**NEW — the STEP 4.5 gate excludes 221 rows it should reach, and one of them is in this queue.** STEP 4.5 ran inside the nightly for the first time in the project's history today (marker: 36 sites resolved, 205 rows upgraded, `stop_reason: deadline`). Its eligibility gate admits `image_source ∈ {curated_category, stock, openverse_named, blank}` and therefore **excludes `curated`**. That is right for a hand-picked override — and wrong for **221 of the 907** `curated` rows, which carry generic stock (`images.pexels.com`) rather than a chosen photo. Those 221 rows share just **36 distinct assets**, and **25 assets are reused across 210 rows**: one pexels photo covers 48 unrelated bar-and-grill rows, another 36 unrelated pizza rows, another 26 farmers-market rows. **151 of the 221 carry a website**, so they would be 4.5-eligible if the gate could tell the two senses of `curated` apart.
 
-**New route closure, structural and pipeline-wide: the Wayback Machine is unavailable to this pipeline.** `web.archive.org` is blocked to our fetcher at the **tool level** — the error is "Claude Code is unable to fetch from web.archive.org", not a site-side 403. This matters because the subagent reported it as a Wayback 403, which would have left the route looking like a transient site problem worth retrying. Verified directly rather than accepted, in line with the standing rule that a subagent's negative is also only a candidate verdict. The consequence is general: the archive route can **never** be used to get behind the hard-403s on `chanhassenmn.gov`, `carvercountymn.gov` or `brainerdmn.gov`, and it should not be proposed again for any of them.
+This is not cosmetic for this queue. **`Bowlero Brooklyn Park (Lucky Strike)` has an open `unresolved_image` row and sits inside the excluded set**, so the backfill pass built to drain rows like it can never reach it — and the gap presents as "nothing to do" rather than as an error, which is the same silent-zero shape this project has already hit with a skipped step, a lapsed log signal and a filter vocabulary gap.
 
-**Five further Lake Ann Park routes closed**, none of them previously tried: `sandee.com` (returns an empty images array), `mindtrip.ai` (a placeholder og:image only), two `cdn1.sportngin.com` PDFs (field maps and diagrams, no photographs), the `chanhassenmn.gov` PhotoAlbum component paths and the Lake Ann Park Preserve project page (both hard 403), and Wikimedia Commons (which has Lake Ann in Michigan and Arkansas, wrong state). The unlinked-photo-gallery route that broke the Cameron Park case open in Bemidji does not generalise to Chanhassen — the gallery paths exist but 403 like the rest of the host.
+Suggested fix: treat `curated` as eligible when `image_url`'s host is a stock provider (pexels / unsplash / pixabay). That preserves the genuine hand-picked overrides the exclusion exists to protect, while freeing the mislabelled rows. Logged as `curated_stock_gate_gap` (warning).
 
-**Publishing.** Both files verified by blob SHA-1 and by contents-API `size` and `sha` change on the first attempt. No retries.
+**Eleven further Lake Ann Park routes closed.** All attempted first-hand this run, all negative: Yelp (403), Wheree (403), Lake-Link (403), stevepemberton.com (text only, no images), Christa Reed Photography (family portraits taken *at* the park — not photographs *of* the park), Adam Johnson Minnesota Photography (no Lake Ann images), the 2024 Parks & Rec report on FlippingBook (re-confirmed text-only), the Chanhassen Historical Society gallery (no park images), Explore Minnesota (park not featured), RPBCWD (watershed diagram only, no photograph), and the Wikipedia article *Lake Ann (Minnesota)* (explicitly carries no image). Combined with the ~25 routes closed on prior runs, this item is licence-bound and further searching is the wrong spend.
+
+**Method notes.** The feed cross-check uses exact normalized-title equality. A token-overlap matcher at 0.6 was tried first and returned 96 "matches" for Lake Ann Park, 100 for Denny's and 99 for Perkins — matching on generic words like *lake*, *park*, *kids* and *free*, and resurfacing the known Toddler-Tuesday/Winona and Movies-in-the-Park/Minneapolis false positives. It is not evidence of presence and was discarded. The research subagent read its item list from a file on disk rather than from a hand-typed prompt, and its brief named prior confabulations explicitly (an invented image description, a non-resolving domain, a Flickr account belonging to a different town); it returned specific URLs with per-route outcomes and no fabrications.
+
+**Reserved-namespace check.** `errlog_step7.py` section 5 counts `ical_feed_pull`, `deal_source_*` (prefix match), `image_backfill` and `run_summary`, scoped by `run_date` — so rows this fixer writes dated 2026-09-14 share a namespace with the build's own assertions, and a carelessly named finding would fail tomorrow's build. Both new `issue_type` values were checked against that set before writing, and the append script asserts it independently.
+
+**Append control.** With zero resolutions the write is a pure append, so byte-preservation is verifiable directly: the first 1,107,477 bytes are identical before and after, which distinguishes "appended 2 rows" from "my writer silently rewrote every line". Final file is **1,108,641 bytes, 3,537 data rows, 3,538 CRLF, 0 bare LF**. The script also hard-fails on a malformed run date, refuses to run twice for the same date, and asserts CRLF termination before appending.
 
 ## Files
 
-- Error log: https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv
-- Findings report: https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md
+- `error_log.csv` — https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv
+- `error-fixing-findings-latest.md` — https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md
+- Local: `Agents and Workflows/error_log.csv`
+- Local: `Agents and Workflows/error-fixing-findings-latest.md`
