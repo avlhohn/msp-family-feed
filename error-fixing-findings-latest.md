@@ -1,57 +1,136 @@
 # MSP Family Guide — Error Fixing (Latest)
 
-Run date **2026-09-15**, finished **04:56 US Central (09:56 UTC)**. Run date derived from the GitHub API `Date` response header (`Tue, 15 Sep 2026 09:56:49 GMT`), not the sandbox clock.
+**Run date:** 2026-09-16 · **Finished:** 07:35 local (12:35 UTC)
+
+Run date and finish time are both derived from a server-side `Date` header, not from the sandbox
+clock. The sandbox clock and the injected `currentDate` have previously been wrong *in agreement*
+by up to two days, so neither is used here.
 
 ## Summary
 
-Open queue at start: **19 rows / 18 distinct items** — 6 `unresolved_website` and 13 `unresolved_image`.
+Nineteen open rows were examined — six `unresolved_website` and thirteen `unresolved_image`, across
+eighteen distinct items — and **none were resolved**. That is the eighth consecutive run at this
+exact shape (19 rows / 18 items / 6 still live in the feed / 0 resolutions), and the shape itself is
+now the finding: the queue is not under-worked, it is structurally blocked. Eleven of the eighteen
+items no longer exist in the published feed at all and are residue rather than active defects. Of
+the six that do still ship, five are settled negatives on first-hand evidence and the sixth needs the
+owner to make a call that no amount of searching can make for it.
 
-Resolved this run: **0** — website 0; image 0 (`og_image` 0, `facebook` 0, `stock_openverse_specific` 0).
-
-Left open: **19 rows / 18 items**, rolling to tomorrow. No regressions: the base loaded byte-identical to the remote (blob `599a3ab0cdab`), all 3,625 carried rows are preserved unchanged, and no previously-resolved row was touched.
-
-The run was scoped before any research was dispatched, which is what keeps a zero-resolution run cheap. Only **6 of the 18 items still exist in today's published feed**; the other 12 have aged out of the window and are queue residue rather than live defects — there is no live row for a resolution to enrich, so no amount of searching can close them. Of the 6 that do still ship, every one is a settled negative: two are chain-promotion image rows that are structurally unresolvable, one fails the recurrence test, one is a bad seed with no Minnesota presence, one is licence-bound, and one has no first-party web presence after twelve runs. That left exactly **one item with any discovery left** — Lake Ann Park — and this run spent nearly the whole research budget closing its last two genuinely untried routes.
-
-Zero is the correct outcome here rather than a shortfall of effort. Lowering the verification bar is the only thing that would move the number, and the standing rule is not to; a settled negative is worth more to this pipeline than a guess. What the run produced instead is **Lake Ann Park now closed on discovery as well as on licence**, and **six diagnostics**, three of which describe defects in the pipeline itself rather than in any venue record: a gate that structurally cannot reach two of the items on this very queue, a freshness mitigation implemented one level short of the file it was meant to protect, and a sixth subagent fabrication in a shape this queue has not seen before.
+The more consequential discovery this run has nothing to do with the queue. The scheduler dispatched
+`msp-family-guide-daily` at `2026-09-16T12:21:46.593Z` and this error-fixer at
+`2026-09-16T12:21:47.307Z` — **one second apart**, against cron slots of 03:06 and 04:40 local. Both
+fired roughly four hours late, together. The fixer is therefore not completion-gated in practice: it
+ran *concurrently with* the build rather than after it. Every downstream observation follows from
+that. Repo HEAD was still 2026-09-15, `msp_family_guide.json` still carried
+`generated_date: 2026-09-15`, and no `run_summary` row for today existed — so this run necessarily
+worked yesterday's queue against yesterday's feed, and did so without any of those three signals
+being a defect in its own right.
 
 ## Resolved this run
 
-None this run. No row's `resolved_date`, `resolved_by` or `resolution_note` was written, and all nineteen open rows carry forward untouched.
+None. Zero website rows and zero image rows were resolved — no `og_image`, no `facebook`, no
+`stock_openverse_specific`. Two research subagents were dispatched, both reading their item lists
+from briefs written to disk programmatically rather than hand-typed, and neither produced a candidate
+that met the verification bar.
+
+Nothing was written into the data on the strength of a subagent's word. One candidate address for
+Bump & Putt was again rejected — see Diagnostics.
 
 ## Still open
 
-**19 rows / 18 items.**
+Nineteen rows roll forward. Six items still ship in the published feed; the other twelve rows
+(eleven items) point at rows the feed no longer contains.
 
-**Lake Ann Park (Chanhassen)** absorbed most of this run's budget and is now exhausted on discovery as well as bound on licence. Two routes had never been attempted. The first was Flickr searched *directly* and filtered to a CC or public-domain licence — a genuinely different question from Openverse, whose index of Flickr is incomplete and which had already returned 0 across six queries. The second was Wikimedia Commons browsed *by geographic category* rather than by name, a name search having previously returned only the Lake Ann Michigan and Arkansas collisions. Both closed NOT RESOLVED across fifteen documented probes. No City of Chanhassen and no Chanhassen Parks & Rec account exists on Flickr; the account-name literal check that caught the Cameron/Bemidji container collision on an earlier item was applied and found no candidate container to check at all. On Commons, `Category:Chanhassen, Minnesota` (34 media files), `Category:Parks in Carver County, Minnesota` and `Category:Lakes of Carver County, Minnesota` hold no Lake Ann Park photograph.
+**Lake Ann Park, Chanhassen** — image. Discovery is exhausted across roughly thirty-eight closed
+routes over nine runs. The city's own park page at `chanhassenmn.gov` was re-tested today and still
+returns a hard 403, which is the single richest source that could exist for this item. The remaining
+real photographs of this park are all third-party rehosts and therefore all-rights-reserved by
+default, so the block is now a licence block rather than a discovery one.
 
-One Flickr probe returned page structure only, with dynamic content not captured by WebFetch. That is recorded **narrowly as a tooling limitation and explicitly not as a content negative** — an over-broad post-mortem is itself a way to lose a real finding, and this queue has already had one mischaracterised negative. The item remains licence-bound: real photographs of the right park exist, but on third-party rehosts we may not redistribute. Further search budget here is the wrong spend. What it needs is a licence route — a first-party upload — not more queries.
+**Denny's Thursday Kids Eat Free · Perkins Tuesday Kids Eat Free · Rubio's Rewards Thursday Kids Free
+Meal** — image. These are chain *promotions*, not venues. There is no single place to photograph, so
+no image route can succeed by construction. They should be closed as unresolvable rather than
+re-attempted.
 
-**Bowlero** is a settled recurrence-test negative from prior runs and, separately, sits inside the set STEP 4.5 structurally cannot reach (see Diagnostics).
+**Bowlero Brooklyn Park (Lucky Strike)** — image. Its six location-page images are Contentful brand
+assets shared verbatim with the Blaine and Lakeville Minnesota siblings, so they identify the chain
+rather than this location. Settled negative.
 
-**Denny's** and **Perkins** are structurally unresolvable in their present shape. Both are `meal_deals` rows, and a `meal_deals` row describes a *promotion*, not a venue — so there is no single venue page to point a website at and no single venue photograph to find. Closing these needs a schema decision, not research.
+**Bump & Putt Family Fun Center** — website. This one is genuinely actionable and needs the owner.
+The site the feed actually ships, `brainerd.com/business/bump-n-putt-family-fun-park/`, was
+re-verified first-hand today and returns a 404 page with no address, phone or hours. That is worse
+than the `unresolved_website` filing implies: the feed is not missing a website, it is publishing a
+dead link a family would click. The row carries three further defects unchanged after thirteen runs —
+an address of `Four miles north of Nisswa, MN` that can never geocode, a coordinate that is a Nisswa
+city-centroid placeholder about 6.4 km from where that address text points, and an operating status
+that is genuinely ambiguous. No first-party site or Facebook page for the business could be verified.
 
-**Rubio's** is a bad seed: the chain has no Minnesota presence at all, so there is nothing in-state to resolve to.
-
-**Bump & Putt Family Fun Center** has no first-party web presence after twelve runs, and this run re-framed it from a missing-website item into a four-part record defect; details in Diagnostics.
-
-The twelve aged-out items are left open deliberately. Each row records a real historical failure, and clearing it would erase that record while enriching nothing a consumer reads.
+Fuzzy title matching was again not treated as evidence of presence. `Toddler Tuesday - ECFE` (Coon
+Rapids) still fuzzy-matches a Winona row and `Movies in the Park - Mankato` still matches Duluth and
+Minneapolis rows; same-state is not a match, and both items are in fact gone.
 
 ## Diagnostics
 
-**The curated-stock gate gap persists and is widening.** STEP 4.5's eligibility gate admits `curated_category`, `stock`, `openverse_named` and blank, but excludes `image_source = curated`. Of the 908 curated rows, **222 are stock-hosted — up from 221 yesterday** — across 36 distinct assets with reuse concentrated at 48, 36, 26, 11 and 10 rows per asset, and **152 of them (up from 151) carry a website** and are therefore mechanically fixable but unreachable. Two items on this open queue, Bowlero and Bump & Putt, sit inside that excluded set: the pass built to drain this queue structurally cannot touch them. The gap widens by a row or two per run because `curated` is a terminal state nothing re-examines. This is logged as a **persistence-plus-delta rather than a duplicate warning**, because a permanent identical warning trains the reader to skim the block. The remedy is a gate change — admit curated rows whose `image_url` resolves to a known stock CDN — not more fixer search.
+Seven rows were appended to `error_log.csv`, all dated 2026-09-16.
 
-**The marker `run_date` mitigation stops one level short of the guard it was written for.** Yesterday's finding was that a *fresh marker file can carry a stale field*, and the recommended tell was to assert that the marker's own `run_date` agrees with the run date passed on the command line. `step45_site_photo.py` now does stamp `run_date` into `_step45_results.json`'s `__meta__` — verified present as `2026-09-15`. But `_image_backfill.json`, the file `errlog_step7.py` actually reads, carries only `item`, `attempted`, `upgraded`, `rejected_logo`, `stop_reason` and `description`. There is no `run_date` on it, so the proposed assertion **cannot be wired**, and a carried `stop_reason` would still satisfy all three existing checks. The value is already in scope at the point of failure: line 200 binds `meta`, which holds it, and line 258 builds the marker dict without it — a one-line fix, after which `errlog_step7.py` can gain the assertion. Today's marker reads `stop_reason=deadline`, `attempted=58`, `upgraded=228`, `rejected_logo=1`, with an mtime of 03:33:39 against `_feedpull_all.json` at 03:13:27, so the file genuinely is fresh; it is one field inside it that remains unproven.
+**`build_fixer_concurrent_dispatch`** (warning) is the primary finding, described in the Summary
+above. Its practical danger is a lost update: the build loads its `error_log.csv` base at its own
+STEP 1 and appends at STEP 7, so whichever of the two tasks publishes second overwrites the other's
+rows. This run mitigated its own half by publishing with optimistic concurrency — the PUT carries the
+`sha` read immediately beforehand, so a conflicting build publish returns 409 and this run re-applies
+onto the new base rather than clobbering it. That protects the build from *us*; it does not protect
+us from the build, whose publisher does not use the same scheme. As of this report the build has
+still published nothing today, so its STEP 7 write is yet to come and our seven rows are at risk.
+**The next run must verify that both this run's rows and the build's own 2026-09-16 STEP 7 rows are
+present in the canonical log.** If either set is missing, a lost update occurred and can be repaired
+from this report.
 
-**A sixth subagent fabrication on this queue, in a new shape.** The five prior fabrications were all claims about *external* sources: an invented image description, an invented Flickr account identity, an invented hostname, bare filenames offered as URLs, and a mischaracterised negative. This one inverted the direction and asserted a value in **our own record** — "Your record shows 218-963-8833" — when the subagent has no access to the feed and the row's `phone` field is in fact the empty string. It was caught only by checking the claim against the feed row. The generalisation worth carrying: a brief that opens by quoting the item *as it appears in the feed* invites an agent to echo data back as though it had read it, so an agent's claim **about our data** must be verified against our data exactly as an external claim is verified against a fetch.
+**`no_run_summary_today`** (info) records the absent marker, with the explicit note that the usual
+reading does not apply — the build was in flight, not missing. The base loaded was the canonical
+GitHub copy (blob `c3322eca880d…`, 3,633 data rows, header schema-exact, row count monotonically up
+from 3,538), so both validation gates passed and no `log_base_rejected` was filed.
 
-**Bump & Putt is a four-part record defect, every part verified first-hand this run.** The shipped `website` returns **404** — `brainerd.com/business/bump-n-putt-family-fun-park/` renders "Sorry! That page doesn't seem to exist." The `address` is a **relative-directions string**, "Four miles north of Nisswa, MN", not a street address, so it can never geocode. The stored coordinate `46.520522,-94.288609` sits **0.125 km from the Nisswa municipal centroid** and 9.312 km from Pequot Lakes — it is a city centroid, which the coverage spec says can never count as evidence of a venue's location, and it lies roughly 6.4 km *south* of where our own address string places the venue. Operating status is genuinely **ambiguous**: after twelve runs there is no dated evidence in either direction. A candidate real address surfaced (29107 State Hwy 371, Pequot Lakes) and has deliberately **not** been written into the record — taking an address from a lead rather than from the venue's own page is a defect class this project already logs. This one needs owner adjudication, not more search.
+**`shipped_website_404`** (warning) records the dead Bump & Putt URL described above.
 
-**Two name collisions re-confirmed**, recorded so a later run does not resolve them onto the wrong venue. "Toddler Tuesday" resolves to 800 Riverview Drive in **Winona**, not the Coon Rapids ECFE item on this queue; "Movies in the Park" resolves to Leif Erikson Park in **Duluth**, not the Mankato item. Both are generic program titles used verbatim by many Minnesota municipalities, so a same-state match is not a match — the city has to agree before either can close.
+**`subagent_confabulation_seventh`** (warning) is the seventh confabulation on this queue and a new
+shape: the report **contradicted itself within one document**. Its Q3 stated that Yelp, Manta and
+ABLocal all returned access errors — 403, 526, 403 — and its Q4 then cited that same Yelp URL as
+"URL fetched", quoted a street address and phone from it, and marked the verdict VERIFIED. Checked
+first-hand, the Yelp URL returns 403, so nothing could have been read from it. The prior six
+instances were all about external sources or about our own data; this one was internally checkable
+at zero cost. The lesson worth keeping: read a subagent report for internal consistency *before*
+spending any verification budget on the URLs it cites — a report that calls a source blocked in one
+answer and quotes it in another is self-invalidating, and catching that costs one re-read rather than
+one fetch. Note also that a previous run logged a different invented-looking phone number for this
+same row; two distinct fabricated numbers on one item is itself a signal.
+
+**`step45_gate_gap_persists`** (info) re-states that STEP 4.5's eligibility gate admits `image_source`
+in `{curated_category, stock, openverse_named, blank}` and therefore excludes `curated`. The
+published feed carries 908 `curated` rows, of which 222 are Pexels or Unsplash stock and 152 of those
+also carry a `website` — rows that sit on stock imagery, have the one input the backfill needs, and
+are structurally unreachable by the pass built to drain them. Two of this queue's six live image
+items, Bowlero and Bump & Putt, are `curated` and thus out of gate entirely, so no number of fixer
+runs can close them via 4.5. **Measurement caveat, stated because an identical number normally means
+a converged pass:** the build had not republished when this was measured, so this is arithmetic on
+the *same artifact* as 2026-09-15, not an independent re-measurement confirming persistence.
+Re-measure once today's build lands.
+
+**`queue_aged_out_residue`** (info) records the eleven aged-out items and the fuzzy-match rejections.
+
+**`fixer_summary`** (info) is the mandated STEP 4 summary row.
 
 ## Files
 
-**`error_log.csv`** — 3,633 data rows after this run, up 8. The base loaded byte-identical to the remote (1,137,267 bytes, blob `599a3ab0cdab`), so there was no owner-edit divergence to reconcile and no `log_base_rejected`. A byte-identical round-trip control was established before anything was appended, the carried bytes were asserted unchanged in the output, and all nineteen open rows were re-counted after the write. Eight rows were added: seven diagnostics and one `info`-severity `fixer_summary`. Every new `issue_type` was asserted to sit outside the reserved namespace (`ical_feed_pull`, `deal_source_*`, `run_summary`, `image_backfill`) so that none of them enrols itself in a STEP 7 signal assertion. No open row's resolution columns were touched.
-
-**`error-fixing-findings-latest.md`** — this report.
+`error_log.csv` was published to `avlhohn/msp-family-feed` on `main` at commit `5400f698`, moving
+from blob `c3322eca880d` to `ee818ab58f4d` — 3,633 to 3,640 data rows, 1,145,643 to 1,153,676 bytes.
+The append was guarded four ways before it ran: a hard failure on a missing or malformed run date
+rather than a default, a byte-identical round-trip control on the untouched file (so "I appended
+seven rows" is distinguishable from "my writer silently rewrote every line"), a double-append guard,
+and an assertion that the output byte string starts with the original bytes so no carried row could
+be altered. All seven new `issue_type` values were checked against the reserved namespace
+(`ical_feed_pull`, `deal_source_*`, `run_summary`, `image_backfill`) so that none accidentally
+enrolls itself in a mandated signal count.
 
 No category CSV was rebuilt or republished. This stage touches `error_log.csv` and this report only.
+
+This report is published as `error-fixing-findings-latest.md` in the same repository.
