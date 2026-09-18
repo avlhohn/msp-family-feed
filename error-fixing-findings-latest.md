@@ -1,6 +1,6 @@
 # MSP Family Guide — Error Fixing (Latest)
 
-**Run date:** 2026-09-17 · **Finished:** 09:51 UTC
+**Run date:** 2026-09-18 · **Finished:** 12:26 UTC
 
 Run date and finish time are both derived from a server-side `Date` header, not from the sandbox
 clock. The sandbox clock and the injected `currentDate` have previously been wrong *in agreement*
@@ -8,134 +8,163 @@ by up to two days, so neither is used here.
 
 ## Summary
 
-Nineteen open rows were examined — six `unresolved_website` and thirteen `unresolved_image`, across
-eighteen distinct items — and **none were resolved**. That is the ninth consecutive run at this exact
-shape (19 rows / 18 items / 6 still live in the feed / 0 resolutions), and the shape itself remains
-the finding: the queue is structurally blocked rather than under-worked. Twelve of the eighteen items
-no longer exist in the published feed at all and are residue rather than active defects. Of the six
-that still ship, five are settled negatives on first-hand evidence and the sixth needs the owner to
-make a call that no amount of searching can make for it.
+Nineteen open rows were examined, deduplicating to eighteen distinct items, and **none were
+resolved**. That is the tenth consecutive run at zero, and for the first nine the explanation given
+was that the queue consists of settled, licence-bound negatives. That explanation is true of the six
+items still in the feed and it is **incomplete**.
 
-Two pieces of standing business closed cleanly. The lost-update escalation raised on 2026-09-16 —
-opened because the build and this fixer dispatched one second apart and could each have clobbered the
-other's write — is **verified CLEAR**. All seven of that run's fixer-authored rows are present in the
-canonical log alongside the build's complete STEP 7 signal set for the same date (30 `ical_feed_pull`,
-6 `deal_source_yield`, 1 `deal_source_non_table`, 3 `deal_source_retired`, 1 `image_backfill`, 1
-`run_summary`), eighty rows for that date in total. Neither side lost anything; the optimistic-
-concurrency PUT was sufficient and no repair was needed. And the scheduling that caused the scare has
-returned to normal: `msp-family-guide-daily` ran at `2026-09-17T08:06:19Z` and this fixer at
-`2026-09-17T09:40:20Z`, ninety-four minutes apart in the correct order. Yesterday's one-second
-concurrent dispatch was a one-off late fire of both cron slots, not a standing defect. Today's run
-therefore worked today's queue against today's feed — repo `pushed_at` 08:38:37Z, `generated_date:
-2026-09-17`, counts 5252 / 849 / 150 / 268 / 460.
+This run asked the next question — not "why did these items fail again?" but "why does this queue
+never change?" — and the answer is the substantive output of the run: **the queue has had no inflow
+for weeks.** The build stopped writing rows in the two issue_types this task drains, 57 and 33 days
+ago respectively, while the underlying gap those rows exist to track grew to 4,728 rows on a generic
+image and 1,013 rows with no website. The fixer has been draining a pond with no inflow while the
+lake goes unmeasured. Details under Diagnostics.
 
-The run's one genuinely new finding is a confabulation shape this queue has not seen before, and it
-is described under Diagnostics.
+Today's daily build has **not yet run**; this fixer executed ahead of it, so the queue worked here is
+yesterday's. That is recorded as `no_run_summary_today`, and it reflects a genuinely absent build
+rather than a missing marker.
 
 ## Resolved this run
 
-None — zero website resolutions and zero image resolutions (0 `og_image`, 0 `facebook`, 0
-`stock_openverse_specific`). No website row produced a page specifically naming the exact venue and
-city, and no image row produced a genuine Facebook photo, a deep-linked or self-branded `og:image`, or
-a place-*specific* Openverse asset. Nothing was written in on partial evidence.
+None.
 
-One candidate was deliberately held rather than shipped, and the reason is worth recording. A second
-independent research pass surfaced the same Bump & Putt street address as the 2026-09-15 pass —
-`29107 State Hwy 371, Pequot Lakes, MN 56472` — and it is still not written into the record. Both
-passes read that address out of Yelp *search-result metadata* while the Yelp page itself returned 403
-to our fetcher on both occasions. Two passes agreeing is not two sources agreeing when both are
-reading the same snippet: agreement across passes measures the search index, not the world.
+- Website resolutions: 0
+- Image resolutions: 0 — og_image 0, facebook 0, stock_openverse_specific 0
+
+No row's `resolved_date`, `resolved_by` or `resolution_note` was written. All 536 previously-resolved
+rows were preserved unchanged, asserted byte-for-byte before the file was written.
 
 ## Still open
 
-All nineteen rows roll forward. Six items remain live in the published feed.
+All nineteen rows remain open. Six of the eighteen items still ship in the feed; each is a negative
+for a specific recorded reason, not for lack of effort.
 
-**Lake Ann Park (Chanhassen)** still has no usable image. The Openverse API was re-probed directly
-today across six queries with a commercial-use licence filter, returning zero eligible assets. The two
-hits for `Lake Ann Chanhassen Minnesota` are both the Eckankar temple — the same false positive this
-queue has recorded since 2026-08-31 — and the four hits for `Chanhassen Minnesota park` are all Paisley
-Park, Prince's studio, which is a collision on the word "Park" itself. This is consistent with 0 of 22
-on 2026-08-21, -28 and -29 and 0 of 6 on 2026-09-10. The probe is cheap and the Creative Commons corpus
-can grow, so it is worth repeating each run, but it has never yielded on this queue. The item is
-licence-bound, not discovery-bound.
+**Lake Ann Park (Chanhassen)** — roughly 36 discovery routes have now been closed across prior runs.
+It is exhausted on discovery *and*, separately, bound on licence, so it fails twice over. Feed
+presence was re-confirmed this run by targeted substring match rather than by fuzzy title match:
+exactly one genuine row, `[parks] Lake Ann Park | 6800 Birch Dr, Chanhassen, MN 55317`. A fuzzy pass
+returned 75 hits, every one of them a different "…Lake…Park…" venue — the documented trap behaving
+exactly as documented, which is why the confirmation step exists.
 
-**Denny's, Perkins and Rubio's** are chain promotions with no single venue to photograph, which makes
-them structurally unresolvable rather than merely unresolved. **Bowlero Brooklyn Park** remains a
-settled negative: its imagery is brand-level Contentful assets shared across every location.
+**Denny's and Perkins (chain kids-eat-free promotions)** — structurally unresolvable rather than
+merely difficult. A promotion is not a venue, so no photograph of this exact thing exists to be
+found; and the recurrence test rejects every candidate by construction, because any asset a chain
+publishes for a promotion necessarily also appears on its sibling locations.
 
-**Bump & Putt Family Fun Center** is the one that needs a human. Its record is wrong in four ways at
-once. The website it actually ships — `https://www.brainerd.com/business/bump-n-putt-family-fun-park/`
-— returns "Sorry! That page doesn't seem to exist" with no address, phone or hours, re-verified
-first-hand today for the second consecutive run; so the feed is not missing a link, it is publishing a
-dead one a family would click. Its address reads "Four miles north of Nisswa, MN", which can never
-geocode. Its coordinate is a Nisswa city-centroid placeholder about 6.4 km from where that address
-text points. And after eight research passes its operating status is still ambiguous. Unchanged across
-fourteen runs. The single most promising untried route is
-`fun4kidsmn.com/places/bump-n-putt-family-fun-park/`, which timed out for both the subagent and a
-first-hand retry — recorded narrowly as a tooling or source-side timeout, explicitly **not** as
-evidence that the listing lacks an address.
+**Rubio's Coastal Grill** — not an image problem at all. A bad seed. Escalated below.
 
-The remaining twelve items no longer appear in the feed at all, so two thirds of this queue is residue.
-Fuzzy title matches were again not treated as evidence of presence. One observation worth carrying:
-`Toddler Tuesday - ECFE` (Coon Rapids) fuzzy-matches a Winona row again, after the 2026-09-12 record
-declared that collision gone because the Winona row had aged out. **A negative about feed *contents*
-has a shelf life of one rolling window and must be re-derived**, unlike a negative about a source or a
-licence, which is durable. `Movies in the Park - Mankato` matches Duluth and Osseo rows; same-state is
-not a match. The `688 rows` item remains a roll-up label rather than a venue and is unworkable as
-written.
+**Bowlero Brooklyn Park** — settled on hard evidence rather than on exhausted effort: all six
+candidate assets are Contentful brand images that also appear on the Blaine and Lakeville Minnesota
+sibling pages. A shared CDN plus generic alt text is the documented tell. Its website and ZIP are
+actionable and are escalated below.
+
+**Bump & Putt Family Fun Park (Brainerd)** — deliberately held open. Escalated below.
+
+The remaining eleven items no longer appear in the published feed. Re-attempting an item that does
+not ship cannot change the artifact, so they are recorded and left open rather than worked. The
+eighteenth item is the `688 rows` roll-up placeholder, which must never be dispatched.
+
+### Escalations for the owner
+
+All three were re-verified first-hand this run rather than repeated from memory. Re-verification is
+cheap, and an escalation carried forward unchecked reads as boilerplate the moment one of its claims
+goes stale.
+
+**Rubio's Coastal Grill — recommend the build DROP the row.** Rubio's has zero Minnesota locations.
+Wikipedia states the chain operates 17 restaurants in Arizona, 60 in Southern California and 5 in
+Nevada. No amount of image or website research can fix a venue that is not in the state.
+
+**Bowlero Brooklyn Park — stale website plus a ZIP conflict.**
+`bowlero.com/location/bowlero-brooklyn-park` now 301-redirects to
+`luckystrikeent.com/location/lucky-strike-brooklyn-park` following a chain rebrand. The destination
+page states ZIP **55443**; the feed row carries **55445**. Both halves belong to the build rather
+than to this fixer.
+
+**Bump & Putt Family Fun Park — the feed ships a 404, and the row is held open on purpose.** The
+stored website `brainerd.com/business/bump-n-putt-family-fun-park/` still returns that site's 404
+body ("Sorry! That page doesn't seem to exist."). The venue's operating status remains **UNVERIFIED**
+— no authoritative source was found either way, and the research agent correctly returned UNVERIFIED
+rather than guessing, which is the behaviour the brief asks for. Resolving this row would bury the
+fact that a dead link is being published, so it stays open as a defect marker.
 
 ## Diagnostics
 
-**An eighth confabulation shape: a real source, correctly fetched and accurately quoted, about the
-wrong business.** One research subagent was dispatched and its report was rejected on two independent
-grounds. First it failed the cheap internal-consistency test adopted on 2026-09-16, returning
-`VERIFIED` verdicts for two questions while its own evidence table marked the supporting Yelp URL
-`FETCH FAILED (HTTP 403)`. Reading the report for self-contradiction *before* spending any verification
-budget cost one re-read rather than a fetch, which is the whole point of that rule. Second, its single
-substantive `FETCH OK` claim was verified first-hand and proved to be a `dl-online.com` article about
-**Go-Putt-N-Bump in Detroit Lakes**, roughly 110 km northwest of Nisswa, published 2014-05-28 and
-carrying no street address at all. Near-identical name, identical business type, both in a Minnesota
-"lakes area" — considerably more seductive than the earlier wrong-state collisions. Every previous
-instance on this queue was catchable by asking whether the source existed or whether it fetched; this
-one is only catchable by asking whether the source names the **right entity in the right place**. Both
-legs of the seasonality verdict are therefore void and Bump & Putt's operating status remains
-ambiguous.
+### The queue has had no inflow for weeks — this run's real finding
 
-**The STEP 4.5 eligibility-gate gap, independently re-measured.** The 2026-09-16 reading carried a
-caveat that it was arithmetic over the same artifact as 2026-09-15, because the build had not
-republished in between. Today's feed is genuinely fresh, so the measurement is now independent. The
-backfill gate admits `image_source` in `curated_category`, `stock`, `openverse_named` or blank, and
-therefore **excludes** `curated`. Today there are 902 `curated` rows, of which 216 carry Pexels or
-Unsplash stock imagery, of which 146 also carry a website — rows sitting on stock photos, holding the
-one input the backfill needs, and structurally unreachable by the pass built to drain them. Against
-yesterday's 222 / 152, the gap is real and slowly shrinking rather than converged. Those 216 rows share
-only 36 distinct stock assets, an image monoculture inside the curated class. For scale, 4,114 in-gate
-rows carry a website across 4,006 distinct sites, so STEP 4.5 is budget-bound and drains gradually.
-Both of this queue's non-chain live image items — Bowlero Brooklyn Park and Bump & Putt — are
-`image_source=curated` and thus out of gate entirely; no number of fixer runs closes them by that
-route.
+The fixer is scoped to exactly two issue_types. Both have gone quiet:
 
-**Base integrity.** No `log_base_rejected` condition arose: the header is schema-exact at ten columns,
-the row count was 3,799 and monotonic up from 3,719, and the local base was proven byte-identical to
-the GitHub canonical by locally computed git blob SHA-1 (`ba3738fb0aa2…`) rather than by size. The
-contents API returns empty content for files over 1 MB, so that local computation replaced a
-re-download entirely. No `no_run_summary_today` condition: today's marker was present. Before
-appending, the untouched file was round-tripped through the CSV reader and writer and asserted
-byte-identical across all 3,800 lines, so "nine rows appended" is distinguishable from "the writer
-silently rewrote every line"; a prefix assertion then proved not one carried byte was altered; and a
-double-append guard confirmed no fixer rows already existed for today. All four guards fire before the
-write, which is what made the first attempt safe — it aborted on a row-arity assertion and left the log
-untouched, rather than leaving a partial append for a retry to duplicate.
+| issue_type | last written | days silent |
+|---|---|---|
+| `unresolved_image` | 2026-07-23 | 57 |
+| `unresolved_website` | 2026-08-16 | 33 |
 
-**Publish.** `error_log.csv` went from 3,799 to 3,808 data rows and 1,209,230 to 1,217,782 bytes, with
-all 536 previously-resolved rows preserved. It was published with optimistic concurrency, carrying the
-`sha` read immediately beforehand so a conflicting build write would return 409 rather than clobber,
-and verified on the first attempt: the returned size matched local exactly and the returned `sha`
-equalled the locally computed blob `9c50ab9044952a49c671247fee0b78109fc542b8`.
+Over the same period the build has continued writing roughly 80–95 error_log rows per night, so it is
+not silent in general — it has simply stopped writing rows in the two categories this task drains.
+And STEP 4.5 has been reporting real nightly progress throughout: `image_backfill` markers show
+36 → 58 → 71 → 88 venue sites resolved on 09-14, 09-15, 09-16 and 09-17, every one of them at
+`warning` severity, meaning budget-bound rather than converged.
+
+Meanwhile the gap those two issue_types exist to track is enormous and almost entirely unlogged. The
+published feed carries **4,728 rows on a generic `curated_category` image** and **1,013 rows with a
+blank website**, against an open queue of **19 rows**, eleven of whose eighteen items have left the
+feed altogether.
+
+Nine consecutive post-mortems concluded the queue was licence-bound settled negatives. That diagnosis
+was locally correct and globally wrong: the reason the queue never changes is that nothing writes to
+it.
+
+### The mechanism: issue_type vocabulary drift
+
+Twenty-six rows were written on 2026-09-10 under the issue_type **`attempted_no_photo`**, and all
+twenty-six are still unresolved. Their descriptions read "STEP 4.5 fetched this item's website and
+found no relevance-passing photo" — they are precisely fixer-shaped work items, produced by the very
+step whose leftovers this task exists to pick up. But STEP 2 selects on
+`issue_type in ('unresolved_website','unresolved_image')` literally, so the fixer is structurally
+blind to them and has walked past them for eight days without raising anything.
+
+The sprawl is measurable: **553 distinct issue_types** in the log, **383 of them (69%) used on exactly
+one date**. Of the 53 issue_types in the image/website family, 37 are one-off.
+
+This is the same registry-drift class the project has already hit twice — `LIBRARY_SRC` against the
+fetcher's dispatch table, which left 669 rows untagged, and `deals_yield` against
+`deals_overlay.SOURCE_KEYS`, which warned falsely for four runs. Two lists naming the same things in
+two files, with nothing enforcing agreement, will drift; and the drift is always silent, because the
+second list's job is remediation rather than validation, so its failure mode is producing nothing
+rather than producing an error.
+
+**Deliberately not fixed in-run.** The spec defines this queue as exactly those two issue_types.
+Widening the selector to sweep up `attempted_no_photo` would resolve twenty-six rows tonight and bury
+the defect, which is the opposite of useful. The fix belongs to the owner and has two possible shapes:
+have the build emit `unresolved_image` / `unresolved_website` again for the rows STEP 4.5 cannot
+serve, or re-point the fixer's selector and constrain the issue_type vocabulary so it cannot drift
+again. The second is the durable one — the first leaves two lists still free to disagree.
+
+### Base log integrity
+
+The local `error_log.csv` was **byte-identical to the remote** by git blob SHA-1
+(`9c50ab9044952a49c671247fee0b78109fc542b8`) before any modification, so there was no stale-base
+defect and no `log_base_rejected`. The header matched the ten-column schema exactly: 3,808 data rows,
+3,809 CRLF, 0 bare LF.
+
+The append was written through two controls, both of which were made to **fail on purpose** before
+being trusted. A round-trip control proves the CSV writer reproduces the untouched file
+byte-for-byte, so "I appended eight rows" cannot be confused with "my writer silently rewrote every
+line". A carried-row control asserts the new file's first 1,217,782 bytes are identical to the old
+file, and that the set of rows carrying a `resolved_date` is unchanged. Four failure cases were
+exercised before the real run: missing run date, malformed run date, corrupted header, and bare-LF
+line endings. All four failed as intended; the clean case passed.
+
+### Today's build has not run
+
+Three independent signals agree, which is what distinguishes an absent build from a missing marker:
+no `run_summary` row dated 2026-09-18 exists (the latest is 2026-09-17); the repository's `pushed_at`
+is 2026-09-17T09:53:19Z; and the published `msp_family_guide.json` carries
+`generated_date: 2026-09-17`.
 
 ## Files
 
-- `error_log.csv` — https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv
-  (local: `Agents and Workflows/error_log.csv`)
-- `error-fixing-findings-latest.md` — https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md
-  (local: `Agents and Workflows/error-fixing-findings-latest.md`)
+- `error_log.csv` — 3,808 → **3,816 data rows** (+8 diagnostic rows, 0 resolutions); 1,217,782 →
+  1,223,645 bytes; CRLF preserved, 0 bare LF. Published to `avlhohn/msp-family-feed`.
+- `error-fixing-findings-latest.md` — this report. Published to `avlhohn/msp-family-feed`.
+
+The five category CSVs and the feed JSON were **not** touched — out of scope for this task.
