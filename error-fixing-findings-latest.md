@@ -1,170 +1,118 @@
 # MSP Family Guide — Error Fixing (Latest)
 
-**Run date:** 2026-09-18 · **Finished:** 12:26 UTC
+**Run date:** 2026-09-19 · **Finished:** 09:40 UTC
 
 Run date and finish time are both derived from a server-side `Date` header, not from the sandbox
 clock. The sandbox clock and the injected `currentDate` have previously been wrong *in agreement*
 by up to two days, so neither is used here.
 
+**Base log:** `error_log.csv` at blob `d9ce54339936` — 1,249,849 bytes, 3,915 data rows, 10-column
+header exact, 3,916 CRLF / 0 bare LF. The local working copy matched the published blob
+byte-for-byte. **Published log:** 3,925 data rows, 1,256,840 bytes.
+
 ## Summary
 
-Nineteen open rows were examined, deduplicating to eighteen distinct items, and **none were
-resolved**. That is the tenth consecutive run at zero, and for the first nine the explanation given
-was that the queue consists of settled, licence-bound negatives. That explanation is true of the six
-items still in the feed and it is **incomplete**.
+Nineteen open rows were examined, deduplicating to eighteen distinct items, one of which is a
+non-actionable roll-up and was excluded — so **seventeen items** were worked across three parallel
+research batches. **None were resolved.** That is the eleventh consecutive run at zero.
 
-This run asked the next question — not "why did these items fail again?" but "why does this queue
-never change?" — and the answer is the substantive output of the run: **the queue has had no inflow
-for weeks.** The build stopped writing rows in the two issue_types this task drains, 57 and 33 days
-ago respectively, while the underlying gap those rows exist to track grew to 4,728 rows on a generic
-image and 1,013 rows with no website. The fixer has been draining a pond with no inflow while the
-lake goes unmeasured. Details under Diagnostics.
+The 2026-09-18 run established why: the queue has had **no inflow**. This run confirms it and adds
+the measurement from the log's own side. The newest `unresolved_image` row is dated 2026-07-23 and
+the newest `unresolved_website` 2026-08-16 — 34 and 58 days old — while the build runs nightly.
+Meanwhile the same defects are still being logged every night under issue_type names this task's
+selector does not read: **300 open `missing_website`** rows and **240 open `generic_image`** rows.
+The fixer is draining a nineteen-row pond beside a 540-row lake. What is left in the pond is the
+residue ten previous runs already failed on, so an eleventh attempt at the same rows was never going
+to clear them. The remedy is vocabulary alignment between the build's loggers and this task's
+selector, not more fixer effort.
+
+The one remaining resolution path is **structurally empty for this queue's venues**.
+`stock_openverse_specific` returned `result_count=0` for every place-specific query attempted — Lake
+Ann Park (Chanhassen), Vetter Stone Amphitheater, Wheeler Park (North Mankato), Moorhead municipal
+pool. The two queries that did return results held only wrong-place generics. Openverse has
+effectively no coverage of municipal and outstate Minnesota venues, so that path cannot drain an
+image queue made of them. That zero is a property of the corpus, not of the query.
 
 Today's daily build has **not yet run**; this fixer executed ahead of it, so the queue worked here is
-yesterday's. That is recorded as `no_run_summary_today`, and it reflects a genuinely absent build
-rather than a missing marker.
+yesterday's. Recorded as `no_run_summary_today`, and it reflects a genuinely absent build rather than
+a missing marker.
+
+What the run did produce is six corrections and data-quality escalations, including one that
+overturns a research verdict and one near-miss that would have written a permanent wrong-venue error
+into the feed. Those are under Diagnostics.
 
 ## Resolved this run
 
 None.
 
-- Website resolutions: 0
-- Image resolutions: 0 — og_image 0, facebook 0, stock_openverse_specific 0
-
-No row's `resolved_date`, `resolved_by` or `resolution_note` was written. All 536 previously-resolved
-rows were preserved unchanged, asserted byte-for-byte before the file was written.
-
 ## Still open
 
-All nineteen rows remain open. Six of the eighteen items still ship in the feed; each is a negative
-for a specific recorded reason, not for lack of effort.
-
-**Lake Ann Park (Chanhassen)** — roughly 36 discovery routes have now been closed across prior runs.
-It is exhausted on discovery *and*, separately, bound on licence, so it fails twice over. Feed
-presence was re-confirmed this run by targeted substring match rather than by fuzzy title match:
-exactly one genuine row, `[parks] Lake Ann Park | 6800 Birch Dr, Chanhassen, MN 55317`. A fuzzy pass
-returned 75 hits, every one of them a different "…Lake…Park…" venue — the documented trap behaving
-exactly as documented, which is why the confirmation step exists.
-
-**Denny's and Perkins (chain kids-eat-free promotions)** — structurally unresolvable rather than
-merely difficult. A promotion is not a venue, so no photograph of this exact thing exists to be
-found; and the recurrence test rejects every candidate by construction, because any asset a chain
-publishes for a promotion necessarily also appears on its sibling locations.
-
-**Rubio's Coastal Grill** — not an image problem at all. A bad seed. Escalated below.
-
-**Bowlero Brooklyn Park** — settled on hard evidence rather than on exhausted effort: all six
-candidate assets are Contentful brand images that also appear on the Blaine and Lakeville Minnesota
-sibling pages. A shared CDN plus generic alt text is the documented tell. Its website and ZIP are
-actionable and are escalated below.
-
-**Bump & Putt Family Fun Park (Brainerd)** — deliberately held open. Escalated below.
-
-The remaining eleven items no longer appear in the published feed. Re-attempting an item that does
-not ship cannot change the artifact, so they are recorded and left open rather than worked. The
-eighteenth item is the `688 rows` roll-up placeholder, which must never be dispatched.
-
-### Escalations for the owner
-
-All three were re-verified first-hand this run rather than repeated from memory. Re-verification is
-cheap, and an escalation carried forward unchecked reads as boilerplate the moment one of its claims
-goes stale.
-
-**Rubio's Coastal Grill — recommend the build DROP the row.** Rubio's has zero Minnesota locations.
-Wikipedia states the chain operates 17 restaurants in Arizona, 60 in Southern California and 5 in
-Nevada. No amount of image or website research can fix a venue that is not in the state.
-
-**Bowlero Brooklyn Park — stale website plus a ZIP conflict.**
-`bowlero.com/location/bowlero-brooklyn-park` now 301-redirects to
-`luckystrikeent.com/location/lucky-strike-brooklyn-park` following a chain rebrand. The destination
-page states ZIP **55443**; the feed row carries **55445**. Both halves belong to the build rather
-than to this fixer.
-
-**Bump & Putt Family Fun Park — the feed ships a 404, and the row is held open on purpose.** The
-stored website `brainerd.com/business/bump-n-putt-family-fun-park/` still returns that site's 404
-body ("Sorry! That page doesn't seem to exist."). The venue's operating status remains **UNVERIFIED**
-— no authoritative source was found either way, and the research agent correctly returned UNVERIFIED
-rather than guessing, which is the behaviour the brief asks for. Resolving this row would bury the
-fact that a dead link is being published, so it stays open as a defect marker.
+| Item | Type | Likely reason |
+|---|---|---|
+| Maplewood Celebrate Summer | unresolved_image | July event, now past; the city's event page has rolled over. Openverse returned only Maplewood **State Park** (Otter Tail County, ~300 km away) — rejected as wrong-place. |
+| Lake Ann Park | unresolved_image | Chanhassen city page returned 403 to the fetcher. A tooling failure is not evidence an image is absent; re-probe. |
+| Niko Moon Concert — Vetter Stone Amphitheater | unresolved_image | Only candidate found was a performer headshot from the artist's own site. A headshot is not a photo of the venue or the event. |
+| Music in the Park Thursdays — Mankato | unresolved_image | Summer series, concluded. No place-specific image; Openverse zero for the venue. |
+| Movies in the Park — Mankato | unresolved_image | Same series page, same outcome. |
+| Moorhead Summer Splash Event | unresolved_image | Past event; the municipal pool has no published photo Openverse or the city site exposes. |
+| Winona Parks & Rec Summer Activities | unresolved_image | Fetcher returned 404 on the Parks & Rec page. Tooling failure, not absence. |
+| Urban Air Trampoline Parks — Minnesota Locations | unresolved_image | Multi-location roll-up. Only brand logos and franchise stock; no single location to photograph. |
+| Denny's Thursday Kids Eat Free | unresolved_image | National chain promotion. Only coupon graphics and brand marks. |
+| Perkins Tuesday Kids Eat Free | unresolved_image | As above. |
+| **Rubio's Rewards Thursday Kids Free Meal** | unresolved_image | **Wrong-state item.** Rubio's Coastal Grill has zero Minnesota locations (~82 restaurants, CA/AZ/NV only). Unresolvable by construction — recommend the build DROP it. |
+| Bowlero Brooklyn Park (Lucky Strike) | unresolved_image | Rebranded location; available imagery is chain marketing, not this venue. |
+| **Mission Branch Library Community Garden — Monday Nights** | unresolved_image | **Wrong-state item.** Mission Branch Library is San Francisco Public Library, 1234 Valencia St. No Minnesota library of that name exists. Recommend DROP. |
+| Summer Outdoor Festival — Brainerd (2026-07-24) | unresolved_website | Generic title naming no organiser; two open rows carry the same string. Nothing specific enough to verify against. |
+| Summer Outdoor Festival — Brainerd (2026-07-31) | unresolved_website | As above. |
+| **Pizza King Station** | unresolved_website | **Suspected wrong-state, not proven.** Every hit resolves to an Indianapolis restaurant. The row's own address is the bare string "Minnesota" with no city. Flagged for human review rather than auto-dropped. |
+| Toddler Tuesday — ECFE | unresolved_website | ECFE is a statewide program run per district; no single canonical site, and the row names no district. |
+| **Bump & Putt Family Fun Center** | unresolved_website | **Correction — the venue is NOT closed** (see Diagnostics). It operates as Bump 'N' Putt Family Fun Park, Pequot Lakes. It has no official website, only aggregator listings, so the row stays open — but the defect is the **name**, not the venue's existence. |
+| 688 rows | unresolved_website | Non-actionable roll-up; the item field holds an aggregate count, not a venue. Can never resolve. Excluded from the work list. |
 
 ## Diagnostics
 
-### The queue has had no inflow for weeks — this run's real finding
+**A research verdict was overturned on verification.** A subagent returned `CONFIRMED_CLOSED` for
+*Bump & Putt Family Fun Center*, on the basis that no evidence of the venue could be found under that
+spelling. Widening the spelling found it trading as **Bump 'N' Putt Family Fun Park**, 29107 State
+Hwy 371, Pequot Lakes MN 56472, ph 218-568-8833, operating since 1987, with listings updated August
+2026. The logged address — "four miles north of Nisswa, MN" — points up Hwy 371 toward Pequot Lakes,
+so the address was approximately right all along and the name was the defect. Absence of evidence for
+one spelling is not evidence of closure, and a probe keyed to one spelling is structurally blind to a
+venue that spells itself differently. Had the verdict been accepted, a false "permanently closed"
+claim would have entered the permanent log.
 
-The fixer is scoped to exactly two issue_types. Both have gone quiet:
+**A wrong-venue near-miss, logged so it is not "fixed" later.** `goputtnbump.com` surfaces first for
+the Pequot Lakes venue and must **not** be attached to it. That domain belongs to *Go-Putt-N-Bump
+Amusement Park*, 15802 US Hwy 59, Detroit Lakes MN — roughly 180 km away. The two names are
+anagram-close and aggregators cross-contaminate their details (both are described as "opened 1987"),
+so a future website backfill searching for the Pequot Lakes venue will surface this domain first.
+Attaching it would be the wrong-venue error, which never self-heals once a website is populated.
 
-| issue_type | last written | days silent |
-|---|---|---|
-| `unresolved_image` | 2026-07-23 | 57 |
-| `unresolved_website` | 2026-08-16 | 33 |
+**Two rows are out of state and one is suspected to be.** Rubio's and Mission Branch Library are
+unresolvable by construction — there is no Minnesota venue to photograph and no Minnesota deal to
+honour — and are recommended for dropping rather than re-queuing. Same defect class as the Austin-TX
+bouldering photo caught on 2026-09-15, except that here the whole **row** is out of state, not just
+its image. Pizza King Station is flagged rather than dropped: no Minnesota location was found, but
+absence of a web presence is not proof of absence, and the nearest Minnesota name-neighbour (Station
+Pizzeria, Minnetonka) is a different restaurant that must not be matched to this row.
 
-Over the same period the build has continued writing roughly 80–95 error_log rows per night, so it is
-not silent in general — it has simply stopped writing rows in the two categories this task drains.
-And STEP 4.5 has been reporting real nightly progress throughout: `image_backfill` markers show
-36 → 58 → 71 → 88 venue sites resolved on 09-14, 09-15, 09-16 and 09-17, every one of them at
-`warning` severity, meaning budget-bound rather than converged.
+**Openverse has no place-specific coverage for this queue.** Four of six queries returned zero
+results. The two that returned results held only wrong-place generics — notably Maplewood **State
+Park** in Otter Tail County against the **City** of Maplewood, which a name-match rule would have
+accepted, stamping a photo of a place 300 km away.
 
-Meanwhile the gap those two issue_types exist to track is enormous and almost entirely unlogged. The
-published feed carries **4,728 rows on a generic `curated_category` image** and **1,013 rows with a
-blank website**, against an open queue of **19 rows**, eleven of whose eighteen items have left the
-feed altogether.
+**Two items were blocked by fetch failures, not by absent images.** Lake Ann Park returned 403 and
+Winona Parks & Rec returned 404. Those rows are left open on the explicit understanding that a
+tooling failure is not evidence an image does not exist, and they are worth re-probing rather than
+writing off.
 
-Nine consecutive post-mortems concluded the queue was licence-bound settled negatives. That diagnosis
-was locally correct and globally wrong: the reason the queue never changes is that nothing writes to
-it.
-
-### The mechanism: issue_type vocabulary drift
-
-Twenty-six rows were written on 2026-09-10 under the issue_type **`attempted_no_photo`**, and all
-twenty-six are still unresolved. Their descriptions read "STEP 4.5 fetched this item's website and
-found no relevance-passing photo" — they are precisely fixer-shaped work items, produced by the very
-step whose leftovers this task exists to pick up. But STEP 2 selects on
-`issue_type in ('unresolved_website','unresolved_image')` literally, so the fixer is structurally
-blind to them and has walked past them for eight days without raising anything.
-
-The sprawl is measurable: **553 distinct issue_types** in the log, **383 of them (69%) used on exactly
-one date**. Of the 53 issue_types in the image/website family, 37 are one-off.
-
-This is the same registry-drift class the project has already hit twice — `LIBRARY_SRC` against the
-fetcher's dispatch table, which left 669 rows untagged, and `deals_yield` against
-`deals_overlay.SOURCE_KEYS`, which warned falsely for four runs. Two lists naming the same things in
-two files, with nothing enforcing agreement, will drift; and the drift is always silent, because the
-second list's job is remediation rather than validation, so its failure mode is producing nothing
-rather than producing an error.
-
-**Deliberately not fixed in-run.** The spec defines this queue as exactly those two issue_types.
-Widening the selector to sweep up `attempted_no_photo` would resolve twenty-six rows tonight and bury
-the defect, which is the opposite of useful. The fix belongs to the owner and has two possible shapes:
-have the build emit `unresolved_image` / `unresolved_website` again for the rows STEP 4.5 cannot
-serve, or re-point the fixer's selector and constrain the issue_type vocabulary so it cannot drift
-again. The second is the durable one — the first leaves two lists still free to disagree.
-
-### Base log integrity
-
-The local `error_log.csv` was **byte-identical to the remote** by git blob SHA-1
-(`9c50ab9044952a49c671247fee0b78109fc542b8`) before any modification, so there was no stale-base
-defect and no `log_base_rejected`. The header matched the ten-column schema exactly: 3,808 data rows,
-3,809 CRLF, 0 bare LF.
-
-The append was written through two controls, both of which were made to **fail on purpose** before
-being trusted. A round-trip control proves the CSV writer reproduces the untouched file
-byte-for-byte, so "I appended eight rows" cannot be confused with "my writer silently rewrote every
-line". A carried-row control asserts the new file's first 1,217,782 bytes are identical to the old
-file, and that the set of rows carrying a `resolved_date` is unchanged. Four failure cases were
-exercised before the real run: missing run date, malformed run date, corrupted header, and bare-LF
-line endings. All four failed as intended; the clean case passed.
-
-### Today's build has not run
-
-Three independent signals agree, which is what distinguishes an absent build from a missing marker:
-no `run_summary` row dated 2026-09-18 exists (the latest is 2026-09-17); the repository's `pushed_at`
-is 2026-09-17T09:53:19Z; and the published `msp_family_guide.json` carries
-`generated_date: 2026-09-17`.
+**Recommended upstream fixes**, none of which are in this task's scope: align the vocabulary between
+the build's STEP 4.5/4.6 loggers and this task's selector, so the 540 open rows currently logged as
+`missing_website` and `generic_image` reach the queue that exists to work them; log aggregate
+findings under a `*_summary` issue_type so roll-ups like "688 rows" are never selected as work items;
+drop the two confirmed out-of-state rows and review the third.
 
 ## Files
 
-- `error_log.csv` — 3,808 → **3,816 data rows** (+8 diagnostic rows, 0 resolutions); 1,217,782 →
-  1,223,645 bytes; CRLF preserved, 0 bare LF. Published to `avlhohn/msp-family-feed`.
-- `error-fixing-findings-latest.md` — this report. Published to `avlhohn/msp-family-feed`.
-
-The five category CSVs and the feed JSON were **not** touched — out of scope for this task.
+- [`error_log.csv`](https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv)
+- [`error-fixing-findings-latest.md`](https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md)
