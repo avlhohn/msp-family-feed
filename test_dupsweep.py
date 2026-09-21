@@ -105,6 +105,13 @@ NA_SAME = [
     ("928 W 7th St Suite 200",           "928 West 7th Street"),
     # the Saint/St fold and ZIP/state stripping must still work alongside the new rule
     ("1341 Pascal St N, Saint Paul, MN 55108", "1341 Pascal St N, St. Paul"),
+    # --- spelled-out TRAILING state (2026-09-21) --------------------------------------
+    # Real observed pair: ESPN spells the state out, the carried row abbreviates it.
+    ("Target Field, Minneapolis, Minnesota",     "Target Field, Minneapolis, MN"),
+    # must compose with the Saint/St fold -- the Cossetta's pair
+    ("St. Paul, Minnesota",                      "Saint Paul, MN"),
+    # trailing state on one side, state+ZIP on the other
+    ("4560 Victoria St N, Shoreview, Minnesota", "4560 Victoria St N, Shoreview, MN 55126"),
 ]
 
 NA_DIFFER = [
@@ -113,6 +120,23 @@ NA_DIFFER = [
     ("100 Main St",       "200 Main St"),
     # 'suite' stripped must not make two different streets equal
     ("100 Main St Suite 4", "100 Oak St Suite 4"),
+    # --- why the spelled-state strip is TRAILING-ONLY (2026-09-21) --------------------
+    # This case BOUNDS the rule: a mid-string "Minnesota" belongs to the venue NAME and must
+    # survive normalization, so these two must not collapse.  It fails under a rule that
+    # strips "minnesota" anywhere, and passes under the trailing-only rule as written.
+    #
+    # Read it for what it is.  The over-broad variant was built as a mutant and measured
+    # against the live dataset: it adds ZERO net-new collision groups, so this is NOT an
+    # observed failure the way every DROP case in closure_filter is.  It is a bound on data
+    # not yet seen, kept because the two variants yield identically and the standing
+    # asymmetry prefers the bounded rule at equal yield.
+    #
+    # Three earlier candidates here ("University of Minnesota, Minneapolis, MN" vs
+    # "Minneapolis, MN", and two like it) were REMOVED because they passed for the WRONG
+    # REASON -- the surviving "university of" prefix made them differ under either rule, so
+    # they were green against the over-broad mutant and discriminated nothing.  Same trap as
+    # the sports_dedup guard-4 case found the same day.  Verified by fail-on-purpose.
+    ("Minnesota Zoo, Apple Valley", "Zoo, Apple Valley"),
 ]
 
 
