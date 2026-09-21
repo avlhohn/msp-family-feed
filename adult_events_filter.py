@@ -134,6 +134,32 @@ DROP_PHRASES = [
     # bare "grief" cannot express: Children's Grief Connection runs real FAMILY grief camps in
     # Minnesota, so "grief" stays a REVIEW_PHRASE and only this specific adult title drops.
     "grief and other emotional challenges",
+    # --- added 2026-09-21: bar / legion karaoke and gambling-shaped bingo ---------------------
+    # Found live in events.csv by reading the bingo/karaoke titles by hand, the same probe that
+    # found Sovereign Grounds and the Peak Cafe group. The compound rule below now covers the
+    # ACTIVITY vocabulary (trivia|bingo|karaoke), but it is TITLE-ONLY by design, so it reaches
+    # only "Bar Bingo" -- every row here announces its bar in the DESCRIPTION, which is the
+    # `magnet senior center` case exactly. Each is pinned as a PROPER NOUN after hand review.
+    #
+    # The line these entries draw is an EXPLICIT adult signal -- an age gate, a bar/legion venue
+    # with late-night hours, or an activity that IS alcohol -- never venue vibe. That line is
+    # what keeps "Plant Bingo" alive, and Plant Bingo is why the line has to be drawn there: it
+    # runs at Two Fathoms BREWING and its own description says "we welcome all ages". A rule
+    # that dropped brewery bingo would have deleted it.
+    "karaoke with dj rhumpshaker",   # No Name Bar, Winona. Description reads "9pm-1am Free | 21+".
+    "karaoke at willy t",            # Willy T's, Alexandria. 9 PM to 12 AM at a bar.
+                                     # Stops before the apostrophe on purpose: the live title
+                                     # carries a CURLY U+2019 and norm() does not fold it to
+                                     # ASCII, so "willy t's" spelled straight would never match.
+    "thirsty thursdays karaoke",     # Willmar/New London American Legion post.
+    "gun bingo",                     # American Legion Post #167: $50/ticket firearms raffle.
+    "black tie bingo",               # Marshall YMCA black-tie fundraiser gala, "food & drinks".
+                                     # Scoped to the full phrase -- bare "black tie" would eat a
+                                     # school's black-tie-optional family gala.
+    "wild cocktails",                # The activity IS making alcoholic drinks ("turn wild
+                                     # edibles into simple syrups for delicious cocktails").
+                                     # Bare "cocktail" is NOT listed: 18 "Live Jazz Music" rows
+                                     # merely mention a cocktail menu and are family KEEPs.
 ]
 
 # --- explicit concert / comedy title list (added 2026-09-01) --------------------------------
@@ -234,7 +260,22 @@ def _guarded(title_norm):
 # fire inside "public", \bbar\b will not fire inside "library" or "barn". This catches
 # "Trivia Thursday at Minnesota BEER Company" but leaves "OMNI Brewery Oktoberfest" alone
 # (no "trivia") and library trivia alone (no alcohol token).
-_RX_TRIVIA = re.compile(r"\btrivia\b")
+# 2026-09-21: the ACTIVITY half of the compound rule was a one-word vocabulary ("trivia") and
+# the gap was invisible in the way this file documents twice already -- no error, no warning,
+# just a quiet zero. `Bar Bingo` ran 6 rows at 929 Beer House & Grill in Winona and could never
+# fire, because bingo is not trivia. This is a VOCABULARY completion, NOT a loosening of the
+# rule's SHAPE: the alcohol co-occurrence requirement and the title-only scope are both
+# unchanged, so "Book Bingo" at a library and "Kid's BINGO" still survive untouched.
+# FP surface measured BEFORE the edit, on this run's real titles (_measure_fp.py):
+#   bingo   -> 30 titles carry \bbingo\b, exactly 6 also carry an alcohol token, and all 6 are
+#              the same real adult title ("Bar Bingo"). Net-new = 1 title / 6 rows, zero FP.
+#   karaoke -> 13 titles carry \bkaraoke\b and ZERO carry an alcohol token, so karaoke adds
+#              nothing here and is listed for completeness only. The adult karaoke rows in this
+#              window declare their bar in the DESCRIPTION, which a title-only rule cannot
+#              reach -- they are pinned as proper nouns in DROP_PHRASES instead, per the
+#              `magnet senior center` precedent. That asymmetry is the whole point: widening
+#              the activity list is cheap and safe, widening the SCOPE to descriptions is not.
+_RX_ACTIVITY = re.compile(r"\b(trivia|bingo|karaoke)\b")
 # 2026-09-07: added the brewing/brewpub/brewhouse forms. The list carried \bbrewery\b only, so
 # "Smart Alex Trivia at Copper Trail Brewing" and "Intuit-To-Win-It Trivia at Intuition
 # Brewing" -- two real bar-trivia rows live in this window -- could never fire the rule. This
@@ -249,9 +290,16 @@ _RX_ALCOHOL = re.compile(
 
 
 def _compound_drop(title_norm):
-    """'trivia' co-occurring with an alcohol token -> bar/brewery trivia (adult). Else None."""
-    if _RX_TRIVIA.search(title_norm) and _RX_ALCOHOL.search(title_norm):
-        return "trivia+alcohol"
+    """A bar-game activity co-occurring with an alcohol token -> adult programming. Else None.
+
+    The hit string stays "trivia+alcohol" ONLY when the activity really is trivia, so an
+    existing error-log row keeps meaning what it meant; bingo and karaoke report their own
+    activity. The reason string is what a later reader greps for, so it must not lie about
+    which rule fired.
+    """
+    m = _RX_ACTIVITY.search(title_norm)
+    if m and _RX_ALCOHOL.search(title_norm):
+        return m.group(1) + "+alcohol"
     return None
 
 
