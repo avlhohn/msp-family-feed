@@ -92,6 +92,42 @@ def na(a):
         a = re.sub(rf"\b{x}\b", y, a)
     a = re.sub(r"\b5[0-9]{4}\b", " ", a)      # MN ZIP
     a = re.sub(r"\bmn\b", " ", a)             # state token
+
+    # --- the SPELLED-OUT state, TRAILING ONLY (2026-09-21) --------------------------------
+    # The line above strips the bare "mn" token ANYWHERE, which is safe because "mn" is never
+    # a word inside a venue name.  "minnesota" is different: it appears mid-string as part of
+    # real venue names carried in the address field -- "University of Minnesota, Minneapolis,
+    # MN", "Science Museum of Minnesota".  So it is dropped ONLY where it is unambiguously the
+    # state token: at the very END of the address.  Same reasoning as the suite strip -- a
+    # trailing state does not identify the BUILDING, which is the only thing this key compares,
+    # while a mid-string "Minnesota" may be the venue's own name.
+    #
+    # HONEST MEASUREMENT, because the obvious justification does not hold up: the over-broad
+    # variant (strip "minnesota" anywhere) was built as a mutant and measured against the live
+    # dataset, and it adds **0** net-new collision groups.  It is NOT currently harmful, and
+    # any claim here that it "would equate genuinely different venues" would be unevidenced.
+    # Trailing-only is kept anyway for two reasons that do survive scrutiny: both variants
+    # yield the identical 2 groups, so the conservative form costs nothing; and the standing
+    # asymmetry (a missed duplicate is cosmetic, a wrong merge silently deletes a real venue)
+    # says to prefer the bounded rule when the yield is equal.  The risk being avoided is on
+    # data not yet seen, not on data measured -- which is what the test case bounding this
+    # says too.
+    #
+    # Same CLASS as the Saint/St fold and the Suite/Ste strip: two spellings of one place that
+    # could never collide, so the address half of the key was structurally blind to the pair.
+    # Found 2026-09-21 via sports_dedup, where ESPN writes "Target Field, Minneapolis,
+    # Minnesota" and the carried row writes "Target Field, Minneapolis, MN".
+    #
+    # FP surface MEASURED BEFORE the edit against the live dataset, using this file's own
+    # bucket key INCLUDING the ntime() split: exactly 2 net-new groups, both hand-verified
+    # genuine (the Twins pair; and Cossetta's, one Saint Paul venue split by "St. Paul,
+    # Minnesota" vs "Saint Paul, MN").  A first probe that omitted ntime() reported 131 and
+    # was a fiction -- re-measure with the real key, not a reconstruction of it.
+    #
+    # This completes the rule's VOCABULARY.  Its SHAPE -- exact title + date + address, with
+    # time as a separator -- is untouched.
+    a = re.sub(r"\s*\bminnesota\s*$", " ", a)
+    # --------------------------------------------------------------------------------------
     return re.sub(r"\s+", " ", a).strip()
 
 
