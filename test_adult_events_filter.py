@@ -150,6 +150,45 @@ CASES = [
     ("Tall Tale Trivia at Sibley State Park", "events", None, False),    # state-park all-ages trivia
     ("Public Library Story Time", "events", None, False),               # 'public' must not trip \bpub\b
 
+    # ---- 2026-09-21: the ACTIVITY widening (trivia -> trivia|bingo|karaoke) -----------------
+    # DROP side: the only title in the live dataset the widened compound rule newly reaches.
+    ("Bar Bingo", "events", "drop", False),                    # 929 Beer House & Grill, progressive jackpots
+    ("Music Bingo at the Taproom", "events", "drop", False),   # constructed: activity + alcohol token
+    ("Karaoke at the Brewpub", "events", "drop", False),       # \bpub\b must NOT be what fires here
+    # KEEP side — every one a REAL live title, and these are what pin the widening down.
+    # Plant Bingo is the load-bearing case: it runs at Two Fathoms BREWING and its own
+    # description says "we welcome all ages", so a rule that dropped brewery bingo on venue
+    # vibe would have deleted a real family event. The title carries no alcohol token, so it
+    # survives -- which is the title-only scope doing exactly its job.
+    ("Plant Bingo", "events", None, False),                    # Two Fathoms Brewing, all ages
+    ("Two Fathoms Karaoke Night", "events", None, False),      # same venue, no age gate -> not a proper noun
+    ("Fun Friday: Music Bingo", "events", None, False),        # Minnesota Beer Co., no alcohol token in TITLE
+    ("Karaoke Night", "events", None, False),                  # George Latimer Central Library, k-pop, all ages
+    ("Karaoke Party at Little Theatre Auditorium", "events", None, False),  # community theatre
+    ("Book Bingo at the Shakopee Library!", "events", None, False),
+    ("Kid's BINGO", "events", None, False),
+    ("Community Bingo", "events", None, False),                # North Branch Library, "ages 8 and up"
+    ("Afternoon of Bingo", "events", None, False),             # Willmar Community Center, "all ages"
+    ("Youth Book Bingo", "events", None, False),
+
+    # ---- 2026-09-21: proper nouns for adult venues that declare themselves only in the
+    # DESCRIPTION, which a title-only rule can never reach (the `magnet senior center` case) ----
+    ("Karaoke with DJ Rhumpshaker", "events", "drop", False),  # No Name Bar: "9pm-1am Free | 21+"
+    ("Karaoke at Willy T\u2019s", "events", "drop", False),    # CURLY apostrophe, as the feed emits it
+    ("Karaoke at Willy T's", "events", "drop", False),         # straight apostrophe must drop too
+    ("Thirsty Thursdays Karaoke at the New London Legion", "events", "drop", False),
+    ("Gun Bingo", "events", "drop", False),                    # American Legion, $50/ticket firearms raffle
+    ("Y Cares Black Tie Bingo", "events", "drop", False),      # YMCA black-tie fundraiser gala
+    ("Wild Cocktails", "events", "drop", False),               # the activity IS making alcoholic drinks
+    # KEEP side for those proper nouns — each a real live title a looser phrase would have eaten.
+    # Bare "black tie" must not be a DROP. NOTE the first draft of this case used "Black Tie
+    # Family Gala" and legitimately FAILED -- `gala` is a long-standing DROP_PHRASE in its own
+    # right, so the title never tested what it claimed to. Isolate the phrase under test.
+    ("Black Tie Skate Night", "events", None, False),
+    ("Live Jazz Music", "events", None, False),                # 18 rows merely MENTION a cocktail menu
+    ("Wild Rice Harvest Festival", "events", None, False),     # bare "wild" must not fire
+    ("Willy Wonka Jr. at the Youth Theatre", "events", None, False),  # "willy" must not fire alone
+
     # ---- must KEEP (guards against the generic adult rule — every one a real live title) ----
     ("Bird Migration Walk (best for ages 8 to adult)", "events", None, False),   # age range
     ("Fungus Among Us (best for ages 8-adult)", "events", None, False),          # age range
