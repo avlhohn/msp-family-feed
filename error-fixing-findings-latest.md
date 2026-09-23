@@ -163,6 +163,44 @@ treated as producing candidates rather than answers: the TripAdvisor CDN image f
 and the Yelp URL substitution for Bump & Putt. Both would have passed a naive "did the subagent
 return a URL" check.
 
+## A post-publish tree check, and the contract it was checked against was wrong
+
+Yesterday's run accidentally published `CLAUDE.md` into the repo (HTTP **201 — CREATED**) and
+reverted it, and the lesson recorded was that a 201 answers *"did the bytes land?"* but never
+*"should this path exist?"*. So this run added a **tree check** after publishing: read the repo's
+file list and compare it against the sanctioned set.
+
+**It failed — and the repo was fine.** It flagged `image_upgrades.py` and `meal_deals.csv`.
+Provenance settled it before anything was touched: both first appeared **2026-07-27**, were last
+modified **2026-08-29** and **2026-08-25**, and have **zero commits today**. Neither came from this
+run. What was wrong was my expected set, which I had built from CLAUDE.md's sentence *"only the 4
+safety-critical helper/test files the owner uploads by hand"* — while the same document elsewhere
+says the Wikimedia layer *"was committed into `image_upgrades.py` (commit `54e8a8f8`)"*. **Both
+cannot be true, and the repo is the one telling the truth.** The contract prose undercounts: there
+are five helper files, not four.
+
+This matters more than a miscount, because the tree audit that yesterday's incident motivated
+**derives its expected set from that prose**. An audit keyed to a wrong contract fails both ways —
+it flags legitimate files, and it would wave through a stray one that happened to be named in the
+prose. The guard built to catch an unsanctioned path is only as good as the list it checks against,
+and that list is a paragraph nothing asserts.
+
+Nothing was deleted. Both paths predate this run and sit outside this task's two sanctioned write
+paths, and deleting a published file on the strength of a claim in prose is unrecoverable if the
+claim is the thing that is wrong — which, here, it was.
+
+**A second item falls out of it: `meal_deals.csv` is an orphan.** The build writes `deals.csv`; the
+category *keys* carry the long names and the *files* do not. `meal_deals.csv` has not been touched
+since **2026-08-25 — 29 days** — and sits in the repo beside the live `deals.csv`. Anything reading
+the artifacts by category name opens the stale one. Not this task's to remove.
+
+**Both halves of the check were proven to fail on purpose**, and the failing case was *predicted
+before the mutant ran* rather than inferred from a count: the unexpected-path branch failed
+naturally (above), and the blob-drift branch — the one that would catch a publish that did not
+actually land — was mutated and went red naming exactly `error_log.csv blob drift`, with the
+restored control green. Run under `python3 -B`, because a mutation harness that leaves bytecode
+enabled can test the wrong code.
+
 ## Ledger
 
 | | |
