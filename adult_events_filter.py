@@ -160,6 +160,24 @@ DROP_PHRASES = [
                                      # edibles into simple syrups for delicious cocktails").
                                      # Bare "cocktail" is NOT listed: 18 "Live Jazz Music" rows
                                      # merely mention a cocktail menu and are family KEEPs.
+    # --- added 2026-09-22: the crawl, a drinking ITINERARY the activity list cannot reach -----
+    # Found by reading the 11 distinct alcohol-token event titles by hand (25 rows) and noting
+    # that ZERO were caught by the compound rule, whose ACTIVITY side is (trivia|bingo|karaoke).
+    # A bar crawl is not one of those activities -- it is a route between bars -- so the
+    # compound rule is structurally incapable of firing on it. This is a VOCABULARY entry, not
+    # a widening of that rule's shape or of its title-only scope.
+    #
+    # `Fari "BOO" Downtown Bar Crawl` (Faribault, 2026-10-30, Paid) carries TWO independent
+    # explicit adult signals -- its description states "must be 21", and the activity IS
+    # alcohol -- which is exactly the line the 2026-09-21 entries above draw. Not venue vibe.
+    #
+    # MEASURED ON LIVE TITLES BEFORE THE EDIT (the 2026-09-07 rule): "bar crawl" hits 1 title /
+    # 1 row, "pub crawl" hits 0, and bare "crawl" hits 2 -- the second being
+    # `Winona Zombie Crawl *20 Years And Crawling*`, a real family Halloween event. So the
+    # anchored two-word phrase is provably zero-FP while the bare keyword would delete a
+    # family row. "pub crawl" is included for symmetry at zero measured cost; both are pinned
+    # in the suite, the bare-crawl and the `Wildwood Sports Bar & Grill` KEEPs alongside them.
+    "bar crawl", "pub crawl",
 ]
 
 # --- explicit concert / comedy title list (added 2026-09-01) --------------------------------
@@ -285,8 +303,26 @@ _RX_ACTIVITY = re.compile(r"\b(trivia|bingo|karaoke)\b")
 # BEFORE the change: 13 titles in the dataset carry \bbrewing\b and exactly the 2 brewery-trivia
 # rows also carry \btrivia\b. Word boundaries stay load-bearing -- \bpub\b does not fire inside
 # "brewpub", which is why brewpub is listed in its own right.
+# 2026-09-23: added tavern|saloon|alehouse -- SIXTH instance of the vocabulary-gap class, and
+# unlike the 2026-09-22 `bar crawl` case this one DOES respond to the known remedy, because a
+# tavern IS a drinking establishment exactly as a pub or brewery is. "Trivia night at Tavern 507
+# in Marshall" is the compound shape the rule was built for (6:30pm bar trivia) and could never
+# fire, because the list named every synonym for a drinking establishment EXCEPT the oldest one.
+# FP surface measured BEFORE the edit on the pre-filter events (the rows the rule fires on):
+# \btavern\b appears in 2 titles / 14 rows and exactly 1 title / 2 rows also carries an activity
+# token, so the change is provably zero-FP here -- "Live Music at The Depot Smokehouse and
+# Tavern" (12 rows) is venue vibe and correctly survives. saloon/alehouse have ZERO live titles,
+# so they cannot produce an FP today and are included because the gap is the vocabulary, not the
+# row count (the 2026-09-21 `karaoke` precedent).
+# REJECTED CANDIDATES, recorded next to the accepted ones so a later reader does not "finish the
+# job": `lounge` -- measured 3 titles / 14 rows, and they are `Lactation Lounge`, `Lactation
+# Lounge with Ramsey County Health` and `Teen Craft and Lounge`, all real family rows; it adds
+# zero drops and risks three. `wine`/`cocktail`/`whiskey`/`liquor` -- zero live titles AND
+# ambiguous in a way the establishment nouns are not (a wine-tasting row is adult by its
+# ACTIVITY, which is the `Wild Cocktails` proper-noun path, not by naming a venue).
 _RX_ALCOHOL = re.compile(
-    r"\b(beer|brewery|brewing|brewpub|brewhouse|taproom|distillery|pub|bar|cider|winery)\b")
+    r"\b(beer|brewery|brewing|brewpub|brewhouse|taproom|distillery|pub|bar|cider|winery"
+    r"|tavern|saloon|alehouse)\b")
 
 
 def _compound_drop(title_norm):
