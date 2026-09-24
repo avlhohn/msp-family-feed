@@ -80,6 +80,12 @@ CASES = [
     # rule could not see while the alcohol list carried \bbrewery\b alone.
     ("Smart Alex Trivia at Copper Trail Brewing", "events", "drop", False),
     ("Intuit-To-Win-It Trivia at Intuition Brewing", "events", "drop", False),
+    # 2026-09-23: the 'tavern' form. The first is a REAL live title in the 09-23 window that the
+    # rule could not see while the alcohol list named every drinking-establishment synonym except
+    # the oldest one. The other two pin saloon/alehouse, which have no live titles yet.
+    ("Trivia night at Tavern 507 in Marshall", "events", "drop", False),
+    ("Bingo at the Silver Dollar Saloon", "events", "drop", False),
+    ("Karaoke at the Riverside Alehouse", "events", "drop", False),
 
     # ---- must DROP (2026-09-01 audit: adult/non-family titles found stale in the live app) ----
     # concerts / comedy — explicit named-act list (no keyword catches these)
@@ -149,6 +155,18 @@ CASES = [
     ("Mille Lacs Kathio State Park Trivia", "events", None, False),      # state-park all-ages trivia
     ("Tall Tale Trivia at Sibley State Park", "events", None, False),    # state-park all-ages trivia
     ("Public Library Story Time", "events", None, False),               # 'public' must not trip \bpub\b
+    # 2026-09-23: the KEEP side of the 'tavern' widening. A REAL 12-row live title -- venue vibe,
+    # no activity token, correctly survives, which is what proves the change completed the
+    # VOCABULARY without widening the rule's SHAPE.
+    ("Live Music at The Depot Smokehouse and Tavern", "events", None, False),
+    # And the REJECTED candidate `lounge`, pinned by a case that can actually DISCRIMINATE. The
+    # first draft of this pair was `Lactation Lounge` / `Teen Craft and Lounge` -- both real live
+    # family titles, and both worthless AS TESTS, because neither carries an activity token, so
+    # the compound rule could not have dropped them whether `lounge` were in the alcohol list or
+    # not. They would have stayed green through exactly the regression they named (the 2026-09-21
+    # NA_DIFFER lesson: isolate the thing under test). This case carries BOTH halves, so it goes
+    # red the moment someone adds `lounge`, which is the decision being recorded.
+    ("Teen Game Night Bingo at the Lounge", "events", None, False),
 
     # ---- 2026-09-21: the ACTIVITY widening (trivia -> trivia|bingo|karaoke) -----------------
     # DROP side: the only title in the live dataset the widened compound rule newly reaches.
@@ -188,6 +206,24 @@ CASES = [
     ("Live Jazz Music", "events", None, False),                # 18 rows merely MENTION a cocktail menu
     ("Wild Rice Harvest Festival", "events", None, False),     # bare "wild" must not fire
     ("Willy Wonka Jr. at the Youth Theatre", "events", None, False),  # "willy" must not fire alone
+
+    # ---- 2026-09-22: the CRAWL, a drinking itinerary no activity keyword reaches -------------
+    # DROP: the live row. Its description states "must be 21" AND the activity IS alcohol -- two
+    # independent explicit adult signals, which is the line the 2026-09-21 block draws. The
+    # compound rule could never reach it: a crawl is a ROUTE between bars, not one of the
+    # (trivia|bingo|karaoke) activities, so this is a VOCABULARY entry, not a shape change.
+    ("Fari \u201cBOO\u201d Downtown Bar Crawl", "events", "drop", False),  # curly quotes, as the feed emits
+    ("Fari \"BOO\" Downtown Bar Crawl", "events", "drop", False),          # straight quotes must drop too
+    ("Downtown Pub Crawl", "events", "drop", False),            # the "pub crawl" half, pinned separately
+    # KEEP side, and these are what make the phrase ANCHORED rather than a bare keyword.
+    # Measured on the live dataset before the edit: "bar crawl" 1 title / 1 row, "pub crawl" 0,
+    # bare "crawl" 2 -- the extra one being this real family Halloween event. A bare `crawl`
+    # keyword would have deleted it, which is the wrong-DROP direction that actually hurts.
+    ("Winona Zombie Crawl *20 Years And Crawling*", "events", None, False),
+    ("Baby Crawling Races", "events", None, False),             # "crawl" as a family activity
+    # A live Kids Bowl Free bowling center, in the dataset today. Any rule keyed on \bbar\b
+    # alone would eat it -- the same shape as "Public Library" fencing \bpub\b.
+    ("Wildwood Sports Bar & Grill", "events", None, False),
 
     # ---- must KEEP (guards against the generic adult rule — every one a real live title) ----
     ("Bird Migration Walk (best for ages 8 to adult)", "events", None, False),   # age range
