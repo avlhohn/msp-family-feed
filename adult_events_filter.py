@@ -178,6 +178,39 @@ DROP_PHRASES = [
     # family row. "pub crawl" is included for symmetry at zero measured cost; both are pinned
     # in the suite, the bare-crawl and the `Wildwood Sports Bar & Grill` KEEPs alongside them.
     "bar crawl", "pub crawl",
+
+    # 2026-09-24 -- SEVENTH instance of the class, and the SECOND that is a SHAPE gap rather
+    # than a vocabulary one, so it takes the `bar crawl` remedy and not the `tavern` one.
+    # Two rows at Cana Wine Bar (64 1st Ave SW, Crosby MN) were sitting in a published family
+    # guide: `Wines of Northern Italy: A Wine Pairing Dinner` (2026-09-24, 5:30 PM, six-course
+    # pairing dinner) and `Fashion and Wine Event` (2026-10-03, 6:00 PM, $50/person, "Rally up
+    # the girls" CAbi fashion show with paired wines). Both are the `Wild Cocktails` shape --
+    # THE ALCOHOL IS THE ACTIVITY -- so `_compound_drop` can never fire on them: its ACTIVITY
+    # side is (trivia|bingo|karaoke) and a wine pairing is not a bar game. Both carry the token
+    # in the TITLE, so the title-only scope reaches them; no scope change is needed or made.
+    #
+    # THIS REVISES, WITHOUT CONTRADICTING, THE 2026-09-23 REJECTION RECORDED AT _RX_ALCOHOL.
+    # That entry rejected `wine` as an ALCOHOL-LIST token on two grounds: zero live titles, and
+    # that such a row is adult "by its ACTIVITY, which is the `Wild Cocktails` proper-noun path,
+    # not by naming a venue." The second ground still holds and is exactly why these land HERE
+    # instead of there. The first ground was a measurement, and measurements expire: `\bwine\b`
+    # hit 0 titles on 2026-09-23 and hits 2 today. A rejection recorded with its reason can be
+    # re-opened on the half that moved; one recorded as a bare verdict could not have been.
+    #
+    # MEASURED BEFORE THE EDIT over the 9,616 PRE-FILTER events -- the rows the rule would fire
+    # on, not the corpus (the 2026-09-18 denominator rule): "wine pairing" 1 title / 1 row,
+    # "fashion and wine" 1 title / 1 row, "wine tasting" 0, "wine dinner" 0, \bwinery\b 0,
+    # \bvineyard\b 0. Both accepted phrases are provably zero-FP on live data.
+    #
+    # BARE `wine` IS REJECTED DESPITE MEASURING ZERO FALSE POSITIVES TODAY (2 titles / 2 rows,
+    # both of them the drops above). A winery's all-ages fall festival or a harvest-festival row
+    # would carry it, and that is venue vibe -- the `Plant Bingo` / `Two Fathoms Brewing` line
+    # the 2026-09-21 entry draws, where a rule keyed on the brewery would have deleted a real
+    # family event. A zero-FP measurement is evidence about TODAY's titles, not a licence for a
+    # keyword whose failure mode is deleting a family row. "wine tasting" is included for
+    # symmetry at zero measured cost (the `pub crawl` / `karaoke` precedent); all three are
+    # pinned in the suite, with the bare-`wine` KEEPs alongside them.
+    "wine pairing", "wine tasting", "fashion and wine",
 ]
 
 # --- explicit concert / comedy title list (added 2026-09-01) --------------------------------
