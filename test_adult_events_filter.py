@@ -225,6 +225,26 @@ CASES = [
     # alone would eat it -- the same shape as "Public Library" fencing \bpub\b.
     ("Wildwood Sports Bar & Grill", "events", None, False),
 
+    # ---- 2026-09-24: WINE, where the alcohol IS the activity ---------------------------------
+    # DROP: both live rows, at Cana Wine Bar (Crosby MN). `_compound_drop` is structurally
+    # incapable of reaching them -- its ACTIVITY side is (trivia|bingo|karaoke) and a wine
+    # pairing is not a bar game -- so this is the `Wild Cocktails` / `bar crawl` SHAPE gap and
+    # takes flat phrases, not an alcohol-list token. Title-only scope is unchanged.
+    ("Wines of Northern Italy: A Wine Pairing Dinner", "events", "drop", False),
+    ("Fashion and Wine Event", "events", "drop", False),
+    ("Wine Tasting Fundraiser", "events", "drop", False),   # the 0-measured symmetry phrase
+    # KEEP side, and this is what makes the phrases ANCHORED rather than a bare `wine` keyword.
+    # Measured before the edit over the 9,616 pre-filter events: "wine pairing" 1 title / 1 row,
+    # "fashion and wine" 1, "wine tasting" 0, "wine dinner" 0, \bwinery\b 0, \bvineyard\b 0, and
+    # bare \bwine\b 2 -- i.e. bare `wine` was zero-FP TODAY and is still rejected, because an
+    # orchard-winery's all-ages fall festival carries it and that is venue vibe (the `Plant
+    # Bingo` / `Two Fathoms Brewing` line). This case must go RED under a bare-`wine` mutant,
+    # which is why it carries `wine` as a STANDALONE WORD: `_match` is word-boundary, so a
+    # `Winery` title would stay green under that mutant and pin nothing.
+    ("Fall Harvest Fest: Hayrides, Corn Maze and Wine", "events", None, False),
+    ("Grape Stomp at Carlos Creek Winery", "events", None, False),  # winery w/o an activity token
+    ("Book and Snack Pairing for Kids", "events", None, False),     # bare `pairing` must not fire
+
     # ---- must KEEP (guards against the generic adult rule — every one a real live title) ----
     ("Bird Migration Walk (best for ages 8 to adult)", "events", None, False),   # age range
     ("Fungus Among Us (best for ages 8-adult)", "events", None, False),          # age range
