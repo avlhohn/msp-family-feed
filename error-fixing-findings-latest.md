@@ -1,6 +1,7 @@
 # MSP Family Guide — Error Fixing (Latest)
 
-**Run date:** 2026-09-25 · **Finished:** 09:57 UTC
+**Run date:** 2026-09-25 · **Finished:** 10:05 UTC (log published 09:57; this report corrected and
+republished at 10:04 — see the RETRACTION under Diagnostics)
 
 Run date and finish time are both derived from a server-side `Date` header, not from the sandbox
 clock. The sandbox clock and the injected `currentDate` have previously been wrong *in agreement*
@@ -117,6 +118,14 @@ the published log holds, under `run_date` 2026-09-25, **both** of this run's row
 2026-09-25 signal set (`ical_feed_pull` per dispatched source, `deal_source_*`, exactly one
 `image_backfill`, exactly one `run_summary`). If either set is missing, it was a lost update, and
 it is repairable from this report.
+
+**Measured at 10:04:35Z, not inferred: the build's STEP 7 still had not landed.** `error_log.csv`
+was still at this run's own blob `89ad9c463902` and the newest commits on the repo were this task's
+three, the most recent build commit being `66a3690805` at 09:01:03Z. So the in-flight reading holds
+118 minutes after the build fired, which is inside the 2h44m tail observed on 2026-09-22 — the
+diagnosis is now carried by two independent observations (`lastRunAt` and the commit list) rather
+than by one. It also sharpens the escalation: the build's rows are still owed, so the next run is
+checking whether a *pending* write landed on top of ours, not whether a completed one was lost.
 
 **A subagent's conditional accept was rejected on verification.** For Bowlero/Lucky Strike a
 subagent surfaced Flickr photo `40926549203`, titled "Bowlero" and credited to the Brooklyn Park
