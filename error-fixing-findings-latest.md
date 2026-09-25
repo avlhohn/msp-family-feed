@@ -85,16 +85,38 @@ verification bar forbids.
 
 ## Diagnostics
 
-**Today's build published its artifacts but never published `error_log.csv`.** Repo commits at
-2026-09-25T09:00:42Z–09:01:03Z carry the daily refresh (*"6377 rows (events 4659, parks 849,
-deals 140…)"*), yet the newest `error_log.csv` commit is `6862a9fc94` at **2026-09-24T14:18:15Z**,
-and **zero** rows in the base carry `run_date` 2026-09-25. The build produced seven correct
-artifacts and recorded nothing about itself. This is the fail-closed-guard blast-radius class
-already documented on 2026-09-22: a hard failure at the logging step suppresses the *entire* run's
-evidence — the feed-pull rows, deal-yield rows, image-backfill marker, coverage rows and all
-findings — in order to prevent one stale row. Logged this run as an `info`/`pipeline` row
+**Today's build was STILL IN FLIGHT when this run finished, so the missing `error_log.csv` is the
+EXPECTED state and not a failure.** Repo commits at 2026-09-25T09:00:42Z–09:01:03Z carry the daily
+refresh (*"6377 rows (events 4659, parks 849, deals 140…)"*), the newest `error_log.csv` commit is
+`6862a9fc94` at **2026-09-24T14:18:15Z**, and **zero** base rows carry `run_date` 2026-09-25. The
+scheduler settles what that means: the build fired at **08:06:36Z** and published its feed and five
+category CSVs at 09:00:42Z; this task fired at **09:44:37Z**, 98 minutes later. The build's STEP 7/8
+— the step that writes `error_log.csv` and today's `run_summary` row — runs *after* that publish,
+and on 2026-09-22 its tail did not finish until 2h44m past it. This is therefore the documented
+`fixer_gate_releases_midbuild` condition: **the fixer's completion gate releases on the build's
+STEP 6 feed/CSV publish, not on build completion.** Logged as an `info`/`pipeline` row
 `no_run_summary_today`; the fixer proceeded on the 2026-09-24 base per the spec's soft-freshness
-branch.
+branch, which is the correct branch for a mid-build reading.
+
+**RETRACTION — an earlier draft of this report attributed that absence to a hard failure at the
+logging step** (the fail-closed-guard blast-radius class documented on 2026-09-22), and said the
+build *"produced seven correct artifacts and recorded nothing about itself."* That was an inference
+about a mechanism never observed: a log stale because the writing step has not run yet and a log
+stale because the writing step failed are byte-identical from here, and the only signal separating
+them is `lastRunAt` for both tasks — one cheap call that was made after the fact rather than at
+STEP 1. Corrected here rather than left standing, because a settled diagnosis taken from a misread
+is the expensive kind: it suppresses the real question *and* supplies a false answer to it.
+
+**Escalation for the next run, naming the exact rows to count.** Both tasks load their own
+`error_log.csv` base and append to it, so whichever publishes second can overwrite the other's rows.
+This run published at 09:57Z with the build's STEP 7 still pending. The rows appended here are
+expected to survive only because the build's `errlog_step7.py` appends to the **same local file**
+this run just rewrote — luck about implementation, not a guarantee. The next run must confirm that
+the published log holds, under `run_date` 2026-09-25, **both** of this run's rows (`issue_type`
+`no_run_summary_today` and `fixer_summary`, each `info`/`pipeline`) **alongside** the build's own
+2026-09-25 signal set (`ical_feed_pull` per dispatched source, `deal_source_*`, exactly one
+`image_backfill`, exactly one `run_summary`). If either set is missing, it was a lost update, and
+it is repairable from this report.
 
 **A subagent's conditional accept was rejected on verification.** For Bowlero/Lucky Strike a
 subagent surfaced Flickr photo `40926549203`, titled "Bowlero" and credited to the Brooklyn Park
