@@ -1,24 +1,28 @@
 # MSP Family Guide — Error Fixing (Latest)
 
-**Run date:** 2026-09-25 · **Finished:** 10:05 UTC (log published 09:57; this report corrected and
-republished at 10:04 — see the RETRACTION under Diagnostics)
+**Run date:** 2026-09-26 · **Finished:** 10:12 UTC
 
 Run date and finish time are both derived from a server-side `Date` header, not from the sandbox
-clock. The sandbox clock and the injected `currentDate` have previously been wrong *in agreement*
-by up to two days, so neither is used here.
+clock. The sandbox clock and the injected `currentDate` have previously been wrong *in agreement* by
+up to two days, so neither is used here.
 
-**Base log:** `error_log.csv` at blob `80113fb08365` — 1,474,523 bytes, 4,528 data rows, 10-column
-header exact, and **byte-identical to the GitHub remote**, so its provenance is verified rather than
-assumed. **Published log:** blob `89ad9c463902`, 1,477,247 bytes, 4,530 data rows, CRLF 4,530 and
-bare LF 0, confirmed by re-GET.
+**Base log:** `error_log.csv` at blob `89ad9c463902` — 1,477,247 bytes, 4,529 data rows, 10-column
+header exact, CRLF 4,530 and bare LF 0, and **byte-identical to the GitHub remote**
+(md5 `29b2c7517794178b4e2540d2dab1c917`), so its provenance is verified rather than assumed. That
+blob is precisely what the 2026-09-25 run published, so the chain is continuous with no intervening
+edit. **Published log:** blob `38ee1d6c726c`, 1,484,234 bytes, 4,535 data rows, CRLF 4,536 and bare
+LF 0, confirmed by re-GET.
+
+One reconciliation note, since it would otherwise read as a regression: last run's report described
+its published log as "4,530 data rows" while also reporting CRLF 4,530 with bare LF 0. Those two are
+only consistent if the 4,530 counted the header line, i.e. 4,529 data rows — which is exactly what
+this run measured as its base. There is no missing row.
 
 ## Summary
 
 The open-issue queue held **6 rows across 6 distinct items** (5 `unresolved_image`, 1
-`unresolved_website`, dated 2026-07-08 to 2026-08-15) — down from 19 last run, because the
-2026-09-23 run closed 13 items that had no row in any published artifact. What remains is the
-residue: every one of these six *is* shipped in the feed, and every one was re-attempted first-hand
-this run.
+`unresolved_website`, dated 2026-07-08 to 2026-08-15), unchanged from last run. Every one is shipped
+in the live feed and every one was re-attempted first-hand this run.
 
 **None met the verification bar, so none were marked resolved.**
 
@@ -26,156 +30,135 @@ this run.
 |---|---|
 | Open rows examined | 6 (5 `unresolved_image`, 1 `unresolved_website`) |
 | Resolved this run | **0** |
-| — by `og_image` | 0 |
-| — by `facebook` | 0 |
-| — by `stock_openverse_specific` | 0 |
-| — website URLs accepted | 0 |
-| Left open | 6 |
-| Rows appended | 2 (both `info`/`pipeline` diagnostics) |
+| — website | 0 |
+| — image by `og_image` | 0 |
+| — image by `facebook` | 0 |
+| — image by `stock_openverse_specific` | 0 |
+| Left open | **6** |
+| Rows appended to the log | 6 (diagnostics + escalations + summary; no existing row touched) |
 
-A zero here is a claim about the sources, not about the effort — and it is a *newly measured* claim,
-not an inherited one. The Openverse half was queried by the parent over the API, because WebFetch
-cannot reach `api.openverse.org` and a subagent's Openverse verdict is therefore inadmissible; the
-page half was fetched by subagents and re-checked by the parent wherever a result would have been
-written. Three of the six are additionally **impossible by construction** rather than merely
-unfound, which is a different and more useful verdict.
+This is roughly the fifteenth consecutive zero-resolution run, and the important point is that **it
+is not a clean queue**. Two separate things produce the zero, and they need different fixes.
+
+First, the six rows that *are* in the queue are largely unresolvable as written. Three of the five
+image rows carry the address `Multiple Twin Cities locations` with blank coordinates, so a
+*place-specific* photograph cannot exist for them **by construction** — there is no single place to
+photograph. The other two were probed directly and the corpus genuinely has nothing.
+
+Second, and larger: **the queue has no inflow.** The last row of either queue type was written 41 and
+65 days ago, while roughly 590 fixer-shaped rows sit in the log under `issue_type` values this task
+does not match. A drained queue and a queue nothing writes to look identical from inside the queue.
+That is the finding this run is actually reporting, and it is recorded rather than worked around.
+
+Every Openverse query was issued **by the parent process**, not delegated, and every one returned
+**HTTP 200**. That distinction is load-bearing: subagents here are WebFetch-only and WebFetch cannot
+reach the Openverse API, so an image negative inherited from a subagent may be a search that never
+ran. These eight negatives are measurements, not silences.
+
+The single `unresolved_website` row stays open, but the run still advanced it — its dead URL was
+re-verified and the venue's correct name, address and phone were established and escalated.
 
 ## Resolved this run
 
-None. No row received a `resolved_date`, `resolved_by` or `resolution_note` value.
+| Item | Type | Resolution note |
+|---|---|---|
+| _(none)_ | — | No row met the confidence bar this run. |
 
-Writing a resolution that does not clear the bar is worse than leaving the row open: an
-`image_source` in the `og_image`/`facebook`/`site_photo` family is treated as final by every later
-enrichment layer and never self-heals, so a wrong accept is permanent. The two candidates that came
-closest are recorded under Diagnostics with the reason each was rejected.
+Nothing was resolved, deliberately. The one candidate for the skill's "confirmed closed / no site"
+path is an **operating business**, and that clause is conditioned on a positively confirmed permanent
+closure. Closing the row on a partial negative would also have removed the only artifact that
+currently surfaces a dead URL still shipping in the feed — burying the defect rather than fixing it.
 
 ## Still open
 
-**Lake Ann Park** — `unresolved_image`, `parks`, open since 2026-07-08.
-The City of Chanhassen park page returns **403** to WebFetch; the park's Facebook presence loads but
-renders no images; Openverse returns **0** for `Lake Ann Park Chanhassen`, and the 2 hits for
-`Lake Ann Park Minnesota` depict a different place. A broader `Chanhassen Minnesota park` query
-returns 57 hits, all rejected — a photo of *a* park in the city is not a photo of *this* park.
-Geography is not depiction; a candidate must pass venue identity, geography **and** subject.
+| Item | Type | Likely reason |
+|---|---|---|
+| Lake Ann Park | `unresolved_image` | Openverse returned **0** candidates at HTTP 200 — a real search that found nothing, not a failed call. A small municipal park with no freely-licensed photograph in the corpus. A previous negative on this item was retracted once before, so it was re-probed rather than inherited. |
+| Denny's Thursday Kids Eat Free | `unresolved_image` | **Impossible by construction** — address is `Multiple Twin Cities locations`, lat/lon blank. Openverse returned 48 hits, all failing the bar: a jazz quartet and a funeral, i.e. wrong identity *and* wrong subject. |
+| Perkins Tuesday Kids Eat Free | `unresolved_image` | **Impossible by construction** (multi-location row, blank coordinates). 2 Openverse hits, both plates of food in Roseville — right geography, wrong subject. A photograph of a meal is not a photograph of a venue. |
+| Rubio's Rewards Thursday Kids Free Meal | `unresolved_image` | **Impossible by construction** (multi-location row). 2 Openverse hits, both **Miami, Florida** — fails geography outright. |
+| Bowlero Brooklyn Park (Lucky Strike) | `unresolved_image` | Openverse **0** candidates. New first-hand finding this run: the venue's own page (`luckystrikeent.com`, reached via a 301 from `bowlero.com`) carries only chain-wide brand marketing photography, not documentation of this location — so the site cannot supply a `site_photo` either. Rejected on the same reasoning that rejects a tourism-board hero banner. |
+| Bump & Putt Family Fun Center | `unresolved_website` | No replacement URL found that names this venue. The shipped `brainerd.com` URL re-verified **404** today. Four candidate sources failed in transport this run (HTTP 500, HTTP 526, HTTP 403, and one 60 s timeout), so the negative is **incomplete on transport grounds** rather than settled — a transport failure is a property of the moment, not of the page. Escalated with corrected details instead; see Diagnostics. |
 
-**Denny's Thursday Kids Eat Free** — `unresolved_image`, `meal_deals`, open since 2026-07-23.
-The corporate site returned **403** on three separate attempts. More decisive than the 403: the
-row's address is *"Multiple Twin Cities locations"*, and a row denoting no single place cannot carry
-a place-specific photo **by construction**. Re-attempting it nightly cannot succeed.
-
-**Perkins Tuesday Kids Eat Free** — `unresolved_image`, `meal_deals`, open since 2026-07-23.
-One timeout and two **403**s. Same multi-location construction. Openverse's nearest hits for this
-brand in Minnesota are two plates of food in Roseville — right brand, right state, wrong subject.
-
-**Rubio's Rewards Thursday Kids Free Meal** — `unresolved_image`, `meal_deals`, open since
-2026-07-23. The site fetched **200**, but WebFetch strips the `<head>`, so no `og:image` is
-reachable within policy. Same multi-location construction. The only Openverse storefront hit for
-this brand is in **Florida**.
-
-**Bowlero Brooklyn Park (Lucky Strike)** — `unresolved_image`, `restaurants`, open since 2026-07-23.
-The venue page now serves chain marketing imagery carrying no location-specific photograph.
-Openverse returns **0** for both `Lucky Strike Brooklyn Park` and `Bowlero Brooklyn Park Minnesota`.
-One external candidate was surfaced and rejected — see Diagnostics.
-
-**Bump & Putt Family Fun Center** — `unresolved_website`, `restaurants`, open since 2026-08-15.
-The shipped `website` (`brainerd.com/…`) returns **404**, verified by the parent this run for the
-**fifth consecutive run**, and it is still live in the feed. No owned domain could be located, and
-every directory carrying the business is blocked to this agent (Yelp 403, Manta 403, ABLocal 526,
-fun4kids timeout). No URL could be accepted without fabricating or approximating one, which the
-verification bar forbids.
+All 6 rows shown; none omitted.
 
 ## Diagnostics
 
-**Today's build was STILL IN FLIGHT when this run finished, so the missing `error_log.csv` is the
-EXPECTED state and not a failure.** Repo commits at 2026-09-25T09:00:42Z–09:01:03Z carry the daily
-refresh (*"6377 rows (events 4659, parks 849, deals 140…)"*), the newest `error_log.csv` commit is
-`6862a9fc94` at **2026-09-24T14:18:15Z**, and **zero** base rows carry `run_date` 2026-09-25. The
-scheduler settles what that means: the build fired at **08:06:36Z** and published its feed and five
-category CSVs at 09:00:42Z; this task fired at **09:44:37Z**, 98 minutes later. The build's STEP 7/8
-— the step that writes `error_log.csv` and today's `run_summary` row — runs *after* that publish,
-and on 2026-09-22 its tail did not finish until 2h44m past it. This is therefore the documented
-`fixer_gate_releases_midbuild` condition: **the fixer's completion gate releases on the build's
-STEP 6 feed/CSV publish, not on build completion.** Logged as an `info`/`pipeline` row
-`no_run_summary_today`; the fixer proceeded on the 2026-09-24 base per the spec's soft-freshness
-branch, which is the correct branch for a mid-build reading.
+**Base log validated before use.** Exact 10-column header, 4,529 data rows all of width 10, CRLF
+4,530 / bare LF 0, 554 rows carrying a `resolved_date`, 69 distinct run dates spanning 2026-07-08 →
+2026-09-25, and byte-identical to the GitHub canonical copy. No `log_base_rejected` was owed.
 
-**RETRACTION — an earlier draft of this report attributed that absence to a hard failure at the
-logging step** (the fail-closed-guard blast-radius class documented on 2026-09-22), and said the
-build *"produced seven correct artifacts and recorded nothing about itself."* That was an inference
-about a mechanism never observed: a log stale because the writing step has not run yet and a log
-stale because the writing step failed are byte-identical from here, and the only signal separating
-them is `lastRunAt` for both tasks — one cheap call that was made after the fact rather than at
-STEP 1. Corrected here rather than left standing, because a settled diagnosis taken from a misread
-is the expensive kind: it suppresses the real question *and* supplies a false answer to it.
+**Soft freshness check FIRED, and is logged as `info` per the skill.** No `run_summary` row dated
+2026-09-26 was present, there was no 2026-09-26 commit, and the repo's own `pushed_at` read
+`2026-09-25T10:04:58Z` — while local build artifacts for today *did* exist (`_feedpull_all.json`
+03:57, `add_step2.py` 04:37). Today's build therefore ran locally and had not published when this
+task started: the documented build/fixer race, in which the gate releases on the build's *publish*
+rather than on its completion. Proceeded anyway, as mandated.
 
-**Escalation for the next run, naming the exact rows to count.** Both tasks load their own
-`error_log.csv` base and append to it, so whichever publishes second can overwrite the other's rows.
-This run published at 09:57Z with the build's STEP 7 still pending. The rows appended here are
-expected to survive only because the build's `errlog_step7.py` appends to the **same local file**
-this run just rewrote — luck about implementation, not a guarantee. The next run must confirm that
-the published log holds, under `run_date` 2026-09-25, **both** of this run's rows (`issue_type`
-`no_run_summary_today` and `fixer_summary`, each `info`/`pipeline`) **alongside** the build's own
-2026-09-25 signal set (`ical_feed_pull` per dispatched source, `deal_source_*`, exactly one
-`image_backfill`, exactly one `run_summary`). If either set is missing, it was a lost update, and
-it is repairable from this report.
+One caveat for whoever reads this next: `pushed_at` now reads `2026-09-26T10:11:45Z`, which is **this
+task's own push**. That corroboration is no longer independently checkable after the fact — the
+evidence was captured in the appended log row *before* the push overwrote it.
 
-**Measured at 10:04:35Z, not inferred: the build's STEP 7 still had not landed.** `error_log.csv`
-was still at this run's own blob `89ad9c463902` and the newest commits on the repo were this task's
-three, the most recent build commit being `66a3690805` at 09:01:03Z. So the in-flight reading holds
-118 minutes after the build fired, which is inside the 2h44m tail observed on 2026-09-22 — the
-diagnosis is now carried by two independent observations (`lastRunAt` and the commit list) rather
-than by one. It also sharpens the escalation: the build's rows are still owed, so the next run is
-checking whether a *pending* write landed on top of ours, not whether a completed one was lost.
+**The 2026-09-25 build published its CSVs and logged NOTHING.** Commit `66a3690805` ("Daily refresh
+2026-09-25: 6377 rows") landed, yet `error_log.csv` carries **zero** rows dated 2026-09-25 — against
+150 rows on 09-23 and 115 on 09-24. That is the STEP 7 blast-radius shape: a fail-closed freshness
+assertion on the *logging* step suppresses an entire run's evidence in order to prevent one stale
+row, so the artifacts publish correctly and nothing records that the run happened. Logged as a
+`warning` for the build's owner. The likely site is `errlog_step7.py` exiting non-zero on a
+section-0 assertion before `open(LOG,"a")`.
 
-**A subagent's conditional accept was rejected on verification.** For Bowlero/Lucky Strike a
-subagent surfaced Flickr photo `40926549203`, titled "Bowlero" and credited to the Brooklyn Park
-EDA, and asked for confirmation. The parent fetched the Flickr page: **All Rights Reserved**, not
-CC-licensed. Three independent grounds to reject — not CC-licensed, Flickr is not one of the three
-permitted `image_source` tokens, and the subject was never visually verified as this venue. It also
-corroborates the parent's own Openverse zero, since Openverse indexes CC-licensed Flickr and a CC
-photo titled "Bowlero" would have surfaced there. **A subagent's conditional accept is a candidate,
-not a result** — as is its rejection.
+**The fixer queue has no inflow — this is the substantive finding.** The last `unresolved_website`
+row was written **41 days** ago (2026-08-16); the last `unresolved_image` row **65 days** ago
+(2026-07-23). Only 319 rows carrying either type exist across the log's entire history. Meanwhile
+roughly **590 fixer-shaped rows are structurally unreachable** by this task because they were written
+under other `issue_type` values: `missing_website` (300), `generic_image` (240),
+`attempted_no_photo` (26), `curated_bad_url` (24). STEP 2 matches two literal strings, so the two
+vocabularies have drifted apart with nothing enforcing agreement — the same registry-drift shape this
+project has hit repeatedly, here between a *writer* and a *reader* of the same field.
 
-**A snippet-sourced address was held, not written.** A subagent reported
-`29107 State Highway 371, Pequot Lakes, MN 56472` and `(218) 568-8833` for Bump & Putt as
-corroborated, while **every page it cited was unfetchable** (403/526/timeout). Corroboration
-assembled from search snippets is not a source. Held as an unverified lead and deliberately not
-written, and recorded here so a later run re-opens it from a fetched page rather than re-deriving it
-from the same snippets.
+**Deliberately not fixed by widening the selector.** Doing so would drain a 590-row backlog in a
+single run while burying the drift that caused it, and would silently change what this task is for.
+Reconciling the two vocabularies — at the writer, or by an explicit alias table — is the owner's call.
 
-**Openverse was queried by the parent, over the API, as the architecture requires.** Eight terms.
-The specific ones returned zero — `Lake Ann Park Chanhassen` 0, `Lucky Strike Brooklyn Park` 0,
-`Bowlero Brooklyn Park Minnesota` 0, `Bump and Putt Nisswa` 0, `Nisswa Minnesota mini golf` 0 — and
-the broad ones returned hits failing the identity or subject test. Subagents are WebFetch-only and
-WebFetch cannot reach `api.openverse.org`, so an Openverse negative arriving from a subagent is
-indistinguishable from a search that never ran.
+**Escalation — Bump & Putt Family Fun Center.** The shipped URL
+`https://www.brainerd.com/business/bump-n-putt-family-fun-park/` returned **HTTP 404** again today
+("Sorry! That page doesn't seem to exist."), as it has for roughly fifteen consecutive runs. The
+venue is *operating*, not closed. Corrected details, corroborated two independent ways — a directory
+read and a separate parent-side search keyed on the phone number: **Bump 'N' Putt Family Fun Park,
+29107 State Hwy 371, Pequot Lakes, MN 56472, (218) 568-8833**, with a listing updated as recently as
+August 2026. Not confirmable on the venue's own page, because no venue-owned page was found, so this
+is escalated for a human to confirm rather than written into the feed.
 
-**Three of the six rows are unresolvable by construction, not by difficulty.** Denny's, Perkins and
-Rubio's all carry the address *"Multiple Twin Cities locations"*. A row that denotes no single place
-cannot have a place-specific photograph, so re-attempting them nightly spends budget on an
-impossibility and inflates the open-queue count with items no research can close. Routing
-multi-location rows out of the image queue is a queue-design fix and the owner's call; noted here
-rather than acted on.
+`goputtnbump.com` was explicitly **rejected** and is recorded here as a near-miss so it is not
+"found" again next run: that is Go-Putt-N-Bump in **Detroit Lakes**, roughly 180 km away, and itself
+listed as closed since July 2026. Resolving to it would have been a match on name similarity alone.
 
-**The standing structural finding is unchanged and still bounds what this task can achieve.** A
-resolution written to `error_log.csv` has **no consumer** — nothing reads resolved rows back into
-`_compiled_work.json` before the build — so even a resolved row would not correct the live feed. The
-Bump & Putt 404 is the running proof: correctly logged for five consecutive runs and still shipped.
-The missing piece is a pass that applies resolved `website`/`image_url` values to the compiled work
-file. Until it exists, "resolve more rows" is not the improvement it looks like.
+**Escalation — Bowlero Brooklyn Park (Lucky Strike).** `bowlero.com` now **301**s to
+`luckystrikeent.com`; the venue trades as **Lucky Strike Brooklyn Park**, 7545 Brooklyn Blvd,
+Brooklyn Park, MN **55443**, 763-503-2695. The feed still ships ZIP **55445**. This rebrand has been
+evidenced in the log for 23+ days and remains unshipped, which is the standing "resolutions have no
+consumer" defect: nothing reads resolved rows back into `_compiled_work.json` before the build, so
+resolving a row produces a note, not a fix. Worth stating plainly, because it bounds what this task
+can achieve at all.
 
-**Base and publish integrity.** Local base and remote were byte-identical at STEP 1, so no
-local-vs-remote direction question arose. A byte-identity round-trip control was run before any
-rewrite and passed, which is what distinguishes "two rows were appended" from "the writer silently
-rewrote every line." The publish was a PUT **200** — an update to a sanctioned path, not a 201
-create — and was verified by blob SHA-1 on re-GET rather than by size.
+**Image method.** All 8 Openverse queries were issued by the parent and every one returned **HTTP
+200**, so each zero is a claim about the corpus rather than about the client. Candidates were judged
+on three tests together — **venue identity, geography, and subject** — and failing any one is a
+rejection.
+
+**Integrity of this run's write.** Six rows were appended and **no existing row was touched**. A
+byte-identity control confirmed the untouched rows round-trip identically to the original before
+anything was appended; post-write assertions confirmed rows carrying a `resolved_date` unchanged at
+**554** and the open queue unchanged at **6**. Data rows 4,529 → **4,535**; bare LF **0**. Neither
+appended row uses a reserved `issue_type` (`ical_feed_pull`, `run_summary`, `image_backfill`, or
+anything prefixed `deal_source_`), so the build's STEP 7 signal assertions are unaffected. The
+publish returned **HTTP 200** — an update to a sanctioned path, not a 201 create — with the blob
+`sha` moving `89ad9c46…` → `38ee1d6c…` and remote size matching local bytes exactly at 1,484,234.
 
 ## Files
 
-| File | State |
-|---|---|
-| `error_log.csv` | published, blob `89ad9c463902109345499631b5833462d2e728ab`, 1,477,247 bytes, 4,530 rows, 4,530 CRLF / 0 bare LF — verified by re-GET |
-| `error-fixing-findings-latest.md` | this report |
-| pre-edit backup | `error_log.pre.csv`, blob `80113fb0836523a463959852673760d85f7d5ce8` |
+- `https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv`
+- `https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md`
 
-Category CSVs and the feed JSON were **not** touched — out of scope for this task.
+Local copies: `Agents and Workflows/error_log.csv` and
+`Agents and Workflows/error-fixing-findings-latest.md`.
