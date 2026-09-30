@@ -161,7 +161,6 @@ tag,burgers,https://images.pexels.com/photos/21370021/pexels-photo-21370021.jpeg
 tag,puppet-show,https://images.pexels.com/photos/7356602/pexels-photo-7356602.jpeg,puppet theater with hand puppets (verified)
 tag,breakfast,https://images.pexels.com/photos/38081727/pexels-photo-38081727.jpeg,
 tag,play-cafe,https://live.staticflickr.com/725/22391678856_11e7edc9f5_b.jpg,fallback-only tag image: child on playground slide (verified)
-tag,story-time,https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg,fallback-only tag image: children reading/story circle (verified)
 tag,car-show,https://live.staticflickr.com/228/472117411_94e0ada8b4_b.jpg,fallback-only tag image: row of classic show cars (verified)
 tag,cruise-night,https://live.staticflickr.com/228/472117411_94e0ada8b4_b.jpg,fallback-only tag image: row of classic show cars (verified)
 tag,community-fest,https://images.pexels.com/photos/10130181/pexels-photo-10130181.jpeg,
@@ -286,8 +285,6 @@ tag,food-truck,https://images.pexels.com/photos/16782204/pexels-photo-16782204.j
 tag,coffee,https://images.pexels.com/photos/34956523/pexels-photo-34956523.jpeg,coffee cup on table
 tag,farm/u-pick,https://images.pexels.com/photos/38328331/pexels-photo-38328331.jpeg,u-pick farm field rows
 tag,farm/u-pick,https://images.pexels.com/photos/5529545/pexels-photo-5529545.jpeg,family picking produce
-tag,story-time,https://images.pexels.com/photos/6437499/pexels-photo-6437499.jpeg,
-tag,library,https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg,
 tag,water-park,https://images.pexels.com/photos/5603385/pexels-photo-5603385.jpeg,
 tag,water-park,https://images.pexels.com/photos/2326887/pexels-photo-2326887.jpeg,
 category,events,https://images.pexels.com/photos/1384254/pexels-photo-1384254.jpeg,rotation pool (reused URLs)
@@ -320,9 +317,6 @@ category,parks,https://images.pexels.com/photos/37177818/pexels-photo-37177818.j
 category,parks,https://images.pexels.com/photos/8082959/pexels-photo-8082959.jpeg,rotation pool (reused URLs)
 category,parks,https://images.pexels.com/photos/37727102/pexels-photo-37727102.jpeg,rotation pool (reused URLs)
 category,parks,https://images.pexels.com/photos/32342544/pexels-photo-32342544.jpeg,rotation pool (reused URLs)
-tag,story-time,https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg,rotation pool (reused URLs)
-tag,story-time,https://images.pexels.com/photos/8775874/pexels-photo-8775874.jpeg,rotation pool (reused URLs)
-tag,story-time,https://images.pexels.com/photos/7979786/pexels-photo-7979786.jpeg,rotation pool (reused URLs)
 tag,arcade,https://images.pexels.com/photos/7514007/pexels-photo-7514007.jpeg,
 tag,volunteer,https://images.pexels.com/photos/8543399/pexels-photo-8543399.jpeg,rotation pool (reused URLs)
 tag,running,https://images.pexels.com/photos/10157895/pexels-photo-10157895.jpeg,
@@ -606,17 +600,6 @@ tag,indoor-playground,https://images.pexels.com/photos/11986168/pexels-photo-119
 tag,indoor-playground,https://images.pexels.com/photos/34855103/pexels-photo-34855103.jpeg,climbing arch in frosty grass
 tag,indoor-playground,https://images.pexels.com/photos/28279146/pexels-photo-28279146.jpeg,rope cargo net close-up
 tag,indoor-playground,https://images.pexels.com/photos/29606685/pexels-photo-29606685.jpeg,playground structure with tube slides
-tag,library,https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg,kid-lit rotation (books/children reading)
-tag,library,https://images.pexels.com/photos/6437499/pexels-photo-6437499.jpeg,kid-lit rotation
-tag,library,https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg,kid-lit rotation
-tag,library,https://images.pexels.com/photos/8775874/pexels-photo-8775874.jpeg,kid-lit rotation
-tag,library,https://images.pexels.com/photos/7979786/pexels-photo-7979786.jpeg,kid-lit rotation
-tag,reading,https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg,kid-lit rotation (open book)
-tag,reading,https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg,kid-lit rotation
-tag,reading,https://images.pexels.com/photos/6437499/pexels-photo-6437499.jpeg,kid-lit rotation
-tag,reading,https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg,kid-lit rotation
-tag,reading,https://images.pexels.com/photos/8775874/pexels-photo-8775874.jpeg,kid-lit rotation
-tag,reading,https://images.pexels.com/photos/7979786/pexels-photo-7979786.jpeg,kid-lit rotation
 tag,crafts,https://images.pexels.com/photos/7031293/pexels-photo-7031293.jpeg,craft rotation (painting)
 tag,crafts,https://images.pexels.com/photos/8506328/pexels-photo-8506328.jpeg,craft rotation (drawing)
 tag,crafts,https://images.pexels.com/photos/8033970/pexels-photo-8033970.jpeg,craft rotation (kids craft supplies)
@@ -627,10 +610,6 @@ tag,outdoor,https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg
 tag,outdoor,https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg,outdoor rotation
 tag,trails,https://images.pexels.com/photos/38247120/pexels-photo-38247120.jpeg,trail/outdoor rotation
 tag,trails,https://images.pexels.com/photos/7671083/pexels-photo-7671083.jpeg,trail/outdoor rotation
-tag,library,https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg,library-scene rotation (retired broad keyword rule)
-tag,reading,https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg,library-scene rotation (retired broad keyword rule)
-tag,story-time,https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg,library-family rotation (even spread)
-tag,story-time,https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg,library-family rotation (even spread)
 tag,fishing,https://images.pexels.com/photos/2702625/pexels-photo-2702625.jpeg,parent+child fishing on dock (backs turned, no faces/text)
 tag,fishing,https://images.pexels.com/photos/37817804/pexels-photo-37817804.jpeg,angler at wooded lake shore (profile/turned, no text)
 tag,movie-screening,https://images.pexels.com/photos/7991321/pexels-photo-7991321.jpeg,
@@ -941,3 +920,75 @@ keyword,Central Park of Maple Grove,https://raw.githubusercontent.com/avlhohn/ms
 keyword,Clifton E. French Regional Park,https://raw.githubusercontent.com/avlhohn/msp-family-feed/main/park_images/clifton-e-french-regional-park-plymouth.jpg,"Plymouth park venue photo (safe-harvest 2026-09-07, repo-hosted)"
 keyword,Bryant Lake Regional Park Beach,https://raw.githubusercontent.com/avlhohn/msp-family-feed/main/park_images/bryant-lake-regional-park-beach-eden-prairie.jpg,"Eden Prairie park venue photo (safe-harvest 2026-09-07, repo-hosted)"
 keyword,Keller Park,https://raw.githubusercontent.com/avlhohn/msp-family-feed/main/park_images/keller-park-maplewood.jpg,"Maplewood park venue photo (safe-harvest 2026-09-07, repo-hosted)"
+tag,story-time,https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg,"library-setting pool 2026-09-30 (verified): teacher reading to children on a beanbag, alphabet wall (library storytime corner)"
+tag,story-time,https://images.pexels.com/photos/7979786/pexels-photo-7979786.jpeg,library-setting pool 2026-09-30 (verified): adult reading a picture book aloud to a child in a library
+tag,story-time,https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg,library-setting pool 2026-09-30 (verified): boy reading beside a colorful children's book display shelf
+tag,story-time,https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg,library-setting pool 2026-09-30 (verified): library shelf filled with colorful children's books
+tag,story-time,https://images.pexels.com/photos/8466915/pexels-photo-8466915.jpeg,library-setting pool 2026-09-30 (verified): diverse children reading books together in a library
+tag,story-time,https://images.pexels.com/photos/10638225/pexels-photo-10638225.jpeg,library-setting pool 2026-09-30 (verified): two students exploring bookshelves in a library
+tag,story-time,https://images.pexels.com/photos/5865565/pexels-photo-5865565.jpeg,library-setting pool 2026-09-30 (verified): parent and children reading in a colorful library section
+tag,story-time,https://images.pexels.com/photos/10638213/pexels-photo-10638213.jpeg,library-setting pool 2026-09-30 (verified): three children in uniforms reading books together in a library
+tag,story-time,https://images.pexels.com/photos/10638219/pexels-photo-10638219.jpeg,library-setting pool 2026-09-30 (verified): two schoolgirls reading books in a modern school library
+tag,story-time,https://images.pexels.com/photos/10643465/pexels-photo-10643465.jpeg,library-setting pool 2026-09-30 (verified): children sharing a book in a library
+tag,story-time,https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg,"library-setting pool 2026-09-30 (verified): teacher reading a book to a story circle of children, alphabet chart"
+tag,story-time,https://images.pexels.com/photos/35551010/pexels-photo-35551010.jpeg,library-setting pool 2026-09-30 (verified): children exploring a globe together in a library
+tag,story-time,https://images.pexels.com/photos/36859107/pexels-photo-36859107.jpeg,library-setting pool 2026-09-30 (verified): girl reading a book beside library shelves
+tag,story-time,https://images.pexels.com/photos/8500414/pexels-photo-8500414.jpeg,library-setting pool 2026-09-30 (verified): child reading on the floor by tall library bookshelves
+tag,story-time,https://images.pexels.com/photos/10638209/pexels-photo-10638209.jpeg,library-setting pool 2026-09-30 (verified): children reading books on a mat in a modern library
+tag,story-time,https://images.pexels.com/photos/8342411/pexels-photo-8342411.jpeg,library-setting pool 2026-09-30 (verified): adult helping a child read a book between library shelves
+tag,story-time,https://images.pexels.com/photos/8499562/pexels-photo-8499562.jpeg,library-setting pool 2026-09-30 (verified): boy reading a book at a table in a school library
+tag,story-time,https://images.pexels.com/photos/8342271/pexels-photo-8342271.jpeg,library-setting pool 2026-09-30 (verified): adults and a child reading together at a library table
+tag,story-time,https://images.pexels.com/photos/10638220/pexels-photo-10638220.jpeg,library-setting pool 2026-09-30 (verified): group of school children reading among library bookshelves
+tag,story-time,https://images.pexels.com/photos/8926887/pexels-photo-8926887.jpeg,library-setting pool 2026-09-30 (verified): children reading at tables in a modern library
+tag,story-time,https://images.pexels.com/photos/8499572/pexels-photo-8499572.jpeg,library-setting pool 2026-09-30 (verified): children reading books at tables in a library
+tag,story-time,https://images.pexels.com/photos/12716109/pexels-photo-12716109.jpeg,library-setting pool 2026-09-30 (verified): two boys reading books in a library aisle
+tag,story-time,https://images.pexels.com/photos/8342284/pexels-photo-8342284.jpeg,library-setting pool 2026-09-30 (verified): adult guiding a child reading a book at a library table
+tag,story-time,https://images.pexels.com/photos/33738527/pexels-photo-33738527.jpeg,library-setting pool 2026-09-30 (verified): girl reading surrounded by colorful children's books
+tag,library,https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg,"library-setting pool 2026-09-30 (verified): teacher reading to children on a beanbag, alphabet wall (library storytime corner)"
+tag,library,https://images.pexels.com/photos/7979786/pexels-photo-7979786.jpeg,library-setting pool 2026-09-30 (verified): adult reading a picture book aloud to a child in a library
+tag,library,https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg,library-setting pool 2026-09-30 (verified): boy reading beside a colorful children's book display shelf
+tag,library,https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg,library-setting pool 2026-09-30 (verified): library shelf filled with colorful children's books
+tag,library,https://images.pexels.com/photos/8466915/pexels-photo-8466915.jpeg,library-setting pool 2026-09-30 (verified): diverse children reading books together in a library
+tag,library,https://images.pexels.com/photos/10638225/pexels-photo-10638225.jpeg,library-setting pool 2026-09-30 (verified): two students exploring bookshelves in a library
+tag,library,https://images.pexels.com/photos/5865565/pexels-photo-5865565.jpeg,library-setting pool 2026-09-30 (verified): parent and children reading in a colorful library section
+tag,library,https://images.pexels.com/photos/10638213/pexels-photo-10638213.jpeg,library-setting pool 2026-09-30 (verified): three children in uniforms reading books together in a library
+tag,library,https://images.pexels.com/photos/10638219/pexels-photo-10638219.jpeg,library-setting pool 2026-09-30 (verified): two schoolgirls reading books in a modern school library
+tag,library,https://images.pexels.com/photos/10643465/pexels-photo-10643465.jpeg,library-setting pool 2026-09-30 (verified): children sharing a book in a library
+tag,library,https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg,"library-setting pool 2026-09-30 (verified): teacher reading a book to a story circle of children, alphabet chart"
+tag,library,https://images.pexels.com/photos/35551010/pexels-photo-35551010.jpeg,library-setting pool 2026-09-30 (verified): children exploring a globe together in a library
+tag,library,https://images.pexels.com/photos/36859107/pexels-photo-36859107.jpeg,library-setting pool 2026-09-30 (verified): girl reading a book beside library shelves
+tag,library,https://images.pexels.com/photos/8500414/pexels-photo-8500414.jpeg,library-setting pool 2026-09-30 (verified): child reading on the floor by tall library bookshelves
+tag,library,https://images.pexels.com/photos/10638209/pexels-photo-10638209.jpeg,library-setting pool 2026-09-30 (verified): children reading books on a mat in a modern library
+tag,library,https://images.pexels.com/photos/8342411/pexels-photo-8342411.jpeg,library-setting pool 2026-09-30 (verified): adult helping a child read a book between library shelves
+tag,library,https://images.pexels.com/photos/8499562/pexels-photo-8499562.jpeg,library-setting pool 2026-09-30 (verified): boy reading a book at a table in a school library
+tag,library,https://images.pexels.com/photos/8342271/pexels-photo-8342271.jpeg,library-setting pool 2026-09-30 (verified): adults and a child reading together at a library table
+tag,library,https://images.pexels.com/photos/10638220/pexels-photo-10638220.jpeg,library-setting pool 2026-09-30 (verified): group of school children reading among library bookshelves
+tag,library,https://images.pexels.com/photos/8926887/pexels-photo-8926887.jpeg,library-setting pool 2026-09-30 (verified): children reading at tables in a modern library
+tag,library,https://images.pexels.com/photos/8499572/pexels-photo-8499572.jpeg,library-setting pool 2026-09-30 (verified): children reading books at tables in a library
+tag,library,https://images.pexels.com/photos/12716109/pexels-photo-12716109.jpeg,library-setting pool 2026-09-30 (verified): two boys reading books in a library aisle
+tag,library,https://images.pexels.com/photos/8342284/pexels-photo-8342284.jpeg,library-setting pool 2026-09-30 (verified): adult guiding a child reading a book at a library table
+tag,library,https://images.pexels.com/photos/33738527/pexels-photo-33738527.jpeg,library-setting pool 2026-09-30 (verified): girl reading surrounded by colorful children's books
+tag,reading,https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg,"library-setting pool 2026-09-30 (verified): teacher reading to children on a beanbag, alphabet wall (library storytime corner)"
+tag,reading,https://images.pexels.com/photos/7979786/pexels-photo-7979786.jpeg,library-setting pool 2026-09-30 (verified): adult reading a picture book aloud to a child in a library
+tag,reading,https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg,library-setting pool 2026-09-30 (verified): boy reading beside a colorful children's book display shelf
+tag,reading,https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg,library-setting pool 2026-09-30 (verified): library shelf filled with colorful children's books
+tag,reading,https://images.pexels.com/photos/8466915/pexels-photo-8466915.jpeg,library-setting pool 2026-09-30 (verified): diverse children reading books together in a library
+tag,reading,https://images.pexels.com/photos/10638225/pexels-photo-10638225.jpeg,library-setting pool 2026-09-30 (verified): two students exploring bookshelves in a library
+tag,reading,https://images.pexels.com/photos/5865565/pexels-photo-5865565.jpeg,library-setting pool 2026-09-30 (verified): parent and children reading in a colorful library section
+tag,reading,https://images.pexels.com/photos/10638213/pexels-photo-10638213.jpeg,library-setting pool 2026-09-30 (verified): three children in uniforms reading books together in a library
+tag,reading,https://images.pexels.com/photos/10638219/pexels-photo-10638219.jpeg,library-setting pool 2026-09-30 (verified): two schoolgirls reading books in a modern school library
+tag,reading,https://images.pexels.com/photos/10643465/pexels-photo-10643465.jpeg,library-setting pool 2026-09-30 (verified): children sharing a book in a library
+tag,reading,https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg,"library-setting pool 2026-09-30 (verified): teacher reading a book to a story circle of children, alphabet chart"
+tag,reading,https://images.pexels.com/photos/35551010/pexels-photo-35551010.jpeg,library-setting pool 2026-09-30 (verified): children exploring a globe together in a library
+tag,reading,https://images.pexels.com/photos/36859107/pexels-photo-36859107.jpeg,library-setting pool 2026-09-30 (verified): girl reading a book beside library shelves
+tag,reading,https://images.pexels.com/photos/8500414/pexels-photo-8500414.jpeg,library-setting pool 2026-09-30 (verified): child reading on the floor by tall library bookshelves
+tag,reading,https://images.pexels.com/photos/10638209/pexels-photo-10638209.jpeg,library-setting pool 2026-09-30 (verified): children reading books on a mat in a modern library
+tag,reading,https://images.pexels.com/photos/8342411/pexels-photo-8342411.jpeg,library-setting pool 2026-09-30 (verified): adult helping a child read a book between library shelves
+tag,reading,https://images.pexels.com/photos/8499562/pexels-photo-8499562.jpeg,library-setting pool 2026-09-30 (verified): boy reading a book at a table in a school library
+tag,reading,https://images.pexels.com/photos/8342271/pexels-photo-8342271.jpeg,library-setting pool 2026-09-30 (verified): adults and a child reading together at a library table
+tag,reading,https://images.pexels.com/photos/10638220/pexels-photo-10638220.jpeg,library-setting pool 2026-09-30 (verified): group of school children reading among library bookshelves
+tag,reading,https://images.pexels.com/photos/8926887/pexels-photo-8926887.jpeg,library-setting pool 2026-09-30 (verified): children reading at tables in a modern library
+tag,reading,https://images.pexels.com/photos/8499572/pexels-photo-8499572.jpeg,library-setting pool 2026-09-30 (verified): children reading books at tables in a library
+tag,reading,https://images.pexels.com/photos/12716109/pexels-photo-12716109.jpeg,library-setting pool 2026-09-30 (verified): two boys reading books in a library aisle
+tag,reading,https://images.pexels.com/photos/8342284/pexels-photo-8342284.jpeg,library-setting pool 2026-09-30 (verified): adult guiding a child reading a book at a library table
+tag,reading,https://images.pexels.com/photos/33738527/pexels-photo-33738527.jpeg,library-setting pool 2026-09-30 (verified): girl reading surrounded by colorful children's books
