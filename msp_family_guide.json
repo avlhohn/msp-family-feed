@@ -64,8 +64,8 @@
       "address": "1801 James Ave N, Minneapolis, MN 55411",
       "latitude": "44.99640",
       "longitude": "-93.30257",
-      "image_url": "https://images.pexels.com/photos/2326887/pexels-photo-2326887.jpeg",
-      "image_source": "curated_category",
+      "image_url": "https://www.minneapolisparks.org/wp-content/uploads/2018/12/North-Commons-Water-Park_Community-Pool-Party_2.jpg",
+      "image_source": "site_photo",
       "date": "",
       "time": "",
       "phone": "",
@@ -274,8 +274,8 @@
       "address": "2323 11th Ave S, Minneapolis, MN 55404",
       "latitude": "44.95977",
       "longitude": "-93.25653",
-      "image_url": "https://images.pexels.com/photos/2705879/pexels-photo-2705879.jpeg",
-      "image_source": "curated_category",
+      "image_url": "https://www.minneapolisparks.org/wp-content/uploads/2018/12/Thanks-swimming-at-Phillips-Aquatic-Center-11-22-18-L4.jpg",
+      "image_source": "site_photo",
       "date": "",
       "time": "",
       "phone": "",
@@ -526,8 +526,8 @@
       "address": "5000 Center Court, Bloomington, MN 55425",
       "latitude": "44.85469",
       "longitude": "-93.242",
-      "image_url": "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg",
-      "image_source": "curated_category",
+      "image_url": "https://www.lego.com/cdn/cs/set/assets/blt3e46d8e54416cff3/Friar_Lego_MOA_13.jpg",
+      "image_source": "site_photo",
       "date": "",
       "time": "Mall hours",
       "phone": "",
@@ -3571,8 +3571,8 @@
       "address": "75 Rev Dr Martin Luther King Jr Blvd, St. Paul, MN 55155",
       "latitude": "44.95519",
       "longitude": "-93.10222",
-      "image_url": "https://images.pexels.com/photos/8926847/pexels-photo-8926847.jpeg",
-      "image_source": "curated_category",
+      "image_url": "https://www.mnhs.org/hs-fs/hubfs/quadriga.jpg?width=740&height=419&name=quadriga.jpg",
+      "image_source": "site_photo",
       "date": "",
       "time": "",
       "phone": "",
@@ -5659,7 +5659,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "RC Preschool Storytime",
@@ -5848,7 +5849,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -5869,7 +5871,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -6415,7 +6418,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Princeton Friends of the Library Meeting",
@@ -6583,7 +6587,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -6604,7 +6609,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -7024,7 +7030,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "RC Preschool Storytime",
@@ -7192,7 +7199,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -7213,7 +7221,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -7717,7 +7726,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Learn to Play Mah Jongg",
@@ -7885,7 +7895,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -7906,7 +7917,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -68176,7 +68188,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,reading"
+      "tags": "library,reading",
+      "end_date": "2027-05-30"
     },
     {
       "title": "Jigsaw Puzzle Tournament",
@@ -88378,7 +88391,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -88399,7 +88413,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -88966,7 +88981,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Learn to Play Mah Jongg",
@@ -89596,7 +89612,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "RC Preschool Storytime",
@@ -89806,7 +89823,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Preschool Storytime Chisago Lakes",
@@ -89827,7 +89845,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,music,reading"
+      "tags": "library,story-time,music,reading",
+      "end_date": "2026-12-09"
     },
     {
       "title": "Sandstone Storytime",
@@ -90520,7 +90539,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,story-time,crafts,music"
+      "tags": "library,story-time,crafts,music",
+      "end_date": "2026-12-15"
     },
     {
       "title": "Friends of the Aitkin Public Library Meeting",
@@ -115321,7 +115341,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115342,7 +115363,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115363,7 +115385,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115384,7 +115407,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115405,7 +115429,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115426,7 +115451,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115447,7 +115473,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115468,7 +115495,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115489,7 +115517,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115510,7 +115539,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115531,7 +115561,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115552,7 +115583,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115573,7 +115605,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115594,7 +115627,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115615,7 +115649,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115636,7 +115671,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115657,7 +115693,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115678,7 +115715,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115699,7 +115737,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115720,7 +115759,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115741,7 +115781,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115762,7 +115803,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115783,7 +115825,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115804,7 +115847,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115825,7 +115869,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115846,7 +115891,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115867,7 +115913,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115888,7 +115935,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115909,7 +115957,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115930,7 +115979,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -115951,7 +116001,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Toddler/Preschool Early Literacy Class at Prior Lake Library",
@@ -116098,7 +116149,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Family Early Literacy Class at the Jordan Library",
@@ -116245,7 +116297,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Readmobile visits @ Elko New Market",
@@ -116371,7 +116424,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Visit the Readmobile at the Jordan Community Education and Recreation Center",
@@ -116497,7 +116551,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Readmobile visits @ Family Resource Center",
@@ -116623,7 +116678,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Shakopee Library's Beans & Books at the Shakopee Brewhall",
@@ -116728,7 +116784,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -116749,7 +116806,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Toddler/Preschool Early Literacy Class at Prior Lake Library",
@@ -116854,7 +116912,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "WIC at the Jordan Library - Appointment Required",
@@ -117001,7 +117060,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Fiber Arts Night at the Shakopee Library",
@@ -117043,7 +117103,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Baby Lap Sit Early Literacy Class at Prior Lake",
@@ -117148,7 +117209,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Family Early Literacy Class at Elko New Market Library",
@@ -117232,7 +117294,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Stories and a Song",
@@ -117274,7 +117337,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Reading Through History: America's 250th Book Bingo",
@@ -117295,7 +117359,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Toddler/Preschool Early Literacy Class at Prior Lake Library",
@@ -117400,7 +117465,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Scott County Law Library visit at Jordan Library",
@@ -117547,7 +117613,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Teen Graffiti Fences at the New Prague Library",
@@ -117715,7 +117782,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Baby Lap Sit Early Literacy Class at Prior Lake",
@@ -117862,7 +117930,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Science Time with the Library",
@@ -120130,7 +120199,8 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,reading"
+      "tags": "library,reading",
+      "end_date": "2027-05-30"
     },
     {
       "title": "Storytime",
@@ -125953,12 +126023,12 @@
       "title": "Sandbar Storytelling Festival: Tales & Ales with Kevin Kling & Lynette Ford",
       "description": "Two Fathoms Brewing. Tales & Ales with Kevin Kling & Lynette Ford – 8 pm – 9:30 pm – FREE TO THE PUBLIC The fifth annual Sandbar Storytelling Festival kicks off their festival events on Wednesday, Oct. 7, with a free event at Two Fathoms Brewery, 65 E. Front St . Join us from 8 to 9:30 p.m. for local brews and the stories with two of the incredible 2026 storytellers. Kevin Kling is an award-winning storyteller, playwright and solo performer whose work blends humor, emotional honesty, and deep human connection. Named Minneapolis Story Laureate in 2014 and often called a “Minnesota State Treasur",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "65 East Front St., Winona, MN 55987",
-      "latitude": "",
-      "longitude": "",
+      "latitude": 44.053579,
+      "longitude": -91.635228,
       "image_url": "https://visitwinona.com/wp-content/uploads/2021/12/SandbarStorytellingFestival-scaled-e1680197169866.jpg",
       "image_source": "site_photo",
       "date": "2026-10-07",
@@ -125974,12 +126044,12 @@
       "title": "Square Dance",
       "description": "The ARC: Home of the Historic Masonic Theatre. Join us on Tuesday Night for Square Dancing at The ARC! Sue Hulsether will be teaching and calling dances. Frog Slough String Band will be providing live music. Cost is $10.00 at the door, $5.00 for students. No experience or partner needed. This is a community dance sponsored by Traditional Music and Dance Collective.",
       "category": "events",
-      "price_type": "",
-      "price": "",
+      "price_type": "Paid",
+      "price": "$10.00",
       "age_range": "",
       "address": "251 Main St, Winona, MN 55987",
-      "latitude": "",
-      "longitude": "",
+      "latitude": 44.050226,
+      "longitude": -91.639293,
       "image_url": "https://visitwinona.com/wp-content/uploads/river-city-ballroom-dancers-arc-e1774040483102.jpg",
       "image_source": "site_photo",
       "date": "2026-10-13",
@@ -125995,8 +126065,8 @@
       "title": "Fall Puzzle Competition",
       "description": "East Recreation Center. REGISTRATION IS NOW OPEN! Assemble your team of four (ages 13+) and register to compete in the 2026 Fall Puzzle Competition! Teams will complete a 500-piece puzzle. 1st, 2nd, and 3rd places will be awarded prizes. Date : Saturday, November 14th Time : 10:00am (Doors open at 9:30am) Location : East Recreation Center Cost : $60 per team (up to four people) Registration Closes: November 6th Register online or in person at the Park & Recreation Office or East Recreation Center. Registration Link: https://tinyurl.com/4ncm73my Questions: 507-457-8258",
       "category": "events",
-      "price_type": "",
-      "price": "",
+      "price_type": "Paid",
+      "price": "$60",
       "age_range": "",
       "address": "210 Zumbro Street, Winona 55987",
       "latitude": "44.046561",
@@ -126016,12 +126086,12 @@
       "title": "Atwater Fire Department Spaghetti Feed",
       "description": "Atwater Fire Hall. Atwater Fire Department Spaghetti Feed 📅 Tuesday, October 6th ⏰ 5:30–7:30 PM 📍 Community Center Building / Firehall in Atwater The Atwater Fire Department is hosting our annual Spaghetti Feed, and we’d love to have our community join us! Come hungry and come hang out with us! You can drive through and pick up your meal, or come inside the firehall and sit down and enjoy dinner with us. ❤️ FREE-WILL DONATION Every dollar raised will go toward purchasing fire tools for our new fire truck. These tools help us be better prepared to serve and protect our community when you need u",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "107 2nd St N, Atwater 56209",
-      "latitude": "",
-      "longitude": "",
+      "latitude": 45.13826,
+      "longitude": -94.779171,
       "image_url": "https://www.willmarlakesarea.com/wp-content/uploads/2026/10/Atwater-Fire-Department-Spaghetti-Feed.png",
       "image_source": "site_photo",
       "date": "2026-10-06",
@@ -126037,14 +126107,14 @@
       "title": "Learn to Play Mah Jongg",
       "description": "Learn to play American Mah Jongg, a tile-based strategy game, with this three-session instructional series taught by longtime Mah Jongg player, Carol Jacobs. Attendees are encouraged to attend all three sessions. Recommended for adults. If there is interest in starting up regular game sessions, future days and times will be discussed.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Milaca Community Library , Milaca Community Library, Milaca, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.7558,
+      "longitude": -93.65441,
+      "image_url": "https://images.pexels.com/photos/8499562/pexels-photo-8499562.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-17",
       "time": "10:30 AM",
       "phone": "",
@@ -126058,14 +126128,14 @@
       "title": "Blessing of The Animals",
       "description": "10/04/2026 to 10/04/2026 - All pets are welcome—whether they walk, waddle, or fly! Join us for the annual Blessing of the Animals to honor the joy and companionship your pet brings. Each animal will receive a blessing and",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Rochester, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.023439,
+      "longitude": -92.463018,
+      "image_url": "https://images.pexels.com/photos/31874024/pexels-photo-31874024.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-04",
       "time": "",
       "phone": "",
@@ -126079,14 +126149,14 @@
       "title": "Hennepin County Master Gardeners at Richfield Farmers Market",
       "description": "Event date: October 17, 2026 Event Time: 07:00 AM - 12:00 PM Location: 6335 Portland Ave Richfield, MN 55423",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Richfield, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.876643,
+      "longitude": -93.287788,
+      "image_url": "https://images.pexels.com/photos/32027591/pexels-photo-32027591.jpeg",
+      "image_source": "curated",
       "date": "2026-10-17",
       "time": "7:00 AM",
       "phone": "",
@@ -126100,14 +126170,14 @@
       "title": "Power of Produce Club at Richfield Farmers Market",
       "description": "Event date: October 17, 2026 Event Time: 07:00 AM - 12:00 PM Location: 6335 Portland Ave Richfield, MN 55423 Description: Kids ages 4-17 and adults 55+ can sign up and receive $2 in produce tokens each week they check in at the Richfield Farmers Market! PoP Club is sponsored by: Visit Richfield, Richfield Senior Advisory Board, Lakewinds Co-op, Gramercy Park Cooperative at Lake Shore Drive, and Village Shores.",
       "category": "events",
-      "price_type": "",
-      "price": "",
+      "price_type": "Paid",
+      "price": "$2",
       "age_range": "",
       "address": "Richfield, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.876643,
+      "longitude": -93.287788,
+      "image_url": "https://images.pexels.com/photos/32027591/pexels-photo-32027591.jpeg",
+      "image_source": "curated",
       "date": "2026-10-17",
       "time": "7:00 AM",
       "phone": "",
@@ -126121,14 +126191,14 @@
       "title": "Bike to the Market Club at Richfield Farmers Market",
       "description": "Event date: October 17, 2026 Event Time: 07:00 AM - 12:00 PM Location: 6335 Portland Ave Richfield, MN 55423 Description: Join the Bike to the Market Club! Stop by the PoP Club booth at the center of the farmers market pavilion to sign up or check in. Bike to the Market Club is for all ages! Club participants use sustainable transportation, like biking, bussing or walking to the Richfield Farmers Market. Check in each week, and after 5 sustainable trips to the market, win a prize! Ample bike parking is available near the entrances to the farmers market. (Information collected is limited to fir",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Richfield, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.876643,
+      "longitude": -93.287788,
+      "image_url": "https://images.pexels.com/photos/32027591/pexels-photo-32027591.jpeg",
+      "image_source": "curated",
       "date": "2026-10-17",
       "time": "7:00 AM",
       "phone": "",
@@ -126142,14 +126212,14 @@
       "title": "Yoga at the Market",
       "description": "Event date: October 17, 2026 Event Time: 08:45 AM - 09:30 AM Location: 6335 Portland Ave Richfield, MN 55423 Description: Slow-flow yoga for all ages! No experience required. Yoga mats provided, or bring your own. Held rain or shine, each Saturday at the Richfield Farmers Market.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Richfield, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.876643,
+      "longitude": -93.287788,
+      "image_url": "https://images.pexels.com/photos/1384254/pexels-photo-1384254.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-17",
       "time": "8:45 AM",
       "phone": "",
@@ -126163,14 +126233,14 @@
       "title": "Hollows Park Cricket Pitch Engagement Session",
       "description": "Event date: October 17, 2026 Event Time: 11:00 AM - 01:00 PM Location: 14500 Southcross Drive West Burnsville, MN 55337",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Burnsville, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.767057,
+      "longitude": -93.277389,
+      "image_url": "https://raw.githubusercontent.com/avlhohn/msp-family-feed/main/park_images/hollows-park-burnsville.jpg",
+      "image_source": "curated",
       "date": "2026-10-17",
       "time": "11:00 AM",
       "phone": "",
@@ -126184,14 +126254,14 @@
       "title": "St. Paul Farmer's Market",
       "description": "Event date: October 17, 2026 Event Time: 09:00 AM - 01:00 PM Location: 20965 Holyoke Avenue Lakeville, MN 55044",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Lakeville, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.650051,
+      "longitude": -93.243279,
+      "image_url": "https://images.pexels.com/photos/31874024/pexels-photo-31874024.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-17",
       "time": "9:00 AM",
       "phone": "",
@@ -126205,14 +126275,14 @@
       "title": "Buckthorn Removal Day",
       "description": "Join the Sibley State Park Improvement Association and park staff to remove invasive buckthorn. We'll be meeting at the Interpretive Center. Please bring gloves if you have them. You can sign up for the event by using the link bellow. If you don't have an account with Better Impact. You can sign up with the \"New Account\" link. Buckthorn Removal Sign up: https://app.betterimpact.com/Volunteer/Schedule/OpportunityDetails?guid=6b8923ff-9132-41d2-813c-5e5eadca3e62&goBackToList=True New Account: https://app.betterimpact.com/Application?OrganizationGuid=f57a2037-b20a-4466-94ed-70b72c6c508e&Applicati",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Sibley State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.31857,
+      "longitude": -95.028523,
+      "image_url": "https://images.dnr.state.mn.us/destinations/state_parks/banners/spk00265.jpg",
+      "image_source": "site_photo",
       "date": "2026-10-24",
       "time": "10 AM",
       "phone": "",
@@ -126226,14 +126296,14 @@
       "title": "The Journey of a Water Droplet- Children's Program",
       "description": "The water we have on earth is all we get. It is constantly moving and between different forms. Learn about the water cycle and go on a journey as a water droplet. One day you could be in a lake in Africa and the next be in a glacier in the Arctic. Who knows where you will go. Participants will have an opportunity to make and take home a water journey bracelet. Meet in the visitor center.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "William O'Brien State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.218471,
+      "longitude": -92.775729,
+      "image_url": "https://images.dnr.state.mn.us/destinations/state_parks/banners/spk00283.jpg",
+      "image_source": "site_photo",
       "date": "2026-11-21",
       "time": "10 AM",
       "phone": "",
@@ -126247,14 +126317,14 @@
       "title": "Backyard Birding (all ages)",
       "description": "Migration is done and Minnesota is left with our winter residents. Our of the approximately 240 bird species that nest here in the summer only about 40 call Minnesota all year-round making late fall and winter and excellent time to learn the basics of birding. Join a naturalist as they explain how to adjust binoculars to your specific eyesight and how to identify birds by their color and size. Binoculars will be provided or bring your own. A 1-mile walk will be included in the program. Dress for the weather. Path taken will be a mixture of asphalt and mowed grass. Meet at the visitor center.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "William O'Brien State Park, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.218471,
+      "longitude": -92.775729,
+      "image_url": "https://images.dnr.state.mn.us/destinations/state_parks/banners/spk00283.jpg",
+      "image_source": "site_photo",
       "date": "2026-11-28",
       "time": "10 AM",
       "phone": "",
@@ -126268,14 +126338,14 @@
       "title": "Criminal Expungement Clinics",
       "description": "The Anoka County Law Library hosts a criminal expungement clinic on the third Tuesday of each month. No pre-registration is necessary. Expungement is the process of filing a motion in court to request that a judge seal a court record. People request expungement when they have been denied employment, housing, or a professional license due to a criminal incident that appears on a background check. Attend an informational session to determine whether you qualify financially to meet individually with an attorney to assess whether this is a realistic option for your situation. This is the best plac",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Elizabeth Ripley, Columbia Heights, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.04605,
+      "longitude": -93.25178,
+      "image_url": "https://images.pexels.com/photos/8499572/pexels-photo-8499572.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-17",
       "time": "12:30 PM",
       "phone": "",
@@ -126289,14 +126359,14 @@
       "title": "Ask the Law Librarian",
       "description": "The Anoka County Law Library Director will be at the Mississippi Library to answer legal reference questions, assist with locating legal forms, and provide referrals where appropriate. Please note that law library staff are not attorneys and cannot provide legal opinions, interpretations, or advice. Anoka County Library strives to ensure that all visitors are able to access library resources, services, and programs. Assistive technology and program accommodations are available at many library locations, as outlined on our library accessibility page. Please call the library branch hosting the p",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Elizabeth Ripley, Columbia Heights, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.04605,
+      "longitude": -93.25178,
+      "image_url": "https://images.pexels.com/photos/8499572/pexels-photo-8499572.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-17",
       "time": "1:00 PM",
       "phone": "",
@@ -126310,14 +126380,14 @@
       "title": "Water Fun Assembly with the Minnesota Science Museum",
       "description": "This program is intended for youth in grades K-5 and their families. Come be entertained by the Minnesota Science Museum. Watch and learn how to describe all the states of water. As the weather gets colder, discover what the animals and plants need to do as the liquid water changes to solid ice. See what happens with the return of spring. Think of all the different things you could do at a pond in the summer and in the winter. Discover how our actions can keep the pond healthy. Registration is not required. Space is limited. Anoka County Library strives to ensure that all visitors are able to",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Northtown Library, Blaine, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.127,
+      "longitude": -93.2528,
+      "image_url": "https://images.pexels.com/photos/35551010/pexels-photo-35551010.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-17",
       "time": "4:00 PM",
       "phone": "",
@@ -126331,14 +126401,14 @@
       "title": "Storytime",
       "description": "Join us Tuesday mornings for storytime at Hardwood Creek Library. This inclusive, welcoming program will use stories, songs, movement and more to help toddlers and preschoolers develop early literacy skills. This storytime is for children of all ages and their caregivers. This storytime will have unique content from our Thursday storytime, and you are welcome to attend either or both. This is an in-person, indoor program. Registration is not required.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Kirsten Redding, Forest Lake, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.27911,
+      "longitude": -92.98516,
+      "image_url": "https://images.pexels.com/photos/8466915/pexels-photo-8466915.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-03",
       "time": "10:00 AM",
       "phone": "",
@@ -126352,14 +126422,14 @@
       "title": "Blazing Needles at Cottage Grove Service Center",
       "description": "Do you have a needlework project you are working on? Join fellow enthusiasts for camaraderie, inspiration, and ideas on Tuesday mornings from 10 a.m. to noon at Cottage Grove Service Center, 13000 Ravine Parkway South, Cottage Grove. Bring your own project supplies. Come and go as you wish. Join the fun!",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Kristin Jones, Cottage Grove, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.82774,
+      "longitude": -92.94382,
+      "image_url": "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-03",
       "time": "10:00 AM",
       "phone": "",
@@ -126373,14 +126443,14 @@
       "title": "Storytime",
       "description": "Sing, talk, read, write, and play with us at storytime in R.H. Stafford Library's children's area. Storytime is a great opportunity to meet new friends, socialize, and strengthen early literacy skills. This storytime is recommended for children ages 2-6 and their grown-ups. Registration is not required.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Alaina Johnson, Woodbury, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.9199,
+      "longitude": -92.93394,
+      "image_url": "https://images.pexels.com/photos/8466915/pexels-photo-8466915.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-03",
       "time": "10:30 AM",
       "phone": "",
@@ -126394,14 +126464,14 @@
       "title": "Storytime & Art Cart at Cottage Grove Service Center",
       "description": "Join us in singing, talking, reading, writing, and playing at this inclusive, welcoming storytime for families at the Cottage Grove Service Center, 13000 Ravine Parkway South, Cottage Grove, starting at 10:30 a.m. Note: Due to election activities, storytime will temporarily meet in the cafeteria space adjacent to the library instead of the main corridor. This storytime focuses on concepts such as life skills, emotions, community, family, and kindness. Storytime is your opportunity to meet new friends and strengthen early literacy skills. Activities during and after storytime are designed to st",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Olivia Heerman, Cottage Grove, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.82774,
+      "longitude": -92.94382,
+      "image_url": "https://images.pexels.com/photos/10638209/pexels-photo-10638209.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-03",
       "time": "10:30 AM",
       "phone": "",
@@ -126415,14 +126485,14 @@
       "title": "Chain Pull Painting",
       "description": "Join us for a one-of-a-kind painting class at R.H. Stafford Library! Chain pull painting, also known as chain drag painting or fluid painting, is a contemporary art technique that involves pouring acrylic paint onto a canvas panel and then using a chain to create unique patterns and designs. The resulting artwork is often vibrant, abstract, and full of unexpected texture and movement. This program is for ages 6 and older. Children under age 8 must be accompanied by a responsible adult who will remain in the building for the duration of the program. Registration is required. This program is fun",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Rebecca Molloy, Woodbury, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.9199,
+      "longitude": -92.93394,
+      "image_url": "https://images.pexels.com/photos/8342284/pexels-photo-8342284.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-03",
       "time": "2:00 PM",
       "phone": "",
@@ -126436,14 +126506,14 @@
       "title": "Teen Hang Out",
       "description": "Teens are invited to come hang out at Hardwood Creek Library and make a craft! Occasionally, some sessions might also include video games, other activities, or snacks. Teens are always welcome to bring homework and use the space to study. For ages 11–18 only.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Suzi Stephenson, Forest Lake, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.27911,
+      "longitude": -92.98516,
+      "image_url": "https://images.pexels.com/photos/10638225/pexels-photo-10638225.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-03",
       "time": "3:00 PM",
       "phone": "",
@@ -126457,14 +126527,14 @@
       "title": "Turf-To-Prairie Plug Planting",
       "description": "Help us establish a biodiverse native prairie planting on the north side of the Library. Come plant seed plugs of native species that will complement the Unity Trail story walk and poetry sidewalk, with wildflowers and native insects for visitors to explore in years to come. Meet on the north lawn. Registration required. For Adults. A Unity Trail Project event.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Laura Morlock, Inver Grove Heights, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.8479,
+      "longitude": -93.04281,
+      "image_url": "https://images.pexels.com/photos/8342284/pexels-photo-8342284.jpeg",
+      "image_source": "curated_category",
       "date": "2026-10-14",
       "time": "5:00 PM",
       "phone": "",
@@ -126478,14 +126548,14 @@
       "title": "Storytime for Babies",
       "description": "Read, play and sing along with your young child in this interactive storytime designed for newborns and babies. For ages birth to Age 2 with their caregivers.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Rebekah Palmer, Apple Valley, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.73191,
+      "longitude": -93.21772,
+      "image_url": "https://images.pexels.com/photos/2123530/pexels-photo-2123530.jpeg",
+      "image_source": "curated",
       "date": "2026-11-02",
       "time": "10:30 AM",
       "phone": "",
@@ -126499,14 +126569,14 @@
       "title": "Pleasant Hill Book Group",
       "description": "Discuss a variety of great books with other members of the community. This month’s title is \"The Briar Club\" by Kate Quinn. New members are welcome. For adults.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Pleasant Hill Library, Hastings, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.737627,
+      "longitude": -92.88455,
+      "image_url": "https://images.pexels.com/photos/10638219/pexels-photo-10638219.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-02",
       "time": "1:30 PM",
       "phone": "",
@@ -126520,14 +126590,14 @@
       "title": "Seed Mosaic",
       "description": "Drop-in to learn basic techniques of mosaic art and create your own masterpieces using seeds. Presented by Caponi Art Park. For all ages.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Annie Flynn, West St. Paul, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.91015,
+      "longitude": -93.08021,
+      "image_url": "https://images.pexels.com/photos/8613091/pexels-photo-8613091.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-02",
       "time": "1:30 PM",
       "phone": "",
@@ -126541,14 +126611,14 @@
       "title": "Teen Hangout Zone",
       "description": "Drop-in after school to play games, make crafts and hang out with other teens. For youth ages 12–18.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Sarah Connolly, South St. Paul, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.89067,
+      "longitude": -93.03728,
+      "image_url": "https://images.pexels.com/photos/36859107/pexels-photo-36859107.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-02",
       "time": "2:30 PM",
       "phone": "",
@@ -126562,14 +126632,14 @@
       "title": "Teen Space",
       "description": "Come unwind, socialize and recharge with other teens. Hangout with your friends, relax, color or do homework. A variety of board games and Nintendo Switch games will be available to play with. Comfy inflatable couches and games will be provided. For youth ages 12–18. This event will be held in RM 106 in the Western Services Center.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Asha Abdulahi, Apple Valley, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.73191,
+      "longitude": -93.21772,
+      "image_url": "https://images.pexels.com/photos/5865565/pexels-photo-5865565.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-02",
       "time": "3:30 PM",
       "phone": "",
@@ -126583,14 +126653,14 @@
       "title": "Ask a Sewing Mentor",
       "description": "Bring your sewing questions and get one-on-one time with a mentor who will help you learn how to use a sewing machine for your own projects. Led by a volunteer iLAB mentor. Registration required. For adults and teens.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Karen Mackey, MN",
       "latitude": "",
       "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "image_url": "https://images.pexels.com/photos/12716109/pexels-photo-12716109.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-02",
       "time": "5:30 PM",
       "phone": "",
@@ -126604,14 +126674,14 @@
       "title": "Upper Elementary Event at the Belle Plaine Library",
       "description": "For ages 8-11. (Description of event) 10/14: Bat-ty Sun Catchers 11/4: Fall Thankful Tree 12/8: Christmas Slime",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Belle Plaine Library, Belle Plaine, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.622732,
+      "longitude": -93.769464,
+      "image_url": "https://images.pexels.com/photos/10643465/pexels-photo-10643465.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-04",
       "time": "3:30 PM",
       "phone": "",
@@ -126625,14 +126695,14 @@
       "title": "Fiber Arts Night at the Shakopee Library",
       "description": "Join us the second Wednesday of each month for a night of community and crafting! Bring your own fiber arts project(s) for this drop-in program. Any project from knitting to crochet, embroidery, cross-stitch, felting, weaving, and more are welcomed! Ages 15 ; all skill levels are welcome at this time for creativity, conversation, encouragement, and shared inspiration.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Shakopee Library, Shakopee, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.797077,
+      "longitude": -93.524482,
+      "image_url": "https://images.pexels.com/photos/10638220/pexels-photo-10638220.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-04",
       "time": "5:30 PM",
       "phone": "",
@@ -126646,14 +126716,14 @@
       "title": "ECFE Stories and a Song",
       "description": "Join an Early Childhood Family Education staff (ECFE) at the Shakopee Library for a short (15-20 minutes) drop-in Storytime on select Friday afternoons. We will share a few stories and a song or activity together! Get here early and grab a seat in the Children's area!",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Shakopee Library, Shakopee, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 44.797077,
+      "longitude": -93.524482,
+      "image_url": "https://images.pexels.com/photos/35551010/pexels-photo-35551010.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-20",
       "time": "1:30 PM",
       "phone": "",
@@ -126667,14 +126737,14 @@
       "title": "Reading Through History: America's 250th Book Bingo",
       "description": "Celebrate America's 250th AND read new books with this fun, history-themed book bingo game. This program is open to all ages and can be done individually or as families. Pick up a bingo sheet at any public library beginning on October 1 and the program will run through December 31. For each bingo (5 in a row horizontally, vertically, or diagonally), get an entry into a grand prize drawing and an American themed sticker. Complete all 25 squares for a blackout and receive an additional 3 entries into the grand prize drawing. Each branch will have a grand prize of a $25 Amazon gift cards, funded",
       "category": "events",
-      "price_type": "",
-      "price": "",
+      "price_type": "Paid",
+      "price": "$25",
       "age_range": "",
       "address": "Library Administration, MN",
       "latitude": "",
       "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "image_url": "https://images.pexels.com/photos/10638209/pexels-photo-10638209.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-21",
       "time": "",
       "phone": "",
@@ -126682,20 +126752,21 @@
       "has_deal": false,
       "deal_description": "",
       "deal_expiry": "",
-      "tags": "library,crafts,reading,games"
+      "tags": "library,crafts,reading,games",
+      "end_date": "2026-12-31"
     },
     {
       "title": "Schooled in Art",
       "description": "An art program where each monthly session features a famous artist and then participants will create their own piece inspired by the artist's work. For school-age children ages 6 to 12. Registration required. Limit 15. Please register for only 1 class per month. Content is the same for both Tuesday and Wednesday classes. This program is made possible with funds from the Friends of the Elk River Library.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Elk River Community Room, Elk River Public Library, Elk River, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.30385,
+      "longitude": -93.56718,
+      "image_url": "https://images.pexels.com/photos/10638220/pexels-photo-10638220.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-18",
       "time": "4:00 PM",
       "phone": "",
@@ -126709,14 +126780,14 @@
       "title": "Preschool Play and Learn Workshop",
       "description": "Encourage a love of learning as you and your child play, explore, discover, count and create. Join us anytime during the morning for this open-ended play session. For ages 2 to 5. This program is made possible with funds from the Friends of the Elk River Library.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Elk River Community Room, Elk River Public Library, Elk River, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.30385,
+      "longitude": -93.56718,
+      "image_url": "https://images.pexels.com/photos/33738527/pexels-photo-33738527.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-20",
       "time": "10:30 AM",
       "phone": "",
@@ -126730,14 +126801,14 @@
       "title": "Novel Idea Monday Night Book Club",
       "description": "Library staff will guide discussion of a book from our collection that we hope will stimulate interesting conversation. Stop by or call the library to find out which title has been selected for the upcoming month – 10 copies available each month first come first served.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Elk River Community Room, Elk River Public Library, Elk River, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.30385,
+      "longitude": -93.56718,
+      "image_url": "https://images.pexels.com/photos/8342271/pexels-photo-8342271.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-23",
       "time": "6:00 PM",
       "phone": "",
@@ -126751,14 +126822,14 @@
       "title": "Preschool Storytime",
       "description": "Stories, songs, and activities to build kindergarten readiness. For ages 3 to 6 years. No registration required. This program is made possible with funds from the Friends of the Elk River Library.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "Elk River Community Room, Elk River Public Library, Elk River, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.30385,
+      "longitude": -93.56718,
+      "image_url": "https://images.pexels.com/photos/10638213/pexels-photo-10638213.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-25",
       "time": "10:30 AM",
       "phone": "",
@@ -126772,14 +126843,14 @@
       "title": "Jigsaw Puzzle Tournament Team 1",
       "description": "Gather your friends and sign up. Each four-member team will compete to see which team can finish the jigsaw puzzle first. Each team will put together the same puzzle. Six team limit. Register online with team name. Ages 10 to adult.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "St. Michael Public Library, Saint Michael, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.212567,
+      "longitude": -93.651183,
+      "image_url": "https://images.pexels.com/photos/34708262/pexels-photo-34708262.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-07",
       "time": "10:30 AM",
       "phone": "",
@@ -126793,14 +126864,14 @@
       "title": "Jigsaw Puzzle Tournament Team 2",
       "description": "Gather your friends and sign up. Each four-member team will compete to see which team can finish the jigsaw puzzle first. Each team will put together the same puzzle. Six team limit. Register online with team name. Ages 10 to adult.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "St. Michael Public Library, Saint Michael, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.212567,
+      "longitude": -93.651183,
+      "image_url": "https://images.pexels.com/photos/10638219/pexels-photo-10638219.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-07",
       "time": "10:30 AM",
       "phone": "",
@@ -126814,14 +126885,14 @@
       "title": "Jigsaw Puzzle Tournament Team 3",
       "description": "Gather your friends and sign up. Each four-member team will compete to see which team can finish the jigsaw puzzle first. Each team will put together the same puzzle. Six team limit. Register online with team name. Ages 10 to adult.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "St. Michael Public Library, Saint Michael, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.212567,
+      "longitude": -93.651183,
+      "image_url": "https://images.pexels.com/photos/8342411/pexels-photo-8342411.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-07",
       "time": "10:30 AM",
       "phone": "",
@@ -126835,14 +126906,14 @@
       "title": "Jigsaw Puzzle Tournament Team 4",
       "description": "Gather your friends and sign up. Each four-member team will compete to see which team can finish the jigsaw puzzle first. Each team will put together the same puzzle. Six team limit. Register online with team name. Ages 10 to adult.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "St. Michael Public Library, Saint Michael, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.212567,
+      "longitude": -93.651183,
+      "image_url": "https://images.pexels.com/photos/10643453/pexels-photo-10643453.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-07",
       "time": "10:30 AM",
       "phone": "",
@@ -126856,14 +126927,14 @@
       "title": "Jigsaw Puzzle Tournament Team 5",
       "description": "Gather your friends and sign up. Each four-member team will compete to see which team can finish the jigsaw puzzle first. Each team will put together the same puzzle. Six team limit. Register online with team name. Ages 10 to adult.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "St. Michael Public Library, Saint Michael, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.212567,
+      "longitude": -93.651183,
+      "image_url": "https://images.pexels.com/photos/10638225/pexels-photo-10638225.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-07",
       "time": "10:30 AM",
       "phone": "",
@@ -126877,14 +126948,14 @@
       "title": "Jigsaw Puzzle Tournament Team 6",
       "description": "Gather your friends and sign up. Each four-member team will compete to see which team can finish the jigsaw puzzle first. Each team will put together the same puzzle. Six team limit. Register online with team name. Ages 10 to adult.",
       "category": "events",
-      "price_type": "",
+      "price_type": "Varies",
       "price": "",
       "age_range": "",
       "address": "St. Michael Public Library, Saint Michael, MN",
-      "latitude": "",
-      "longitude": "",
-      "image_url": "",
-      "image_source": "",
+      "latitude": 45.212567,
+      "longitude": -93.651183,
+      "image_url": "https://images.pexels.com/photos/10643465/pexels-photo-10643465.jpeg",
+      "image_source": "curated_category",
       "date": "2026-11-07",
       "time": "10:30 AM",
       "phone": "",
@@ -127368,8 +127439,8 @@
       "address": "Hopkins, MN",
       "latitude": "44.92278",
       "longitude": "-93.41703",
-      "image_url": "https://images.pexels.com/photos/34889832/pexels-photo-34889832.jpeg",
-      "image_source": "curated_category",
+      "image_url": "https://www.maplegrovemn.gov/ImageRepository/Document?documentId=2482",
+      "image_source": "site_photo",
       "date": "",
       "time": "",
       "phone": "",
@@ -150955,8 +151026,8 @@
       "address": "Father Hennepin Bluffs Park, 200 Main Street SE, Minneapolis, MN 55414",
       "latitude": "44.9876",
       "longitude": "-93.2534",
-      "image_url": "https://images.pexels.com/photos/8543399/pexels-photo-8543399.jpeg",
-      "image_source": "curated_category",
+      "image_url": "https://www.minneapolisparks.org/wp-content/uploads/2021/09/July-2019-Group-450x340.jpg",
+      "image_source": "site_photo",
       "date": "",
       "time": "9:00 AM - 11:30 AM",
       "phone": "612-313-7778",
@@ -152173,8 +152244,8 @@
       "address": "Various Minneapolis locations, MN",
       "latitude": "44.97730",
       "longitude": "-93.26547",
-      "image_url": "https://www.tchabitat.org/hubfs/_Minnetonka%20Mills%20Groundbreaking%20800x450.jpg",
-      "image_source": "curated_category",
+      "image_url": "https://www.minneapolismn.gov/media/-www-content-assets/images/SWR---Litter-cleanup-supplies.jpg",
+      "image_source": "site_photo",
       "date": "",
       "time": "Varies",
       "phone": "",
