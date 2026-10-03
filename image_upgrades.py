@@ -269,7 +269,7 @@ def discover_data_file():
 def load_curated(path):
     """Return dict of lists keyed by match_type, each a (match_value, image_url) list.
     Blank-image_url rows are dropped."""
-    out = {"title": [], "keyword": [], "category": [], "tag": []}
+    out = {"title": [], "keyword": [], "category": [], "tag": [], "keyword_pool": []}
     if not os.path.exists(path):
         return out
     with open(path, "r", encoding="utf-8", newline="") as fh:
@@ -639,6 +639,19 @@ def apply_curated_override(records, curated):
     protected = {norm(x) for x in REAL_PHOTO_SOURCES}
     title_map = {norm(mv): url for mv, url in curated["title"]}
     keyword_rows = [(norm(mv), url) for mv, url in curated["keyword"]]
+    # keyword_pool: same substring-on-title match as `keyword`, but a match_value may
+    # carry SEVERAL urls and one is chosen per item by a stable hash of a COMPOSITE key
+    # (title|address|date), so many identically-titled rows (e.g. 237 "Baby Storytime")
+    # spread across the pool instead of all showing one image. Isolated from `keyword`
+    # on purpose: the existing single-url keyword/title paths are left byte-identical, so
+    # venues with an accidental 2nd keyword url (zoo/aquatennial) keep first-match-wins.
+    pool_multi = _collect_multi(curated.get("keyword_pool", []))
+    pool_keys, _seen = [], set()
+    for mv, _u in curated.get("keyword_pool", []):
+        k = norm(mv)
+        if k and k not in _seen:
+            _seen.add(k)
+            pool_keys.append(k)
     upgraded = 0
     for item in records:
         t = norm(item.get(F_TITLE))
@@ -647,6 +660,14 @@ def apply_curated_override(records, curated):
             for kw, kurl in keyword_rows:    # substring/keyword match on title
                 if kw and kw in t:
                     url = kurl
+                    break
+        if url is None:
+            for kw in pool_keys:             # rotating substring/keyword pool
+                if kw in t:
+                    pkey = "|".join([norm(item.get(F_TITLE)),
+                                     norm(item.get("address")),
+                                     norm(item.get("date"))])
+                    url = _stable_pick(pool_multi[kw], pkey)
                     break
         if url:
             if norm(item.get(F_SRC)) in protected:
