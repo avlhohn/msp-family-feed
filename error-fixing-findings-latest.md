@@ -31,9 +31,13 @@ days, while 1,448 open rows across 118 other issue types sit structurally unreac
 selection rule this task is given. A small queue read as success is the false pass this pipeline
 rates worst, because a shortfall gets investigated and an empty queue never does.
 
-Two STEP 1 conditions were serious enough to earn durable rows in `error_log.csv` rather than only
-a mention here, since this report is overwritten every run and a finding that lives only in an
-overwritten file is not recorded at all.
+One STEP 1 condition was serious enough to earn a durable row of its own in `error_log.csv` rather
+than only a mention here. The inflow finding did not, and the reasoning behind that is worth
+stating, because this run got it wrong first and corrected it: a finding that is true every run
+does not belong in an append-only log. It belongs in the single `fixer_summary` row this task
+writes per run, and in this report, which is overwritten in place. The log already carried four
+names for that one finding; a fifth was appended, measured, rolled back, and folded into the
+summary row instead.
 
 ## Resolved this run
 
@@ -124,7 +128,21 @@ Two mechanisms could produce that, and **neither was verified**, so both are rec
 hypotheses on purpose: either the build has stopped emitting these types altogether, or it still
 detects them and the rows are capped or suppressed before the append. The remedy differs
 completely between the two, so the right next step is to establish which is live, not to act on
-the count. Logged as `fixer_queue_inflow_check`.
+the count.
+
+**This finding was logged as its own row, and then that row was rolled back.** It is carried
+instead inside today's `fixer_summary` row and here. The correction is worth recording because the
+reasoning that produced the mistake was superficially sound: this report is overwritten every run,
+so a finding that lives only here looked unrecorded. What that reasoning missed is that the log
+already held **four names for this one finding** — `fixer_queue_no_inflow` on 2026-09-18,
+`queue_no_inflow` on 09-19 and 09-20, and `fixer_queue_inflow_check` on 09-26. A fifth would have
+been the accumulating permanent warning this pipeline forbids, the failure mode where a block of
+nightly-identical warnings trains the reader to skim it. Worse, it would have arrived by the very
+`issue_type` vocabulary drift the finding itself describes — one concept under four spellings,
+which splits every count of it. The durable home for something true every run is the one row this
+task writes per run, which cannot accumulate by construction. The append helper now carries two
+assertions enforcing that, both of which were made to fail on purpose before the passing result
+was trusted.
 
 **Base validation and reconciliation both clean.** The base carried the exact ten-column header,
 5,373 data rows spanning 2026-07-08 to 2026-10-03, pure CRLF line endings with zero bare
@@ -140,23 +158,32 @@ questions.
 **The STEP 4 append failed loudly before writing anything**, on a width assertion that caught
 three malformed rows while `error_log.csv` was still pristine — the failure direction to prefer. It
 was re-run with the guard block intact plus a mandatory-run-date assertion, and both date guards
-were made to fire on purpose before the passing result was trusted. Post-write verification
-confirmed 5,373 → 5,376 rows, the header unchanged, the resolved count unchanged at 555, every row
-ten fields wide, zero bare linefeeds, and the first 1,758,725 bytes byte-identical to the
-preserved pre-append baseline.
+were made to fire on purpose before the passing result was trusted.
+
+It then ran a second time, after the inflow row was rolled back. The preserved baseline is what
+made that safe: it was verified to be a **byte-exact prefix** of the appended file before the
+restore, which proves it is the exact common ancestor and that the rollback discarded only this
+run's own three rows rather than anything else. Post-write verification confirmed 5,373 → 5,375
+rows, the header unchanged, the resolved count unchanged at 555, every row ten fields wide, zero
+bare linefeeds, and the first 1,758,725 bytes byte-identical to the baseline. The fold itself was
+then asserted against the **file** rather than against the helper's variables — exactly one
+`fixer_summary` row dated today, the inflow finding present inside it, and no standalone inflow
+row added — because a helper can be correct about what it intended to write and still not have
+written it.
 
 ## Files
 
-- `error_log.csv` — published to `avlhohn/msp-family-feed` on `main`. 1,763,352 bytes, git blob
-  `b0142de18d68`, verified by comparing the API's returned `sha` against the locally computed blob
-  SHA-1 of the exact bytes uploaded, not by a size threshold. Commit `36ddb150b8e7`.
+- `error_log.csv` — published to `avlhohn/msp-family-feed` on `main`. 5,375 data rows,
+  1,763,490 bytes, git blob `00dfc449135b`, verified by comparing the API's returned `sha` against
+  the locally computed blob SHA-1 of the exact bytes uploaded, not by a size threshold. Two rows
+  appended: the `fixer_summary` and `drive_token_stale_check`.
   <https://github.com/avlhohn/msp-family-feed/blob/main/error_log.csv>
 - `error-fixing-findings-latest.md` — this report, published to the same repo.
   <https://github.com/avlhohn/msp-family-feed/blob/main/error-fixing-findings-latest.md>
-- `.bak_error_log_prefixer_1003.csv` — the preserved pre-append baseline, 1,758,725 bytes, blob
-  `fa97a025e59a`. It is the exact common ancestor, and therefore the only thing that makes a
-  row-identity merge or a clean append rollback possible. Keep it until the next run's
-  reconciliation is clean.
+- `.bak_error_log_prefixer_1003.csv` — the preserved pre-append baseline, 5,373 data rows,
+  1,758,725 bytes, blob `fa97a025e59a`. It is the exact common ancestor, and therefore the only
+  thing that makes a row-identity merge or a clean append rollback possible. It did that work this
+  run, which is the argument for keeping it until the next run's reconciliation is clean.
 - `.fixer_1003/` — this run's working directory: the programmatically written queue and subagent
   batch files, the parent-side Openverse query and its results, the direct image byte-check, and
   the guarded append and publish helpers.
