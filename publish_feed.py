@@ -87,6 +87,8 @@ def api(method, url, token, body=None):
     req.add_header("Accept", "application/vnd.github+json")
     req.add_header("X-GitHub-Api-Version", "2022-11-28")
     req.add_header("User-Agent", "msp-family-feed")
+    if body:
+        req.add_header("Content-Type", "application/json")
     try:
         with urllib.request.urlopen(req, timeout=120) as r:
             return r.status, json.loads(r.read().decode())
