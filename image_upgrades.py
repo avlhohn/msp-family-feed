@@ -613,7 +613,12 @@ def apply_curated_category(records, curated):
         if options is None:
             options = cat_map.get(norm(item.get(F_CATEGORY)))
         if options:
-            url = _stable_pick(options, item.get(F_TITLE))
+            # Key on title+date so each occurrence of a recurring series (e.g. a
+            # weekly storytime) spreads across the pool instead of every date
+            # showing one image. Evergreen rows (blank date) fall back to title.
+            _k = (item.get(F_TITLE) or "")
+            _d = (item.get("date") or "")
+            url = _stable_pick(options, _k + "|" + _d if _d else _k)
             if url:
                 item[F_IMG] = url
                 item[F_SRC] = "curated_category"
