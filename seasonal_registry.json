@@ -1,0 +1,8 @@
+{
+  "_comment": "Season gate for blank-date STANDING events only. Each entry: a title regex (case-insensitive) and the months the event is in season. A matching standing event is hidden from the published feed when its season does not intersect the run window's months. Conservative by design: only clearly outdoor/summer series. Dated events are never touched (they age out on their own). Added 2026-11-03.",
+  "rules": [
+    {"name": "kidstock", "pattern": "kidstock", "months": [5, 6, 7, 8]},
+    {"name": "outdoor_movies", "pattern": "movies?\\s+(in|under|at)\\s+the\\s+park|movie\\s+under\\s+the\\s+stars|sounds\\s+of\\s+summer|outdoor\\s+movie", "months": [5, 6, 7, 8, 9]},
+    {"name": "outdoor_concerts", "pattern": "free\\s+(outdoor\\s+)?concert|concerts?\\s+in\\s+the\\s+park|music\\s+in\\s+the\\s+park|band\\s?shell|summer\\s+concert", "months": [5, 6, 7, 8, 9]}
+  ]
+}
