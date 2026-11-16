@@ -41,7 +41,7 @@ CATS = ["events", "parks", "meal_deals", "volunteer_opportunities", "restaurants
 LAT_MIN, LAT_MAX = 43.3, 49.5
 LON_MIN, LON_MAX = -97.5, -89.4
 CACHE = os.path.join(PARENT, "_geocache.json")
-UA = "msp-family-feed/1.0 (daily guide build; contact avlhohn@gmail.com)"
+UA = os.environ.get("GEO_UA", "msp-family-feed/1.0 (daily guide build)")
 DEADLINE = float(os.environ.get("GEO_DEADLINE", "1500"))
 
 
